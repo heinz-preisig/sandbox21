@@ -1,0 +1,88 @@
+digraph chemical {
+label=chemical;
+rankdir=LR;
+subgraph cluster_chemical___property {
+label=property;
+rankdir=LR;
+}
+
+subgraph cluster_chemical___network {
+label=network;
+rankdir=LR;
+V_10 [fillcolor=seagreen3, fontsize=12, label=F, penwidth=3, style=filled];
+}
+
+subgraph cluster_chemical___projection {
+label=projection;
+rankdir=LR;
+}
+
+subgraph cluster_chemical___differenceOperator {
+label=differenceOperator;
+rankdir=LR;
+}
+
+subgraph cluster_chemical___frame {
+label=frame;
+rankdir=LR;
+V_11 [fillcolor=seagreen1, fontsize=12, label=l, penwidth=3, style=filled];
+V_12 [fillcolor=seagreen1, fontsize=12, label=r_x, penwidth=3, style=filled];
+V_13 [fillcolor=seagreen1, fontsize=12, label=r_y, penwidth=3, style=filled];
+V_14 [fillcolor=seagreen1, fontsize=12, label=r_z, penwidth=3, style=filled];
+V_4 [fillcolor=seagreen1, fontsize=12, label=t, penwidth=3, style=filled];
+V_5 [fillcolor=seagreen1, fontsize=12, label=to, penwidth=3, style=filled];
+V_6 [fillcolor=seagreen1, fontsize=12, label=te, penwidth=3, style=filled];
+V_7 [fillcolor=seagreen1, fontsize=12, label=t_interval, penwidth=3, style=filled];
+V_9 [fillcolor=seagreen1, fontsize=12, label=pulse, penwidth=3, style=filled];
+}
+
+subgraph cluster_chemical___state {
+label=state;
+rankdir=LR;
+V_15 [fillcolor=grey, fontsize=12, label=V, penwidth=3, style=filled];
+V_16 [fillcolor=grey, fontsize=12, label=U, penwidth=3, style=filled];
+V_17 [fillcolor=grey, fontsize=12, label=S, penwidth=3, style=filled];
+V_18 [fillcolor=grey, fontsize=12, label=n, penwidth=3, style=filled];
+V_22 [fillcolor=grey, fontsize=12, label=H, penwidth=3, style=filled];
+V_23 [fillcolor=grey, fontsize=12, label=A, penwidth=3, style=filled];
+V_24 [fillcolor=grey, fontsize=12, label=G, penwidth=3, style=filled];
+V_25 [fillcolor=grey, fontsize=12, label=C, penwidth=3, style=filled];
+}
+
+subgraph cluster_chemical___constant {
+label=constant;
+rankdir=LR;
+V_1 [fillcolor=lightcyan, fontsize=12, label=value, penwidth=3, style=filled];
+V_2 [fillcolor=lightcyan, fontsize=12, label=one, penwidth=3, style=filled];
+V_3 [fillcolor=lightcyan, fontsize=12, label=zero, penwidth=3, style=filled];
+V_8 [fillcolor=lightcyan, fontsize=12, label=onehalf, penwidth=3, style=filled];
+}
+
+subgraph cluster_chemical___effort {
+label=effort;
+rankdir=LR;
+V_19 [fillcolor=salmon, fontsize=12, label=T, penwidth=3, style=filled];
+V_20 [fillcolor=salmon, fontsize=12, label=p, penwidth=3, style=filled];
+V_21 [fillcolor=salmon, fontsize=12, label=chemPot, penwidth=3, style=filled];
+}
+
+subgraph cluster_chemical___secondaryState {
+label=secondaryState;
+rankdir=LR;
+V_28 [fillcolor=white, fontsize=12, label=v_x, penwidth=3, style=filled];
+V_29 [fillcolor=white, fontsize=12, label=v_y, penwidth=3, style=filled];
+V_30 [fillcolor=white, fontsize=12, label=v_z, penwidth=3, style=filled];
+V_31 [fillcolor=white, fontsize=12, label=c, penwidth=3, style=filled];
+}
+
+subgraph cluster_chemical___diffState {
+label=diffState;
+rankdir=LR;
+}
+
+subgraph cluster_chemical___property {
+label=property;
+rankdir=LR;
+}
+
+}

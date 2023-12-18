@@ -1,0 +1,99 @@
+
+% automatically generated - do not edit
+%
+% =======================================
+
+\documentclass[landscape, 12pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{longtable}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+
+\usepackage[text={\textwidth,10cm},
+		a4paper,
+		headsep=0.7cm,
+		top=2cm,
+		bottom=2cm,
+		left=2cm,
+		right=2cm,
+		%		showframe,
+		showcrop,
+		%nofoot,
+		nomarginpar
+		]{geometry}
+\usepackage[%
+        backref,
+        %	ps2pdf,
+        %	dvips,
+        final,
+        %pdftitle={#1},
+        pdfauthor={Heinz A Preisig},
+        pdfsubject={'CAM'},
+        colorlinks=true,
+        linkcolor=red,
+        citecolor=blue,
+        anchorcolor=blue,
+        hyperindex=true,
+        bookmarks,
+        bookmarksopen=true,
+        bookmarksnumbered=true,
+        bookmarksdepth=10,
+        hyperfigures=true,
+        %a4paper,
+        linktocpage=true,
+        pageanchor=true,
+        ]{hyperref}
+
+\usepackage{enumitem}
+
+%% math packages
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{calligra}
+\usepackage{array}
+
+%% >>>>>>>>>>>>>>>> user definitions BIBLIOGRAPHY & DEFS <<<<<<<<<<<<<<<<<<<<<<<<
+
+\input{./resources/defs}
+\input{./resources/defvars}
+\parindent=0pt
+
+
+
+
+\newenvironment{eq}{\begin{minipage}{16cm}$}{$\end{minipage} }
+%\newenvironment{eq}{$}{$}
+
+% ==================================== body  =====================================
+\begin{document}
+
+
+\section*{Equation assignment sequence for variable ${G}{_{N}}$}
+
+
+
+\renewcommand{\arraystretch}{1.5}
+
+\begin{longtable}{|p{1cm}|p{1cm}|p{1cm}|p{16cm}|p{4cm}|}\hline
+  no &var &equ &quations &token\\\hline\hline
+\endhead
+\hline \multicolumn{3}{r}{\textit{Continued on next page}} \\
+\endfoot
+\hline
+\endlastfoot
+10 &11 &- &\begin{eq}{l}{_{N}} :: \text{port variable}\end{eq} & \\
+9 &1 &- &\begin{eq}{{\#}}{_{}} :: \text{port variable}\end{eq} & \\
+8 &17 &- &\begin{eq}{S}{_{N}} :: \text{port variable}\end{eq} & \\
+7 &16 &- &\begin{eq}{U}{_{N}} :: \text{port variable}\end{eq} & \\
+6 &14 &17 &\begin{eq}{r_z}{_{N}} := \text{Instantiate}({l}{_{N}}, {{\#}}{_{}})\end{eq} & \\
+5 &13 &16 &\begin{eq}{r_y}{_{N}} := \text{Instantiate}({l}{_{N}}, {{\#}}{_{}})\end{eq} & \\
+4 &12 &13 &\begin{eq}{r_x}{_{N}} := \text{Instantiate}({l}{_{N}}, {{\#}}{_{}})\end{eq} & \\
+3 &20 &12 &\begin{eq}{p}{_{N}} := \frac{\partial{{U}{_{N}}}}{\partial{{V}{_{N}}}}\end{eq} & \\
+2 &19 &11 &\begin{eq}{T}{_{N}} := \frac{\partial{{U}{_{N}}}}{\partial{{S}{_{N}}}}\end{eq} & \\
+1 &15 &7 &\begin{eq}{V}{_{N}} := {r_x}{_{N}} \, . \, {r_y}{_{N}} \, . \, {r_z}{_{N}}\end{eq} & \\
+0 &24 &1 &\begin{eq}{G}{_{N}} := {U}{_{N}}  + {p}{_{N}} \, . \, {V}{_{N}}  - {T}{_{N}} \, . \, {S}{_{N}}\end{eq} & \\
+
+\end{longtable}
+
+\end{document}
+% ================================== end =========================================

@@ -1,0 +1,448 @@
+{
+  "version": "8",
+  "variables": {
+    "V_1": {
+      "IRI": "promo:value",
+      "aliases": {
+        "matlab": "value",
+        "latex": "{\\#}",
+        "internal_code": "value",
+        "global_ID": "V_1"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_1"
+      },
+      "created": "2023-12-09 16:40:28",
+      "doc": "numerical value",
+      "equations": {},
+      "index_structures": [],
+      "label": "value",
+      "modified": "2023-12-09 16:40:43",
+      "network": "root",
+      "port_variable": true,
+      "tokens": [],
+      "type": "constant",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_2": {
+      "IRI": "promo:one",
+      "aliases": {
+        "matlab": "one",
+        "latex": "1",
+        "internal_code": "one",
+        "global_ID": "V_2"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_2"
+      },
+      "created": "2023-12-09 16:41:28",
+      "doc": "numerical one",
+      "equations": {
+        "E_1": {
+          "rhs": {
+            "global_ID": " O_10 D_0 V_1 D_7 V_1 D_1",
+            "latex": "\\text{Instantiate}({value}{_{}}, {value}{_{}})"
+          },
+          "type": "generic",
+          "doc": "numerical one",
+          "network": "root",
+          "incidence_list": [
+            "V_1"
+          ],
+          "created": "2023-12-09 16:41:28",
+          "modified": "2023-12-09 16:41:28",
+          "lhs": {
+            "global_ID": "V_2"
+          }
+        }
+      },
+      "index_structures": [],
+      "label": "one",
+      "modified": "2023-12-09 16:41:28",
+      "network": "root",
+      "port_variable": false,
+      "tokens": [],
+      "type": "constant",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_3": {
+      "IRI": "promo:zero",
+      "aliases": {
+        "matlab": "zero",
+        "latex": "0",
+        "internal_code": "zero",
+        "global_ID": "V_3"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_3"
+      },
+      "created": "2023-12-09 16:41:52",
+      "doc": "numerical value zero",
+      "equations": {
+        "E_2": {
+          "rhs": {
+            "global_ID": " O_10 D_0 V_1 D_7 V_1 D_1",
+            "latex": "\\text{Instantiate}({value}{_{}}, {value}{_{}})"
+          },
+          "type": "generic",
+          "doc": "numerical value zero",
+          "network": "root",
+          "incidence_list": [
+            "V_1"
+          ],
+          "created": "2023-12-09 16:41:52",
+          "modified": "2023-12-09 16:41:52",
+          "lhs": {
+            "global_ID": "V_3"
+          }
+        }
+      },
+      "index_structures": [],
+      "label": "zero",
+      "modified": "2023-12-09 16:41:52",
+      "network": "root",
+      "port_variable": false,
+      "tokens": [],
+      "type": "constant",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_4": {
+      "IRI": "qudt:Time",
+      "aliases": {
+        "matlab": "t",
+        "latex": "t",
+        "internal_code": "t",
+        "global_ID": "V_4"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_4"
+      },
+      "created": "2023-12-09 16:43:15",
+      "doc": "time",
+      "equations": {},
+      "index_structures": [],
+      "label": "t",
+      "modified": "2023-12-09 16:43:56",
+      "network": "root",
+      "port_variable": true,
+      "tokens": [],
+      "type": "frame",
+      "units": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_5": {
+      "IRI": "promo:to",
+      "aliases": {
+        "matlab": "to",
+        "latex": "to",
+        "internal_code": "to",
+        "global_ID": "V_5"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_5"
+      },
+      "created": "2023-12-09 16:44:34",
+      "doc": "time zero",
+      "equations": {
+        "E_3": {
+          "rhs": {
+            "global_ID": " O_10 D_0 V_4 D_7 V_3 D_1",
+            "latex": "\\text{Instantiate}({t}{_{}}, {0}{_{}})"
+          },
+          "type": "generic",
+          "doc": "time zero",
+          "network": "root",
+          "incidence_list": [
+            "V_3",
+            "V_4"
+          ],
+          "created": "2023-12-09 16:44:34",
+          "modified": "2023-12-09 16:44:34",
+          "lhs": {
+            "global_ID": "V_5"
+          }
+        }
+      },
+      "index_structures": [],
+      "label": "to",
+      "modified": "2023-12-09 16:44:34",
+      "network": "root",
+      "port_variable": false,
+      "tokens": [],
+      "type": "frame",
+      "units": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_6": {
+      "IRI": "promo:te",
+      "aliases": {
+        "matlab": "te",
+        "latex": "te",
+        "internal_code": "te",
+        "global_ID": "V_6"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_6"
+      },
+      "created": "2023-12-09 16:45:12",
+      "doc": "time end",
+      "equations": {
+        "E_4": {
+          "rhs": {
+            "global_ID": " O_10 D_0 V_4 D_7 V_1 D_1",
+            "latex": "\\text{Instantiate}({t}{_{}}, {{\\#}}{_{}})"
+          },
+          "type": "generic",
+          "doc": "time end",
+          "network": "root",
+          "incidence_list": [
+            "V_1",
+            "V_4"
+          ],
+          "created": "2023-12-09 16:45:12",
+          "modified": "2023-12-09 16:45:12",
+          "lhs": {
+            "global_ID": "V_6"
+          }
+        }
+      },
+      "index_structures": [],
+      "label": "te",
+      "modified": "2023-12-09 16:45:12",
+      "network": "root",
+      "port_variable": false,
+      "tokens": [],
+      "type": "frame",
+      "units": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_7": {
+      "IRI": "promo:t_interval",
+      "aliases": {
+        "matlab": "t_interval",
+        "latex": "t_interval",
+        "internal_code": "t_interval",
+        "global_ID": "V_7"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_7"
+      },
+      "created": "2023-12-09 16:47:07",
+      "doc": "time interval",
+      "equations": {
+        "E_5": {
+          "rhs": {
+            "global_ID": " O_10 D_0 V_4 D_7 V_1 D_1",
+            "latex": "\\text{Instantiate}({t}{_{}}, {{\\#}}{_{}})"
+          },
+          "type": "generic",
+          "doc": "time interval",
+          "network": "root",
+          "incidence_list": [
+            "V_1",
+            "V_4"
+          ],
+          "created": "2023-12-09 16:47:07",
+          "modified": "2023-12-09 16:47:07",
+          "lhs": {
+            "global_ID": "V_7"
+          }
+        }
+      },
+      "index_structures": [],
+      "label": "t_interval",
+      "modified": "2023-12-09 16:47:07",
+      "network": "root",
+      "port_variable": false,
+      "tokens": [],
+      "type": "frame",
+      "units": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "indices": {
+    "I_1": {
+      "type": "index",
+      "label": "node",
+      "network": [
+        "root",
+        "physical",
+        "reactions",
+        "material",
+        "macroscopic",
+        "solid",
+        "fluid",
+        "liquid",
+        "gas",
+        "energy",
+        "control"
+      ],
+      "aliases": {
+        "matlab": "N",
+        "latex": "N",
+        "internal_code": "N"
+      },
+      "tokens": null,
+      "IRI": "None"
+    },
+    "I_2": {
+      "type": "index",
+      "label": "arc",
+      "network": [
+        "root",
+        "physical",
+        "reactions",
+        "material",
+        "macroscopic",
+        "solid",
+        "fluid",
+        "liquid",
+        "gas",
+        "energy",
+        "control"
+      ],
+      "aliases": {
+        "matlab": "A",
+        "latex": "A",
+        "internal_code": "A"
+      },
+      "tokens": null,
+      "IRI": "None"
+    },
+    "I_3": {
+      "type": "index",
+      "label": "species",
+      "network": [
+        "physical",
+        "reactions",
+        "material",
+        "macroscopic",
+        "solid",
+        "fluid",
+        "liquid",
+        "gas",
+        "energy"
+      ],
+      "aliases": {
+        "matlab": "S",
+        "latex": "S",
+        "internal_code": "S"
+      },
+      "tokens": "mass",
+      "IRI": "None"
+    },
+    "I_4": {
+      "type": "index",
+      "label": "species_conversion",
+      "network": [
+        "physical",
+        "reactions",
+        "material",
+        "macroscopic",
+        "solid",
+        "fluid",
+        "liquid",
+        "gas",
+        "energy"
+      ],
+      "aliases": {
+        "matlab": "CS",
+        "latex": "CS",
+        "internal_code": "CS"
+      },
+      "tokens": {
+        "instances": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "W"
+        ],
+        "conversions": [
+          {
+            "reactants": [
+              "A"
+            ],
+            "products": [
+              "B"
+            ]
+          },
+          {
+            "reactants": [
+              "A",
+              "B"
+            ],
+            "products": [
+              "C",
+              "D"
+            ]
+          }
+        ]
+      },
+      "IRI": "None"
+    }
+  },
+  "Ontology_global_IDs": {
+    "variable": 7,
+    "equation": 5
+  }
+}

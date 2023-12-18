@@ -1,0 +1,483 @@
+{
+  "version": "8",
+  "variables": {
+    "V_1": {
+      "IRI": "promo:value",
+      "aliases": {
+        "matlab": "value",
+        "latex": "value",
+        "internal_code": "value",
+        "global_ID": "V_1"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_1",
+        "latex": "{value}{_{}}"
+      },
+      "created": "2023-12-07 15:42:42",
+      "doc": "numerical value",
+      "equations": {},
+      "index_structures": [],
+      "label": "value",
+      "modified": "2023-12-07 15:42:54",
+      "network": "root",
+      "port_variable": true,
+      "tokens": [],
+      "type": "constant",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_10": {
+      "IRI": "promo:F",
+      "aliases": {
+        "matlab": "F",
+        "latex": "F",
+        "internal_code": "F",
+        "global_ID": "V_10"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_10"
+      },
+      "created": "2023-12-07 15:51:41",
+      "doc": "fundamental incidence matrix",
+      "equations": {},
+      "index_structures": [
+        "I_1",
+        "I_2"
+      ],
+      "label": "F",
+      "modified": "2023-12-07 15:52:25",
+      "network": "root",
+      "port_variable": true,
+      "tokens": [],
+      "type": "network",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_2": {
+      "IRI": "promo:one",
+      "aliases": {
+        "matlab": "one",
+        "latex": "one",
+        "internal_code": "one",
+        "global_ID": "V_2"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_2",
+        "matlab": "one",
+        "latex": "{one}{_{}}"
+      },
+      "created": "2023-12-07 15:43:27",
+      "doc": "numerical value one",
+      "equations": {
+        "E_1": {
+          "rhs": {
+            "global_ID": " O_11 D_0{value}{_{}} D_7{value}{_{}} D_1",
+            "latex": "\\text{Instantiate}({value}{_{}}, {value}{_{}})",
+            "matlab": null
+          },
+          "type": "generic",
+          "doc": "numerical value one",
+          "network": "root",
+          "incidence_list": [],
+          "created": "2023-12-07 15:43:27",
+          "modified": "2023-12-07 15:43:27",
+          "lhs": {
+            "global_ID": "V_2",
+            "matlab": "one",
+            "latex": "{one}{_{}}"
+          }
+        }
+      },
+      "index_structures": [],
+      "label": "one",
+      "modified": "2023-12-07 15:43:27",
+      "network": "root",
+      "port_variable": false,
+      "tokens": [],
+      "type": "constant",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_3": {
+      "IRI": "promo:zero",
+      "aliases": {
+        "matlab": "zero",
+        "latex": "zero",
+        "internal_code": "zero",
+        "global_ID": "V_3"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_3",
+        "matlab": "zero",
+        "latex": "{zero}{_{}}"
+      },
+      "created": "2023-12-07 15:43:53",
+      "doc": "numerical value zero",
+      "equations": {
+        "E_2": {
+          "rhs": {
+            "global_ID": " O_11 D_0{value}{_{}} D_7{value}{_{}} D_1",
+            "latex": "\\text{Instantiate}({value}{_{}}, {value}{_{}})",
+            "matlab": null
+          },
+          "type": "generic",
+          "doc": "numerical value zero",
+          "network": "root",
+          "incidence_list": [],
+          "created": "2023-12-07 15:43:53",
+          "modified": "2023-12-07 15:43:53",
+          "lhs": {
+            "global_ID": "V_3",
+            "matlab": "zero",
+            "latex": "{zero}{_{}}"
+          }
+        }
+      },
+      "index_structures": [],
+      "label": "zero",
+      "modified": "2023-12-07 15:43:53",
+      "network": "root",
+      "port_variable": false,
+      "tokens": [],
+      "type": "constant",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_4": {
+      "IRI": "promo:onehalf",
+      "aliases": {
+        "matlab": "onehalf",
+        "latex": "onehalf",
+        "internal_code": "onehalf",
+        "global_ID": "V_4"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_4",
+        "matlab": "onehalf",
+        "latex": "{onehalf}{_{}}"
+      },
+      "created": "2023-12-07 15:44:16",
+      "doc": "numerical value one half",
+      "equations": {
+        "E_3": {
+          "rhs": {
+            "global_ID": " O_11 D_0{value}{_{}} D_7{value}{_{}} D_1",
+            "latex": "\\text{Instantiate}({value}{_{}}, {value}{_{}})",
+            "matlab": null
+          },
+          "type": "generic",
+          "doc": "numerical value one half",
+          "network": "root",
+          "incidence_list": [],
+          "created": "2023-12-07 15:44:16",
+          "modified": "2023-12-07 15:44:16",
+          "lhs": {
+            "global_ID": "V_4",
+            "matlab": "onehalf",
+            "latex": "{onehalf}{_{}}"
+          }
+        }
+      },
+      "index_structures": [],
+      "label": "onehalf",
+      "modified": "2023-12-07 15:44:16",
+      "network": "root",
+      "port_variable": false,
+      "tokens": [],
+      "type": "constant",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_5": {
+      "IRI": "qudt:Time",
+      "aliases": {
+        "matlab": "t",
+        "latex": "t",
+        "internal_code": "t",
+        "global_ID": "V_5"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_5",
+        "latex": "{t}{_{}}"
+      },
+      "created": "2023-12-07 15:45:24",
+      "doc": "time",
+      "equations": {},
+      "index_structures": [],
+      "label": "t",
+      "modified": "2023-12-07 15:45:57",
+      "network": "root",
+      "port_variable": true,
+      "tokens": [],
+      "type": "frame",
+      "units": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_6": {
+      "IRI": "promo:to",
+      "aliases": {
+        "matlab": "to",
+        "latex": "to",
+        "internal_code": "to",
+        "global_ID": "V_6"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_6",
+        "matlab": "to",
+        "latex": "{to}{_{}}"
+      },
+      "created": "2023-12-07 15:46:38",
+      "doc": "time zero",
+      "equations": {
+        "E_4": {
+          "rhs": {
+            "global_ID": " O_11 D_0{t}{_{}} D_7{value}{_{}} D_1",
+            "latex": "\\text{Instantiate}({t}{_{}}, {value}{_{}})",
+            "matlab": null
+          },
+          "type": "generic",
+          "doc": "time zero",
+          "network": "root",
+          "incidence_list": [],
+          "created": "2023-12-07 15:46:38",
+          "modified": "2023-12-07 15:46:38",
+          "lhs": {
+            "global_ID": "V_6",
+            "matlab": "to",
+            "latex": "{to}{_{}}"
+          }
+        }
+      },
+      "index_structures": [],
+      "label": "to",
+      "modified": "2023-12-07 15:46:38",
+      "network": "root",
+      "port_variable": false,
+      "tokens": [],
+      "type": "frame",
+      "units": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_7": {
+      "IRI": "promo:te",
+      "aliases": {
+        "matlab": "te",
+        "latex": "te",
+        "internal_code": "te",
+        "global_ID": "V_7"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_7",
+        "matlab": "te",
+        "latex": "{te}{_{}}"
+      },
+      "created": "2023-12-07 15:47:12",
+      "doc": "time end",
+      "equations": {
+        "E_5": {
+          "rhs": {
+            "global_ID": " O_11 D_0{t}{_{}} D_7{value}{_{}} D_1",
+            "latex": "\\text{Instantiate}({t}{_{}}, {value}{_{}})",
+            "matlab": null
+          },
+          "type": "generic",
+          "doc": "time end",
+          "network": "root",
+          "incidence_list": [],
+          "created": "2023-12-07 15:47:12",
+          "modified": "2023-12-07 15:47:12",
+          "lhs": {
+            "global_ID": "V_7",
+            "matlab": "te",
+            "latex": "{te}{_{}}"
+          }
+        }
+      },
+      "index_structures": [],
+      "label": "te",
+      "modified": "2023-12-07 15:47:12",
+      "network": "root",
+      "port_variable": false,
+      "tokens": [],
+      "type": "frame",
+      "units": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_8": {
+      "IRI": "promo:dt_pulse",
+      "aliases": {
+        "matlab": "dt_pulse",
+        "latex": "dt_pulse",
+        "internal_code": "dt_pulse",
+        "global_ID": "V_8"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_8",
+        "matlab": "dt_pulse",
+        "latex": "{dt_pulse}{_{}}"
+      },
+      "created": "2023-12-07 15:48:27",
+      "doc": "pulse length",
+      "equations": {
+        "E_6": {
+          "rhs": {
+            "global_ID": " O_11 D_0{t}{_{}} D_7{value}{_{}} D_1",
+            "latex": "\\text{Instantiate}({t}{_{}}, {value}{_{}})",
+            "matlab": null
+          },
+          "type": "generic",
+          "doc": "pulse length",
+          "network": "root",
+          "incidence_list": [],
+          "created": "2023-12-07 15:48:27",
+          "modified": "2023-12-07 15:48:27",
+          "lhs": {
+            "global_ID": "V_8",
+            "matlab": "dt_pulse",
+            "latex": "{dt_pulse}{_{}}"
+          }
+        }
+      },
+      "index_structures": [],
+      "label": "dt_pulse",
+      "modified": "2023-12-07 15:48:27",
+      "network": "root",
+      "port_variable": false,
+      "tokens": [],
+      "type": "frame",
+      "units": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_9": {
+      "IRI": "promo:pulse",
+      "aliases": {
+        "matlab": "pulse",
+        "latex": "pulse",
+        "internal_code": "pulse",
+        "global_ID": "V_9"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_9",
+        "matlab": "pulse",
+        "latex": "{pulse}{_{}}"
+      },
+      "created": "2023-12-07 15:50:36",
+      "doc": "pulse function",
+      "equations": {
+        "E_7": {
+          "rhs": {
+            "global_ID": " F_16 D_0{t}{_{}} O_1{to}{_{}} D_1 O_1 F_16 D_0{t}{_{}} O_1 D_0{to}{_{}} O_1{dt_pulse}{_{}} D_1 D_1",
+            "latex": "\\text{sign} \\left( {t}{_{}}  - {to}{_{}} \\right)  - \\text{sign} \\left( {t}{_{}}  - \\left({to}{_{}}  - {dt_pulse}{_{}}\\right) \\right)",
+            "matlab": null
+          },
+          "type": "generic",
+          "doc": "pulse function",
+          "network": "root",
+          "incidence_list": [],
+          "created": "2023-12-07 15:50:36",
+          "modified": "2023-12-07 15:50:36",
+          "lhs": {
+            "global_ID": "V_9",
+            "matlab": "pulse",
+            "latex": "{pulse}{_{}}"
+          }
+        }
+      },
+      "index_structures": [],
+      "label": "pulse",
+      "modified": "2023-12-07 15:50:36",
+      "network": "root",
+      "port_variable": false,
+      "tokens": [],
+      "type": "frame",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "indices": {
+  },
+  "Ontology_global_IDs": {
+    "variable": 10,
+    "equation": 7
+  }
+}

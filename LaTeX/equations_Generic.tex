@@ -13,60 +13,92 @@ no & equation &documentation &layer \\\hline\hline
 \endlastfoot
 
         \hyperlink{"v:2"}{ 1 }\hypertarget{"e:1"}{  } &
-    \begin{eq}{1}{_{}} := \text{Instantiate}({value}{_{}}, {value}{_{}})\end{eq} &
-    \begin{lay}numerical value one\end{lay} &
+    \begin{eq}{1}{_{}} := \text{Instantiate}({{\#}}{_{}}, {{\#}}{_{}})\end{eq} &
+    \begin{lay}numerical one\end{lay} &
     \begin{lay}root\end{lay} \\
-        \hyperlink{"v:19"}{ 10 }\hypertarget{"e:10"}{  } &
-    \begin{eq}{p}{_{N}} := \ParDiff{{U}{_{N}}}{{V}{_{N}}}\end{eq} &
+        \hyperlink{"v:3"}{ 2 }\hypertarget{"e:2"}{  } &
+    \begin{eq}{0}{_{}} := \text{Instantiate}({{\#}}{_{}}, {{\#}}{_{}})\end{eq} &
+    \begin{lay}numerical value zero\end{lay} &
+    \begin{lay}root\end{lay} \\
+        \hyperlink{"v:5"}{ 3 }\hypertarget{"e:3"}{  } &
+    \begin{eq}{{t^o}}{_{}} := \text{Instantiate}({t}{_{}}, {0}{_{}})\end{eq} &
+    \begin{lay}time zero\end{lay} &
+    \begin{lay}root\end{lay} \\
+        \hyperlink{"v:6"}{ 4 }\hypertarget{"e:4"}{  } &
+    \begin{eq}{{t^e}}{_{}} := \text{Instantiate}({t}{_{}}, {{\#}}{_{}})\end{eq} &
+    \begin{lay}time end\end{lay} &
+    \begin{lay}root\end{lay} \\
+        \hyperlink{"v:7"}{ 5 }\hypertarget{"e:5"}{  } &
+    \begin{eq}{{\Delta t}}{_{}} := \text{Instantiate}({t}{_{}}, {{\#}}{_{}})\end{eq} &
+    \begin{lay}time interval\end{lay} &
+    \begin{lay}root\end{lay} \\
+        \hyperlink{"v:8"}{ 6 }\hypertarget{"e:6"}{  } &
+    \begin{eq}{0.5}{_{}} := \text{Instantiate}({{\#}}{_{}}, {{\#}}{_{}})\end{eq} &
+    \begin{lay}numerical one half\end{lay} &
+    \begin{lay}root\end{lay} \\
+        \hyperlink{"v:9"}{ 7 }\hypertarget{"e:7"}{  } &
+    \begin{eq}{{\Delta}}{_{}} := \text{sign} \left( {t}{_{}}  - {{t^o}}{_{}} \right)  - \text{sign} \left( {t}{_{}}  - \left({{t^o}}{_{}}  - {{\Delta t}}{_{}}\right) \right)\end{eq} &
+    \begin{lay}pulse of length time interval\end{lay} &
+    \begin{lay}root\end{lay} \\
+        \hyperlink{"v:12"}{ 8 }\hypertarget{"e:8"}{  } &
+    \begin{eq}{{r_x}}{_{N}} := \text{Instantiate}({{\ell}}{_{N}}, {{\#}}{_{}})\end{eq} &
+    \begin{lay}x-direction\end{lay} &
+    \begin{lay}physical\end{lay} \\
+        \hyperlink{"v:13"}{ 9 }\hypertarget{"e:9"}{  } &
+    \begin{eq}{{r_y}}{_{N}} := \text{Instantiate}({{\ell}}{_{N}}, {{\#}}{_{}})\end{eq} &
+    \begin{lay}y-direction\end{lay} &
+    \begin{lay}physical\end{lay} \\
+        \hyperlink{"v:14"}{ 10 }\hypertarget{"e:10"}{  } &
+    \begin{eq}{{r_z}}{_{N}} := \text{Instantiate}({{\ell}}{_{N}}, {{\#}}{_{}})\end{eq} &
+    \begin{lay}z-direction\end{lay} &
+    \begin{lay}physical\end{lay} \\
+        \hyperlink{"v:15"}{ 11 }\hypertarget{"e:11"}{  } &
+    \begin{eq}{V}{_{N}} := {{r_x}}{_{N}} \, . \, {{r_y}}{_{N}} \, . \, {{r_z}}{_{N}}\end{eq} &
+    \begin{lay}volume\end{lay} &
+    \begin{lay}physical\end{lay} \\
+        \hyperlink{"v:20"}{ 13 }\hypertarget{"e:13"}{  } &
+    \begin{eq}{p}{_{N}} := \frac{\partial{{U}{_{N}}}}{\partial{{V}{_{N}}}}\end{eq} &
     \begin{lay}pressure\end{lay} &
     \begin{lay}physical\end{lay} \\
-        \hyperlink{"v:20"}{ 11 }\hypertarget{"e:11"}{  } &
-    \begin{eq}{{\mu}}{_{N, S}} := \ParDiff{{U}{_{N}}}{{n}{_{N, S}}}\end{eq} &
+        \hyperlink{"v:21"}{ 14 }\hypertarget{"e:14"}{  } &
+    \begin{eq}{{\mu}}{_{N, S}} := \frac{\partial{{U}{_{N}}}}{\partial{{n}{_{N, S}}}}\end{eq} &
     \begin{lay}chemical potential\end{lay} &
     \begin{lay}physical\end{lay} \\
-        \hyperlink{"v:21"}{ 12 }\hypertarget{"e:12"}{  } &
+        \hyperlink{"v:22"}{ 15 }\hypertarget{"e:15"}{  } &
     \begin{eq}{H}{_{N}} := {U}{_{N}}  - {p}{_{N}} \, . \, {V}{_{N}}\end{eq} &
     \begin{lay}Enthalpy\end{lay} &
     \begin{lay}physical\end{lay} \\
-        \hyperlink{"v:22"}{ 13 }\hypertarget{"e:13"}{  } &
-    \begin{eq}{A}{_{N}} := {U}{_{N}}  - {T}{_{N}} \, . \, {S}{_{N}}\end{eq} &
-    \begin{lay}Helmholtz energy\end{lay} &
+        \hyperlink{"v:19"}{ 16 }\hypertarget{"e:16"}{  } &
+    \begin{eq}{T}{_{N}} := \frac{\partial{{U}{_{N}}}}{\partial{{S}{_{N}}}}\end{eq} &
+    \begin{lay}temperature\end{lay} &
     \begin{lay}physical\end{lay} \\
-        \hyperlink{"v:23"}{ 14 }\hypertarget{"e:14"}{  } &
+        \hyperlink{"v:23"}{ 17 }\hypertarget{"e:17"}{  } &
+    \begin{eq}{A}{_{N}} := {U}{_{N}}  - {T}{_{N}} \, . \, {S}{_{N}}\end{eq} &
+    \begin{lay}Helmholts energy\end{lay} &
+    \begin{lay}physical\end{lay} \\
+        \hyperlink{"v:24"}{ 18 }\hypertarget{"e:18"}{  } &
     \begin{eq}{G}{_{N}} := {U}{_{N}}  + {p}{_{N}} \, . \, {V}{_{N}}  - {T}{_{N}} \, . \, {S}{_{N}}\end{eq} &
     \begin{lay}Gibbs free energy\end{lay} &
     \begin{lay}physical\end{lay} \\
-        \hyperlink{"v:3"}{ 2 }\hypertarget{"e:2"}{  } &
-    \begin{eq}{0}{_{}} := \text{Instantiate}({value}{_{}}, {value}{_{}})\end{eq} &
-    \begin{lay}numerical value zero\end{lay} &
-    \begin{lay}root\end{lay} \\
-        \hyperlink{"v:4"}{ 3 }\hypertarget{"e:3"}{  } &
-    \begin{eq}{{0.5}}{_{}} := \text{Instantiate}({value}{_{}}, {value}{_{}})\end{eq} &
-    \begin{lay}numerical value one half\end{lay} &
-    \begin{lay}root\end{lay} \\
-        \hyperlink{"v:6"}{ 4 }\hypertarget{"e:4"}{  } &
-    \begin{eq}{{t^o}}{_{}} := \text{Instantiate}({t}{_{}}, {value}{_{}})\end{eq} &
-    \begin{lay}time zero\end{lay} &
-    \begin{lay}root\end{lay} \\
-        \hyperlink{"v:7"}{ 5 }\hypertarget{"e:5"}{  } &
-    \begin{eq}{{t^e}}{_{}} := \text{Instantiate}({t}{_{}}, {value}{_{}})\end{eq} &
-    \begin{lay}time end\end{lay} &
-    \begin{lay}root\end{lay} \\
-        \hyperlink{"v:8"}{ 6 }\hypertarget{"e:6"}{  } &
-    \begin{eq}{{\Delta t}}{_{}} := \text{Instantiate}({t}{_{}}, {value}{_{}})\end{eq} &
-    \begin{lay}pulse length\end{lay} &
-    \begin{lay}root\end{lay} \\
-        \hyperlink{"v:9"}{ 7 }\hypertarget{"e:7"}{  } &
-    \begin{eq}{pulse}{_{}} := \text{sign} \left( {t}{_{}}  - {to}{_{}} \right)  - \text{sign} \left( {t}{_{}}  - \left({to}{_{}}  - {dt_pulse}{_{}}\right) \right)\end{eq} &
-    \begin{lay}pulse function\end{lay} &
-    \begin{lay}root\end{lay} \\
-        \hyperlink{"v:17"}{ 8 }\hypertarget{"e:8"}{  } &
-    \begin{eq}{V}{_{N}} := {{r_x}}{_{N}} \, . \, {{r_y}}{_{N}} \, . \, {{r_z}}{_{N}}\end{eq} &
-    \begin{lay}fundamental state - volume\end{lay} &
+        \hyperlink{"v:28"}{ 20 }\hypertarget{"e:20"}{  } &
+    \begin{eq}{{v_x}}{_{N}} := \left( {t}{_{}} \right)^{-1} \, . \, {{\ell}}{_{N}}\end{eq} &
+    \begin{lay}velocity in x-direction\end{lay} &
     \begin{lay}physical\end{lay} \\
-        \hyperlink{"v:18"}{ 9 }\hypertarget{"e:9"}{  } &
-    \begin{eq}{T}{_{N}} := \ParDiff{{U}{_{N}}}{{S}{_{N}}}\end{eq} &
-    \begin{lay}temperature\end{lay} &
+        \hyperlink{"v:29"}{ 21 }\hypertarget{"e:21"}{  } &
+    \begin{eq}{{v_y}}{_{N}} := \left( {t}{_{}} \right)^{-1} \, . \, {{r_y}}{_{N}}\end{eq} &
+    \begin{lay}velocity in y-direction\end{lay} &
     \begin{lay}physical\end{lay} \\
+        \hyperlink{"v:30"}{ 22 }\hypertarget{"e:22"}{  } &
+    \begin{eq}{{v_z}}{_{N}} := \left( {t}{_{}} \right)^{-1} \, . \, {{r_z}}{_{N}}\end{eq} &
+    \begin{lay}velocity in z-direction\end{lay} &
+    \begin{lay}physical\end{lay} \\
+        \hyperlink{"v:31"}{ 23 }\hypertarget{"e:23"}{  } &
+    \begin{eq}{c}{_{N, S}} := \left( {V}{_{N}} \right)^{-1} \, . \, {n}{_{N, S}}\end{eq} &
+    \begin{lay}molar concentration\end{lay} &
+    \begin{lay}physical\end{lay} \\
+        \hyperlink{"v:33"}{ 25 }\hypertarget{"e:25"}{  } &
+    \begin{eq}{m}{_{N, S}} := {{\_\lambda}}{_{S}} \, . \, {n}{_{N, S}}\end{eq} &
+    \begin{lay}mass\end{lay} &
+    \begin{lay}material --> macroscopic\end{lay} \\
 \hline
 \end{longtable}

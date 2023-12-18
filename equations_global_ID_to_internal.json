@@ -2,71 +2,121 @@
   "E_1": {
     "lhs": "one",
     "network": "root",
-    "rhs": " Instantiate   )"
+    "rhs": " Instantiate ( value , value )"
   },
   "E_10": {
+    "lhs": "r_z",
+    "network": "physical",
+    "rhs": " Instantiate ( l , value )"
+  },
+  "E_11": {
+    "lhs": "V",
+    "network": "physical",
+    "rhs": " r_x . r_y . r_z"
+  },
+  "E_13": {
     "lhs": "p",
     "network": "physical",
-    "rhs": " ParDiff   )"
+    "rhs": " ParDiff ( U , V )"
+  },
+  "E_14": {
+    "lhs": "chemPot",
+    "network": "physical",
+    "rhs": " ParDiff ( U , n )"
+  },
+  "E_15": {
+    "lhs": "H",
+    "network": "physical",
+    "rhs": " U - p . V"
+  },
+  "E_16": {
+    "lhs": "T",
+    "network": "physical",
+    "rhs": " ParDiff ( U , S )"
+  },
+  "E_17": {
+    "lhs": "A",
+    "network": "physical",
+    "rhs": " U - T . S"
+  },
+  "E_18": {
+    "lhs": "G",
+    "network": "physical",
+    "rhs": " U + p . V - T . S"
+  },
+  "E_19": {
+    "lhs": "_n",
+    "network": "macroscopic >>> material",
+    "rhs": " n"
   },
   "E_2": {
     "lhs": "zero",
     "network": "root",
-    "rhs": " Instantiate   )"
+    "rhs": " Instantiate ( value , value )"
+  },
+  "E_20": {
+    "lhs": "v_x",
+    "network": "physical",
+    "rhs": " inv ( t ) . l"
+  },
+  "E_21": {
+    "lhs": "v_y",
+    "network": "physical",
+    "rhs": " inv ( t ) . r_y"
+  },
+  "E_22": {
+    "lhs": "v_z",
+    "network": "physical",
+    "rhs": " inv ( t ) . r_z"
   },
   "E_3": {
-    "lhs": "onehalf",
-    "network": "root",
-    "rhs": " Instantiate   )"
-  },
-  "E_4": {
     "lhs": "to",
     "network": "root",
-    "rhs": " Instantiate   )"
+    "rhs": " Instantiate ( t , zero )"
   },
-  "E_5": {
+  "E_4": {
     "lhs": "te",
     "network": "root",
-    "rhs": " Instantiate   )"
+    "rhs": " Instantiate ( t , value )"
+  },
+  "E_5": {
+    "lhs": "t_interval",
+    "network": "root",
+    "rhs": " Instantiate ( t , value )"
   },
   "E_6": {
-    "lhs": "dt_pulse",
+    "lhs": "onehalf",
     "network": "root",
-    "rhs": " Instantiate   )"
+    "rhs": " Instantiate ( value , value )"
   },
   "E_7": {
     "lhs": "pulse",
     "network": "root",
-    "rhs": " sign   ) - sign  -   ) )"
+    "rhs": " sign ( t - to ) - sign ( t - ( to - t_interval ) )"
   },
   "E_8": {
-    "lhs": "V",
+    "lhs": "r_x",
     "network": "physical",
-    "rhs": " bla......{{r_x}}{_{N}}........  "
+    "rhs": " Instantiate ( l , value )"
   },
   "E_9": {
-    "lhs": "T",
+    "lhs": "r_y",
     "network": "physical",
-    "rhs": " ParDiff   )"
+    "rhs": " Instantiate ( l , value )"
   },
-  "E_11": {
-    "lhs": "chemPot",
+  "E_23": {
+    "lhs": "c",
     "network": "physical",
-    "rhs": " ParDiff   bla......S}}........ )"
+    "rhs": " inv ( V ) . n"
   },
-  "E_12": {
-    "lhs": "H",
-    "network": "physical",
-    "rhs": " bla......{U}{_{N}}........  "
+  "E_24": {
+    "lhs": "_Mm",
+    "network": "material >>> macroscopic",
+    "rhs": " Mm"
   },
-  "E_13": {
-    "lhs": "A",
-    "network": "physical",
-    "rhs": " bla......{U}{_{N}}........  "
-  },
-  "E_14": {
-    "lhs": "G",
-    "network": "physical",
-    "rhs": " bla......{U}{_{N}}........    "
+  "E_25": {
+    "lhs": "m",
+    "network": "material >>> macroscopic",
+    "rhs": " _Mm . n"
   }
 }

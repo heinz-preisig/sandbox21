@@ -1,0 +1,69 @@
+digraph control {
+label=control;
+rankdir=LR;
+subgraph cluster_control___dataFlow {
+label=dataFlow;
+rankdir=LR;
+}
+
+subgraph cluster_control___input {
+label=input;
+rankdir=LR;
+}
+
+subgraph cluster_control___output {
+label=output;
+rankdir=LR;
+}
+
+subgraph cluster_control___network {
+label=network;
+rankdir=LR;
+V_10 [fillcolor=seagreen3, fontsize=12, label=F, penwidth=3, style=filled];
+}
+
+subgraph cluster_control___projection {
+label=projection;
+rankdir=LR;
+}
+
+subgraph cluster_control___localIndex {
+label=localIndex;
+rankdir=LR;
+}
+
+subgraph cluster_control___frame {
+label=frame;
+rankdir=LR;
+V_4 [fillcolor=seagreen1, fontsize=12, label=t, penwidth=3, style=filled];
+V_5 [fillcolor=seagreen1, fontsize=12, label=to, penwidth=3, style=filled];
+V_6 [fillcolor=seagreen1, fontsize=12, label=te, penwidth=3, style=filled];
+V_7 [fillcolor=seagreen1, fontsize=12, label=t_interval, penwidth=3, style=filled];
+V_9 [fillcolor=seagreen1, fontsize=12, label=pulse, penwidth=3, style=filled];
+}
+
+subgraph cluster_control___state {
+label=state;
+rankdir=LR;
+}
+
+subgraph cluster_control___constant {
+label=constant;
+rankdir=LR;
+V_1 [fillcolor=lightcyan, fontsize=12, label=value, penwidth=3, style=filled];
+V_2 [fillcolor=lightcyan, fontsize=12, label=one, penwidth=3, style=filled];
+V_3 [fillcolor=lightcyan, fontsize=12, label=zero, penwidth=3, style=filled];
+V_8 [fillcolor=lightcyan, fontsize=12, label=onehalf, penwidth=3, style=filled];
+}
+
+subgraph cluster_control___diffState {
+label=diffState;
+rankdir=LR;
+}
+
+subgraph cluster_control___algebraic {
+label=algebraic;
+rankdir=LR;
+}
+
+}
