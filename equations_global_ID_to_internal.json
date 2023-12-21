@@ -45,9 +45,9 @@
     "rhs": " U + p . V - T . S"
   },
   "E_19": {
-    "lhs": "_n",
-    "network": "macroscopic >>> material",
-    "rhs": " n"
+    "lhs": "v_x",
+    "network": "physical",
+    "rhs": " inv ( t ) . r_x"
   },
   "E_2": {
     "lhs": "zero",
@@ -55,68 +55,428 @@
     "rhs": " Instantiate ( value , value )"
   },
   "E_20": {
-    "lhs": "v_x",
-    "network": "physical",
-    "rhs": " inv ( t ) . l"
-  },
-  "E_21": {
     "lhs": "v_y",
     "network": "physical",
     "rhs": " inv ( t ) . r_y"
   },
-  "E_22": {
+  "E_21": {
     "lhs": "v_z",
     "network": "physical",
     "rhs": " inv ( t ) . r_z"
+  },
+  "E_22": {
+    "lhs": "_Mm",
+    "network": "material >>> macroscopic",
+    "rhs": " Mm"
+  },
+  "E_24": {
+    "lhs": "Boltz",
+    "network": "physical",
+    "rhs": " Instantiate ( S , value )"
+  },
+  "E_25": {
+    "lhs": "R",
+    "network": "physical",
+    "rhs": " Av . Boltz"
+  },
+  "E_26": {
+    "lhs": "Ue",
+    "network": "physical",
+    "rhs": " inv ( C ) . U"
+  },
+  "E_27": {
+    "lhs": "Cp",
+    "network": "material",
+    "rhs": " ParDiff ( H , T )"
+  },
+  "E_28": {
+    "lhs": "Cv",
+    "network": "material",
+    "rhs": " ParDiff ( U , T )"
+  },
+  "E_29": {
+    "lhs": "kq_x",
+    "network": "material",
+    "rhs": " inv ( V ) . Cp . v_x"
   },
   "E_3": {
     "lhs": "to",
     "network": "root",
     "rhs": " Instantiate ( t , zero )"
   },
+  "E_30": {
+    "lhs": "kq_y",
+    "network": "material",
+    "rhs": " inv ( V ) . Cp . v_y"
+  },
+  "E_31": {
+    "lhs": "kq_z",
+    "network": "material",
+    "rhs": " inv ( V ) . Cp . v_z"
+  },
+  "E_32": {
+    "lhs": "kd_x",
+    "network": "material",
+    "rhs": " inv ( chemPot ) . ( v_x . ( inv ( V ) . ParDiff ( U , chemPot ) ) )"
+  },
+  "E_33": {
+    "lhs": "kd_y",
+    "network": "material",
+    "rhs": " inv ( chemPot ) . ( v_y . ( inv ( V ) . ParDiff ( U , chemPot ) ) )"
+  },
+  "E_34": {
+    "lhs": "kd_z",
+    "network": "material",
+    "rhs": " inv ( chemPot ) . ( v_z . ( inv ( V ) . ParDiff ( U , chemPot ) ) )"
+  },
+  "E_35": {
+    "lhs": "kc_x",
+    "network": "material",
+    "rhs": " ( Mm * inv ( chemPot ) ) . inv ( V ) . ParDiff ( U , p ) . v_x"
+  },
+  "E_36": {
+    "lhs": "kc_y",
+    "network": "material",
+    "rhs": " ( Mm * inv ( chemPot ) ) . inv ( V ) . ParDiff ( U , p ) . v_y"
+  },
+  "E_37": {
+    "lhs": "kc_z",
+    "network": "material",
+    "rhs": " ( Mm * inv ( chemPot ) ) . inv ( V ) . ParDiff ( U , p ) . v_z"
+  },
+  "E_38": {
+    "lhs": "h",
+    "network": "material",
+    "rhs": " H . inv ( n )"
+  },
+  "E_39": {
+    "lhs": "kc_x_A",
+    "network": "material",
+    "rhs": " I_N_A * kc_x"
+  },
   "E_4": {
     "lhs": "te",
     "network": "root",
     "rhs": " Instantiate ( t , value )"
+  },
+  "E_40": {
+    "lhs": "kc_y_A",
+    "network": "material",
+    "rhs": " I_N_A * kc_y"
+  },
+  "E_41": {
+    "lhs": "kc_z_A",
+    "network": "material",
+    "rhs": " I_N_A * kc_z"
+  },
+  "E_42": {
+    "lhs": "kd_x_A",
+    "network": "material",
+    "rhs": " I_N_A * kd_x"
+  },
+  "E_43": {
+    "lhs": "kd_y_A",
+    "network": "material",
+    "rhs": " I_N_A * kd_y"
+  },
+  "E_44": {
+    "lhs": "kd_z_A",
+    "network": "material",
+    "rhs": " I_N_A * kd_z"
+  },
+  "E_45": {
+    "lhs": "kq_x_A",
+    "network": "material",
+    "rhs": " I_N_A * kq_x"
+  },
+  "E_46": {
+    "lhs": "kq_y_A",
+    "network": "material",
+    "rhs": " I_N_A * kq_y"
+  },
+  "E_47": {
+    "lhs": "kq_z_A",
+    "network": "material",
+    "rhs": " I_N_A * kq_z"
+  },
+  "E_48": {
+    "lhs": "m",
+    "network": "material",
+    "rhs": " Mm * n"
+  },
+  "E_49": {
+    "lhs": "density",
+    "network": "material",
+    "rhs": " inv ( V ) . m"
   },
   "E_5": {
     "lhs": "t_interval",
     "network": "root",
     "rhs": " Instantiate ( t , value )"
   },
+  "E_50": {
+    "lhs": "v",
+    "network": "material",
+    "rhs": " V * inv ( n )"
+  },
+  "E_51": {
+    "lhs": "kd_x_Fick",
+    "network": "material",
+    "rhs": " I_N_A * ( v_x . ParDiff ( U , chemPot ) . inv ( n ) )"
+  },
+  "E_52": {
+    "lhs": "kd_y_Fick",
+    "network": "material",
+    "rhs": " I_N_A * ( v_y . ParDiff ( U , chemPot ) . inv ( n ) )"
+  },
+  "E_53": {
+    "lhs": "kd_z_Fick",
+    "network": "material",
+    "rhs": " I_N_A * ( v_z . ParDiff ( U , chemPot ) . inv ( n ) )"
+  },
+  "E_54": {
+    "lhs": "A_xy",
+    "network": "macroscopic",
+    "rhs": " r_x . r_y"
+  },
+  "E_55": {
+    "lhs": "A_xz",
+    "network": "macroscopic",
+    "rhs": " r_x . r_z"
+  },
+  "E_56": {
+    "lhs": "A_yz",
+    "network": "macroscopic",
+    "rhs": " r_y . r_z"
+  },
+  "E_57": {
+    "lhs": "A_xy_A",
+    "network": "macroscopic",
+    "rhs": " I_N_A * A_xy"
+  },
+  "E_58": {
+    "lhs": "A_xz_A",
+    "network": "macroscopic",
+    "rhs": " I_N_A * A_xz"
+  },
+  "E_59": {
+    "lhs": "A_yz_A",
+    "network": "macroscopic",
+    "rhs": " I_N_A * A_yz"
+  },
   "E_6": {
     "lhs": "onehalf",
     "network": "root",
     "rhs": " Instantiate ( value , value )"
+  },
+  "E_60": {
+    "lhs": "_kc_x_A",
+    "network": "material >>> macroscopic",
+    "rhs": " kc_x_A"
+  },
+  "E_61": {
+    "lhs": "_kc_y_A",
+    "network": "material >>> macroscopic",
+    "rhs": " kc_y_A"
+  },
+  "E_62": {
+    "lhs": "_kc_z_A",
+    "network": "material >>> macroscopic",
+    "rhs": " kc_z_A"
+  },
+  "E_63": {
+    "lhs": "_kd_x_A",
+    "network": "material >>> macroscopic",
+    "rhs": " kd_x_A"
+  },
+  "E_64": {
+    "lhs": "_kd_x_Fick",
+    "network": "material >>> macroscopic",
+    "rhs": " kd_x_Fick"
+  },
+  "E_65": {
+    "lhs": "_kd_y_Fick",
+    "network": "material >>> macroscopic",
+    "rhs": " kd_y_Fick"
+  },
+  "E_66": {
+    "lhs": "_kd_y_A",
+    "network": "material >>> macroscopic",
+    "rhs": " kd_y_A"
+  },
+  "E_67": {
+    "lhs": "_kd_z_A",
+    "network": "material >>> macroscopic",
+    "rhs": " kd_z_A"
+  },
+  "E_68": {
+    "lhs": "_kd_z_Fick",
+    "network": "material >>> macroscopic",
+    "rhs": " kd_z_Fick"
+  },
+  "E_69": {
+    "lhs": "_kq_x_A",
+    "network": "material >>> macroscopic",
+    "rhs": " kq_x_A"
   },
   "E_7": {
     "lhs": "pulse",
     "network": "root",
     "rhs": " sign ( t - to ) - sign ( t - ( to - t_interval ) )"
   },
+  "E_70": {
+    "lhs": "_kq_y_A",
+    "network": "material >>> macroscopic",
+    "rhs": " kq_y_A"
+  },
+  "E_71": {
+    "lhs": "_kq_z_A",
+    "network": "material >>> macroscopic",
+    "rhs": " kq_z_A"
+  },
+  "E_72": {
+    "lhs": "fq_x",
+    "network": "macroscopic",
+    "rhs": " A_yz_A . _kq_x_A . ( D * T )"
+  },
+  "E_73": {
+    "lhs": "aq",
+    "network": "macroscopic",
+    "rhs": " F * fq_x"
+  },
+  "E_74": {
+    "lhs": "c",
+    "network": "macroscopic",
+    "rhs": " inv ( V ) . n"
+  },
+  "E_75": {
+    "lhs": "d",
+    "network": "macroscopic",
+    "rhs": " sign ( D * p )"
+  },
+  "E_76": {
+    "lhs": "c_A",
+    "network": "macroscopic",
+    "rhs": " ( onehalf . ( D - d . abs ( D ) ) ) * c"
+  },
+  "E_77": {
+    "lhs": "_density",
+    "network": "material >>> macroscopic",
+    "rhs": " density"
+  },
+  "E_78": {
+    "lhs": "density_A",
+    "network": "material",
+    "rhs": " I_N_A * density"
+  },
+  "E_79": {
+    "lhs": "_density_A",
+    "network": "material >>> macroscopic",
+    "rhs": " density_A"
+  },
   "E_8": {
     "lhs": "r_x",
     "network": "physical",
     "rhs": " Instantiate ( l , value )"
+  },
+  "E_80": {
+    "lhs": "fV",
+    "network": "macroscopic",
+    "rhs": " inv ( _density_A ) . _kc_x_A . A_yz_A . ( D * p )"
+  },
+  "E_81": {
+    "lhs": "fnc",
+    "network": "macroscopic",
+    "rhs": " fV . c_A"
+  },
+  "E_82": {
+    "lhs": "anc",
+    "network": "macroscopic",
+    "rhs": " F * fnc"
+  },
+  "E_83": {
+    "lhs": "nt",
+    "network": "macroscopic",
+    "rhs": " I_S * n"
+  },
+  "E_84": {
+    "lhs": "x",
+    "network": "macroscopic",
+    "rhs": " inv ( nt ) . n"
+  },
+  "E_85": {
+    "lhs": "fnd",
+    "network": "macroscopic",
+    "rhs": " A_yz_A . neg ( _kd_x_Fick ) . ( D * c )"
+  },
+  "E_86": {
+    "lhs": "chemPot_o",
+    "network": "material",
+    "rhs": " Instantiate ( chemPot , value )"
+  },
+  "E_87": {
+    "lhs": "_x",
+    "network": "macroscopic >>> material",
+    "rhs": " x"
+  },
+  "E_88": {
+    "lhs": "chemPot",
+    "network": "material",
+    "rhs": " chemPot_o + R . T . ln ( _x )"
+  },
+  "E_89": {
+    "lhs": "fnd",
+    "network": "macroscopic",
+    "rhs": " A_yz_A . neg ( _kd_x_A ) . ( D * chemPot )"
   },
   "E_9": {
     "lhs": "r_y",
     "network": "physical",
     "rhs": " Instantiate ( l , value )"
   },
-  "E_23": {
-    "lhs": "c",
-    "network": "physical",
-    "rhs": " inv ( V ) . n"
+  "E_90": {
+    "lhs": "and",
+    "network": "macroscopic",
+    "rhs": " F * fnd"
   },
-  "E_24": {
-    "lhs": "_Mm",
-    "network": "material >>> macroscopic",
-    "rhs": " Mm"
+  "E_91": {
+    "lhs": "aw",
+    "network": "macroscopic",
+    "rhs": " Instantiate ( H , value )"
   },
-  "E_25": {
-    "lhs": "m",
+  "E_92": {
+    "lhs": "_h",
     "network": "material >>> macroscopic",
-    "rhs": " _Mm . n"
+    "rhs": " h"
+  },
+  "E_93": {
+    "lhs": "h_A",
+    "network": "material",
+    "rhs": " I_N_A * h"
+  },
+  "E_94": {
+    "lhs": "_h_A",
+    "network": "material >>> macroscopic",
+    "rhs": " h_A"
+  },
+  "E_95": {
+    "lhs": "fHc",
+    "network": "macroscopic",
+    "rhs": " I_S * ( _h_A . fnc )"
+  },
+  "E_96": {
+    "lhs": "fHd",
+    "network": "macroscopic",
+    "rhs": " I_S * ( _h_A . fnd )"
+  },
+  "E_97": {
+    "lhs": "aHc",
+    "network": "macroscopic",
+    "rhs": " F * fHc"
+  },
+  "E_98": {
+    "lhs": "aHd",
+    "network": "macroscopic",
+    "rhs": " F * fHd"
   }
 }

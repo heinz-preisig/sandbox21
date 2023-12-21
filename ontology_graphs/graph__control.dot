@@ -19,12 +19,15 @@ rankdir=LR;
 subgraph cluster_control___network {
 label=network;
 rankdir=LR;
-V_10 [fillcolor=seagreen3, fontsize=12, label=F, penwidth=3, style=filled];
+V_10 [fillcolor=salmon, fontsize=12, label=F, penwidth=3, style=filled];
 }
 
 subgraph cluster_control___projection {
 label=projection;
 rankdir=LR;
+V_48 [fillcolor=white, fontsize=12, label=I_N_A, penwidth=3, style=filled];
+V_96 [fillcolor=white, fontsize=12, label=I_N, penwidth=3, style=filled];
+V_97 [fillcolor=white, fontsize=12, label=I_A, penwidth=3, style=filled];
 }
 
 subgraph cluster_control___localIndex {
@@ -35,11 +38,11 @@ rankdir=LR;
 subgraph cluster_control___frame {
 label=frame;
 rankdir=LR;
-V_4 [fillcolor=seagreen1, fontsize=12, label=t, penwidth=3, style=filled];
-V_5 [fillcolor=seagreen1, fontsize=12, label=to, penwidth=3, style=filled];
-V_6 [fillcolor=seagreen1, fontsize=12, label=te, penwidth=3, style=filled];
-V_7 [fillcolor=seagreen1, fontsize=12, label=t_interval, penwidth=3, style=filled];
-V_9 [fillcolor=seagreen1, fontsize=12, label=pulse, penwidth=3, style=filled];
+V_4 [fillcolor=grey, fontsize=12, label=t, penwidth=3, style=filled];
+V_5 [fillcolor=grey, fontsize=12, label=to, penwidth=3, style=filled];
+V_6 [fillcolor=grey, fontsize=12, label=te, penwidth=3, style=filled];
+V_7 [fillcolor=grey, fontsize=12, label=t_interval, penwidth=3, style=filled];
+V_9 [fillcolor=grey, fontsize=12, label=pulse, penwidth=3, style=filled];
 }
 
 subgraph cluster_control___state {
@@ -50,10 +53,10 @@ rankdir=LR;
 subgraph cluster_control___constant {
 label=constant;
 rankdir=LR;
-V_1 [fillcolor=lightcyan, fontsize=12, label=value, penwidth=3, style=filled];
-V_2 [fillcolor=lightcyan, fontsize=12, label=one, penwidth=3, style=filled];
-V_3 [fillcolor=lightcyan, fontsize=12, label=zero, penwidth=3, style=filled];
-V_8 [fillcolor=lightcyan, fontsize=12, label=onehalf, penwidth=3, style=filled];
+V_1 [fillcolor=green, fontsize=12, label=value, penwidth=3, style=filled];
+V_2 [fillcolor=green, fontsize=12, label=one, penwidth=3, style=filled];
+V_3 [fillcolor=green, fontsize=12, label=zero, penwidth=3, style=filled];
+V_8 [fillcolor=green, fontsize=12, label=onehalf, penwidth=3, style=filled];
 }
 
 subgraph cluster_control___diffState {

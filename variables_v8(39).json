@@ -74,13 +74,13 @@
       "IRI": "promo:l",
       "aliases": {
         "matlab": "l",
-        "latex": "l",
+        "latex": "{\\ell}",
         "internal_code": "l",
         "global_ID": "V_11"
       },
       "compiled_lhs": {
         "global_ID": "V_11",
-        "latex": "{l}{_{N}}"
+        "latex": "{{\\ell}}{_{N}}"
       },
       "created": "2023-12-09 17:18:36",
       "doc": "length",
@@ -109,14 +109,14 @@
       "IRI": "promo:r_x",
       "aliases": {
         "matlab": "r_x",
-        "latex": "r_x",
+        "latex": "{r_x}",
         "internal_code": "r_x",
         "global_ID": "V_12"
       },
       "compiled_lhs": {
         "global_ID": "V_12",
         "matlab": "r_x(N)",
-        "latex": "{r_x}{_{N}}"
+        "latex": "{{r_x}}{_{N}}"
       },
       "created": "2023-12-09 17:19:24",
       "doc": "x-direction",
@@ -124,7 +124,7 @@
         "E_8": {
           "rhs": {
             "global_ID": " O_10 D_0 V_11 D_7 V_1 D_1",
-            "latex": "\\text{Instantiate}({l}{_{N}}, {{\\#}}{_{}})",
+            "latex": "\\text{Instantiate}({{\\ell}}{_{N}}, {{\\#}}{_{}})",
             "matlab": null
           },
           "type": "generic",
@@ -139,7 +139,7 @@
           "lhs": {
             "global_ID": "V_12",
             "matlab": "r_x(N)",
-            "latex": "{r_x}{_{N}}"
+            "latex": "{{r_x}}{_{N}}"
           }
         }
       },
@@ -167,14 +167,14 @@
       "IRI": "promo:r_y",
       "aliases": {
         "matlab": "r_y",
-        "latex": "r_y",
+        "latex": "{r_y}",
         "internal_code": "r_y",
         "global_ID": "V_13"
       },
       "compiled_lhs": {
         "global_ID": "V_13",
         "matlab": "r_y(N)",
-        "latex": "{r_y}{_{N}}"
+        "latex": "{{r_y}}{_{N}}"
       },
       "created": "2023-12-09 17:19:39",
       "doc": "y-direction",
@@ -182,7 +182,7 @@
         "E_9": {
           "rhs": {
             "global_ID": " O_10 D_0 V_11 D_7 V_1 D_1",
-            "latex": "\\text{Instantiate}({l}{_{N}}, {{\\#}}{_{}})",
+            "latex": "\\text{Instantiate}({{\\ell}}{_{N}}, {{\\#}}{_{}})",
             "matlab": null
           },
           "type": "generic",
@@ -197,7 +197,7 @@
           "lhs": {
             "global_ID": "V_13",
             "matlab": "r_y(N)",
-            "latex": "{r_y}{_{N}}"
+            "latex": "{{r_y}}{_{N}}"
           }
         }
       },
@@ -225,14 +225,14 @@
       "IRI": "promo:r_z",
       "aliases": {
         "matlab": "r_z",
-        "latex": "r_z",
+        "latex": "{r_z}",
         "internal_code": "r_z",
         "global_ID": "V_14"
       },
       "compiled_lhs": {
         "global_ID": "V_14",
         "matlab": "r_z(N)",
-        "latex": "{r_z}{_{N}}"
+        "latex": "{{r_z}}{_{N}}"
       },
       "created": "2023-12-09 17:20:03",
       "doc": "z-direction",
@@ -240,7 +240,7 @@
         "E_10": {
           "rhs": {
             "global_ID": " O_10 D_0 V_11 D_7 V_1 D_1",
-            "latex": "\\text{Instantiate}({l}{_{N}}, {{\\#}}{_{}})",
+            "latex": "\\text{Instantiate}({{\\ell}}{_{N}}, {{\\#}}{_{}})",
             "matlab": null
           },
           "type": "generic",
@@ -255,7 +255,7 @@
           "lhs": {
             "global_ID": "V_14",
             "matlab": "r_z(N)",
-            "latex": "{r_z}{_{N}}"
+            "latex": "{{r_z}}{_{N}}"
           }
         }
       },
@@ -298,7 +298,7 @@
         "E_11": {
           "rhs": {
             "global_ID": " V_12 O_4 V_13 O_4 V_14",
-            "latex": "{r_x}{_{N}} \\, . \\, {r_y}{_{N}} \\, . \\, {r_z}{_{N}}",
+            "latex": "{{r_x}}{_{N}} \\, . \\, {{r_y}}{_{N}} \\, . \\, {{r_z}}{_{N}}",
             "matlab": "r_x(N) .* r_y(N) .* r_z(N)"
           },
           "type": "generic",
@@ -634,8 +634,7 @@
         "E_14": {
           "rhs": {
             "global_ID": " O_6 D_0 V_16 D_7 V_18 D_1",
-            "latex": "\\frac{\\partial{{U}{_{N}}}}{\\partial{{n}{_{N, S}}}}",
-            "matlab": null
+            "latex": "\\frac{\\partial{{U}{_{N}}}}{\\partial{{n}{_{N, S}}}}"
           },
           "type": "generic",
           "doc": "chemical potential",
@@ -924,56 +923,163 @@
       ]
     },
     "V_27": {
-      "IRI": "promo:_n",
+      "IRI": "promo:v_x",
       "aliases": {
-        "matlab": "_n",
-        "latex": "{\\_n}",
-        "internal_code": "_n",
+        "matlab": "v_x",
+        "latex": "{v_x}",
+        "internal_code": "v_x",
         "global_ID": "V_27"
       },
       "compiled_lhs": {
         "global_ID": "V_27",
-        "matlab": "_n(N, S)",
-        "latex": "{{\\_n}}{_{N, S}}"
+        "latex": "{{v_x}}{_{N}}"
       },
-      "created": "2023-12-12 15:40:28",
-      "doc": "link variable n to interface macroscopic >>> material",
+      "created": "2023-12-20 10:31:06",
+      "doc": "velocity in x-direction",
       "equations": {
         "E_19": {
           "rhs": {
-            "global_ID": " V_18",
-            "latex": "{n}{_{N, S}}",
-            "matlab": "n(N, S)"
+            "global_ID": " F_15 D_0 V_4 D_1 O_4 V_12",
+            "latex": "\\left( {t}{_{}} \\right)^{-1} \\, . \\, {{r_x}}{_{N}}"
           },
-          "type": "interface_link_equation",
-          "doc": "interface equation",
-          "network": "macroscopic >>> material",
+          "type": "generic",
+          "doc": "velocity in x-direction",
+          "network": "physical",
           "incidence_list": [
-            "V_18"
+            "V_12",
+            "V_4"
           ],
-          "created": "2023-12-12 15:40:28",
-          "modified": "2023-12-12 15:40:28",
+          "created": "2023-12-20 10:31:06",
+          "modified": "2023-12-20 10:31:06",
           "lhs": {
             "global_ID": "V_27",
-            "matlab": "_n(N, S)",
-            "latex": "{{\\_n}}{_{N, S}}"
+            "latex": "{{v_x}}{_{N}}"
           }
         }
       },
       "index_structures": [
-        "I_1",
-        "I_3"
+        "I_1"
       ],
-      "label": "_n",
-      "modified": "2023-12-12 15:40:28",
-      "network": "macroscopic >>> material",
+      "label": "v_x",
+      "modified": "2023-12-20 10:31:06",
+      "network": "physical",
       "port_variable": false,
       "tokens": [],
-      "type": "get",
+      "type": "secondaryState",
       "units": [
-        0,
-        0,
+        -1,
         1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_28": {
+      "IRI": "promo:v_y",
+      "aliases": {
+        "matlab": "v_y",
+        "latex": "{v_y}",
+        "internal_code": "v_y",
+        "global_ID": "V_28"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_28",
+        "latex": "{{v_y}}{_{N}}"
+      },
+      "created": "2023-12-20 10:31:34",
+      "doc": "velocity in y-direction",
+      "equations": {
+        "E_20": {
+          "rhs": {
+            "global_ID": " F_15 D_0 V_4 D_1 O_4 V_13",
+            "latex": "\\left( {t}{_{}} \\right)^{-1} \\, . \\, {{r_y}}{_{N}}"
+          },
+          "type": "generic",
+          "doc": "velocity in y-direction",
+          "network": "physical",
+          "incidence_list": [
+            "V_13",
+            "V_4"
+          ],
+          "created": "2023-12-20 10:31:34",
+          "modified": "2023-12-20 10:31:34",
+          "lhs": {
+            "global_ID": "V_28",
+            "latex": "{{v_y}}{_{N}}"
+          }
+        }
+      },
+      "index_structures": [
+        "I_1"
+      ],
+      "label": "v_y",
+      "modified": "2023-12-20 10:31:34",
+      "network": "physical",
+      "port_variable": false,
+      "tokens": [],
+      "type": "secondaryState",
+      "units": [
+        -1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_29": {
+      "IRI": "promo:v_z",
+      "aliases": {
+        "matlab": "v_z",
+        "latex": "{v_z}",
+        "internal_code": "v_z",
+        "global_ID": "V_29"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_29",
+        "latex": "{{v_z}}{_{N}}"
+      },
+      "created": "2023-12-20 10:32:10",
+      "doc": "velocity in z-direction",
+      "equations": {
+        "E_21": {
+          "rhs": {
+            "global_ID": " F_15 D_0 V_4 D_1 O_4 V_14",
+            "latex": "\\left( {t}{_{}} \\right)^{-1} \\, . \\, {{r_z}}{_{N}}"
+          },
+          "type": "generic",
+          "doc": "velocity in z-direction",
+          "network": "physical",
+          "incidence_list": [
+            "V_14",
+            "V_4"
+          ],
+          "created": "2023-12-20 10:32:10",
+          "modified": "2023-12-20 10:32:10",
+          "lhs": {
+            "global_ID": "V_29",
+            "latex": "{{v_z}}{_{N}}"
+          }
+        }
+      },
+      "index_structures": [
+        "I_1"
+      ],
+      "label": "v_z",
+      "modified": "2023-12-20 10:32:10",
+      "network": "physical",
+      "port_variable": false,
+      "tokens": [],
+      "type": "secondaryState",
+      "units": [
+        -1,
+        1,
+        0,
         0,
         0,
         0,
@@ -1030,6 +1136,58 @@
         0,
         0,
         0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_30": {
+      "IRI": "promo:_Mm",
+      "aliases": {
+        "matlab": "_Mm",
+        "latex": "{\\_\\lambda}",
+        "internal_code": "_Mm",
+        "global_ID": "V_30"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_30"
+      },
+      "created": "2023-12-20 10:34:26",
+      "doc": "link variable Mm to interface material >>> macroscopic",
+      "equations": {
+        "E_22": {
+          "rhs": {
+            "global_ID": " V_26",
+            "latex": "{{\\lambda}}{_{S}}"
+          },
+          "type": "interface_link_equation",
+          "doc": "interface equation",
+          "network": "material >>> macroscopic",
+          "incidence_list": [
+            "V_26"
+          ],
+          "created": "2023-12-20 10:34:26",
+          "modified": "2023-12-20 10:34:26",
+          "lhs": {
+            "global_ID": "V_30"
+          }
+        }
+      },
+      "index_structures": [
+        "I_3"
+      ],
+      "label": "_Mm",
+      "modified": "2023-12-20 10:34:26",
+      "network": "material >>> macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "get",
+      "units": [
+        0,
+        0,
+        -1,
+        1,
         0,
         0,
         0,
@@ -1505,7 +1663,7 @@
     }
   },
   "Ontology_global_IDs": {
-    "variable": 27,
-    "equation": 19
+    "variable": 30,
+    "equation": 22
   }
 }
