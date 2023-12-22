@@ -88,7 +88,7 @@
         "E_84": {
           "rhs": {
             "global_ID": " F_15 D_0 V_99 D_1 O_4 V_18",
-            "latex": "\\left( {nt}{_{N}} \\right)^{-1} \\, . \\, {n}{_{N, S}}"
+            "latex": "\\left( {{n^t}}{_{N}} \\right)^{-1} \\, . \\, {n}{_{N, S}}"
           },
           "type": "generic",
           "doc": "concentration mole fraction",
@@ -130,13 +130,13 @@
       "IRI": "promo:fnd",
       "aliases": {
         "matlab": "fnd",
-        "latex": "fnd",
+        "latex": "{\\hat{n}^d}",
         "internal_code": "fnd",
         "global_ID": "V_101"
       },
       "compiled_lhs": {
         "global_ID": "V_101",
-        "latex": "{fnd}{_{A, S}}"
+        "latex": "{{\\hat{n}^d}}{_{A, S}}"
       },
       "created": "2023-12-21 11:38:19",
       "doc": "diffusional mass flow in arc",
@@ -159,7 +159,7 @@
           "modified": "2023-12-21 11:38:19",
           "lhs": {
             "global_ID": "V_101",
-            "latex": "{fnd}{_{A, S}}"
+            "latex": "{{\\hat{n}^d}}{_{A, S}}"
           }
         },
         "E_89": {
@@ -180,7 +180,7 @@
           "modified": "2023-12-21 11:47:23",
           "lhs": {
             "global_ID": "V_101",
-            "latex": "{fnd}{_{A, S}}"
+            "latex": "{{\\hat{n}^d}}{_{A, S}}"
           }
         }
       },
@@ -334,7 +334,7 @@
         "E_90": {
           "rhs": {
             "global_ID": " V_10  O_5 V_101",
-            "latex": "{F}{_{N, A}} \\star {fnd}{_{A, S}}"
+            "latex": "{F}{_{N, A}} \\star {{\\hat{n}^d}}{_{A, S}}"
           },
           "type": "generic",
           "doc": "accumulation due to diffusional mass transfer",
@@ -500,7 +500,7 @@
         "E_93": {
           "rhs": {
             "global_ID": " V_48  O_5 V_47",
-            "latex": "{I_N_A}{_{N, A}} \\star {h}{_{N, S}}"
+            "latex": "{I}{_{N, A}} \\star {h}{_{N, S}}"
           },
           "type": "generic",
           "doc": "partial molar enthalpies of transport system",
@@ -611,7 +611,7 @@
         "E_95": {
           "rhs": {
             "global_ID": " V_98  O_5 D_0 V_108 O_4 V_92 D_1",
-            "latex": "{I_S}{_{S}} \\star \\left({{\\_h}}{_{A, S}} \\, . \\, {fnc}{_{A, S}}\\right)"
+            "latex": "{I}{_{S}} \\star \\left({{\\_h}}{_{A, S}} \\, . \\, {{\\hat{n}^c}}{_{A, S}}\\right)"
           },
           "type": "generic",
           "doc": "enthalpy flow due to convective mass flow",
@@ -702,7 +702,7 @@
         "E_96": {
           "rhs": {
             "global_ID": " V_98  O_5 D_0 V_108 O_4 V_101 D_1",
-            "latex": "{I_S}{_{S}} \\star \\left({{\\_h}}{_{A, S}} \\, . \\, {fnd}{_{A, S}}\\right)"
+            "latex": "{I}{_{S}} \\star \\left({{\\_h}}{_{A, S}} \\, . \\, {{\\hat{n}^d}}{_{A, S}}\\right)"
           },
           "type": "generic",
           "doc": "enthalpy flow due to diffusive mass flow",
@@ -844,6 +844,307 @@
         2,
         0,
         1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_113": {
+      "IRI": "promo:P_N_K",
+      "aliases": {
+        "matlab": "P_N_K",
+        "latex": "P",
+        "internal_code": "P_N_K",
+        "global_ID": "V_113"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_113",
+        "latex": "{P}{_{N, K}}"
+      },
+      "created": "2023-12-22 10:18:53",
+      "doc": "what node has what reaction",
+      "equations": {},
+      "index_structures": [
+        "I_1",
+        "I_4"
+      ],
+      "label": "P_N_K",
+      "modified": "2023-12-22 10:19:30",
+      "network": "reactions",
+      "port_variable": true,
+      "tokens": [],
+      "type": "projection",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_114": {
+      "IRI": "promo:T_K",
+      "aliases": {
+        "matlab": "T_K",
+        "latex": "T",
+        "internal_code": "T_K",
+        "global_ID": "V_114"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_114",
+        "latex": "{T}{_{N, K}}"
+      },
+      "created": "2023-12-22 10:22:06",
+      "doc": "temparature of the nodes with reactions",
+      "equations": {
+        "E_99": {
+          "rhs": {
+            "global_ID": " V_19 O_4 V_113",
+            "latex": "{T}{_{N}} \\, . \\, {P}{_{N, K}}"
+          },
+          "type": "generic",
+          "doc": "temparature of the nodes with reactions",
+          "network": "reactions",
+          "incidence_list": [
+            "V_113",
+            "V_19"
+          ],
+          "created": "2023-12-22 10:22:06",
+          "modified": "2023-12-22 10:22:06",
+          "lhs": {
+            "global_ID": "V_114",
+            "latex": "{T}{_{N, K}}"
+          }
+        }
+      },
+      "index_structures": [
+        "I_1",
+        "I_4"
+      ],
+      "label": "T_K",
+      "modified": "2023-12-22 10:22:06",
+      "network": "reactions",
+      "port_variable": false,
+      "tokens": [],
+      "type": "effort",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_115": {
+      "IRI": "promo:Ea",
+      "aliases": {
+        "matlab": "Ea",
+        "latex": "E_a",
+        "internal_code": "Ea",
+        "global_ID": "V_115"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_115",
+        "latex": "{E_a}{_{N, K}}"
+      },
+      "created": "2023-12-22 10:47:06",
+      "doc": "Arrhenius activation energy",
+      "equations": {
+        "E_100": {
+          "rhs": {
+            "global_ID": " O_10 D_0 V_34 O_4 V_114 D_7 V_1 D_1",
+            "latex": "\\text{Instantiate}({R}{_{N}} \\, . \\, {T}{_{N, K}}, {{\\#}}{_{}})"
+          },
+          "type": "generic",
+          "doc": "Arrhenius activation energy",
+          "network": "reactions",
+          "incidence_list": [
+            "V_1",
+            "V_114",
+            "V_34"
+          ],
+          "created": "2023-12-22 10:47:06",
+          "modified": "2023-12-22 10:47:06",
+          "lhs": {
+            "global_ID": "V_115",
+            "latex": "{E_a}{_{N, K}}"
+          }
+        }
+      },
+      "index_structures": [
+        "I_1",
+        "I_4"
+      ],
+      "label": "Ea",
+      "modified": "2023-12-22 10:47:06",
+      "network": "reactions",
+      "port_variable": false,
+      "tokens": [],
+      "type": "properties",
+      "units": [
+        -2,
+        2,
+        -1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_116": {
+      "IRI": "promo:Ko",
+      "aliases": {
+        "matlab": "Ko",
+        "latex": "K^o",
+        "internal_code": "Ko",
+        "global_ID": "V_116"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_116",
+        "latex": "{K^o}{_{K}}"
+      },
+      "created": "2023-12-22 11:12:47",
+      "doc": "Arrhenius frequency factor -- a strange construction",
+      "equations": {
+        "E_101": {
+          "rhs": {
+            "global_ID": " O_10 D_0 V_98  O_5 D_0 V_113  O_5 D_0 F_15 D_0 V_4 D_1 O_4 F_15 D_0 V_15 D_1 O_4 F_15 D_0 V_18 D_1 D_1 D_1 D_7 V_1 D_1",
+            "latex": "\\text{Instantiate}({I}{_{S}} \\star \\left({P}{_{N, K}} \\star \\left(\\left( {t}{_{}} \\right)^{-1} \\, . \\, \\left( {V}{_{N}} \\right)^{-1} \\, . \\, \\left( {n}{_{N, S}} \\right)^{-1}\\right)\\right), {{\\#}}{_{}})"
+          },
+          "type": "generic",
+          "doc": "Arrhenius frequency factor -- a strange construction",
+          "network": "reactions",
+          "incidence_list": [
+            "V_1",
+            "V_113",
+            "V_15",
+            "V_18",
+            "V_4",
+            "V_98"
+          ],
+          "created": "2023-12-22 11:12:47",
+          "modified": "2023-12-22 11:12:47",
+          "lhs": {
+            "global_ID": "V_116",
+            "latex": "{K^o}{_{K}}"
+          }
+        }
+      },
+      "index_structures": [
+        "I_4"
+      ],
+      "label": "Ko",
+      "modified": "2023-12-22 11:12:47",
+      "network": "reactions",
+      "port_variable": false,
+      "tokens": [],
+      "type": "properties",
+      "units": [
+        -1,
+        -3,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_117": {
+      "IRI": "promo:K",
+      "aliases": {
+        "matlab": "K",
+        "latex": "K",
+        "internal_code": "K",
+        "global_ID": "V_117"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_117",
+        "latex": "{K}{_{N, K}}"
+      },
+      "created": "2023-12-22 11:15:54",
+      "doc": "raction \"constant\"",
+      "equations": {
+        "E_102": {
+          "rhs": {
+            "global_ID": " V_116 O_4 F_0 D_0 F_11 D_0 V_115 D_1 O_4 F_15 D_0 V_34 O_4 V_114 D_1 D_1",
+            "latex": "{K^o}{_{K}} \\, . \\, exp(\\left( -{E_a}{_{N, K}} \\right) \\, . \\, \\left( {R}{_{N}} \\, . \\, {T}{_{N, K}} \\right)^{-1})"
+          },
+          "type": "generic",
+          "doc": "raction \"constant\"",
+          "network": "reactions",
+          "incidence_list": [
+            "V_114",
+            "V_115",
+            "V_116",
+            "V_34"
+          ],
+          "created": "2023-12-22 11:15:54",
+          "modified": "2023-12-22 11:15:54",
+          "lhs": {
+            "global_ID": "V_117",
+            "latex": "{K}{_{N, K}}"
+          }
+        }
+      },
+      "index_structures": [
+        "I_1",
+        "I_4"
+      ],
+      "label": "K",
+      "modified": "2023-12-22 11:15:54",
+      "network": "reactions",
+      "port_variable": false,
+      "tokens": [],
+      "type": "properties",
+      "units": [
+        -1,
+        -3,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_118": {
+      "IRI": "promo:N",
+      "aliases": {
+        "matlab": "N",
+        "latex": "N",
+        "internal_code": "N",
+        "global_ID": "V_118"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_118"
+      },
+      "created": "2023-12-22 11:19:25",
+      "doc": "stoichiometric matrix",
+      "equations": {},
+      "index_structures": [
+        "I_3",
+        "I_4"
+      ],
+      "label": "N",
+      "modified": "2023-12-22 11:19:46",
+      "network": "reactions",
+      "port_variable": true,
+      "tokens": [],
+      "type": "properties",
+      "units": [
+        0,
+        0,
+        0,
+        0,
         0,
         0,
         0,
@@ -2883,13 +3184,13 @@
       "IRI": "promo:I_N_A",
       "aliases": {
         "matlab": "I_N_A",
-        "latex": "I_N_A",
+        "latex": "I",
         "internal_code": "I_N_A",
         "global_ID": "V_48"
       },
       "compiled_lhs": {
         "global_ID": "V_48",
-        "latex": "{I_N_A}{_{N, A}}"
+        "latex": "{I}{_{N, A}}"
       },
       "created": "2023-12-20 15:48:30",
       "doc": "project node on arc ",
@@ -2933,7 +3234,7 @@
         "E_39": {
           "rhs": {
             "global_ID": " V_48  O_5 V_44",
-            "latex": "{I_N_A}{_{N, A}} \\star {{k^c_x}}{_{N}}"
+            "latex": "{I}{_{N, A}} \\star {{k^c_x}}{_{N}}"
           },
           "type": "generic",
           "doc": " convective mass conductivity in x-direction in arc",
@@ -3044,7 +3345,7 @@
         "E_40": {
           "rhs": {
             "global_ID": " V_48  O_5 V_45",
-            "latex": "{I_N_A}{_{N, A}} \\star {{k^c_y}}{_{N}}"
+            "latex": "{I}{_{N, A}} \\star {{k^c_y}}{_{N}}"
           },
           "type": "generic",
           "doc": " convective mass conductivity in y-direction in arc",
@@ -3099,7 +3400,7 @@
         "E_41": {
           "rhs": {
             "global_ID": " V_48  O_5 V_46",
-            "latex": "{I_N_A}{_{N, A}} \\star {{k^c_z}}{_{N}}"
+            "latex": "{I}{_{N, A}} \\star {{k^c_z}}{_{N}}"
           },
           "type": "generic",
           "doc": " convective mass conductivity in z-direction in arc",
@@ -3154,7 +3455,7 @@
         "E_42": {
           "rhs": {
             "global_ID": " V_48  O_5 V_41",
-            "latex": "{I_N_A}{_{N, A}} \\star {{k^d_x}}{_{N, S}}"
+            "latex": "{I}{_{N, A}} \\star {{k^d_x}}{_{N, S}}"
           },
           "type": "generic",
           "doc": "diffusional mass conductivity in x-direction in arc",
@@ -3210,7 +3511,7 @@
         "E_43": {
           "rhs": {
             "global_ID": " V_48  O_5 V_42",
-            "latex": "{I_N_A}{_{N, A}} \\star {{k^d_y}}{_{N, S}}"
+            "latex": "{I}{_{N, A}} \\star {{k^d_y}}{_{N, S}}"
           },
           "type": "generic",
           "doc": "diffusional mass conductivity in z-direction in arc",
@@ -3266,7 +3567,7 @@
         "E_44": {
           "rhs": {
             "global_ID": " V_48  O_5 V_43",
-            "latex": "{I_N_A}{_{N, A}} \\star {{k^d_z}}{_{N, S}}"
+            "latex": "{I}{_{N, A}} \\star {{k^d_z}}{_{N, S}}"
           },
           "type": "generic",
           "doc": "diffusional mass conductivity in z-direction in arc",
@@ -3322,7 +3623,7 @@
         "E_45": {
           "rhs": {
             "global_ID": " V_48  O_5 V_38",
-            "latex": "{I_N_A}{_{N, A}} \\star {{k^q_x}}{_{N}}"
+            "latex": "{I}{_{N, A}} \\star {{k^q_x}}{_{N}}"
           },
           "type": "generic",
           "doc": "thermal conductivity in x-direction in arc",
@@ -3377,7 +3678,7 @@
         "E_46": {
           "rhs": {
             "global_ID": " V_48  O_5 V_39",
-            "latex": "{I_N_A}{_{N, A}} \\star {{k^q_y}}{_{N}}"
+            "latex": "{I}{_{N, A}} \\star {{k^q_y}}{_{N}}"
           },
           "type": "generic",
           "doc": "thermal conductivity in y-direction in arc",
@@ -3432,7 +3733,7 @@
         "E_47": {
           "rhs": {
             "global_ID": " V_48  O_5 V_40",
-            "latex": "{I_N_A}{_{N, A}} \\star {{k^q_z}}{_{N}}"
+            "latex": "{I}{_{N, A}} \\star {{k^q_z}}{_{N}}"
           },
           "type": "generic",
           "doc": "thermal conductivity in z-direction in arc",
@@ -3708,7 +4009,7 @@
         "E_51": {
           "rhs": {
             "global_ID": " V_48  O_5 D_0 V_27 O_4 O_6 D_0 V_16 D_7 V_21 D_1 O_4 F_15 D_0 V_18 D_1 D_1",
-            "latex": "{I_N_A}{_{N, A}} \\star \\left({{v_x}}{_{N}} \\, . \\, \\frac{\\partial{{U}{_{N}}}}{\\partial{{{\\mu}}{_{N, S}}}} \\, . \\, \\left( {n}{_{N, S}} \\right)^{-1}\\right)"
+            "latex": "{I}{_{N, A}} \\star \\left({{v_x}}{_{N}} \\, . \\, \\frac{\\partial{{U}{_{N}}}}{\\partial{{{\\mu}}{_{N, S}}}} \\, . \\, \\left( {n}{_{N, S}} \\right)^{-1}\\right)"
           },
           "type": "generic",
           "doc": "Fick's diffusivity in arc and x-direction ",
@@ -3767,7 +4068,7 @@
         "E_52": {
           "rhs": {
             "global_ID": " V_48  O_5 D_0 V_28 O_4 O_6 D_0 V_16 D_7 V_21 D_1 O_4 F_15 D_0 V_18 D_1 D_1",
-            "latex": "{I_N_A}{_{N, A}} \\star \\left({{v_y}}{_{N}} \\, . \\, \\frac{\\partial{{U}{_{N}}}}{\\partial{{{\\mu}}{_{N, S}}}} \\, . \\, \\left( {n}{_{N, S}} \\right)^{-1}\\right)"
+            "latex": "{I}{_{N, A}} \\star \\left({{v_y}}{_{N}} \\, . \\, \\frac{\\partial{{U}{_{N}}}}{\\partial{{{\\mu}}{_{N, S}}}} \\, . \\, \\left( {n}{_{N, S}} \\right)^{-1}\\right)"
           },
           "type": "generic",
           "doc": "Fick's diffusivity in arc and y-direction ",
@@ -3826,7 +4127,7 @@
         "E_53": {
           "rhs": {
             "global_ID": " V_48  O_5 D_0 V_29 O_4 O_6 D_0 V_16 D_7 V_21 D_1 O_4 F_15 D_0 V_18 D_1 D_1",
-            "latex": "{I_N_A}{_{N, A}} \\star \\left({{v_z}}{_{N}} \\, . \\, \\frac{\\partial{{U}{_{N}}}}{\\partial{{{\\mu}}{_{N, S}}}} \\, . \\, \\left( {n}{_{N, S}} \\right)^{-1}\\right)"
+            "latex": "{I}{_{N, A}} \\star \\left({{v_z}}{_{N}} \\, . \\, \\frac{\\partial{{U}{_{N}}}}{\\partial{{{\\mu}}{_{N, S}}}} \\, . \\, \\left( {n}{_{N, S}} \\right)^{-1}\\right)"
           },
           "type": "generic",
           "doc": "Fick's diffusivity in arc and z-direction ",
@@ -4086,7 +4387,7 @@
         "E_57": {
           "rhs": {
             "global_ID": " V_48  O_5 V_65",
-            "latex": "{I_N_A}{_{N, A}} \\star {{A_{xy}}}{_{N}}"
+            "latex": "{I}{_{N, A}} \\star {{A_{xy}}}{_{N}}"
           },
           "type": "generic",
           "doc": "cross sectional area yz of arc",
@@ -4141,7 +4442,7 @@
         "E_58": {
           "rhs": {
             "global_ID": " V_48  O_5 V_66",
-            "latex": "{I_N_A}{_{N, A}} \\star {{A_{xz}}}{_{N}}"
+            "latex": "{I}{_{N, A}} \\star {{A_{xz}}}{_{N}}"
           },
           "type": "generic",
           "doc": "cross sectional area xz of arc",
@@ -4252,7 +4553,7 @@
         "E_59": {
           "rhs": {
             "global_ID": " V_48  O_5 V_67",
-            "latex": "{I_N_A}{_{N, A}} \\star {{A_{yz}}}{_{N}}"
+            "latex": "{I}{_{N, A}} \\star {{A_{yz}}}{_{N}}"
           },
           "type": "generic",
           "doc": "cross sectional area yz of arc",
@@ -5002,13 +5303,13 @@
       "IRI": "promo:fq_x",
       "aliases": {
         "matlab": "fq_x",
-        "latex": "fq_x",
+        "latex": "{\\hat{q}_x}",
         "internal_code": "fq_x",
         "global_ID": "V_83"
       },
       "compiled_lhs": {
         "global_ID": "V_83",
-        "latex": "{fq_x}{_{A}}"
+        "latex": "{{\\hat{q}_x}}{_{A}}"
       },
       "created": "2023-12-20 17:08:31",
       "doc": "heat flow in arc and x-direction",
@@ -5031,7 +5332,7 @@
           "modified": "2023-12-20 17:08:31",
           "lhs": {
             "global_ID": "V_83",
-            "latex": "{fq_x}{_{A}}"
+            "latex": "{{\\hat{q}_x}}{_{A}}"
           }
         }
       },
@@ -5073,7 +5374,7 @@
         "E_73": {
           "rhs": {
             "global_ID": " V_10  O_5 V_83",
-            "latex": "{F}{_{N, A}} \\star {fq_x}{_{A}}"
+            "latex": "{F}{_{N, A}} \\star {{\\hat{q}_x}}{_{A}}"
           },
           "type": "generic",
           "doc": "accumulation due to conductive heat flow",
@@ -5351,7 +5652,7 @@
         "E_78": {
           "rhs": {
             "global_ID": " V_48  O_5 V_59",
-            "latex": "{I_N_A}{_{N, A}} \\star {\\rho}{_{N}}"
+            "latex": "{I}{_{N, A}} \\star {\\rho}{_{N}}"
           },
           "type": "generic",
           "doc": "density of arc material",
@@ -5561,13 +5862,13 @@
       "IRI": "promo:fnc",
       "aliases": {
         "matlab": "fnc",
-        "latex": "fnc",
+        "latex": "{\\hat{n}^c}",
         "internal_code": "fnc",
         "global_ID": "V_92"
       },
       "compiled_lhs": {
         "global_ID": "V_92",
-        "latex": "{fnc}{_{A, S}}"
+        "latex": "{{\\hat{n}^c}}{_{A, S}}"
       },
       "created": "2023-12-21 10:50:40",
       "doc": "convective mass flow in an arc",
@@ -5588,7 +5889,7 @@
           "modified": "2023-12-21 10:50:40",
           "lhs": {
             "global_ID": "V_92",
-            "latex": "{fnc}{_{A, S}}"
+            "latex": "{{\\hat{n}^c}}{_{A, S}}"
           }
         }
       },
@@ -5631,7 +5932,7 @@
         "E_82": {
           "rhs": {
             "global_ID": " V_10  O_5 V_92",
-            "latex": "{F}{_{N, A}} \\star {fnc}{_{A, S}}"
+            "latex": "{F}{_{N, A}} \\star {{\\hat{n}^c}}{_{A, S}}"
           },
           "type": "generic",
           "doc": "accumulation due to convective mass flow",
@@ -5673,13 +5974,13 @@
       "IRI": "promo:I_N",
       "aliases": {
         "matlab": "I_N",
-        "latex": "I_N",
+        "latex": "I",
         "internal_code": "I_N",
         "global_ID": "V_96"
       },
       "compiled_lhs": {
         "global_ID": "V_96",
-        "latex": "{I_N}{_{N}}"
+        "latex": "{I}{_{N}}"
       },
       "created": "2023-12-21 11:10:16",
       "doc": "vector of ones of length nodes",
@@ -5708,13 +6009,13 @@
       "IRI": "promo:I_A",
       "aliases": {
         "matlab": "I_A",
-        "latex": "I_A",
+        "latex": "I",
         "internal_code": "I_A",
         "global_ID": "V_97"
       },
       "compiled_lhs": {
         "global_ID": "V_97",
-        "latex": "{I_A}{_{A}}"
+        "latex": "{I}{_{A}}"
       },
       "created": "2023-12-21 11:10:44",
       "doc": "vector of ones of length arcs",
@@ -5743,13 +6044,13 @@
       "IRI": "promo:I_S",
       "aliases": {
         "matlab": "I_S",
-        "latex": "I_S",
+        "latex": "I",
         "internal_code": "I_S",
         "global_ID": "V_98"
       },
       "compiled_lhs": {
         "global_ID": "V_98",
-        "latex": "{I_S}{_{S}}"
+        "latex": "{I}{_{S}}"
       },
       "created": "2023-12-21 11:12:52",
       "doc": "vector of ones of length sepecies",
@@ -5778,13 +6079,13 @@
       "IRI": "promo:nt",
       "aliases": {
         "matlab": "nt",
-        "latex": "nt",
+        "latex": "{n^t}",
         "internal_code": "nt",
         "global_ID": "V_99"
       },
       "compiled_lhs": {
         "global_ID": "V_99",
-        "latex": "{nt}{_{N}}"
+        "latex": "{{n^t}}{_{N}}"
       },
       "created": "2023-12-21 11:15:02",
       "doc": "total amount",
@@ -5792,7 +6093,7 @@
         "E_83": {
           "rhs": {
             "global_ID": " V_98  O_5 V_18",
-            "latex": "{I_S}{_{S}} \\star {n}{_{N, S}}"
+            "latex": "{I}{_{S}} \\star {n}{_{N, S}}"
           },
           "type": "generic",
           "doc": "total amount",
@@ -5805,7 +6106,7 @@
           "modified": "2023-12-21 11:15:02",
           "lhs": {
             "global_ID": "V_99",
-            "latex": "{nt}{_{N}}"
+            "latex": "{{n^t}}{_{N}}"
           }
         }
       },
@@ -5916,9 +6217,9 @@
         "energy"
       ],
       "aliases": {
-        "matlab": "CS",
-        "latex": "CS",
-        "internal_code": "CS"
+        "matlab": "K",
+        "latex": "K",
+        "internal_code": "K"
       },
       "tokens": {
         "instances": [
@@ -5953,7 +6254,7 @@
     }
   },
   "Ontology_global_IDs": {
-    "variable": 112,
-    "equation": 98
+    "variable": 118,
+    "equation": 102
   }
 }

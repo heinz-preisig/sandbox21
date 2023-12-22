@@ -428,6 +428,50 @@ V_V_112.temperature = [ units[4] ]
 V_V_112.current = [ units[5] ]
 V_V_112.light = [ units[6] ]
 
+# V_113
+label = variables[V_113]["label"]
+network = variables[V_113]["network"]
+variable_type = variables[V_113]["type"]
+label = variables[V_113]["label"]
+doc = variables[V_113]["doc"]
+onto_ID = "V_V_113"
+V_V_113 = onto.ProMoVar( onto_ID )
+V_V_113.label = label
+V_V_113.network = network
+V_V_113.variable_type = variable_type
+V_V_113.comment = doc
+
+units = variables[V_113]["units"].asList()
+V_V_113.time = [ units[0] ]
+V_V_113.length = [ units[1] ]
+V_V_113.amount = [ units[2] ]
+V_V_113.mass = [ units[3] ]
+V_V_113.temperature = [ units[4] ]
+V_V_113.current = [ units[5] ]
+V_V_113.light = [ units[6] ]
+
+# V_114
+label = variables[V_114]["label"]
+network = variables[V_114]["network"]
+variable_type = variables[V_114]["type"]
+label = variables[V_114]["label"]
+doc = variables[V_114]["doc"]
+onto_ID = "V_V_114"
+V_V_114 = onto.ProMoVar( onto_ID )
+V_V_114.label = label
+V_V_114.network = network
+V_V_114.variable_type = variable_type
+V_V_114.comment = doc
+
+units = variables[V_114]["units"].asList()
+V_V_114.time = [ units[0] ]
+V_V_114.length = [ units[1] ]
+V_V_114.amount = [ units[2] ]
+V_V_114.mass = [ units[3] ]
+V_V_114.temperature = [ units[4] ]
+V_V_114.current = [ units[5] ]
+V_V_114.light = [ units[6] ]
+
 # V_12
 label = variables[V_12]["label"]
 network = variables[V_12]["network"]
@@ -2474,6 +2518,94 @@ V_V_99.temperature = [ units[4] ]
 V_V_99.current = [ units[5] ]
 V_V_99.light = [ units[6] ]
 
+# V_115
+label = variables[V_115]["label"]
+network = variables[V_115]["network"]
+variable_type = variables[V_115]["type"]
+label = variables[V_115]["label"]
+doc = variables[V_115]["doc"]
+onto_ID = "V_V_115"
+V_V_115 = onto.ProMoVar( onto_ID )
+V_V_115.label = label
+V_V_115.network = network
+V_V_115.variable_type = variable_type
+V_V_115.comment = doc
+
+units = variables[V_115]["units"].asList()
+V_V_115.time = [ units[0] ]
+V_V_115.length = [ units[1] ]
+V_V_115.amount = [ units[2] ]
+V_V_115.mass = [ units[3] ]
+V_V_115.temperature = [ units[4] ]
+V_V_115.current = [ units[5] ]
+V_V_115.light = [ units[6] ]
+
+# V_116
+label = variables[V_116]["label"]
+network = variables[V_116]["network"]
+variable_type = variables[V_116]["type"]
+label = variables[V_116]["label"]
+doc = variables[V_116]["doc"]
+onto_ID = "V_V_116"
+V_V_116 = onto.ProMoVar( onto_ID )
+V_V_116.label = label
+V_V_116.network = network
+V_V_116.variable_type = variable_type
+V_V_116.comment = doc
+
+units = variables[V_116]["units"].asList()
+V_V_116.time = [ units[0] ]
+V_V_116.length = [ units[1] ]
+V_V_116.amount = [ units[2] ]
+V_V_116.mass = [ units[3] ]
+V_V_116.temperature = [ units[4] ]
+V_V_116.current = [ units[5] ]
+V_V_116.light = [ units[6] ]
+
+# V_117
+label = variables[V_117]["label"]
+network = variables[V_117]["network"]
+variable_type = variables[V_117]["type"]
+label = variables[V_117]["label"]
+doc = variables[V_117]["doc"]
+onto_ID = "V_V_117"
+V_V_117 = onto.ProMoVar( onto_ID )
+V_V_117.label = label
+V_V_117.network = network
+V_V_117.variable_type = variable_type
+V_V_117.comment = doc
+
+units = variables[V_117]["units"].asList()
+V_V_117.time = [ units[0] ]
+V_V_117.length = [ units[1] ]
+V_V_117.amount = [ units[2] ]
+V_V_117.mass = [ units[3] ]
+V_V_117.temperature = [ units[4] ]
+V_V_117.current = [ units[5] ]
+V_V_117.light = [ units[6] ]
+
+# V_118
+label = variables[V_118]["label"]
+network = variables[V_118]["network"]
+variable_type = variables[V_118]["type"]
+label = variables[V_118]["label"]
+doc = variables[V_118]["doc"]
+onto_ID = "V_V_118"
+V_V_118 = onto.ProMoVar( onto_ID )
+V_V_118.label = label
+V_V_118.network = network
+V_V_118.variable_type = variable_type
+V_V_118.comment = doc
+
+units = variables[V_118]["units"].asList()
+V_V_118.time = [ units[0] ]
+V_V_118.length = [ units[1] ]
+V_V_118.amount = [ units[2] ]
+V_V_118.mass = [ units[3] ]
+V_V_118.temperature = [ units[4] ]
+V_V_118.current = [ units[5] ]
+V_V_118.light = [ units[6] ]
+
 # functions assignments
 
 #V_1
@@ -2625,6 +2757,19 @@ F_ID = "F_E_98"
 F_E_98 = onto.function( F_ID )
 F_E_98.is_function_of = incidence_list
 V_V_112.has_function.append( F_E_98 )
+#V_113
+
+V_V_113.has_function = []
+#V_114
+
+V_V_114.has_function = []
+incidence_list = []
+incidence_list.append( V_19 )
+incidence_list.append( V_113 )
+F_ID = "F_E_99"
+F_E_99 = onto.function( F_ID )
+F_E_99.is_function_of = incidence_list
+V_V_114.has_function.append( F_E_99 )
 #V_12
 
 V_V_12.has_function = []
@@ -3515,5 +3660,45 @@ F_ID = "F_E_83"
 F_E_83 = onto.function( F_ID )
 F_E_83.is_function_of = incidence_list
 V_V_99.has_function.append( F_E_83 )
+#V_115
+
+V_V_115.has_function = []
+incidence_list = []
+incidence_list.append( V_34 )
+incidence_list.append( V_114 )
+incidence_list.append( V_1 )
+F_ID = "F_E_100"
+F_E_100 = onto.function( F_ID )
+F_E_100.is_function_of = incidence_list
+V_V_115.has_function.append( F_E_100 )
+#V_116
+
+V_V_116.has_function = []
+incidence_list = []
+incidence_list.append( V_98 )
+incidence_list.append( V_113 )
+incidence_list.append( V_4 )
+incidence_list.append( V_15 )
+incidence_list.append( V_18 )
+incidence_list.append( V_1 )
+F_ID = "F_E_101"
+F_E_101 = onto.function( F_ID )
+F_E_101.is_function_of = incidence_list
+V_V_116.has_function.append( F_E_101 )
+#V_117
+
+V_V_117.has_function = []
+incidence_list = []
+incidence_list.append( V_116 )
+incidence_list.append( V_115 )
+incidence_list.append( V_34 )
+incidence_list.append( V_114 )
+F_ID = "F_E_102"
+F_E_102 = onto.function( F_ID )
+F_E_102.is_function_of = incidence_list
+V_V_117.has_function.append( F_E_102 )
+#V_118
+
+V_V_118.has_function = []
 
 onto.save("variables.owl")

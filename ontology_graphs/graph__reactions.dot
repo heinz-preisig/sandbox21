@@ -4,16 +4,17 @@ rankdir=LR;
 subgraph cluster_reactions___network {
 label=network;
 rankdir=LR;
-V_10 [fillcolor=salmon, fontsize=12, label=F, penwidth=3, style=filled];
+V_10 [fillcolor=white, fontsize=12, label=F, penwidth=3, style=filled];
 }
 
 subgraph cluster_reactions___projection {
 label=projection;
 rankdir=LR;
-V_48 [fillcolor=white, fontsize=12, label=I_N_A, penwidth=3, style=filled];
-V_96 [fillcolor=white, fontsize=12, label=I_N, penwidth=3, style=filled];
-V_97 [fillcolor=white, fontsize=12, label=I_A, penwidth=3, style=filled];
-V_98 [fillcolor=white, fontsize=12, label=I_S, penwidth=3, style=filled];
+V_113 [fillcolor=tomato, fontsize=12, label=P_N_K, penwidth=3, style=filled];
+V_48 [fillcolor=tomato, fontsize=12, label=I_N_A, penwidth=3, style=filled];
+V_96 [fillcolor=tomato, fontsize=12, label=I_N, penwidth=3, style=filled];
+V_97 [fillcolor=tomato, fontsize=12, label=I_A, penwidth=3, style=filled];
+V_98 [fillcolor=tomato, fontsize=12, label=I_S, penwidth=3, style=filled];
 }
 
 subgraph cluster_reactions___differenceOperator {
@@ -24,62 +25,95 @@ rankdir=LR;
 subgraph cluster_reactions___frame {
 label=frame;
 rankdir=LR;
-V_11 [fillcolor=grey, fontsize=12, label=l, penwidth=3, style=filled];
-V_12 [fillcolor=grey, fontsize=12, label=r_x, penwidth=3, style=filled];
-V_13 [fillcolor=grey, fontsize=12, label=r_y, penwidth=3, style=filled];
-V_14 [fillcolor=grey, fontsize=12, label=r_z, penwidth=3, style=filled];
-V_4 [fillcolor=grey, fontsize=12, label=t, penwidth=3, style=filled];
-V_5 [fillcolor=grey, fontsize=12, label=to, penwidth=3, style=filled];
-V_6 [fillcolor=grey, fontsize=12, label=te, penwidth=3, style=filled];
-V_7 [fillcolor=grey, fontsize=12, label=t_interval, penwidth=3, style=filled];
-V_9 [fillcolor=grey, fontsize=12, label=pulse, penwidth=3, style=filled];
+V_11 [fillcolor=cyan, fontsize=12, label=l, penwidth=3, style=filled];
+V_12 [fillcolor=cyan, fontsize=12, label=r_x, penwidth=3, style=filled];
+V_13 [fillcolor=cyan, fontsize=12, label=r_y, penwidth=3, style=filled];
+V_14 [fillcolor=cyan, fontsize=12, label=r_z, penwidth=3, style=filled];
+V_4 [fillcolor=cyan, fontsize=12, label=t, penwidth=3, style=filled];
+V_5 [fillcolor=cyan, fontsize=12, label=to, penwidth=3, style=filled];
+V_6 [fillcolor=cyan, fontsize=12, label=te, penwidth=3, style=filled];
+V_7 [fillcolor=cyan, fontsize=12, label=t_interval, penwidth=3, style=filled];
+V_9 [fillcolor=cyan, fontsize=12, label=pulse, penwidth=3, style=filled];
 }
 
 subgraph cluster_reactions___state {
 label=state;
 rankdir=LR;
-V_15 [fillcolor=tan, fontsize=12, label=V, penwidth=3, style=filled];
-V_16 [fillcolor=tan, fontsize=12, label=U, penwidth=3, style=filled];
-V_17 [fillcolor=tan, fontsize=12, label=S, penwidth=3, style=filled];
-V_18 [fillcolor=tan, fontsize=12, label=n, penwidth=3, style=filled];
-V_22 [fillcolor=tan, fontsize=12, label=H, penwidth=3, style=filled];
-V_23 [fillcolor=tan, fontsize=12, label=A, penwidth=3, style=filled];
-V_24 [fillcolor=tan, fontsize=12, label=G, penwidth=3, style=filled];
-V_25 [fillcolor=tan, fontsize=12, label=C, penwidth=3, style=filled];
+V_15 [fillcolor=seagreen2, fontsize=12, label=V, penwidth=3, style=filled];
+V_16 [fillcolor=seagreen2, fontsize=12, label=U, penwidth=3, style=filled];
+V_17 [fillcolor=seagreen2, fontsize=12, label=S, penwidth=3, style=filled];
+V_18 [fillcolor=seagreen2, fontsize=12, label=n, penwidth=3, style=filled];
+V_22 [fillcolor=seagreen2, fontsize=12, label=H, penwidth=3, style=filled];
+V_23 [fillcolor=seagreen2, fontsize=12, label=A, penwidth=3, style=filled];
+V_24 [fillcolor=seagreen2, fontsize=12, label=G, penwidth=3, style=filled];
+V_25 [fillcolor=seagreen2, fontsize=12, label=C, penwidth=3, style=filled];
 }
 
 subgraph cluster_reactions___constant {
 label=constant;
 rankdir=LR;
-V_1 [fillcolor=green, fontsize=12, label=value, penwidth=3, style=filled];
-V_2 [fillcolor=green, fontsize=12, label=one, penwidth=3, style=filled];
-V_3 [fillcolor=green, fontsize=12, label=zero, penwidth=3, style=filled];
-V_32 [fillcolor=green, fontsize=12, label=Av, penwidth=3, style=filled];
-V_33 [fillcolor=green, fontsize=12, label=Boltz, penwidth=3, style=filled];
-V_34 [fillcolor=green, fontsize=12, label=R, penwidth=3, style=filled];
-V_8 [fillcolor=green, fontsize=12, label=onehalf, penwidth=3, style=filled];
+V_1 [fillcolor=tan, fontsize=12, label=value, penwidth=3, style=filled];
+V_2 [fillcolor=tan, fontsize=12, label=one, penwidth=3, style=filled];
+V_3 [fillcolor=tan, fontsize=12, label=zero, penwidth=3, style=filled];
+V_32 [fillcolor=tan, fontsize=12, label=Av, penwidth=3, style=filled];
+V_33 [fillcolor=tan, fontsize=12, label=Boltz, penwidth=3, style=filled];
+V_34 [fillcolor=tan, fontsize=12, label=R, penwidth=3, style=filled];
+V_8 [fillcolor=tan, fontsize=12, label=onehalf, penwidth=3, style=filled];
 }
 
+E_99 -> V_113  [splines=ortho];
+E_99 -> V_19  [splines=ortho];
 subgraph cluster_reactions___effort {
 label=effort;
 rankdir=LR;
-V_19 [fillcolor=darkolivegreen1, fontsize=12, label=T, penwidth=3, style=filled];
-V_20 [fillcolor=darkolivegreen1, fontsize=12, label=p, penwidth=3, style=filled];
-V_21 [fillcolor=darkolivegreen1, fontsize=12, label=chemPot, penwidth=3, style=filled];
-V_35 [fillcolor=darkolivegreen1, fontsize=12, label=Ue, penwidth=3, style=filled];
+V_114 [fillcolor=seagreen4, fontsize=12, label=T_K, penwidth=3, style=filled];
+V_19 [fillcolor=seagreen4, fontsize=12, label=T, penwidth=3, style=filled];
+V_20 [fillcolor=seagreen4, fontsize=12, label=p, penwidth=3, style=filled];
+V_21 [fillcolor=seagreen4, fontsize=12, label=chemPot, penwidth=3, style=filled];
+V_35 [fillcolor=seagreen4, fontsize=12, label=Ue, penwidth=3, style=filled];
+E_99 [fillcolor=pink, fontsize=12, shape=box, style=filled];
+E_99 -> V_114  [splines=ortho];
 }
 
 subgraph cluster_reactions___secondaryState {
 label=secondaryState;
 rankdir=LR;
-V_27 [fillcolor=lightcyan4, fontsize=12, label=v_x, penwidth=3, style=filled];
-V_28 [fillcolor=lightcyan4, fontsize=12, label=v_y, penwidth=3, style=filled];
-V_29 [fillcolor=lightcyan4, fontsize=12, label=v_z, penwidth=3, style=filled];
+V_27 [fillcolor=darkolivegreen1, fontsize=12, label=v_x, penwidth=3, style=filled];
+V_28 [fillcolor=darkolivegreen1, fontsize=12, label=v_y, penwidth=3, style=filled];
+V_29 [fillcolor=darkolivegreen1, fontsize=12, label=v_z, penwidth=3, style=filled];
 }
 
 subgraph cluster_reactions___diffState {
 label=diffState;
 rankdir=LR;
+}
+
+E_100 -> V_1  [splines=ortho];
+E_100 -> V_114  [splines=ortho];
+E_100 -> V_34  [splines=ortho];
+E_101 -> V_1  [splines=ortho];
+E_101 -> V_113  [splines=ortho];
+E_101 -> V_15  [splines=ortho];
+E_101 -> V_18  [splines=ortho];
+E_101 -> V_4  [splines=ortho];
+E_101 -> V_98  [splines=ortho];
+E_102 -> V_114  [splines=ortho];
+E_102 -> V_115  [splines=ortho];
+E_102 -> V_116  [splines=ortho];
+E_102 -> V_34  [splines=ortho];
+subgraph cluster_reactions___properties {
+label=properties;
+rankdir=LR;
+V_115 [fillcolor=seagreen3, fontsize=12, label=Ea, penwidth=3, style=filled];
+V_116 [fillcolor=seagreen3, fontsize=12, label=Ko, penwidth=3, style=filled];
+V_117 [fillcolor=seagreen3, fontsize=12, label=K, penwidth=3, style=filled];
+V_118 [fillcolor=seagreen3, fontsize=12, label=N, penwidth=3, style=filled];
+E_100 [fillcolor=pink, fontsize=12, shape=box, style=filled];
+E_100 -> V_115  [splines=ortho];
+E_101 [fillcolor=pink, fontsize=12, shape=box, style=filled];
+E_101 -> V_116  [splines=ortho];
+E_102 [fillcolor=pink, fontsize=12, shape=box, style=filled];
+E_102 -> V_117  [splines=ortho];
 }
 
 }

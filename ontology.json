@@ -582,7 +582,8 @@
           "constant",
           "effort",
           "secondaryState",
-          "diffState"
+          "diffState",
+          "properties"
         ]
       },
       "children": [],

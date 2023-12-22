@@ -9,6 +9,21 @@
     "network": "physical",
     "rhs": " Instantiate ( l , value )"
   },
+  "E_100": {
+    "lhs": "Ea",
+    "network": "reactions",
+    "rhs": " Instantiate ( R . T_K , value )"
+  },
+  "E_101": {
+    "lhs": "Ko",
+    "network": "reactions",
+    "rhs": " Instantiate ( I_S * ( P_N_K * ( inv ( t ) . inv ( V ) . inv ( n ) ) ) , value )"
+  },
+  "E_102": {
+    "lhs": "K",
+    "network": "reactions",
+    "rhs": " Ko . exp ( neg ( Ea ) . inv ( R . T_K ) )"
+  },
   "E_11": {
     "lhs": "V",
     "network": "physical",
@@ -478,5 +493,10 @@
     "lhs": "aHd",
     "network": "macroscopic",
     "rhs": " F * fHd"
+  },
+  "E_99": {
+    "lhs": "T_K",
+    "network": "reactions",
+    "rhs": " T . P_N_K"
   }
 }
