@@ -14,20 +14,80 @@
     "network": "reactions",
     "rhs": " Instantiate ( R . T_K , value )"
   },
-  "E_101": {
-    "lhs": "Ko",
-    "network": "reactions",
-    "rhs": " Instantiate ( I_S * ( P_N_K * ( inv ( t ) . inv ( V ) . inv ( n ) ) ) , value )"
+  "E_103": {
+    "lhs": "_Ea",
+    "network": "reactions >>> macroscopic",
+    "rhs": " Ea"
   },
-  "E_102": {
-    "lhs": "K",
-    "network": "reactions",
-    "rhs": " Ko . exp ( neg ( Ea ) . inv ( R . T_K ) )"
+  "E_106": {
+    "lhs": "_N",
+    "network": "reactions >>> macroscopic",
+    "rhs": " N"
+  },
+  "E_107": {
+    "lhs": "_T_K",
+    "network": "reactions >>> macroscopic",
+    "rhs": " T_K"
+  },
+  "E_109": {
+    "lhs": "_c",
+    "network": "macroscopic >>> reactions",
+    "rhs": " c"
   },
   "E_11": {
     "lhs": "V",
     "network": "physical",
     "rhs": " r_x . r_y . r_z"
+  },
+  "E_110": {
+    "lhs": "c_norming",
+    "network": "reactions",
+    "rhs": " Instantiate ( _c , value )"
+  },
+  "E_112": {
+    "lhs": "cn",
+    "network": "reactions",
+    "rhs": " inv ( c_norming ) . _c"
+  },
+  "E_113": {
+    "lhs": "cn_NK",
+    "network": "reactions",
+    "rhs": " P_N_K . cn"
+  },
+  "E_115": {
+    "lhs": "interactionProbability",
+    "network": "reactions",
+    "rhs": " Product ( cn_NK  )"
+  },
+  "E_118": {
+    "lhs": "Ko",
+    "network": "reactions",
+    "rhs": " Instantiate ( I_S * ( P_N_K * ( inv ( t ) . inv ( V ) . n ) ) , value )"
+  },
+  "E_119": {
+    "lhs": "K",
+    "network": "reactions",
+    "rhs": " Ko . exp ( neg ( Ea ) . inv ( R . T_K ) )"
+  },
+  "E_120": {
+    "lhs": "nProd",
+    "network": "reactions",
+    "rhs": " V . ( N * ( K . interactionProbability ) )"
+  },
+  "E_121": {
+    "lhs": "_nProd",
+    "network": "reactions >>> macroscopic",
+    "rhs": " nProd"
+  },
+  "E_122": {
+    "lhs": "anProduction",
+    "network": "macroscopic",
+    "rhs": " _nProd"
+  },
+  "E_123": {
+    "lhs": "an",
+    "network": "macroscopic",
+    "rhs": " anc + and + anProduction"
   },
   "E_13": {
     "lhs": "p",
@@ -498,5 +558,40 @@
     "lhs": "T_K",
     "network": "reactions",
     "rhs": " T . P_N_K"
+  },
+  "E_125": {
+    "lhs": "fw",
+    "network": "macroscopic",
+    "rhs": " Instantiate ( fHc , value )"
+  },
+  "E_126": {
+    "lhs": "aw",
+    "network": "macroscopic",
+    "rhs": " F * fw"
+  },
+  "E_127": {
+    "lhs": "aH",
+    "network": "macroscopic",
+    "rhs": " aHc + aHd + aq + aw"
+  },
+  "E_128": {
+    "lhs": "H",
+    "network": "macroscopic",
+    "rhs": " Integral ( aH :: t in [ to , te ] ) + Ho"
+  },
+  "E_129": {
+    "lhs": "n",
+    "network": "macroscopic",
+    "rhs": " Integral ( an :: t in [ to , te ] ) + no"
+  },
+  "E_130": {
+    "lhs": "Ho",
+    "network": "macroscopic",
+    "rhs": " Instantiate ( H , value )"
+  },
+  "E_131": {
+    "lhs": "no",
+    "network": "macroscopic",
+    "rhs": " Instantiate ( n , value )"
   }
 }

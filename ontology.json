@@ -451,7 +451,8 @@
           "effort",
           "secondaryState",
           "diffState",
-          "property"
+          "property",
+          "conversion"
         ]
       },
       "children": [],
@@ -515,7 +516,8 @@
           "constant",
           "effort",
           "secondaryState",
-          "diffState"
+          "diffState",
+          "conversion"
         ]
       },
       "children": [
@@ -583,7 +585,8 @@
           "effort",
           "secondaryState",
           "diffState",
-          "properties"
+          "properties",
+          "conversion"
         ]
       },
       "children": [],

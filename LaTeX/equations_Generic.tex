@@ -300,10 +300,6 @@ no & equation &documentation &layer \\\hline\hline
     \begin{eq}{{\dot{n}^d}}{_{N, S}} := {F}{_{N, A}} \star {{\hat{n}^d}}{_{A, S}}\end{eq} &
     \begin{lay}accumulation due to diffusional mass transfer\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
-        \hyperlink{"v:105"}{ 91 }\hypertarget{"e:91"}{  } &
-    \begin{eq}{{\dot{H}^w}}{_{N}} := \text{Instantiate}({H}{_{N}}, {{\#}}{_{}})\end{eq} &
-    \begin{lay}work flow -- instantiate\end{lay} &
-    \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:107"}{ 93 }\hypertarget{"e:93"}{  } &
     \begin{eq}{h_A}{_{A, S}} := {I}{_{N, A}} \star {h}{_{N, S}}\end{eq} &
     \begin{lay}partial molar enthalpies of transport system\end{lay} &
@@ -332,13 +328,69 @@ no & equation &documentation &layer \\\hline\hline
     \begin{eq}{E_a}{_{N, K}} := \text{Instantiate}({R}{_{N}} \, . \, {T}{_{N, K}}, {{\#}}{_{}})\end{eq} &
     \begin{lay}Arrhenius activation energy\end{lay} &
     \begin{lay}reactions\end{lay} \\
-        \hyperlink{"v:116"}{ 101 }\hypertarget{"e:101"}{  } &
-    \begin{eq}{K^o}{_{K}} := \text{Instantiate}({I}{_{S}} \star \left({P}{_{N, K}} \star \left(\left( {t}{_{}} \right)^{-1} \, . \, \left( {V}{_{N}} \right)^{-1} \, . \, \left( {n}{_{N, S}} \right)^{-1}\right)\right), {{\#}}{_{}})\end{eq} &
+        \hyperlink{"v:126"}{ 110 }\hypertarget{"e:110"}{  } &
+    \begin{eq}{c^n}{_{N, S}} := \text{Instantiate}({{\_c}}{_{N, S}}, {{\#}}{_{}})\end{eq} &
+    \begin{lay}norming concentration used in the definition of the species interaction probability\end{lay} &
+    \begin{lay}reactions\end{lay} \\
+        \hyperlink{"v:128"}{ 112 }\hypertarget{"e:112"}{  } &
+    \begin{eq}{{\bar n}}{_{N, S}} := \left( {c^n}{_{N, S}} \right)^{-1} \, . \, {{\_c}}{_{N, S}}\end{eq} &
+    \begin{lay}normed concentration\end{lay} &
+    \begin{lay}reactions\end{lay} \\
+        \hyperlink{"v:129"}{ 113 }\hypertarget{"e:113"}{  } &
+    \begin{eq}{{\bar n}}{_{N, S, K}} := {P}{_{N, K}} \, . \, {{\bar n}}{_{N, S}}\end{eq} &
+    \begin{lay}normed concentration -- context node and conversion\end{lay} &
+    \begin{lay}reactions\end{lay} \\
+        \hyperlink{"v:131"}{ 115 }\hypertarget{"e:115"}{  } &
+    \begin{eq}{\phi}{_{N, K}} := \prod_{S}  {{cn_NK}{_{N, S, K}}} \end{eq} &
+    \begin{lay}probability for the species to meet to undergo reaction\end{lay} &
+    \begin{lay}reactions\end{lay} \\
+        \hyperlink{"v:134"}{ 118 }\hypertarget{"e:118"}{  } &
+    \begin{eq}{{K^o}}{_{K}} := \text{Instantiate}({I}{_{S}} \star \left({P}{_{N, K}} \star \left(\left( {t}{_{}} \right)^{-1} \, . \, \left( {V}{_{N}} \right)^{-1} \, . \, {n}{_{N, S}}\right)\right), {{\#}}{_{}})\end{eq} &
     \begin{lay}Arrhenius frequency factor -- a strange construction\end{lay} &
     \begin{lay}reactions\end{lay} \\
-        \hyperlink{"v:117"}{ 102 }\hypertarget{"e:102"}{  } &
-    \begin{eq}{K}{_{N, K}} := {K^o}{_{K}} \, . \, exp(\left( -{E_a}{_{N, K}} \right) \, . \, \left( {R}{_{N}} \, . \, {T}{_{N, K}} \right)^{-1})\end{eq} &
-    \begin{lay}raction "constant"\end{lay} &
+        \hyperlink{"v:135"}{ 119 }\hypertarget{"e:119"}{  } &
+    \begin{eq}{K}{_{N, K}} := {{K^o}}{_{K}} \, . \, exp(\left( -{E_a}{_{N, K}} \right) \, . \, \left( {R}{_{N}} \, . \, {T}{_{N, K}} \right)^{-1})\end{eq} &
+    \begin{lay}reaction"constant\end{lay} &
     \begin{lay}reactions\end{lay} \\
+        \hyperlink{"v:136"}{ 120 }\hypertarget{"e:120"}{  } &
+    \begin{eq}{{\tilde{n}}}{_{N, S}} := {V}{_{N}} \, . \, \left({N}{_{S, K}} \star \left({K}{_{N, K}} \, . \, {\phi}{_{N, K}}\right)\right)\end{eq} &
+    \begin{lay}production term for differential component mass balance\end{lay} &
+    \begin{lay}reactions\end{lay} \\
+        \hyperlink{"v:138"}{ 122 }\hypertarget{"e:122"}{  } &
+    \begin{eq}{{\dot{n}}}{_{N, S}} := {{\_\tilde{n}}}{_{N, S}}\end{eq} &
+    \begin{lay}production term\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+        \hyperlink{"v:139"}{ 123 }\hypertarget{"e:123"}{  } &
+    \begin{eq}{{\dot{n}}}{_{N, S}} := {{\dot{n}^c}}{_{N, S}}  + {{\dot{n}^d}}{_{N, S}}  + {{\dot{n}}}{_{N, S}}\end{eq} &
+    \begin{lay}differentional species balance\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+        \hyperlink{"v:141"}{ 125 }\hypertarget{"e:125"}{  } &
+    \begin{eq}{{\hat{w}}}{_{A}} := \text{Instantiate}({{\hat{H}^c}}{_{A}}, {{\#}}{_{}})\end{eq} &
+    \begin{lay}just an numerical work flow term -- as a starter\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+        \hyperlink{"v:142"}{ 126 }\hypertarget{"e:126"}{  } &
+    \begin{eq}{{\dot{w}}}{_{N}} := {F}{_{N, A}} \star {{\hat{w}}}{_{A}}\end{eq} &
+    \begin{lay}enthalpy accumulation due to work flows\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+        \hyperlink{"v:143"}{ 127 }\hypertarget{"e:127"}{  } &
+    \begin{eq}{{\dot{H}}}{_{N}} := {{\dot{H}^c}}{_{N}}  + {{\dot{H}^d}}{_{N}}  + {{\dot{q}}}{_{N}}  + {{\dot{w}}}{_{N}}\end{eq} &
+    \begin{lay}differential enthalpy balance\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+        \hyperlink{"v:22"}{ 128 }\hypertarget{"e:128"}{  } &
+    \begin{eq}{H}{_{N}} := \int_{ {{t^o}}{_{}} }^{ {{t^e}}{_{}} } \, {{\dot{H}}}{_{N}} \enskip d\,{t}{_{}}  + {Ho}{_{N}}\end{eq} &
+    \begin{lay}Enthalpy\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+        \hyperlink{"v:18"}{ 129 }\hypertarget{"e:129"}{  } &
+    \begin{eq}{n}{_{N, S}} := \int_{ {{t^o}}{_{}} }^{ {{t^e}}{_{}} } \, {{\dot{n}}}{_{N, S}} \enskip d\,{t}{_{}}  + {no}{_{N, S}}\end{eq} &
+    \begin{lay}fundamental state - molar mass\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+        \hyperlink{"v:144"}{ 130 }\hypertarget{"e:130"}{  } &
+    \begin{eq}{Ho}{_{N}} := \text{Instantiate}({H}{_{N}}, {{\#}}{_{}})\end{eq} &
+    \begin{lay}initial enthalpy\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+        \hyperlink{"v:145"}{ 131 }\hypertarget{"e:131"}{  } &
+    \begin{eq}{no}{_{N, S}} := \text{Instantiate}({n}{_{N, S}}, {{\#}}{_{}})\end{eq} &
+    \begin{lay}initial species masses\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
 \hline
 \end{longtable}

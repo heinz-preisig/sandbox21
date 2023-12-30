@@ -372,61 +372,6 @@
         0
       ]
     },
-    "V_105": {
-      "IRI": "promo:aw",
-      "aliases": {
-        "matlab": "aw",
-        "latex": "{\\dot{H}^w}",
-        "internal_code": "aw",
-        "global_ID": "V_105"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_105",
-        "latex": "{{\\dot{H}^w}}{_{N}}"
-      },
-      "created": "2023-12-21 12:01:46",
-      "doc": "accumulation due to work flow -- instantiate",
-      "equations": {
-        "E_91": {
-          "rhs": {
-            "global_ID": " O_10 D_0 V_22 D_7 V_1 D_1",
-            "latex": "\\text{Instantiate}({H}{_{N}}, {{\\#}}{_{}})"
-          },
-          "type": "generic",
-          "doc": "work flow -- instantiate",
-          "network": "macroscopic",
-          "incidence_list": [
-            "V_1",
-            "V_22"
-          ],
-          "created": "2023-12-21 12:01:46",
-          "modified": "2023-12-21 12:01:46",
-          "lhs": {
-            "global_ID": "V_105",
-            "latex": "{{\\dot{H}^w}}{_{N}}"
-          }
-        }
-      },
-      "index_structures": [
-        "I_1"
-      ],
-      "label": "aw",
-      "modified": "2023-12-21 12:20:58",
-      "network": "macroscopic",
-      "port_variable": false,
-      "tokens": [],
-      "type": "transport",
-      "units": [
-        -2,
-        2,
-        0,
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
     "V_106": {
       "IRI": "promo:_h",
       "aliases": {
@@ -999,123 +944,6 @@
         0
       ]
     },
-    "V_116": {
-      "IRI": "promo:Ko",
-      "aliases": {
-        "matlab": "Ko",
-        "latex": "K^o",
-        "internal_code": "Ko",
-        "global_ID": "V_116"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_116",
-        "latex": "{K^o}{_{K}}"
-      },
-      "created": "2023-12-22 11:12:47",
-      "doc": "Arrhenius frequency factor -- a strange construction",
-      "equations": {
-        "E_101": {
-          "rhs": {
-            "global_ID": " O_10 D_0 V_98  O_5 D_0 V_113  O_5 D_0 F_15 D_0 V_4 D_1 O_4 F_15 D_0 V_15 D_1 O_4 F_15 D_0 V_18 D_1 D_1 D_1 D_7 V_1 D_1",
-            "latex": "\\text{Instantiate}({I}{_{S}} \\star \\left({P}{_{N, K}} \\star \\left(\\left( {t}{_{}} \\right)^{-1} \\, . \\, \\left( {V}{_{N}} \\right)^{-1} \\, . \\, \\left( {n}{_{N, S}} \\right)^{-1}\\right)\\right), {{\\#}}{_{}})"
-          },
-          "type": "generic",
-          "doc": "Arrhenius frequency factor -- a strange construction",
-          "network": "reactions",
-          "incidence_list": [
-            "V_1",
-            "V_113",
-            "V_15",
-            "V_18",
-            "V_4",
-            "V_98"
-          ],
-          "created": "2023-12-22 11:12:47",
-          "modified": "2023-12-22 11:12:47",
-          "lhs": {
-            "global_ID": "V_116",
-            "latex": "{K^o}{_{K}}"
-          }
-        }
-      },
-      "index_structures": [
-        "I_4"
-      ],
-      "label": "Ko",
-      "modified": "2023-12-22 11:12:47",
-      "network": "reactions",
-      "port_variable": false,
-      "tokens": [],
-      "type": "properties",
-      "units": [
-        -1,
-        -3,
-        -1,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    "V_117": {
-      "IRI": "promo:K",
-      "aliases": {
-        "matlab": "K",
-        "latex": "K",
-        "internal_code": "K",
-        "global_ID": "V_117"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_117",
-        "latex": "{K}{_{N, K}}"
-      },
-      "created": "2023-12-22 11:15:54",
-      "doc": "raction \"constant\"",
-      "equations": {
-        "E_102": {
-          "rhs": {
-            "global_ID": " V_116 O_4 F_0 D_0 F_11 D_0 V_115 D_1 O_4 F_15 D_0 V_34 O_4 V_114 D_1 D_1",
-            "latex": "{K^o}{_{K}} \\, . \\, exp(\\left( -{E_a}{_{N, K}} \\right) \\, . \\, \\left( {R}{_{N}} \\, . \\, {T}{_{N, K}} \\right)^{-1})"
-          },
-          "type": "generic",
-          "doc": "raction \"constant\"",
-          "network": "reactions",
-          "incidence_list": [
-            "V_114",
-            "V_115",
-            "V_116",
-            "V_34"
-          ],
-          "created": "2023-12-22 11:15:54",
-          "modified": "2023-12-22 11:15:54",
-          "lhs": {
-            "global_ID": "V_117",
-            "latex": "{K}{_{N, K}}"
-          }
-        }
-      },
-      "index_structures": [
-        "I_1",
-        "I_4"
-      ],
-      "label": "K",
-      "modified": "2023-12-22 11:15:54",
-      "network": "reactions",
-      "port_variable": false,
-      "tokens": [],
-      "type": "properties",
-      "units": [
-        -1,
-        -3,
-        -1,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
     "V_118": {
       "IRI": "promo:N",
       "aliases": {
@@ -1125,7 +953,8 @@
         "global_ID": "V_118"
       },
       "compiled_lhs": {
-        "global_ID": "V_118"
+        "global_ID": "V_118",
+        "latex": "{N}{_{S, K}}"
       },
       "created": "2023-12-22 11:19:25",
       "doc": "stoichiometric matrix",
@@ -1145,6 +974,61 @@
         0,
         0,
         0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_119": {
+      "IRI": "promo:_Ea",
+      "aliases": {
+        "matlab": "_Ea",
+        "latex": "{\\_E^a}",
+        "internal_code": "_Ea",
+        "global_ID": "V_119"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_119",
+        "latex": "{{\\_E^a}}{_{N, K}}"
+      },
+      "created": "2023-12-23 16:01:54",
+      "doc": "link variable Ea to interface reactions >>> macroscopic",
+      "equations": {
+        "E_103": {
+          "rhs": {
+            "global_ID": " V_115",
+            "latex": "{E_a}{_{N, K}}"
+          },
+          "type": "interface_link_equation",
+          "doc": "interface equation",
+          "network": "reactions >>> macroscopic",
+          "incidence_list": [
+            "V_115"
+          ],
+          "created": "2023-12-23 16:01:54",
+          "modified": "2023-12-23 16:01:54",
+          "lhs": {
+            "global_ID": "V_119",
+            "latex": "{{\\_E^a}}{_{N, K}}"
+          }
+        }
+      },
+      "index_structures": [
+        "I_1",
+        "I_4"
+      ],
+      "label": "_Ea",
+      "modified": "2023-12-23 16:01:54",
+      "network": "reactions >>> macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "get",
+      "units": [
+        -2,
+        2,
+        -1,
+        1,
         0,
         0,
         0,
@@ -1201,6 +1085,340 @@
       "units": [
         0,
         1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_122": {
+      "IRI": "promo:_N",
+      "aliases": {
+        "matlab": "_N",
+        "latex": "{_N}",
+        "internal_code": "_N",
+        "global_ID": "V_122"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_122",
+        "latex": "{{_N}}{_{S, K}}"
+      },
+      "created": "2023-12-23 16:02:00",
+      "doc": "link variable N to interface reactions >>> macroscopic",
+      "equations": {
+        "E_106": {
+          "rhs": {
+            "global_ID": " V_118",
+            "latex": "{N}{_{S, K}}"
+          },
+          "type": "interface_link_equation",
+          "doc": "interface equation",
+          "network": "reactions >>> macroscopic",
+          "incidence_list": [
+            "V_118"
+          ],
+          "created": "2023-12-23 16:02:00",
+          "modified": "2023-12-23 16:02:00",
+          "lhs": {
+            "global_ID": "V_122",
+            "latex": "{{_N}}{_{S, K}}"
+          }
+        }
+      },
+      "index_structures": [
+        "I_3",
+        "I_4"
+      ],
+      "label": "_N",
+      "modified": "2023-12-23 16:02:00",
+      "network": "reactions >>> macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "get",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_123": {
+      "IRI": "promo:_T_K",
+      "aliases": {
+        "matlab": "_T_K",
+        "latex": "{\\_T}",
+        "internal_code": "_T_K",
+        "global_ID": "V_123"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_123",
+        "latex": "{{\\_T}}{_{N, K}}"
+      },
+      "created": "2023-12-23 16:02:09",
+      "doc": "link variable T_K to interface reactions >>> macroscopic",
+      "equations": {
+        "E_107": {
+          "rhs": {
+            "global_ID": " V_114",
+            "latex": "{T}{_{N, K}}"
+          },
+          "type": "interface_link_equation",
+          "doc": "interface equation",
+          "network": "reactions >>> macroscopic",
+          "incidence_list": [
+            "V_114"
+          ],
+          "created": "2023-12-23 16:02:09",
+          "modified": "2023-12-23 16:02:09",
+          "lhs": {
+            "global_ID": "V_123",
+            "latex": "{{\\_T}}{_{N, K}}"
+          }
+        }
+      },
+      "index_structures": [
+        "I_1",
+        "I_4"
+      ],
+      "label": "_T_K",
+      "modified": "2023-12-23 16:02:09",
+      "network": "reactions >>> macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "get",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_125": {
+      "IRI": "promo:_c",
+      "aliases": {
+        "matlab": "_c",
+        "latex": "{\\_c}",
+        "internal_code": "_c",
+        "global_ID": "V_125"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_125",
+        "latex": "{{\\_c}}{_{N, S}}"
+      },
+      "created": "2023-12-23 16:24:10",
+      "doc": "link variable c to interface macroscopic >>> reactions",
+      "equations": {
+        "E_109": {
+          "rhs": {
+            "global_ID": " V_85",
+            "latex": "{c}{_{N, S}}"
+          },
+          "type": "interface_link_equation",
+          "doc": "interface equation",
+          "network": "macroscopic >>> reactions",
+          "incidence_list": [
+            "V_85"
+          ],
+          "created": "2023-12-23 16:24:10",
+          "modified": "2023-12-23 16:24:10",
+          "lhs": {
+            "global_ID": "V_125",
+            "latex": "{{\\_c}}{_{N, S}}"
+          }
+        }
+      },
+      "index_structures": [
+        "I_1",
+        "I_3"
+      ],
+      "label": "_c",
+      "modified": "2023-12-23 16:24:10",
+      "network": "macroscopic >>> reactions",
+      "port_variable": false,
+      "tokens": [],
+      "type": "get",
+      "units": [
+        0,
+        -3,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_126": {
+      "IRI": "promo:c_norming",
+      "aliases": {
+        "matlab": "c_norming",
+        "latex": "c^n",
+        "internal_code": "c_norming",
+        "global_ID": "V_126"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_126",
+        "latex": "{c^n}{_{N, S}}"
+      },
+      "created": "2023-12-23 16:34:36",
+      "doc": "norming concentration used in the definition of the species interaction probability",
+      "equations": {
+        "E_110": {
+          "rhs": {
+            "global_ID": " O_10 D_0 V_125 D_7 V_1 D_1",
+            "latex": "\\text{Instantiate}({{\\_c}}{_{N, S}}, {{\\#}}{_{}})"
+          },
+          "type": "generic",
+          "doc": "norming concentration used in the definition of the species interaction probability",
+          "network": "reactions",
+          "incidence_list": [
+            "V_1",
+            "V_125"
+          ],
+          "created": "2023-12-23 16:34:36",
+          "modified": "2023-12-23 16:34:36",
+          "lhs": {
+            "global_ID": "V_126",
+            "latex": "{c^n}{_{N, S}}"
+          }
+        }
+      },
+      "index_structures": [
+        "I_1",
+        "I_3"
+      ],
+      "label": "c_norming",
+      "modified": "2023-12-23 16:34:36",
+      "network": "reactions",
+      "port_variable": false,
+      "tokens": [],
+      "type": "properties",
+      "units": [
+        0,
+        -3,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_128": {
+      "IRI": "promo:cn",
+      "aliases": {
+        "matlab": "cn",
+        "latex": "{\\bar n}",
+        "internal_code": "cn",
+        "global_ID": "V_128"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_128",
+        "latex": "{{\\bar n}}{_{N, S}}"
+      },
+      "created": "2023-12-30 11:30:06",
+      "doc": "normed concentration",
+      "equations": {
+        "E_112": {
+          "rhs": {
+            "global_ID": " F_15 D_0 V_126 D_1 O_4 V_125",
+            "latex": "\\left( {c^n}{_{N, S}} \\right)^{-1} \\, . \\, {{\\_c}}{_{N, S}}"
+          },
+          "type": "generic",
+          "doc": "normed concentration",
+          "network": "reactions",
+          "incidence_list": [
+            "V_125",
+            "V_126"
+          ],
+          "created": "2023-12-30 11:30:06",
+          "modified": "2023-12-30 11:30:06",
+          "lhs": {
+            "global_ID": "V_128",
+            "latex": "{{\\bar n}}{_{N, S}}"
+          }
+        }
+      },
+      "index_structures": [
+        "I_1",
+        "I_3"
+      ],
+      "label": "cn",
+      "modified": "2023-12-30 11:30:25",
+      "network": "reactions",
+      "port_variable": false,
+      "tokens": [],
+      "type": "secondaryState",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_129": {
+      "IRI": "promo:cn_NK",
+      "aliases": {
+        "matlab": "cn_NK",
+        "latex": "{\\bar n}",
+        "internal_code": "cn_NK",
+        "global_ID": "V_129"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_129",
+        "latex": "{{\\bar n}}{_{N, S, K}}"
+      },
+      "created": "2023-12-30 11:40:07",
+      "doc": "normed concentration -- context node and conversion",
+      "equations": {
+        "E_113": {
+          "rhs": {
+            "global_ID": " V_113 O_4 V_128",
+            "latex": "{P}{_{N, K}} \\, . \\, {{\\bar n}}{_{N, S}}"
+          },
+          "type": "generic",
+          "doc": "normed concentration -- context node and conversion",
+          "network": "reactions",
+          "incidence_list": [
+            "V_113",
+            "V_128"
+          ],
+          "created": "2023-12-30 11:40:07",
+          "modified": "2023-12-30 11:40:07",
+          "lhs": {
+            "global_ID": "V_129",
+            "latex": "{{\\bar n}}{_{N, S, K}}"
+          }
+        }
+      },
+      "index_structures": [
+        "I_1",
+        "I_3",
+        "I_4"
+      ],
+      "label": "cn_NK",
+      "modified": "2023-12-30 11:40:07",
+      "network": "reactions",
+      "port_variable": false,
+      "tokens": [],
+      "type": "secondaryState",
+      "units": [
+        0,
+        0,
         0,
         0,
         0,
@@ -1267,6 +1485,403 @@
         0
       ]
     },
+    "V_131": {
+      "IRI": "promo:interactionProbability",
+      "aliases": {
+        "matlab": "interactionProbability",
+        "latex": "\\phi",
+        "internal_code": "interactionProbability",
+        "global_ID": "V_131"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_131",
+        "latex": "{\\phi}{_{N, K}}"
+      },
+      "created": "2023-12-30 11:46:24",
+      "doc": "probability for the species to meet to undergo reaction",
+      "equations": {
+        "E_115": {
+          "rhs": {
+            "global_ID": " O_9 D_0 V_129 D_7S D_1",
+            "latex": "\\prod_{S}  {{cn_NK}{_{N, S, K}}} "
+          },
+          "type": "generic",
+          "doc": "probability for the species to meet to undergo reaction",
+          "network": "reactions",
+          "incidence_list": [
+            "V_129"
+          ],
+          "created": "2023-12-30 11:46:24",
+          "modified": "2023-12-30 11:46:24",
+          "lhs": {
+            "global_ID": "V_131",
+            "latex": "{\\phi}{_{N, K}}"
+          }
+        }
+      },
+      "index_structures": [
+        "I_1",
+        "I_4"
+      ],
+      "label": "interactionProbability",
+      "modified": "2023-12-30 11:46:24",
+      "network": "reactions",
+      "port_variable": false,
+      "tokens": [],
+      "type": "properties",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_134": {
+      "IRI": "promo:Ko",
+      "aliases": {
+        "matlab": "Ko",
+        "latex": "{K^o}",
+        "internal_code": "Ko",
+        "global_ID": "V_134"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_134",
+        "latex": "{{K^o}}{_{K}}"
+      },
+      "created": "2023-12-30 17:53:28",
+      "doc": "Arrhenius frequency factor -- a strange construction",
+      "equations": {
+        "E_118": {
+          "rhs": {
+            "global_ID": " O_10 D_0 V_98  O_5 D_0 V_113  O_5 D_0 F_15 D_0 V_4 D_1 O_4 F_15 D_0 V_15 D_1 O_4 V_18 D_1 D_1 D_7 V_1 D_1",
+            "latex": "\\text{Instantiate}({I}{_{S}} \\star \\left({P}{_{N, K}} \\star \\left(\\left( {t}{_{}} \\right)^{-1} \\, . \\, \\left( {V}{_{N}} \\right)^{-1} \\, . \\, {n}{_{N, S}}\\right)\\right), {{\\#}}{_{}})"
+          },
+          "type": "generic",
+          "doc": "Arrhenius frequency factor -- a strange construction",
+          "network": "reactions",
+          "incidence_list": [
+            "V_1",
+            "V_113",
+            "V_15",
+            "V_18",
+            "V_4",
+            "V_98"
+          ],
+          "created": "2023-12-30 17:53:28",
+          "modified": "2023-12-30 17:53:28",
+          "lhs": {
+            "global_ID": "V_134",
+            "latex": "{{K^o}}{_{K}}"
+          }
+        }
+      },
+      "index_structures": [
+        "I_4"
+      ],
+      "label": "Ko",
+      "modified": "2023-12-30 17:55:27",
+      "network": "reactions",
+      "port_variable": false,
+      "tokens": [],
+      "type": "properties",
+      "units": [
+        -1,
+        -3,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_135": {
+      "IRI": "promo:K",
+      "aliases": {
+        "matlab": "K",
+        "latex": "K",
+        "internal_code": "K",
+        "global_ID": "V_135"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_135",
+        "latex": "{K}{_{N, K}}"
+      },
+      "created": "2023-12-30 17:54:47",
+      "doc": "reaction\"constant",
+      "equations": {
+        "E_119": {
+          "rhs": {
+            "global_ID": " V_134 O_4 F_0 D_0 F_11 D_0 V_115 D_1 O_4 F_15 D_0 V_34 O_4 V_114 D_1 D_1",
+            "latex": "{{K^o}}{_{K}} \\, . \\, exp(\\left( -{E_a}{_{N, K}} \\right) \\, . \\, \\left( {R}{_{N}} \\, . \\, {T}{_{N, K}} \\right)^{-1})"
+          },
+          "type": "generic",
+          "doc": "reaction\"constant",
+          "network": "reactions",
+          "incidence_list": [
+            "V_114",
+            "V_115",
+            "V_134",
+            "V_34"
+          ],
+          "created": "2023-12-30 17:54:47",
+          "modified": "2023-12-30 17:54:47",
+          "lhs": {
+            "global_ID": "V_135",
+            "latex": "{K}{_{N, K}}"
+          }
+        }
+      },
+      "index_structures": [
+        "I_1",
+        "I_4"
+      ],
+      "label": "K",
+      "modified": "2023-12-30 17:55:21",
+      "network": "reactions",
+      "port_variable": false,
+      "tokens": [],
+      "type": "properties",
+      "units": [
+        -1,
+        -3,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_136": {
+      "IRI": "promo:nProd",
+      "aliases": {
+        "matlab": "nProd",
+        "latex": "{\\tilde{n}}",
+        "internal_code": "nProd",
+        "global_ID": "V_136"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_136",
+        "latex": "{{\\tilde{n}}}{_{N, S}}"
+      },
+      "created": "2023-12-30 18:01:21",
+      "doc": "production term for differential component mass balance",
+      "equations": {
+        "E_120": {
+          "rhs": {
+            "global_ID": " V_15 O_4 D_0 V_118  O_5 D_0 V_135 O_4 V_131 D_1 D_1",
+            "latex": "{V}{_{N}} \\, . \\, \\left({N}{_{S, K}} \\star \\left({K}{_{N, K}} \\, . \\, {\\phi}{_{N, K}}\\right)\\right)"
+          },
+          "type": "generic",
+          "doc": "production term for differential component mass balance",
+          "network": "reactions",
+          "incidence_list": [
+            "V_118",
+            "V_131",
+            "V_135",
+            "V_15"
+          ],
+          "created": "2023-12-30 18:01:21",
+          "modified": "2023-12-30 18:01:21",
+          "lhs": {
+            "global_ID": "V_136",
+            "latex": "{{\\tilde{n}}}{_{N, S}}"
+          }
+        }
+      },
+      "index_structures": [
+        "I_1",
+        "I_3"
+      ],
+      "label": "nProd",
+      "modified": "2023-12-30 18:01:21",
+      "network": "reactions",
+      "port_variable": false,
+      "tokens": [],
+      "type": "conversion",
+      "units": [
+        -1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_137": {
+      "IRI": "promo:_nProd",
+      "aliases": {
+        "matlab": "_nProd",
+        "latex": "{\\_\\tilde{n}}",
+        "internal_code": "_nProd",
+        "global_ID": "V_137"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_137",
+        "latex": "{{\\_\\tilde{n}}}{_{N, S}}"
+      },
+      "created": "2023-12-30 18:02:04",
+      "doc": "link variable nProd to interface reactions >>> macroscopic",
+      "equations": {
+        "E_121": {
+          "rhs": {
+            "global_ID": " V_136",
+            "latex": "{{\\tilde{n}}}{_{N, S}}"
+          },
+          "type": "interface_link_equation",
+          "doc": "interface equation",
+          "network": "reactions >>> macroscopic",
+          "incidence_list": [
+            "V_136"
+          ],
+          "created": "2023-12-30 18:02:04",
+          "modified": "2023-12-30 18:02:04",
+          "lhs": {
+            "global_ID": "V_137",
+            "latex": "{{\\_\\tilde{n}}}{_{N, S}}"
+          }
+        }
+      },
+      "index_structures": [
+        "I_1",
+        "I_3"
+      ],
+      "label": "_nProd",
+      "modified": "2023-12-30 18:02:04",
+      "network": "reactions >>> macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "get",
+      "units": [
+        -1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_138": {
+      "IRI": "promo:anProduction",
+      "aliases": {
+        "matlab": "anProduction",
+        "latex": "{\\dot{n}}",
+        "internal_code": "anProduction",
+        "global_ID": "V_138"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_138",
+        "latex": "{{\\dot{n}}}{_{N, S}}"
+      },
+      "created": "2023-12-30 18:04:09",
+      "doc": "production term",
+      "equations": {
+        "E_122": {
+          "rhs": {
+            "global_ID": " V_137",
+            "latex": "{{\\_\\tilde{n}}}{_{N, S}}"
+          },
+          "type": "generic",
+          "doc": "production term",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_137"
+          ],
+          "created": "2023-12-30 18:04:09",
+          "modified": "2023-12-30 18:04:09",
+          "lhs": {
+            "global_ID": "V_138",
+            "latex": "{{\\dot{n}}}{_{N, S}}"
+          }
+        }
+      },
+      "index_structures": [
+        "I_1",
+        "I_3"
+      ],
+      "label": "anProduction",
+      "modified": "2023-12-30 18:04:09",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "conversion",
+      "units": [
+        -1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_139": {
+      "IRI": "promo:an",
+      "aliases": {
+        "matlab": "an",
+        "latex": "{\\dot{n}}",
+        "internal_code": "an",
+        "global_ID": "V_139"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_139",
+        "latex": "{{\\dot{n}}}{_{N, S}}"
+      },
+      "created": "2023-12-30 18:05:07",
+      "doc": "differentional species balance",
+      "equations": {
+        "E_123": {
+          "rhs": {
+            "global_ID": " V_93 O_0 V_104 O_0 V_138",
+            "latex": "{{\\dot{n}^c}}{_{N, S}}  + {{\\dot{n}^d}}{_{N, S}}  + {{\\dot{n}}}{_{N, S}}"
+          },
+          "type": "generic",
+          "doc": "differentional species balance",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_104",
+            "V_138",
+            "V_93"
+          ],
+          "created": "2023-12-30 18:05:07",
+          "modified": "2023-12-30 18:05:07",
+          "lhs": {
+            "global_ID": "V_139",
+            "latex": "{{\\dot{n}}}{_{N, S}}"
+          }
+        }
+      },
+      "index_structures": [
+        "I_1",
+        "I_3"
+      ],
+      "label": "an",
+      "modified": "2023-12-30 18:05:07",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "diffState",
+      "units": [
+        -1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
     "V_14": {
       "IRI": "promo:r_z",
       "aliases": {
@@ -1318,6 +1933,284 @@
         0,
         1,
         0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_141": {
+      "IRI": "promo:fw",
+      "aliases": {
+        "matlab": "fw",
+        "latex": "{\\hat{w}}",
+        "internal_code": "fw",
+        "global_ID": "V_141"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_141",
+        "latex": "{{\\hat{w}}}{_{A}}"
+      },
+      "created": "2023-12-30 18:13:22",
+      "doc": "just an numerical work flow term -- as a starter",
+      "equations": {
+        "E_125": {
+          "rhs": {
+            "global_ID": " O_10 D_0 V_109 D_7 V_1 D_1",
+            "latex": "\\text{Instantiate}({{\\hat{H}^c}}{_{A}}, {{\\#}}{_{}})"
+          },
+          "type": "generic",
+          "doc": "just an numerical work flow term -- as a starter",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_1",
+            "V_109"
+          ],
+          "created": "2023-12-30 18:13:22",
+          "modified": "2023-12-30 18:13:22",
+          "lhs": {
+            "global_ID": "V_141",
+            "latex": "{{\\hat{w}}}{_{A}}"
+          }
+        }
+      },
+      "index_structures": [
+        "I_2"
+      ],
+      "label": "fw",
+      "modified": "2023-12-30 18:13:22",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "transport",
+      "units": [
+        -3,
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_142": {
+      "IRI": "promo:aw",
+      "aliases": {
+        "matlab": "aw",
+        "latex": "{\\dot{w}}",
+        "internal_code": "aw",
+        "global_ID": "V_142"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_142",
+        "latex": "{{\\dot{w}}}{_{N}}"
+      },
+      "created": "2023-12-30 18:14:17",
+      "doc": "enthalpy accumulation due to work flows",
+      "equations": {
+        "E_126": {
+          "rhs": {
+            "global_ID": " V_10  O_5 V_141",
+            "latex": "{F}{_{N, A}} \\star {{\\hat{w}}}{_{A}}"
+          },
+          "type": "generic",
+          "doc": "enthalpy accumulation due to work flows",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_10",
+            "V_141"
+          ],
+          "created": "2023-12-30 18:14:17",
+          "modified": "2023-12-30 18:14:17",
+          "lhs": {
+            "global_ID": "V_142",
+            "latex": "{{\\dot{w}}}{_{N}}"
+          }
+        }
+      },
+      "index_structures": [
+        "I_1"
+      ],
+      "label": "aw",
+      "modified": "2023-12-30 18:14:17",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "transport",
+      "units": [
+        -3,
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_143": {
+      "IRI": "promo:aH",
+      "aliases": {
+        "matlab": "aH",
+        "latex": "{\\dot{H}}",
+        "internal_code": "aH",
+        "global_ID": "V_143"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_143",
+        "latex": "{{\\dot{H}}}{_{N}}"
+      },
+      "created": "2023-12-30 18:15:34",
+      "doc": "differential enthalpy balance",
+      "equations": {
+        "E_127": {
+          "rhs": {
+            "global_ID": " V_111 O_0 V_112 O_0 V_84 O_0 V_142",
+            "latex": "{{\\dot{H}^c}}{_{N}}  + {{\\dot{H}^d}}{_{N}}  + {{\\dot{q}}}{_{N}}  + {{\\dot{w}}}{_{N}}"
+          },
+          "type": "generic",
+          "doc": "differential enthalpy balance",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_111",
+            "V_112",
+            "V_142",
+            "V_84"
+          ],
+          "created": "2023-12-30 18:15:34",
+          "modified": "2023-12-30 18:15:34",
+          "lhs": {
+            "global_ID": "V_143",
+            "latex": "{{\\dot{H}}}{_{N}}"
+          }
+        }
+      },
+      "index_structures": [
+        "I_1"
+      ],
+      "label": "aH",
+      "modified": "2023-12-30 18:15:34",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "diffState",
+      "units": [
+        -3,
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_144": {
+      "IRI": "promo:Ho",
+      "aliases": {
+        "matlab": "Ho",
+        "latex": "Ho",
+        "internal_code": "Ho",
+        "global_ID": "V_144"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_144",
+        "latex": "{Ho}{_{N}}"
+      },
+      "created": "2023-12-30 18:19:44",
+      "doc": "initial enthalpy",
+      "equations": {
+        "E_130": {
+          "rhs": {
+            "global_ID": " O_10 D_0 V_22 D_7 V_1 D_1",
+            "latex": "\\text{Instantiate}({H}{_{N}}, {{\\#}}{_{}})"
+          },
+          "type": "generic",
+          "doc": "initial enthalpy",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_1",
+            "V_22"
+          ],
+          "created": "2023-12-30 18:19:44",
+          "modified": "2023-12-30 18:19:44",
+          "lhs": {
+            "global_ID": "V_144",
+            "latex": "{Ho}{_{N}}"
+          }
+        }
+      },
+      "index_structures": [
+        "I_1"
+      ],
+      "label": "Ho",
+      "modified": "2023-12-30 18:19:44",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "state",
+      "units": [
+        -2,
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_145": {
+      "IRI": "promo:no",
+      "aliases": {
+        "matlab": "no",
+        "latex": "no",
+        "internal_code": "no",
+        "global_ID": "V_145"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_145",
+        "latex": "{no}{_{N, S}}"
+      },
+      "created": "2023-12-30 18:20:17",
+      "doc": "initial species masses",
+      "equations": {
+        "E_131": {
+          "rhs": {
+            "global_ID": " O_10 D_0 V_18 D_7 V_1 D_1",
+            "latex": "\\text{Instantiate}({n}{_{N, S}}, {{\\#}}{_{}})"
+          },
+          "type": "generic",
+          "doc": "initial species masses",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_1",
+            "V_18"
+          ],
+          "created": "2023-12-30 18:20:17",
+          "modified": "2023-12-30 18:20:17",
+          "lhs": {
+            "global_ID": "V_145",
+            "latex": "{no}{_{N, S}}"
+          }
+        }
+      },
+      "index_structures": [
+        "I_1",
+        "I_3"
+      ],
+      "label": "no",
+      "modified": "2023-12-30 18:20:17",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "state",
+      "units": [
+        0,
+        0,
+        1,
         0,
         0,
         0,
@@ -1468,7 +2361,30 @@
       },
       "created": "2023-12-09 17:43:36",
       "doc": "fundamental state - molar mass",
-      "equations": {},
+      "equations": {
+        "E_129": {
+          "rhs": {
+            "global_ID": " O_8 D_0 V_139 D_8 V_4 O_13 D_2 V_5 D_7 V_6 D_3 D_1 O_0 V_145",
+            "latex": "\\int_{ {{t^o}}{_{}} }^{ {{t^e}}{_{}} } \\, {{\\dot{n}}}{_{N, S}} \\enskip d\\,{t}{_{}}  + {no}{_{N, S}}"
+          },
+          "type": "generic",
+          "doc": "fundamental state - molar mass",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_139",
+            "V_145",
+            "V_4",
+            "V_5",
+            "V_6"
+          ],
+          "created": "2023-12-30 18:18:24",
+          "modified": "2023-12-30 18:20:39",
+          "lhs": {
+            "global_ID": "V_18",
+            "latex": "{n}{_{N, S}}"
+          }
+        }
+      },
       "index_structures": [
         "I_1",
         "I_3"
@@ -1773,6 +2689,29 @@
           ],
           "created": "2023-12-09 18:43:24",
           "modified": "2023-12-09 18:43:24",
+          "lhs": {
+            "global_ID": "V_22",
+            "matlab": "H(N)",
+            "latex": "{H}{_{N}}"
+          }
+        },
+        "E_128": {
+          "rhs": {
+            "global_ID": " O_8 D_0 V_143 D_8 V_4 O_13 D_2 V_5 D_7 V_6 D_3 D_1 O_0 V_144",
+            "latex": "\\int_{ {{t^o}}{_{}} }^{ {{t^e}}{_{}} } \\, {{\\dot{H}}}{_{N}} \\enskip d\\,{t}{_{}}  + {Ho}{_{N}}"
+          },
+          "type": "generic",
+          "doc": "Enthalpy",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_143",
+            "V_144",
+            "V_4",
+            "V_5",
+            "V_6"
+          ],
+          "created": "2023-12-30 18:17:55",
+          "modified": "2023-12-30 18:20:55",
           "lhs": {
             "global_ID": "V_22",
             "matlab": "H(N)",
@@ -6151,7 +7090,8 @@
       "aliases": {
         "matlab": "N",
         "latex": "N",
-        "internal_code": "N"
+        "internal_code": "N",
+        "global_ID": "N"
       },
       "tokens": null,
       "IRI": "None"
@@ -6175,7 +7115,8 @@
       "aliases": {
         "matlab": "A",
         "latex": "A",
-        "internal_code": "A"
+        "internal_code": "A",
+        "global_ID": "A"
       },
       "tokens": null,
       "IRI": "None"
@@ -6197,7 +7138,8 @@
       "aliases": {
         "matlab": "S",
         "latex": "S",
-        "internal_code": "S"
+        "internal_code": "S",
+        "global_ID": "S"
       },
       "tokens": "mass",
       "IRI": "None"
@@ -6219,7 +7161,8 @@
       "aliases": {
         "matlab": "K",
         "latex": "K",
-        "internal_code": "K"
+        "internal_code": "K",
+        "global_ID": " I_I_4"
       },
       "tokens": {
         "instances": [
@@ -6254,7 +7197,7 @@
     }
   },
   "Ontology_global_IDs": {
-    "variable": 118,
-    "equation": 102
+    "variable": 145,
+    "equation": 131
   }
 }
