@@ -2111,13 +2111,13 @@
       "IRI": "promo:Ho",
       "aliases": {
         "matlab": "Ho",
-        "latex": "Ho",
+        "latex": "{H^o}",
         "internal_code": "Ho",
         "global_ID": "V_144"
       },
       "compiled_lhs": {
         "global_ID": "V_144",
-        "latex": "{Ho}{_{N}}"
+        "latex": "{{H^o}}{_{N}}"
       },
       "created": "2023-12-30 18:19:44",
       "doc": "initial enthalpy",
@@ -2138,7 +2138,7 @@
           "modified": "2023-12-30 18:19:44",
           "lhs": {
             "global_ID": "V_144",
-            "latex": "{Ho}{_{N}}"
+            "latex": "{{H^o}}{_{N}}"
           }
         }
       },
@@ -2166,13 +2166,13 @@
       "IRI": "promo:no",
       "aliases": {
         "matlab": "no",
-        "latex": "no",
+        "latex": "{n^o}",
         "internal_code": "no",
         "global_ID": "V_145"
       },
       "compiled_lhs": {
         "global_ID": "V_145",
-        "latex": "{no}{_{N, S}}"
+        "latex": "{{n^o}}{_{N, S}}"
       },
       "created": "2023-12-30 18:20:17",
       "doc": "initial species masses",
@@ -2193,7 +2193,7 @@
           "modified": "2023-12-30 18:20:17",
           "lhs": {
             "global_ID": "V_145",
-            "latex": "{no}{_{N, S}}"
+            "latex": "{{n^o}}{_{N, S}}"
           }
         }
       },
@@ -2365,7 +2365,7 @@
         "E_129": {
           "rhs": {
             "global_ID": " O_8 D_0 V_139 D_8 V_4 O_13 D_2 V_5 D_7 V_6 D_3 D_1 O_0 V_145",
-            "latex": "\\int_{ {{t^o}}{_{}} }^{ {{t^e}}{_{}} } \\, {{\\dot{n}}}{_{N, S}} \\enskip d\\,{t}{_{}}  + {no}{_{N, S}}"
+            "latex": "\\int_{ {{t^o}}{_{}} }^{ {{t^e}}{_{}} } \\, {{\\dot{n}}}{_{N, S}} \\enskip d\\,{t}{_{}}  + {{n^o}}{_{N, S}}"
           },
           "type": "generic",
           "doc": "fundamental state - molar mass",
@@ -2698,7 +2698,7 @@
         "E_128": {
           "rhs": {
             "global_ID": " O_8 D_0 V_143 D_8 V_4 O_13 D_2 V_5 D_7 V_6 D_3 D_1 O_0 V_144",
-            "latex": "\\int_{ {{t^o}}{_{}} }^{ {{t^e}}{_{}} } \\, {{\\dot{H}}}{_{N}} \\enskip d\\,{t}{_{}}  + {Ho}{_{N}}"
+            "latex": "\\int_{ {{t^o}}{_{}} }^{ {{t^e}}{_{}} } \\, {{\\dot{H}}}{_{N}} \\enskip d\\,{t}{_{}}  + {{H^o}}{_{N}}"
           },
           "type": "generic",
           "doc": "Enthalpy",
