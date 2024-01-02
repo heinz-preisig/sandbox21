@@ -1502,17 +1502,18 @@
       "equations": {
         "E_115": {
           "rhs": {
-            "global_ID": " O_9 D_0 V_129 D_7S D_1",
-            "latex": "\\prod_{S}  {{cn_NK}{_{N, S, K}}} "
+            "global_ID": " O_9 D_0 V_129 O_2 D_0 V_118 D_1 D_7 I_3 D_1",
+            "latex": "\\prod_{S}  {{{\\bar n}}{_{N, S, K}}^{\\left({N}{_{S, K}}\\right)}} "
           },
           "type": "generic",
           "doc": "probability for the species to meet to undergo reaction",
           "network": "reactions",
           "incidence_list": [
+            "V_118",
             "V_129"
           ],
           "created": "2023-12-30 11:46:24",
-          "modified": "2023-12-30 11:46:24",
+          "modified": "2024-01-02 11:54:08",
           "lhs": {
             "global_ID": "V_131",
             "latex": "{\\phi}{_{N, K}}"
@@ -2218,6 +2219,227 @@
         0
       ]
     },
+    "V_146": {
+      "IRI": "promo:T_norming",
+      "aliases": {
+        "matlab": "T_norming",
+        "latex": "{T^o}",
+        "internal_code": "T_norming",
+        "global_ID": "V_146"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_146",
+        "latex": "{{T^o}}{_{N}}"
+      },
+      "created": "2024-01-02 16:41:27",
+      "doc": "norming temperature",
+      "equations": {
+        "E_132": {
+          "rhs": {
+            "global_ID": " O_10 D_0 V_19 D_7 V_1 D_1",
+            "latex": "\\text{Instantiate}({T}{_{N}}, {{\\#}}{_{}})"
+          },
+          "type": "generic",
+          "doc": "norming temperature",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_1",
+            "V_19"
+          ],
+          "created": "2024-01-02 16:41:27",
+          "modified": "2024-01-02 16:41:27",
+          "lhs": {
+            "global_ID": "V_146",
+            "latex": "{{T^o}}{_{N}}"
+          }
+        }
+      },
+      "index_structures": [
+        "I_1"
+      ],
+      "label": "T_norming",
+      "modified": "2024-01-02 16:42:49",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "secondaryState",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_147": {
+      "IRI": "promo:p_norming",
+      "aliases": {
+        "matlab": "p_norming",
+        "latex": "{p^o}",
+        "internal_code": "p_norming",
+        "global_ID": "V_147"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_147",
+        "latex": "{{p^o}}{_{N}}"
+      },
+      "created": "2024-01-02 16:42:08",
+      "doc": "normed pressure",
+      "equations": {
+        "E_133": {
+          "rhs": {
+            "global_ID": " O_10 D_0 V_20 D_7 V_1 D_1",
+            "latex": "\\text{Instantiate}({p}{_{N}}, {{\\#}}{_{}})"
+          },
+          "type": "generic",
+          "doc": "normed pressure",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_1",
+            "V_20"
+          ],
+          "created": "2024-01-02 16:42:08",
+          "modified": "2024-01-02 16:42:08",
+          "lhs": {
+            "global_ID": "V_147",
+            "latex": "{{p^o}}{_{N}}"
+          }
+        }
+      },
+      "index_structures": [
+        "I_1"
+      ],
+      "label": "p_norming",
+      "modified": "2024-01-02 16:42:59",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "secondaryState",
+      "units": [
+        -2,
+        -1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_148": {
+      "IRI": "promo:c_norming",
+      "aliases": {
+        "matlab": "c_norming",
+        "latex": "{c^o}",
+        "internal_code": "c_norming",
+        "global_ID": "V_148"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_148",
+        "latex": "{{c^o}}{_{N, S}}"
+      },
+      "created": "2024-01-02 16:42:40",
+      "doc": "norming concentration",
+      "equations": {
+        "E_134": {
+          "rhs": {
+            "global_ID": " O_10 D_0 V_85 D_7 V_1 D_1",
+            "latex": "\\text{Instantiate}({c}{_{N, S}}, {{\\#}}{_{}})"
+          },
+          "type": "generic",
+          "doc": "norming concentration",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_1",
+            "V_85"
+          ],
+          "created": "2024-01-02 16:42:40",
+          "modified": "2024-01-02 16:42:40",
+          "lhs": {
+            "global_ID": "V_148",
+            "latex": "{{c^o}}{_{N, S}}"
+          }
+        }
+      },
+      "index_structures": [
+        "I_1",
+        "I_3"
+      ],
+      "label": "c_norming",
+      "modified": "2024-01-02 16:42:54",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "secondaryState",
+      "units": [
+        0,
+        -3,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_149": {
+      "IRI": "promo:T_normed",
+      "aliases": {
+        "matlab": "T_normed",
+        "latex": "{\\bar{T}^o}",
+        "internal_code": "T_normed",
+        "global_ID": "V_149"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_149",
+        "latex": "{{\\bar{T}^o}}{_{N}}"
+      },
+      "created": "2024-01-02 16:43:29",
+      "doc": "normed temperature",
+      "equations": {
+        "E_135": {
+          "rhs": {
+            "global_ID": " V_19 O_4 F_15 D_0 V_146 D_1",
+            "latex": "{T}{_{N}} \\, . \\, \\left( {{T^o}}{_{N}} \\right)^{-1}"
+          },
+          "type": "generic",
+          "doc": "normed temperature",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_146",
+            "V_19"
+          ],
+          "created": "2024-01-02 16:43:29",
+          "modified": "2024-01-02 16:43:29",
+          "lhs": {
+            "global_ID": "V_149",
+            "latex": "{{\\bar{T}^o}}{_{N}}"
+          }
+        }
+      },
+      "index_structures": [
+        "I_1"
+      ],
+      "label": "T_normed",
+      "modified": "2024-01-02 16:43:29",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "secondaryState",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
     "V_15": {
       "IRI": "qudt:Volume",
       "aliases": {
@@ -2277,6 +2499,553 @@
         0
       ]
     },
+    "V_150": {
+      "IRI": "promo:p_normed",
+      "aliases": {
+        "matlab": "p_normed",
+        "latex": "{\\bar{p}^o}",
+        "internal_code": "p_normed",
+        "global_ID": "V_150"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_150",
+        "latex": "{{\\bar{p}^o}}{_{N}}"
+      },
+      "created": "2024-01-02 16:44:00",
+      "doc": "normed pressure",
+      "equations": {
+        "E_136": {
+          "rhs": {
+            "global_ID": " F_15 D_0 V_20 D_1 O_4 V_20",
+            "latex": "\\left( {p}{_{N}} \\right)^{-1} \\, . \\, {p}{_{N}}"
+          },
+          "type": "generic",
+          "doc": "normed pressure",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_20"
+          ],
+          "created": "2024-01-02 16:44:00",
+          "modified": "2024-01-02 16:44:00",
+          "lhs": {
+            "global_ID": "V_150",
+            "latex": "{{\\bar{p}^o}}{_{N}}"
+          }
+        }
+      },
+      "index_structures": [
+        "I_1"
+      ],
+      "label": "p_normed",
+      "modified": "2024-01-02 16:44:00",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "secondaryState",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_151": {
+      "IRI": "promo:c_normed",
+      "aliases": {
+        "matlab": "c_normed",
+        "latex": "{\\bar{c}^o}",
+        "internal_code": "c_normed",
+        "global_ID": "V_151"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_151",
+        "latex": "{{\\bar{c}^o}}{_{N, S}}"
+      },
+      "created": "2024-01-02 16:44:29",
+      "doc": "normed concentration",
+      "equations": {
+        "E_137": {
+          "rhs": {
+            "global_ID": " F_15 D_0 V_148 D_1 O_4 V_85",
+            "latex": "\\left( {{c^o}}{_{N, S}} \\right)^{-1} \\, . \\, {c}{_{N, S}}"
+          },
+          "type": "generic",
+          "doc": "normed concentration",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_148",
+            "V_85"
+          ],
+          "created": "2024-01-02 16:44:29",
+          "modified": "2024-01-02 16:44:29",
+          "lhs": {
+            "global_ID": "V_151",
+            "latex": "{{\\bar{c}^o}}{_{N, S}}"
+          }
+        }
+      },
+      "index_structures": [
+        "I_1",
+        "I_3"
+      ],
+      "label": "c_normed",
+      "modified": "2024-01-02 16:44:29",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "secondaryState",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_152": {
+      "IRI": "promo:_p_normed",
+      "aliases": {
+        "matlab": "_p_normed",
+        "latex": "{\\_\\bar{p}}",
+        "internal_code": "_p_normed",
+        "global_ID": "V_152"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_152",
+        "latex": "{{\\_\\bar{p}}}{_{N}}"
+      },
+      "created": "2024-01-02 16:56:07",
+      "doc": "link variable p_normed to interface macroscopic >>> control",
+      "equations": {
+        "E_138": {
+          "rhs": {
+            "global_ID": " V_150",
+            "latex": "{{\\bar{p}^o}}{_{N}}"
+          },
+          "type": "interface_link_equation",
+          "doc": "interface equation",
+          "network": "macroscopic >>> control",
+          "incidence_list": [
+            "V_150"
+          ],
+          "created": "2024-01-02 16:56:07",
+          "modified": "2024-01-02 16:56:07",
+          "lhs": {
+            "global_ID": "V_152",
+            "latex": "{{\\_\\bar{p}}}{_{N}}"
+          }
+        }
+      },
+      "index_structures": [
+        "I_1"
+      ],
+      "label": "_p_normed",
+      "modified": "2024-01-02 16:56:07",
+      "network": "macroscopic >>> control",
+      "port_variable": false,
+      "tokens": [],
+      "type": "get",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_153": {
+      "IRI": "promo:_T_normed",
+      "aliases": {
+        "matlab": "_T_normed",
+        "latex": "{\\_\\bar{T}}",
+        "internal_code": "_T_normed",
+        "global_ID": "V_153"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_153",
+        "latex": "{{\\_\\bar{T}}}{_{N}}"
+      },
+      "created": "2024-01-02 16:56:15",
+      "doc": "link variable T_normed to interface macroscopic >>> control",
+      "equations": {
+        "E_139": {
+          "rhs": {
+            "global_ID": " V_149",
+            "latex": "{{\\bar{T}^o}}{_{N}}"
+          },
+          "type": "interface_link_equation",
+          "doc": "interface equation",
+          "network": "macroscopic >>> control",
+          "incidence_list": [
+            "V_149"
+          ],
+          "created": "2024-01-02 16:56:15",
+          "modified": "2024-01-02 16:56:15",
+          "lhs": {
+            "global_ID": "V_153",
+            "latex": "{{\\_\\bar{T}}}{_{N}}"
+          }
+        }
+      },
+      "index_structures": [
+        "I_1"
+      ],
+      "label": "_T_normed",
+      "modified": "2024-01-02 16:56:15",
+      "network": "macroscopic >>> control",
+      "port_variable": false,
+      "tokens": [],
+      "type": "get",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_154": {
+      "IRI": "promo:_c_normed",
+      "aliases": {
+        "matlab": "_c_normed",
+        "latex": "{\\_\\bar{c}}",
+        "internal_code": "_c_normed",
+        "global_ID": "V_154"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_154",
+        "latex": "{{\\_\\bar{c}}}{_{N, S}}"
+      },
+      "created": "2024-01-02 16:56:29",
+      "doc": "link variable c_normed to interface macroscopic >>> control",
+      "equations": {
+        "E_140": {
+          "rhs": {
+            "global_ID": " V_151",
+            "latex": "{{\\bar{c}^o}}{_{N, S}}"
+          },
+          "type": "interface_link_equation",
+          "doc": "interface equation",
+          "network": "macroscopic >>> control",
+          "incidence_list": [
+            "V_151"
+          ],
+          "created": "2024-01-02 16:56:29",
+          "modified": "2024-01-02 16:56:29",
+          "lhs": {
+            "global_ID": "V_154",
+            "latex": "{{\\_\\bar{c}}}{_{N, S}}"
+          }
+        }
+      },
+      "index_structures": [
+        "I_1",
+        "I_3"
+      ],
+      "label": "_c_normed",
+      "modified": "2024-01-02 16:56:29",
+      "network": "macroscopic >>> control",
+      "port_variable": false,
+      "tokens": [],
+      "type": "get",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_155": {
+      "IRI": "promo:measurement_vector",
+      "aliases": {
+        "matlab": "measurement_vector",
+        "latex": "m",
+        "internal_code": "measurement_vector",
+        "global_ID": "V_155"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_155",
+        "latex": "{m}{_{A}}"
+      },
+      "created": "2024-01-02 17:02:25",
+      "doc": "normed measurements of temparatures",
+      "equations": {
+        "E_141": {
+          "rhs": {
+            "global_ID": " V_10  O_5 V_153",
+            "latex": "{F}{_{N, A}} \\star {{\\_\\bar{T}}}{_{N}}"
+          },
+          "type": "generic",
+          "doc": "normed measurements of temparatures",
+          "network": "control",
+          "incidence_list": [
+            "V_10",
+            "V_153"
+          ],
+          "created": "2024-01-02 17:02:25",
+          "modified": "2024-01-02 17:02:25",
+          "lhs": {
+            "global_ID": "V_155",
+            "latex": "{m}{_{A}}"
+          }
+        },
+        "E_142": {
+          "rhs": {
+            "global_ID": " V_10  O_5 V_152",
+            "latex": "{F}{_{N, A}} \\star {{\\_\\bar{p}}}{_{N}}"
+          },
+          "type": "generic",
+          "doc": "normed measurements of pressures",
+          "network": "control",
+          "incidence_list": [
+            "V_10",
+            "V_152"
+          ],
+          "created": "2024-01-02 17:03:11",
+          "modified": "2024-01-02 17:03:11",
+          "lhs": {
+            "global_ID": "V_155",
+            "latex": "{m}{_{A}}"
+          }
+        }
+      },
+      "index_structures": [
+        "I_2"
+      ],
+      "label": "measurement_vector",
+      "modified": "2024-01-02 17:05:03",
+      "network": "control",
+      "port_variable": false,
+      "tokens": [],
+      "type": "algebraic",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_156": {
+      "IRI": "promo:measurement_matrix",
+      "aliases": {
+        "matlab": "measurement_matrix",
+        "latex": "m",
+        "internal_code": "measurement_matrix",
+        "global_ID": "V_156"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_156",
+        "latex": "{m}{_{A, S}}"
+      },
+      "created": "2024-01-02 17:05:47",
+      "doc": "normed measurment of concentration",
+      "equations": {
+        "E_143": {
+          "rhs": {
+            "global_ID": " V_10  O_5 V_154",
+            "latex": "{F}{_{N, A}} \\star {{\\_\\bar{c}}}{_{N, S}}"
+          },
+          "type": "generic",
+          "doc": "normed measurment of concentration",
+          "network": "control",
+          "incidence_list": [
+            "V_10",
+            "V_154"
+          ],
+          "created": "2024-01-02 17:05:47",
+          "modified": "2024-01-02 17:05:47",
+          "lhs": {
+            "global_ID": "V_156",
+            "latex": "{m}{_{A, S}}"
+          }
+        }
+      },
+      "index_structures": [
+        "I_2",
+        "I_3"
+      ],
+      "label": "measurement_matrix",
+      "modified": "2024-01-02 17:05:47",
+      "network": "control",
+      "port_variable": false,
+      "tokens": [],
+      "type": "algebraic",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_157": {
+      "IRI": "promo:setpoint_vector",
+      "aliases": {
+        "matlab": "setpoint_vector",
+        "latex": "{m^{v\\star}}",
+        "internal_code": "setpoint_vector",
+        "global_ID": "V_157"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_157",
+        "latex": "{{m^{v\\star}}}{_{A}}"
+      },
+      "created": "2024-01-02 17:08:17",
+      "doc": "setpoint for measurement vector",
+      "equations": {
+        "E_144": {
+          "rhs": {
+            "global_ID": " O_10 D_0 V_155 D_7 V_1 D_1",
+            "latex": "\\text{Instantiate}({m}{_{A}}, {{\\#}}{_{}})"
+          },
+          "type": "generic",
+          "doc": "setpoint for measurement vector",
+          "network": "control",
+          "incidence_list": [
+            "V_1",
+            "V_155"
+          ],
+          "created": "2024-01-02 17:08:17",
+          "modified": "2024-01-02 17:08:17",
+          "lhs": {
+            "global_ID": "V_157",
+            "latex": "{{m^{v\\star}}}{_{A}}"
+          }
+        }
+      },
+      "index_structures": [
+        "I_2"
+      ],
+      "label": "setpoint_vector",
+      "modified": "2024-01-02 17:08:17",
+      "network": "control",
+      "port_variable": false,
+      "tokens": [],
+      "type": "algebraic",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_158": {
+      "IRI": "promo:setpoint_matrix",
+      "aliases": {
+        "matlab": "setpoint_matrix",
+        "latex": "{m^{m\\star}}",
+        "internal_code": "setpoint_matrix",
+        "global_ID": "V_158"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_158",
+        "latex": "{{m^{m\\star}}}{_{A, S}}"
+      },
+      "created": "2024-01-02 17:09:13",
+      "doc": "setpoiint for measurment matrix",
+      "equations": {
+        "E_145": {
+          "rhs": {
+            "global_ID": " O_10 D_0 V_156 D_7 V_1 D_1",
+            "latex": "\\text{Instantiate}({m}{_{A, S}}, {{\\#}}{_{}})"
+          },
+          "type": "generic",
+          "doc": "setpoiint for measurment matrix",
+          "network": "control",
+          "incidence_list": [
+            "V_1",
+            "V_156"
+          ],
+          "created": "2024-01-02 17:09:13",
+          "modified": "2024-01-02 17:09:13",
+          "lhs": {
+            "global_ID": "V_158",
+            "latex": "{{m^{m\\star}}}{_{A, S}}"
+          }
+        }
+      },
+      "index_structures": [
+        "I_2",
+        "I_3"
+      ],
+      "label": "setpoint_matrix",
+      "modified": "2024-01-02 17:09:13",
+      "network": "control",
+      "port_variable": false,
+      "tokens": [],
+      "type": "algebraic",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_159": {
+      "IRI": "qudt:Gain",
+      "aliases": {
+        "matlab": "P",
+        "latex": "P",
+        "internal_code": "P",
+        "global_ID": "V_159"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_159",
+        "latex": "{P}{_{}}"
+      },
+      "created": "2024-01-02 17:17:58",
+      "doc": "gain",
+      "equations": {},
+      "index_structures": [],
+      "label": "P",
+      "modified": "2024-01-02 17:18:29",
+      "network": "control",
+      "port_variable": true,
+      "tokens": [],
+      "type": "constant",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
     "V_16": {
       "IRI": "qudt:InternalEnergy",
       "aliases": {
@@ -2306,6 +3075,228 @@
         2,
         0,
         1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_160": {
+      "IRI": "promo:error_vector",
+      "aliases": {
+        "matlab": "error_vector",
+        "latex": "{e^{v}}",
+        "internal_code": "error_vector",
+        "global_ID": "V_160"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_160",
+        "latex": "{{e^{v}}}{_{A}}"
+      },
+      "created": "2024-01-02 17:20:57",
+      "doc": "output error vector",
+      "equations": {
+        "E_146": {
+          "rhs": {
+            "global_ID": " V_157 O_1 V_155",
+            "latex": "{{m^{v\\star}}}{_{A}}  - {m}{_{A}}"
+          },
+          "type": "generic",
+          "doc": "output error vector",
+          "network": "control",
+          "incidence_list": [
+            "V_155",
+            "V_157"
+          ],
+          "created": "2024-01-02 17:20:57",
+          "modified": "2024-01-02 17:20:57",
+          "lhs": {
+            "global_ID": "V_160",
+            "latex": "{{e^{v}}}{_{A}}"
+          }
+        }
+      },
+      "index_structures": [
+        "I_2"
+      ],
+      "label": "error_vector",
+      "modified": "2024-01-02 17:20:57",
+      "network": "control",
+      "port_variable": false,
+      "tokens": [],
+      "type": "algebraic",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_161": {
+      "IRI": "promo:error_matrix",
+      "aliases": {
+        "matlab": "error_matrix",
+        "latex": "{e^{m}}",
+        "internal_code": "error_matrix",
+        "global_ID": "V_161"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_161",
+        "latex": "{{e^{m}}}{_{A, S}}"
+      },
+      "created": "2024-01-02 17:24:09",
+      "doc": "output error matrix",
+      "equations": {
+        "E_147": {
+          "rhs": {
+            "global_ID": " V_158 O_1 V_156",
+            "latex": "{{m^{m\\star}}}{_{A, S}}  - {m}{_{A, S}}"
+          },
+          "type": "generic",
+          "doc": "output error matrix",
+          "network": "control",
+          "incidence_list": [
+            "V_156",
+            "V_158"
+          ],
+          "created": "2024-01-02 17:24:09",
+          "modified": "2024-01-02 17:24:09",
+          "lhs": {
+            "global_ID": "V_161",
+            "latex": "{{e^{m}}}{_{A, S}}"
+          }
+        }
+      },
+      "index_structures": [
+        "I_2",
+        "I_3"
+      ],
+      "label": "error_matrix",
+      "modified": "2024-01-02 17:24:09",
+      "network": "control",
+      "port_variable": false,
+      "tokens": [],
+      "type": "algebraic",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_162": {
+      "IRI": "promo:u_vector",
+      "aliases": {
+        "matlab": "u_vector",
+        "latex": "{u^{v}}",
+        "internal_code": "u_vector",
+        "global_ID": "V_162"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_162",
+        "latex": "{{u^{v}}}{_{A}}"
+      },
+      "created": "2024-01-02 17:27:22",
+      "doc": "control ouput vector",
+      "equations": {
+        "E_148": {
+          "rhs": {
+            "global_ID": " V_159 O_4 V_160",
+            "latex": "{P}{_{}} \\, . \\, {{e^{v}}}{_{A}}"
+          },
+          "type": "generic",
+          "doc": "control ouput vector",
+          "network": "control",
+          "incidence_list": [
+            "V_159",
+            "V_160"
+          ],
+          "created": "2024-01-02 17:27:22",
+          "modified": "2024-01-02 17:27:22",
+          "lhs": {
+            "global_ID": "V_162",
+            "latex": "{{u^{v}}}{_{A}}"
+          }
+        }
+      },
+      "index_structures": [
+        "I_2"
+      ],
+      "label": "u_vector",
+      "modified": "2024-01-02 17:27:22",
+      "network": "control",
+      "port_variable": false,
+      "tokens": [],
+      "type": "algebraic",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_163": {
+      "IRI": "promo:u_matrix",
+      "aliases": {
+        "matlab": "u_matrix",
+        "latex": "{u^{m}}",
+        "internal_code": "u_matrix",
+        "global_ID": "V_163"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_163",
+        "latex": "{{u^{m}}}{_{A, S}}"
+      },
+      "created": "2024-01-02 17:28:35",
+      "doc": "control output matrix",
+      "equations": {
+        "E_149": {
+          "rhs": {
+            "global_ID": " V_159 O_4 V_161",
+            "latex": "{P}{_{}} \\, . \\, {{e^{m}}}{_{A, S}}"
+          },
+          "type": "generic",
+          "doc": "control output matrix",
+          "network": "control",
+          "incidence_list": [
+            "V_159",
+            "V_161"
+          ],
+          "created": "2024-01-02 17:28:35",
+          "modified": "2024-01-02 17:28:35",
+          "lhs": {
+            "global_ID": "V_163",
+            "latex": "{{u^{m}}}{_{A, S}}"
+          }
+        }
+      },
+      "index_structures": [
+        "I_2",
+        "I_3"
+      ],
+      "label": "u_matrix",
+      "modified": "2024-01-02 17:28:35",
+      "network": "control",
+      "port_variable": false,
+      "tokens": [],
+      "type": "algebraic",
+      "units": [
+        0,
+        0,
+        0,
+        0,
         0,
         0,
         0,
@@ -7091,7 +8082,7 @@
         "matlab": "N",
         "latex": "N",
         "internal_code": "N",
-        "global_ID": "N"
+        "global_ID": "I_1"
       },
       "tokens": null,
       "IRI": "None"
@@ -7116,7 +8107,7 @@
         "matlab": "A",
         "latex": "A",
         "internal_code": "A",
-        "global_ID": "A"
+        "global_ID": "I_2"
       },
       "tokens": null,
       "IRI": "None"
@@ -7139,7 +8130,7 @@
         "matlab": "S",
         "latex": "S",
         "internal_code": "S",
-        "global_ID": "S"
+        "global_ID": "I_3"
       },
       "tokens": "mass",
       "IRI": "None"
@@ -7197,7 +8188,7 @@
     }
   },
   "Ontology_global_IDs": {
-    "variable": 145,
-    "equation": 131
+    "variable": 163,
+    "equation": 149
   }
 }
