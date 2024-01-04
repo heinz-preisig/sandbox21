@@ -159,15 +159,85 @@
     "network": "macroscopic",
     "rhs": " inv ( c_norming ) . c"
   },
+  "E_138": {
+    "lhs": "_p_normed",
+    "network": "macroscopic >>> control",
+    "rhs": " p_normed"
+  },
+  "E_139": {
+    "lhs": "_T_normed",
+    "network": "macroscopic >>> control",
+    "rhs": " T_normed"
+  },
   "E_14": {
     "lhs": "chemPot",
     "network": "physical",
     "rhs": " ParDiff ( U , n )"
   },
+  "E_140": {
+    "lhs": "_c_normed",
+    "network": "macroscopic >>> control",
+    "rhs": " c_normed"
+  },
+  "E_141": {
+    "lhs": "measurement_vector",
+    "network": "control",
+    "rhs": " F * _T_normed"
+  },
+  "E_142": {
+    "lhs": "measurement_vector",
+    "network": "control",
+    "rhs": " F * _p_normed"
+  },
+  "E_143": {
+    "lhs": "measurement_matrix",
+    "network": "control",
+    "rhs": " F * _c_normed"
+  },
+  "E_144": {
+    "lhs": "setpoint_vector",
+    "network": "control",
+    "rhs": " Instantiate ( measurement_vector , value )"
+  },
+  "E_145": {
+    "lhs": "setpoint_matrix",
+    "network": "control",
+    "rhs": " Instantiate ( measurement_matrix , value )"
+  },
+  "E_146": {
+    "lhs": "error_vector",
+    "network": "control",
+    "rhs": " setpoint_vector - measurement_vector"
+  },
+  "E_147": {
+    "lhs": "error_matrix",
+    "network": "control",
+    "rhs": " setpoint_matrix - measurement_matrix"
+  },
+  "E_148": {
+    "lhs": "u_vector",
+    "network": "control",
+    "rhs": " P . error_vector"
+  },
+  "E_149": {
+    "lhs": "u_matrix",
+    "network": "control",
+    "rhs": " P . error_matrix"
+  },
   "E_15": {
     "lhs": "H",
     "network": "physical",
     "rhs": " U - p . V"
+  },
+  "E_150": {
+    "lhs": "_setpoint_matrix",
+    "network": "control >>> macroscopic",
+    "rhs": " setpoint_matrix"
+  },
+  "E_151": {
+    "lhs": "_setpoint_vector",
+    "network": "control >>> macroscopic",
+    "rhs": " setpoint_vector"
   },
   "E_16": {
     "lhs": "T",
@@ -618,65 +688,5 @@
     "lhs": "T_K",
     "network": "reactions",
     "rhs": " T . P_N_K"
-  },
-  "E_138": {
-    "lhs": "_p_normed",
-    "network": "macroscopic >>> control",
-    "rhs": " p_normed"
-  },
-  "E_139": {
-    "lhs": "_T_normed",
-    "network": "macroscopic >>> control",
-    "rhs": " T_normed"
-  },
-  "E_140": {
-    "lhs": "_c_normed",
-    "network": "macroscopic >>> control",
-    "rhs": " c_normed"
-  },
-  "E_141": {
-    "lhs": "measurement_vector",
-    "network": "control",
-    "rhs": " F * _T_normed"
-  },
-  "E_142": {
-    "lhs": "measurement_vector",
-    "network": "control",
-    "rhs": " F * _p_normed"
-  },
-  "E_143": {
-    "lhs": "measurement_matrix",
-    "network": "control",
-    "rhs": " F * _c_normed"
-  },
-  "E_144": {
-    "lhs": "setpoint_vector",
-    "network": "control",
-    "rhs": " Instantiate ( measurement_vector , value )"
-  },
-  "E_145": {
-    "lhs": "setpoint_matrix",
-    "network": "control",
-    "rhs": " Instantiate ( measurement_matrix , value )"
-  },
-  "E_146": {
-    "lhs": "error_vector",
-    "network": "control",
-    "rhs": " setpoint_vector - measurement_vector"
-  },
-  "E_147": {
-    "lhs": "error_matrix",
-    "network": "control",
-    "rhs": " setpoint_matrix - measurement_matrix"
-  },
-  "E_148": {
-    "lhs": "u_vector",
-    "network": "control",
-    "rhs": " P . error_vector"
-  },
-  "E_149": {
-    "lhs": "u_matrix",
-    "network": "control",
-    "rhs": " P . error_matrix"
   }
 }

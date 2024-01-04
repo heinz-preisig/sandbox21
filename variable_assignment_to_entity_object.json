@@ -685,5 +685,49 @@
         "output_vars": [
             "V_101"
         ]
+    },
+    "control >>> macroscopic (setpoint_matrix -> _setpoint_matrix)": {
+        "index_set": null,
+        "integrators": {},
+        "var_eq_forest": [
+            {
+                "V_164": [
+                    "E_150"
+                ],
+                "E_150": [
+                    "V_158"
+                ],
+                "V_158": []
+            }
+        ],
+        "init_vars": [],
+        "input_vars": [
+            "V_158"
+        ],
+        "output_vars": [
+            "V_164"
+        ]
+    },
+    "control >>> macroscopic (setpoint_vector -> _setpoint_vector)": {
+        "index_set": null,
+        "integrators": {},
+        "var_eq_forest": [
+            {
+                "V_165": [
+                    "E_151"
+                ],
+                "E_151": [
+                    "V_157"
+                ],
+                "V_157": []
+            }
+        ],
+        "init_vars": [],
+        "input_vars": [
+            "V_157"
+        ],
+        "output_vars": [
+            "V_165"
+        ]
     }
 }

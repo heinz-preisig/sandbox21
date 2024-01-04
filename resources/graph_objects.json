@@ -4056,12 +4056,6 @@
               "position_y": 0,
               "width": 10
             }
-          },
-          "energy|conduction|lumped": {
-            "-": {
-              "height": 10,
-              "width": 10
-            }
           }
         }
       },
@@ -4085,12 +4079,6 @@
               "movable": false,
               "position_x": 0,
               "position_y": 0,
-              "width": 15
-            }
-          },
-          "energy|conduction|lumped": {
-            "-": {
-              "height": 15,
               "width": 15
             }
           }
@@ -4527,6 +4515,13 @@
               "position_x": 0,
               "position_y": 50
             }
+          },
+          "energy|conduction|lumped": {
+            "-": {
+              "movable": true,
+              "position_x": 0,
+              "position_y": 50
+            }
           }
         },
         "root": {
@@ -4578,6 +4573,7 @@
             }
           },
           "energy|conduction|lumped": {
+            "": {},
             "blocked": {
               "action": [],
               "colour": [
@@ -4873,6 +4869,13 @@
               "position_x": 0,
               "position_y": 50
             }
+          },
+          "constant|AE": {
+            "-": {
+              "movable": true,
+              "position_x": 0,
+              "position_y": 50
+            }
           }
         },
         "root": {
@@ -4893,6 +4896,15 @@
               ],
               "height": 40,
               "layer": "node",
+              "movable": false,
+              "position_x": -20,
+              "position_y": -20,
+              "width": 40
+            }
+          },
+          "constant|AE": {
+            "-": {
+              "height": 40,
               "movable": false,
               "position_x": -20,
               "position_y": -20,
@@ -5130,6 +5142,7 @@
         },
         "root": {
           "constant|AE": {
+            "": {},
             "blocked": {
               "action": [],
               "colour": [

@@ -1775,7 +1775,7 @@
       "IRI": "promo:anProduction",
       "aliases": {
         "matlab": "anProduction",
-        "latex": "{\\dot{n}}",
+        "latex": "{\\dot{n}^p}",
         "internal_code": "anProduction",
         "global_ID": "V_138"
       },
@@ -2945,7 +2945,7 @@
       "network": "control",
       "port_variable": false,
       "tokens": [],
-      "type": "algebraic",
+      "type": "constant",
       "units": [
         0,
         0,
@@ -3001,7 +3001,7 @@
       "network": "control",
       "port_variable": false,
       "tokens": [],
-      "type": "algebraic",
+      "type": "constant",
       "units": [
         0,
         0,
@@ -3292,6 +3292,115 @@
       "port_variable": false,
       "tokens": [],
       "type": "algebraic",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_164": {
+      "IRI": "promo:_setpoint_matrix",
+      "aliases": {
+        "matlab": "_setpoint_matrix",
+        "latex": "{\\_m^m}",
+        "internal_code": "_setpoint_matrix",
+        "global_ID": "V_164"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_164",
+        "latex": "{{\\_m^m}}{_{A, S}}"
+      },
+      "created": "2024-01-03 09:56:00",
+      "doc": "link variable setpoint_matrix to interface control >>> macroscopic",
+      "equations": {
+        "E_150": {
+          "rhs": {
+            "global_ID": " V_158",
+            "latex": "{{m^{m\\star}}}{_{A, S}}"
+          },
+          "type": "interface_link_equation",
+          "doc": "interface equation",
+          "network": "control >>> macroscopic",
+          "incidence_list": [
+            "V_158"
+          ],
+          "created": "2024-01-03 09:56:00",
+          "modified": "2024-01-03 09:56:00",
+          "lhs": {
+            "global_ID": "V_164",
+            "latex": "{{\\_m^m}}{_{A, S}}"
+          }
+        }
+      },
+      "index_structures": [
+        "I_2",
+        "I_3"
+      ],
+      "label": "_setpoint_matrix",
+      "modified": "2024-01-03 09:56:00",
+      "network": "control >>> macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "get",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_165": {
+      "IRI": "promo:_setpoint_vector",
+      "aliases": {
+        "matlab": "_setpoint_vector",
+        "latex": "{\\_m^v}",
+        "internal_code": "_setpoint_vector",
+        "global_ID": "V_165"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_165",
+        "latex": "{{\\_m^v}}{_{A}}"
+      },
+      "created": "2024-01-03 09:56:05",
+      "doc": "link variable setpoint_vector to interface control >>> macroscopic",
+      "equations": {
+        "E_151": {
+          "rhs": {
+            "global_ID": " V_157",
+            "latex": "{{m^{v\\star}}}{_{A}}"
+          },
+          "type": "interface_link_equation",
+          "doc": "interface equation",
+          "network": "control >>> macroscopic",
+          "incidence_list": [
+            "V_157"
+          ],
+          "created": "2024-01-03 09:56:05",
+          "modified": "2024-01-03 09:56:05",
+          "lhs": {
+            "global_ID": "V_165",
+            "latex": "{{\\_m^v}}{_{A}}"
+          }
+        }
+      },
+      "index_structures": [
+        "I_2"
+      ],
+      "label": "_setpoint_vector",
+      "modified": "2024-01-03 09:56:05",
+      "network": "control >>> macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "get",
       "units": [
         0,
         0,
@@ -8188,7 +8297,7 @@
     }
   },
   "Ontology_global_IDs": {
-    "variable": 163,
-    "equation": 149
+    "variable": 165,
+    "equation": 151
   }
 }
