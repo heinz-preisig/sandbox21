@@ -623,8 +623,12 @@
           "constant": [
             "infinity"
           ],
-          "dynamic": [],
-          "event": []
+          "dynamic": [
+            "lumped"
+          ],
+          "event": [
+            "lumped"
+          ]
         },
         "token": {
           "charge": [],

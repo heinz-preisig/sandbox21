@@ -12,20 +12,50 @@
 \endlastfoot
 
 
-        157
-             & \hypertarget{"v:157"}{ $ {{m^{v\star}}}{_{A}} $}
-             & \verb|setpoint_vector|
-             & setpoint for measurement vector
+        185
+             & \hypertarget{"v:185"}{ $ {{t_s}}{_{A}} $}
+             & \verb|t_switch_A|
+             & switching times
+             & \begin{lay}frame \end{lay}
+             & $ s \, $
+             &                 \hyperlink{"e:169"}{ 169 }
+                 \\
+            179
+             & \hypertarget{"v:179"}{ $ {x}{_{N}} $}
+             & \verb|x|
+             & controller state
+             & \begin{lay}state \end{lay}
+             & $  $
+             &                 \hyperlink{"e:165"}{ 165 }
+                 \\
+            183
+             & \hypertarget{"v:183"}{ $ {{x^o}}{_{N}} $}
+             & \verb|xo|
+             & initial controller state
+             & \begin{lay}state \end{lay}
+             & $  $
+             &                 \hyperlink{"e:166"}{ 166 }
+                 \\
+            181
+             & \hypertarget{"v:181"}{ $ {I}{_{N, D}} $}
+             & \verb|I_N_D|
+             & map differential space to node space
              & \begin{lay}constant \end{lay}
              & $  $
-             &                 \hyperlink{"e:144"}{ 144 }
-                 \\
+             & \\
             159
              & \hypertarget{"v:159"}{ $ {P}{_{}} $}
              & \verb|P|
              & gain
              & \begin{lay}constant \end{lay}
              & $  $
+             & \\
+            177
+             & \hypertarget{"v:177"}{ $ {A}{_{N, D}} $}
+             & \verb|A|
+             & LTIS A-matrix 
+             & \begin{lay}constant \end{lay}
+             & $ s^{-1} \, $
              & \\
             158
              & \hypertarget{"v:158"}{ $ {{m^{m\star}}}{_{A, S}} $}
@@ -35,13 +65,37 @@
              & $  $
              &                 \hyperlink{"e:145"}{ 145 }
                  \\
-            161
-             & \hypertarget{"v:161"}{ $ {{e^{m}}}{_{A, S}} $}
-             & \verb|error_matrix|
-             & output error matrix
+            157
+             & \hypertarget{"v:157"}{ $ {{m^{v\star}}}{_{A}} $}
+             & \verb|setpoint_vector|
+             & setpoint for measurement vector
+             & \begin{lay}constant \end{lay}
+             & $  $
+             &                 \hyperlink{"e:144"}{ 144 }
+                 \\
+            178
+             & \hypertarget{"v:178"}{ $ {B}{_{A, D}} $}
+             & \verb|B|
+             & LTIS B-matrix
+             & \begin{lay}constant \end{lay}
+             & $ s^{-1} \, $
+             & \\
+            182
+             & \hypertarget{"v:182"}{ $ {{\dot{x}}}{_{D}} $}
+             & \verb|dxdt|
+             & differential controller state
+             & \begin{lay}diffState \end{lay}
+             & $ s^{-1} \, $
+             &                 \hyperlink{"e:164"}{ 164 }
+                 \\
+            162
+             & \hypertarget{"v:162"}{ $ {{u^{v}}}{_{A}} $}
+             & \verb|u_vector|
+             & control ouput vector
              & \begin{lay}algebraic \end{lay}
              & $  $
-             &                 \hyperlink{"e:147"}{ 147 }
+             &                 \hyperlink{"e:148"}{ 148 }
+                                 \hyperlink{"e:170"}{ 170 }
                  \\
             160
              & \hypertarget{"v:160"}{ $ {{e^{v}}}{_{A}} $}
@@ -51,13 +105,13 @@
              & $  $
              &                 \hyperlink{"e:146"}{ 146 }
                  \\
-            162
-             & \hypertarget{"v:162"}{ $ {{u^{v}}}{_{A}} $}
-             & \verb|u_vector|
-             & control ouput vector
+            156
+             & \hypertarget{"v:156"}{ $ {m}{_{A, S}} $}
+             & \verb|measurement_matrix|
+             & normed measurment of concentration
              & \begin{lay}algebraic \end{lay}
              & $  $
-             &                 \hyperlink{"e:148"}{ 148 }
+             &                 \hyperlink{"e:143"}{ 143 }
                  \\
             155
              & \hypertarget{"v:155"}{ $ {m}{_{A}} $}
@@ -68,6 +122,14 @@
              &                 \hyperlink{"e:141"}{ 141 }
                                  \hyperlink{"e:142"}{ 142 }
                  \\
+            161
+             & \hypertarget{"v:161"}{ $ {{e^{m}}}{_{A, S}} $}
+             & \verb|error_matrix|
+             & output error matrix
+             & \begin{lay}algebraic \end{lay}
+             & $  $
+             &                 \hyperlink{"e:147"}{ 147 }
+                 \\
             163
              & \hypertarget{"v:163"}{ $ {{u^{m}}}{_{A, S}} $}
              & \verb|u_matrix|
@@ -75,13 +137,5 @@
              & \begin{lay}algebraic \end{lay}
              & $  $
              &                 \hyperlink{"e:149"}{ 149 }
-                 \\
-            156
-             & \hypertarget{"v:156"}{ $ {m}{_{A, S}} $}
-             & \verb|measurement_matrix|
-             & normed measurment of concentration
-             & \begin{lay}algebraic \end{lay}
-             & $  $
-             &                 \hyperlink{"e:143"}{ 143 }
                  \\
     \end{longtable}

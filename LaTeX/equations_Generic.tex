@@ -13,43 +13,43 @@ no & equation &documentation &layer \\\hline\hline
 \endlastfoot
 
         \hyperlink{"v:2"}{ 1 }\hypertarget{"e:1"}{  } &
-    \begin{eq}{1}{_{}} := \text{Instantiate}({{\#}}{_{}}, {{\#}}{_{}})\end{eq} &
+    \begin{eq}{1}{_{}} := \textbf{Instantiate}({{\#}}{_{}}, {{\#}}{_{}})\end{eq} &
     \begin{lay}numerical one\end{lay} &
     \begin{lay}root\end{lay} \\
         \hyperlink{"v:3"}{ 2 }\hypertarget{"e:2"}{  } &
-    \begin{eq}{0}{_{}} := \text{Instantiate}({{\#}}{_{}}, {{\#}}{_{}})\end{eq} &
+    \begin{eq}{0}{_{}} := \textbf{Instantiate}({{\#}}{_{}}, {{\#}}{_{}})\end{eq} &
     \begin{lay}numerical value zero\end{lay} &
     \begin{lay}root\end{lay} \\
         \hyperlink{"v:5"}{ 3 }\hypertarget{"e:3"}{  } &
-    \begin{eq}{{t^o}}{_{}} := \text{Instantiate}({t}{_{}}, {0}{_{}})\end{eq} &
+    \begin{eq}{{t^o}}{_{}} := \textbf{Instantiate}({t}{_{}}, {0}{_{}})\end{eq} &
     \begin{lay}time zero\end{lay} &
     \begin{lay}root\end{lay} \\
         \hyperlink{"v:6"}{ 4 }\hypertarget{"e:4"}{  } &
-    \begin{eq}{{t^e}}{_{}} := \text{Instantiate}({t}{_{}}, {{\#}}{_{}})\end{eq} &
+    \begin{eq}{{t^e}}{_{}} := \textbf{Instantiate}({t}{_{}}, {{\#}}{_{}})\end{eq} &
     \begin{lay}time end\end{lay} &
     \begin{lay}root\end{lay} \\
         \hyperlink{"v:7"}{ 5 }\hypertarget{"e:5"}{  } &
-    \begin{eq}{{\Delta t}}{_{}} := \text{Instantiate}({t}{_{}}, {{\#}}{_{}})\end{eq} &
+    \begin{eq}{{\Delta t}}{_{}} := \textbf{Instantiate}({t}{_{}}, {{\#}}{_{}})\end{eq} &
     \begin{lay}time interval\end{lay} &
     \begin{lay}root\end{lay} \\
         \hyperlink{"v:8"}{ 6 }\hypertarget{"e:6"}{  } &
-    \begin{eq}{0.5}{_{}} := \text{Instantiate}({{\#}}{_{}}, {{\#}}{_{}})\end{eq} &
+    \begin{eq}{0.5}{_{}} := \textbf{Instantiate}({{\#}}{_{}}, {{\#}}{_{}})\end{eq} &
     \begin{lay}numerical one half\end{lay} &
     \begin{lay}root\end{lay} \\
         \hyperlink{"v:9"}{ 7 }\hypertarget{"e:7"}{  } &
-    \begin{eq}{{\Delta}}{_{}} := \text{sign} \left( {t}{_{}}  - {{t^o}}{_{}} \right)  - \text{sign} \left( {t}{_{}}  - \left({{t^o}}{_{}}  - {{\Delta t}}{_{}}\right) \right)\end{eq} &
+    \begin{eq}{{\Delta}}{_{}} := \textbf{sign} \left( {t}{_{}}  - {{t^o}}{_{}} \right)  - \textbf{sign} \left( {t}{_{}}  - \left({{t^o}}{_{}}  - {{\Delta t}}{_{}}\right) \right)\end{eq} &
     \begin{lay}pulse of length time interval\end{lay} &
     \begin{lay}root\end{lay} \\
         \hyperlink{"v:12"}{ 8 }\hypertarget{"e:8"}{  } &
-    \begin{eq}{{r_x}}{_{N}} := \text{Instantiate}({{\ell}}{_{N}}, {{\#}}{_{}})\end{eq} &
+    \begin{eq}{{r_x}}{_{N}} := \textbf{Instantiate}({{\ell}}{_{N}}, {{\#}}{_{}})\end{eq} &
     \begin{lay}x-direction\end{lay} &
     \begin{lay}physical\end{lay} \\
         \hyperlink{"v:13"}{ 9 }\hypertarget{"e:9"}{  } &
-    \begin{eq}{{r_y}}{_{N}} := \text{Instantiate}({{\ell}}{_{N}}, {{\#}}{_{}})\end{eq} &
+    \begin{eq}{{r_y}}{_{N}} := \textbf{Instantiate}({{\ell}}{_{N}}, {{\#}}{_{}})\end{eq} &
     \begin{lay}y-direction\end{lay} &
     \begin{lay}physical\end{lay} \\
         \hyperlink{"v:14"}{ 10 }\hypertarget{"e:10"}{  } &
-    \begin{eq}{{r_z}}{_{N}} := \text{Instantiate}({{\ell}}{_{N}}, {{\#}}{_{}})\end{eq} &
+    \begin{eq}{{r_z}}{_{N}} := \textbf{Instantiate}({{\ell}}{_{N}}, {{\#}}{_{}})\end{eq} &
     \begin{lay}z-direction\end{lay} &
     \begin{lay}physical\end{lay} \\
         \hyperlink{"v:15"}{ 11 }\hypertarget{"e:11"}{  } &
@@ -93,7 +93,7 @@ no & equation &documentation &layer \\\hline\hline
     \begin{lay}velocity in z-direction\end{lay} &
     \begin{lay}physical\end{lay} \\
         \hyperlink{"v:33"}{ 24 }\hypertarget{"e:24"}{  } &
-    \begin{eq}{B}{_{N}} := \text{Instantiate}({S}{_{N}}, {{\#}}{_{}})\end{eq} &
+    \begin{eq}{B}{_{N}} := \textbf{Instantiate}({S}{_{N}}, {{\#}}{_{}})\end{eq} &
     \begin{lay}Boltzmann constant\end{lay} &
     \begin{lay}physical\end{lay} \\
         \hyperlink{"v:34"}{ 25 }\hypertarget{"e:25"}{  } &
@@ -249,7 +249,7 @@ no & equation &documentation &layer \\\hline\hline
     \begin{lay}molar concentration\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:86"}{ 75 }\hypertarget{"e:75"}{  } &
-    \begin{eq}{d}{_{A}} := \text{sign} \left( {D}{_{N, A}} \star {p}{_{N}} \right)\end{eq} &
+    \begin{eq}{d}{_{A}} := \textbf{sign} \left( {D}{_{N, A}} \star {p}{_{N}} \right)\end{eq} &
     \begin{lay}fow direction of convective flow\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:87"}{ 76 }\hypertarget{"e:76"}{  } &
@@ -285,11 +285,11 @@ no & equation &documentation &layer \\\hline\hline
     \begin{lay}diffusional mass flow in arc\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:102"}{ 86 }\hypertarget{"e:86"}{  } &
-    \begin{eq}{{\mu^o}}{_{N, S}} := \text{Instantiate}({{\mu}}{_{N, S}}, {{\#}}{_{}})\end{eq} &
+    \begin{eq}{{\mu^o}}{_{N, S}} := \textbf{Instantiate}({{\mu}}{_{N, S}}, {{\#}}{_{}})\end{eq} &
     \begin{lay}standard chemical potential\end{lay} &
     \begin{lay}material\end{lay} \\
         \hyperlink{"v:21"}{ 88 }\hypertarget{"e:88"}{  } &
-    \begin{eq}{{\mu}}{_{N, S}} := {{\mu^o}}{_{N, S}}  + {R}{_{N}} \, . \, {T}{_{N}} \, . \, ln({{\_x}}{_{N, S}})\end{eq} &
+    \begin{eq}{{\mu}}{_{N, S}} := {{\mu^o}}{_{N, S}}  + {R}{_{N}} \, . \, {T}{_{N}} \, . \, \textbf{ln}\left({{\_x}}{_{N, S}}\right)\end{eq} &
     \begin{lay}chemical potential standard model with mole fraction\end{lay} &
     \begin{lay}material\end{lay} \\
         \hyperlink{"v:101"}{ 89 }\hypertarget{"e:89"}{  } &
@@ -301,7 +301,7 @@ no & equation &documentation &layer \\\hline\hline
     \begin{lay}accumulation due to diffusional mass transfer\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:107"}{ 93 }\hypertarget{"e:93"}{  } &
-    \begin{eq}{h_A}{_{A, S}} := {I}{_{N, A}} \star {h}{_{N, S}}\end{eq} &
+    \begin{eq}{h}{_{A, S}} := {I}{_{N, A}} \star {h}{_{N, S}}\end{eq} &
     \begin{lay}partial molar enthalpies of transport system\end{lay} &
     \begin{lay}material\end{lay} \\
         \hyperlink{"v:109"}{ 95 }\hypertarget{"e:95"}{  } &
@@ -325,11 +325,11 @@ no & equation &documentation &layer \\\hline\hline
     \begin{lay}temparature of the nodes with reactions\end{lay} &
     \begin{lay}reactions\end{lay} \\
         \hyperlink{"v:115"}{ 100 }\hypertarget{"e:100"}{  } &
-    \begin{eq}{E_a}{_{N, K}} := \text{Instantiate}({R}{_{N}} \, . \, {T}{_{N, K}}, {{\#}}{_{}})\end{eq} &
+    \begin{eq}{E_a}{_{N, K}} := \textbf{Instantiate}({R}{_{N}} \, . \, {T}{_{N, K}}, {{\#}}{_{}})\end{eq} &
     \begin{lay}Arrhenius activation energy\end{lay} &
     \begin{lay}reactions\end{lay} \\
         \hyperlink{"v:126"}{ 110 }\hypertarget{"e:110"}{  } &
-    \begin{eq}{c^n}{_{N, S}} := \text{Instantiate}({{\_c}}{_{N, S}}, {{\#}}{_{}})\end{eq} &
+    \begin{eq}{c^n}{_{N, S}} := \textbf{Instantiate}({{\_c}}{_{N, S}}, {{\#}}{_{}})\end{eq} &
     \begin{lay}norming concentration used in the definition of the species interaction probability\end{lay} &
     \begin{lay}reactions\end{lay} \\
         \hyperlink{"v:128"}{ 112 }\hypertarget{"e:112"}{  } &
@@ -345,11 +345,11 @@ no & equation &documentation &layer \\\hline\hline
     \begin{lay}probability for the species to meet to undergo reaction\end{lay} &
     \begin{lay}reactions\end{lay} \\
         \hyperlink{"v:134"}{ 118 }\hypertarget{"e:118"}{  } &
-    \begin{eq}{{K^o}}{_{K}} := \text{Instantiate}({I}{_{S}} \star \left({P}{_{N, K}} \star \left(\left( {t}{_{}} \right)^{-1} \, . \, \left( {V}{_{N}} \right)^{-1} \, . \, {n}{_{N, S}}\right)\right), {{\#}}{_{}})\end{eq} &
+    \begin{eq}{{K^o}}{_{K}} := \textbf{Instantiate}({I}{_{S}} \star \left({P}{_{N, K}} \star \left(\left( {t}{_{}} \right)^{-1} \, . \, \left( {V}{_{N}} \right)^{-1} \, . \, {n}{_{N, S}}\right)\right), {{\#}}{_{}})\end{eq} &
     \begin{lay}Arrhenius frequency factor -- a strange construction\end{lay} &
     \begin{lay}reactions\end{lay} \\
         \hyperlink{"v:135"}{ 119 }\hypertarget{"e:119"}{  } &
-    \begin{eq}{K}{_{N, K}} := {{K^o}}{_{K}} \, . \, exp(\left( -{E_a}{_{N, K}} \right) \, . \, \left( {R}{_{N}} \, . \, {T}{_{N, K}} \right)^{-1})\end{eq} &
+    \begin{eq}{K}{_{N, K}} := {{K^o}}{_{K}} \, . \, \textbf{exp}\left(\left( -{E_a}{_{N, K}} \right) \, . \, \left( {R}{_{N}} \, . \, {T}{_{N, K}} \right)^{-1}\right)\end{eq} &
     \begin{lay}reaction"constant\end{lay} &
     \begin{lay}reactions\end{lay} \\
         \hyperlink{"v:136"}{ 120 }\hypertarget{"e:120"}{  } &
@@ -365,7 +365,7 @@ no & equation &documentation &layer \\\hline\hline
     \begin{lay}differentional species balance\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:141"}{ 125 }\hypertarget{"e:125"}{  } &
-    \begin{eq}{{\hat{w}}}{_{A}} := \text{Instantiate}({{\hat{H}^c}}{_{A}}, {{\#}}{_{}})\end{eq} &
+    \begin{eq}{{\hat{w}}}{_{A}} := \textbf{Instantiate}({{\hat{H}^c}}{_{A}}, {{\#}}{_{}})\end{eq} &
     \begin{lay}just an numerical work flow term -- as a starter\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:142"}{ 126 }\hypertarget{"e:126"}{  } &
@@ -385,23 +385,23 @@ no & equation &documentation &layer \\\hline\hline
     \begin{lay}fundamental state - molar mass\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:144"}{ 130 }\hypertarget{"e:130"}{  } &
-    \begin{eq}{{H^o}}{_{N}} := \text{Instantiate}({H}{_{N}}, {{\#}}{_{}})\end{eq} &
+    \begin{eq}{{H^o}}{_{N}} := \textbf{Instantiate}({H}{_{N}}, {{\#}}{_{}})\end{eq} &
     \begin{lay}initial enthalpy\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:145"}{ 131 }\hypertarget{"e:131"}{  } &
-    \begin{eq}{{n^o}}{_{N, S}} := \text{Instantiate}({n}{_{N, S}}, {{\#}}{_{}})\end{eq} &
+    \begin{eq}{{n^o}}{_{N, S}} := \textbf{Instantiate}({n}{_{N, S}}, {{\#}}{_{}})\end{eq} &
     \begin{lay}initial species masses\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:146"}{ 132 }\hypertarget{"e:132"}{  } &
-    \begin{eq}{{T^o}}{_{N}} := \text{Instantiate}({T}{_{N}}, {{\#}}{_{}})\end{eq} &
+    \begin{eq}{{T^o}}{_{N}} := \textbf{Instantiate}({T}{_{N}}, {{\#}}{_{}})\end{eq} &
     \begin{lay}norming temperature\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:147"}{ 133 }\hypertarget{"e:133"}{  } &
-    \begin{eq}{{p^o}}{_{N}} := \text{Instantiate}({p}{_{N}}, {{\#}}{_{}})\end{eq} &
+    \begin{eq}{{p^o}}{_{N}} := \textbf{Instantiate}({p}{_{N}}, {{\#}}{_{}})\end{eq} &
     \begin{lay}normed pressure\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:148"}{ 134 }\hypertarget{"e:134"}{  } &
-    \begin{eq}{{c^o}}{_{N, S}} := \text{Instantiate}({c}{_{N, S}}, {{\#}}{_{}})\end{eq} &
+    \begin{eq}{{c^o}}{_{N, S}} := \textbf{Instantiate}({c}{_{N, S}}, {{\#}}{_{}})\end{eq} &
     \begin{lay}norming concentration\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:149"}{ 135 }\hypertarget{"e:135"}{  } &
@@ -429,11 +429,11 @@ no & equation &documentation &layer \\\hline\hline
     \begin{lay}normed measurment of concentration\end{lay} &
     \begin{lay}control\end{lay} \\
         \hyperlink{"v:157"}{ 144 }\hypertarget{"e:144"}{  } &
-    \begin{eq}{{m^{v\star}}}{_{A}} := \text{Instantiate}({m}{_{A}}, {{\#}}{_{}})\end{eq} &
+    \begin{eq}{{m^{v\star}}}{_{A}} := \textbf{Instantiate}({m}{_{A}}, {{\#}}{_{}})\end{eq} &
     \begin{lay}setpoint for measurement vector\end{lay} &
     \begin{lay}control\end{lay} \\
         \hyperlink{"v:158"}{ 145 }\hypertarget{"e:145"}{  } &
-    \begin{eq}{{m^{m\star}}}{_{A, S}} := \text{Instantiate}({m}{_{A, S}}, {{\#}}{_{}})\end{eq} &
+    \begin{eq}{{m^{m\star}}}{_{A, S}} := \textbf{Instantiate}({m}{_{A, S}}, {{\#}}{_{}})\end{eq} &
     \begin{lay}setpoiint for measurment matrix\end{lay} &
     \begin{lay}control\end{lay} \\
         \hyperlink{"v:160"}{ 146 }\hypertarget{"e:146"}{  } &
@@ -452,5 +452,69 @@ no & equation &documentation &layer \\\hline\hline
     \begin{eq}{{u^{m}}}{_{A, S}} := {P}{_{}} \, . \, {{e^{m}}}{_{A, S}}\end{eq} &
     \begin{lay}control output matrix\end{lay} &
     \begin{lay}control\end{lay} \\
+        \hyperlink{"v:166"}{ 152 }\hypertarget{"e:152"}{  } &
+    \begin{eq}{I}{_{N}} := \frac{d\,{{C}{_{N}}}}{d\,{{t}{_{}}}}\end{eq} &
+    \begin{lay}electric current definition\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+        \hyperlink{"v:168"}{ 154 }\hypertarget{"e:154"}{  } &
+    \begin{eq}{{R^e}}{_{N}} := \left( {_I}{_{N}} \right)^{-1} \, . \, {{U^e}}{_{N}}\end{eq} &
+    \begin{lay}electrical resistance\end{lay} &
+    \begin{lay}material\end{lay} \\
+        \hyperlink{"v:171"}{ 155 }\hypertarget{"e:155"}{  } &
+    \begin{eq}{{k^{e,x}}}{_{N}} := \left( {{R^e}}{_{N}} \right)^{-1} \, . \, \left({S}{_{S}} \star {{\_x}}{_{N, S}}\right)\end{eq} &
+    \begin{lay}electrical conductivity -- a simple model being a function of a selected set of species\end{lay} &
+    \begin{lay}material\end{lay} \\
+        \hyperlink{"v:172"}{ 156 }\hypertarget{"e:156"}{  } &
+    \begin{eq}{cp}{_{N}} := {{C_p}}{_{N}} \, . \, \left( {m}{_{N}} \right)^{-1}\end{eq} &
+    \begin{lay}specific heat capacity at constant pressure\end{lay} &
+    \begin{lay}material\end{lay} \\
+        \hyperlink{"v:174"}{ 158 }\hypertarget{"e:158"}{  } &
+    \begin{eq}{m}{_{N}} := {{\_\lambda}}{_{S}} \star {n}{_{N, S}}\end{eq} &
+    \begin{lay}mass\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+        \hyperlink{"v:175"}{ 159 }\hypertarget{"e:159"}{  } &
+    \begin{eq}{{C_p}}{_{N}} := {m}{_{N}} \, . \, {{\_c_p}}{_{N}}\end{eq} &
+    \begin{lay}total heat capacity\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+        \hyperlink{"v:176"}{ 160 }\hypertarget{"e:160"}{  } &
+    \begin{eq}{{T^{ref}}}{_{N}} := \textbf{Instantiate}({T}{_{N}}, {{\#}}{_{}})\end{eq} &
+    \begin{lay}reference temperature\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+        \hyperlink{"v:22"}{ 161 }\hypertarget{"e:161"}{  } &
+    \begin{eq}{H}{_{N}} := {{C_p}}{_{N}} \, . \, \left({T}{_{N}}  - {{T^{ref}}}{_{N}}\right)\end{eq} &
+    \begin{lay}Enthalpy\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+        \hyperlink{"v:19"}{ 162 }\hypertarget{"e:162"}{  } &
+    \begin{eq}{T}{_{N}} := \textbf{Root}\left( {H}{_{N}}\right)\end{eq} &
+    \begin{lay}temperature\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+        \hyperlink{"v:182"}{ 164 }\hypertarget{"e:164"}{  } &
+    \begin{eq}{{\dot{x}}}{_{D}} := {A}{_{N, D}} \star {x}{_{N}}  + {B}{_{A, D}} \star {m}{_{A}}\end{eq} &
+    \begin{lay}differential controller state\end{lay} &
+    \begin{lay}control\end{lay} \\
+        \hyperlink{"v:179"}{ 165 }\hypertarget{"e:165"}{  } &
+    \begin{eq}{x}{_{N}} := \int_{ {{t^o}}{_{}} }^{ {{t^e}}{_{}} } \, {I}{_{N, D}} \star {{\dot{x}}}{_{D}} \enskip d\,{t}{_{}}  + {{x^o}}{_{N}}\end{eq} &
+    \begin{lay}controller state\end{lay} &
+    \begin{lay}control\end{lay} \\
+        \hyperlink{"v:183"}{ 166 }\hypertarget{"e:166"}{  } &
+    \begin{eq}{{x^o}}{_{N}} := \textbf{Instantiate}({x}{_{N}}, {{\#}}{_{}})\end{eq} &
+    \begin{lay}initial controller state\end{lay} &
+    \begin{lay}control\end{lay} \\
+        \hyperlink{"v:185"}{ 169 }\hypertarget{"e:169"}{  } &
+    \begin{eq}{{t_s}}{_{A}} := \textbf{Instantiate}({I}{_{A}} \, . \, {t}{_{}}, {{\#}}{_{}})\end{eq} &
+    \begin{lay}switching times\end{lay} &
+    \begin{lay}control\end{lay} \\
+        \hyperlink{"v:162"}{ 170 }\hypertarget{"e:170"}{  } &
+    \begin{eq}{{u^{v}}}{_{A}} := {0.5}{_{}} \, . \, \left({I}{_{A}} \, . \, {1}{_{}}  - \textbf{sign} \left( \left({I}{_{A}} \, . \, {t}{_{}}\right)  - {{t_s}}{_{A}} \right)\right)\end{eq} &
+    \begin{lay}control ouput vector -- switches\end{lay} &
+    \begin{lay}control\end{lay} \\
+        \hyperlink{"v:186"}{ 171 }\hypertarget{"e:171"}{  } &
+    \begin{eq}{{k^{valve}}}{_{A}} := \textbf{Instantiate}({{\dot{V}}}{_{A}}, {{\#}}{_{}})\end{eq} &
+    \begin{lay}valve constant -- pressure difference must be dimensionless\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+        \hyperlink{"v:91"}{ 172 }\hypertarget{"e:172"}{  } &
+    \begin{eq}{{\dot{V}}}{_{A}} := {{\_u^v}}{_{A}} \, . \, {{k^{valve}}}{_{A}} \, . \, \textbf{sqrt}\left(\left({D}{_{N, A}} \star \left({p}{_{N}} \, . \, \left( {{p^o}}{_{N}} \right)^{-1}\right)\right)\right)\end{eq} &
+    \begin{lay}volumetric flow\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
 \hline
 \end{longtable}
