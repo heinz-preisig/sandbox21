@@ -261,11 +261,11 @@ no & equation &documentation &layer \\\hline\hline
     \begin{lay}density of arc material\end{lay} &
     \begin{lay}material\end{lay} \\
         \hyperlink{"v:91"}{ 80 }\hypertarget{"e:80"}{  } &
-    \begin{eq}{{\dot{V}}}{_{A}} := \left( {{\_\rho}}{_{A}} \right)^{-1} \, . \, {{\_k^c_x}}{_{A}} \, . \, {{A_{yz}}}{_{A}} \, . \, \left({D}{_{N, A}} \star {p}{_{N}}\right)\end{eq} &
+    \begin{eq}{{\hat{V}}}{_{A}} := \left( {{\_\rho}}{_{A}} \right)^{-1} \, . \, {{\_k^c_x}}{_{A}} \, . \, {{A_{yz}}}{_{A}} \, . \, \left({D}{_{N, A}} \star {p}{_{N}}\right)\end{eq} &
     \begin{lay}volumetric flow\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:92"}{ 81 }\hypertarget{"e:81"}{  } &
-    \begin{eq}{{\hat{n}^c}}{_{A, S}} := {{\dot{V}}}{_{A}} \, . \, {c}{_{A, S}}\end{eq} &
+    \begin{eq}{{\hat{n}^c}}{_{A, S}} := {{\hat{V}}}{_{A}} \, . \, {c}{_{A, S}}\end{eq} &
     \begin{lay}convective mass flow in an arc\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:93"}{ 82 }\hypertarget{"e:82"}{  } &
@@ -509,12 +509,64 @@ no & equation &documentation &layer \\\hline\hline
     \begin{lay}control ouput vector -- switches\end{lay} &
     \begin{lay}control\end{lay} \\
         \hyperlink{"v:186"}{ 171 }\hypertarget{"e:171"}{  } &
-    \begin{eq}{{k^{valve}}}{_{A}} := \textbf{Instantiate}({{\dot{V}}}{_{A}}, {{\#}}{_{}})\end{eq} &
+    \begin{eq}{{k^{valve}}}{_{A}} := \textbf{Instantiate}({{\hat{V}}}{_{A}}, {{\#}}{_{}})\end{eq} &
     \begin{lay}valve constant -- pressure difference must be dimensionless\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:91"}{ 172 }\hypertarget{"e:172"}{  } &
-    \begin{eq}{{\dot{V}}}{_{A}} := {{\_u^v}}{_{A}} \, . \, {{k^{valve}}}{_{A}} \, . \, \textbf{sqrt}\left(\left({D}{_{N, A}} \star \left({p}{_{N}} \, . \, \left( {{p^o}}{_{N}} \right)^{-1}\right)\right)\right)\end{eq} &
+    \begin{eq}{{\hat{V}}}{_{A}} := {{\_u^v}}{_{A}} \, . \, {{k^{valve}}}{_{A}} \, . \, \textbf{sqrt}\left(\left({D}{_{N, A}} \star \left({p}{_{N}} \, . \, \left( {{p^o}}{_{N}} \right)^{-1}\right)\right)\right)\end{eq} &
     \begin{lay}volumetric flow\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+        \hyperlink{"v:188"}{ 174 }\hypertarget{"e:174"}{  } &
+    \begin{eq}{{\hat{m}}}{_{A}} := {{\_\rho}}{_{A}} \, . \, {{\hat{V}}}{_{A}}\end{eq} &
+    \begin{lay}mass flow rate \end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+        \hyperlink{"v:91"}{ 175 }\hypertarget{"e:175"}{  } &
+    \begin{eq}{{\hat{V}}}{_{A}} := \left({I}{_{N, A}} \star {{v_x}}{_{N}}\right) \, . \, {{A_{yz}}}{_{A}}\end{eq} &
+    \begin{lay}volumetric flow\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+        \hyperlink{"v:189"}{ 176 }\hypertarget{"e:176"}{  } &
+    \begin{eq}{h}{_{N}} := \textbf{Instantiate}({{\ell}}{_{N}}, {{\#}}{_{}})\end{eq} &
+    \begin{lay}height\end{lay} &
+    \begin{lay}physical\end{lay} \\
+        \hyperlink{"v:192"}{ 177 }\hypertarget{"e:177"}{  } &
+    \begin{eq}{{v_x}}{_{A}} := {I}{_{N, A}} \star {{v_x}}{_{N}}\end{eq} &
+    \begin{lay}velocity in arc\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+        \hyperlink{"v:196"}{ 181 }\hypertarget{"e:181"}{  } &
+    \begin{eq}{L}{_{A}} := {I}{_{N, A}} \star {{\ell}}{_{N}}\end{eq} &
+    \begin{lay}length of pipe\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+        \hyperlink{"v:200"}{ 185 }\hypertarget{"e:185"}{  } &
+    \begin{eq}{{\dot{E}^k}}{_{A}} := {{\hat{m}}}{_{A}} \, . \, {D}{_{N, A}} \star \left({{v_x}}{_{N}} \, . \, {{v_x}}{_{N}}\right)\end{eq} &
+    \begin{lay}net kinetic energy\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+        \hyperlink{"v:201"}{ 186 }\hypertarget{"e:186"}{  } &
+    \begin{eq}{{\dot{E}^p}}{_{A}} := {{\hat{m}}}{_{A}} \, . \, {g}{_{}} \, . \, {D}{_{N, A}} \star {h}{_{N}}\end{eq} &
+    \begin{lay}net potential energy\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+        \hyperlink{"v:203"}{ 188 }\hypertarget{"e:188"}{  } &
+    \begin{eq}{{f^l}}{_{A}} := \textbf{Instantiate}({{\dot{E}^p}}{_{A}} \, . \, \left({I}{_{N, A}} \star \left( {{\ell}}{_{N}} \right)^{-1}\right), {{\#}}{_{}})\end{eq} &
+    \begin{lay}friction coefficient for linear model\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+        \hyperlink{"v:141"}{ 189 }\hypertarget{"e:189"}{  } &
+    \begin{eq}{{\hat{w}}}{_{A}} := {{f^l}}{_{A}} \, . \, {L}{_{A}}\end{eq} &
+    \begin{lay}a linear model\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+        \hyperlink{"v:205"}{ 191 }\hypertarget{"e:191"}{  } &
+    \begin{eq}{{\dot{w}^V}}{_{A}} := {{\hat{V}}}{_{A}} \, . \, \left({D}{_{N, A}} \star {p}{_{N}}\right)\end{eq} &
+    \begin{lay}net volume work\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+        \hyperlink{"v:206"}{ 192 }\hypertarget{"e:192"}{  } &
+    \begin{eq}{{\dot{E}^m}}{_{A}} := {{\dot{E}^k}}{_{A}}  + {{\dot{E}^p}}{_{A}}  + {{\dot{w}^V}}{_{A}}  + {{\hat{w}}}{_{A}}\end{eq} &
+    \begin{lay}accumulation of mechanical work\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+        \hyperlink{"v:207"}{ 193 }\hypertarget{"e:193"}{  } &
+    \begin{eq}{residual_aE_mechanical}{_{A}} := {{\dot{E}^m}}{_{A}}  - \left({{\dot{E}^k}}{_{A}}  + {{\dot{E}^p}}{_{A}}  + {{\dot{w}^V}}{_{A}}  + {{\hat{w}}}{_{A}}\right)\end{eq} &
+    \begin{lay}residual form of differential mechanical energy balance\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+        \hyperlink{"v:91"}{ 194 }\hypertarget{"e:194"}{  } &
+    \begin{eq}{{\hat{V}}}{_{A}} := \textbf{Root}\left( {residual_aE_mechanical}{_{A}}\right)\end{eq} &
+    \begin{lay}volumetric flow as a root of the pressure distribution\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
 \hline
 \end{longtable}

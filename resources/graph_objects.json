@@ -1185,13 +1185,13 @@
             "enabled": {
               "action": [],
               "colour": [
+                170,
+                170,
                 255,
-                255,
-                255,
-                100
+                255
               ],
               "height": 10,
-              "layer": "mainPanel",
+              "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
@@ -1206,7 +1206,7 @@
                 255
               ],
               "height": 10,
-              "layer": "mainPanel",
+              "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
@@ -1272,7 +1272,7 @@
                 100
               ],
               "height": 100,
-              "layer": "mainPanel",
+              "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
@@ -1287,7 +1287,7 @@
                 255
               ],
               "height": 100,
-              "layer": "mainPanel",
+              "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
@@ -2639,7 +2639,7 @@
                 255
               ],
               "height": 10,
-              "layer": "mainPanel",
+              "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
@@ -2648,13 +2648,13 @@
             "enabled": {
               "action": [],
               "colour": [
+                170,
+                170,
                 255,
-                255,
-                255,
-                100
+                255
               ],
               "height": 10,
-              "layer": "mainPanel",
+              "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
@@ -2669,7 +2669,7 @@
                 255
               ],
               "height": 10,
-              "layer": "mainPanel",
+              "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
@@ -2750,7 +2750,7 @@
                 255
               ],
               "height": 100,
-              "layer": "mainPanel",
+              "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
@@ -2765,7 +2765,7 @@
                 100
               ],
               "height": 100,
-              "layer": "mainPanel",
+              "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
@@ -2780,7 +2780,7 @@
                 255
               ],
               "height": 100,
-              "layer": "mainPanel",
+              "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
@@ -4515,13 +4515,6 @@
               "position_x": 0,
               "position_y": 50
             }
-          },
-          "energy|conduction|lumped": {
-            "-": {
-              "movable": true,
-              "position_x": 0,
-              "position_y": 50
-            }
           }
         },
         "root": {
@@ -4573,7 +4566,6 @@
             }
           },
           "energy|conduction|lumped": {
-            "": {},
             "blocked": {
               "action": [],
               "colour": [
@@ -4869,13 +4861,6 @@
               "position_x": 0,
               "position_y": 50
             }
-          },
-          "constant|AE": {
-            "-": {
-              "movable": true,
-              "position_x": 0,
-              "position_y": 50
-            }
           }
         },
         "root": {
@@ -4901,15 +4886,6 @@
               "position_y": -20,
               "width": 40
             }
-          },
-          "constant|AE": {
-            "-": {
-              "height": 40,
-              "movable": false,
-              "position_x": -20,
-              "position_y": -20,
-              "width": 40
-            }
           }
         }
       },
@@ -4929,6 +4905,7 @@
         },
         "root": {
           "node_interface": {
+            "": {},
             "blocked": {
               "action": [],
               "colour": [
@@ -4938,22 +4915,26 @@
                 255
               ],
               "height": 10,
-              "layer": "mainPanel",
+              "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
               "width": 10
             },
             "enabled": {
-              "action": [],
+              "action": [
+                "add arc",
+                "begin arc",
+                "change arc"
+              ],
               "colour": [
+                170,
+                170,
                 255,
-                255,
-                255,
-                100
+                255
               ],
               "height": 10,
-              "layer": "mainPanel",
+              "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
@@ -4968,7 +4949,7 @@
                 255
               ],
               "height": 10,
-              "layer": "mainPanel",
+              "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
@@ -5040,6 +5021,7 @@
             }
           },
           "node_intraface": {
+            "": {},
             "blocked": {
               "action": [],
               "colour": [
@@ -5049,14 +5031,18 @@
                 255
               ],
               "height": 100,
-              "layer": "mainPanel",
+              "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
               "width": 100
             },
             "enabled": {
-              "action": [],
+              "action": [
+                "add arc",
+                "begin arc",
+                "delete node"
+              ],
               "colour": [
                 255,
                 255,
@@ -5064,7 +5050,7 @@
                 100
               ],
               "height": 100,
-              "layer": "mainPanel",
+              "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
@@ -5079,7 +5065,7 @@
                 255
               ],
               "height": 100,
-              "layer": "mainPanel",
+              "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
@@ -5142,7 +5128,6 @@
         },
         "root": {
           "constant|AE": {
-            "": {},
             "blocked": {
               "action": [],
               "colour": [
@@ -5196,6 +5181,7 @@
             }
           },
           "constant|infinity": {
+            "": {},
             "blocked": {
               "action": [],
               "colour": [

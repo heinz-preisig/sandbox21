@@ -344,15 +344,70 @@
     "network": "control >>> macroscopic",
     "rhs": " u_vector"
   },
+  "E_174": {
+    "lhs": "fm",
+    "network": "macroscopic",
+    "rhs": " _density_A . fV"
+  },
+  "E_175": {
+    "lhs": "fV",
+    "network": "macroscopic",
+    "rhs": " ( I_N_A * v_x ) . A_yz_A"
+  },
+  "E_176": {
+    "lhs": "height",
+    "network": "physical",
+    "rhs": " Instantiate ( l , value )"
+  },
+  "E_177": {
+    "lhs": "v_x_A",
+    "network": "macroscopic",
+    "rhs": " I_N_A * v_x"
+  },
   "E_18": {
     "lhs": "G",
     "network": "physical",
     "rhs": " U + p . V - T . S"
   },
+  "E_181": {
+    "lhs": "length_pipe",
+    "network": "macroscopic",
+    "rhs": " I_N_A * l"
+  },
+  "E_185": {
+    "lhs": "aE_kinetic",
+    "network": "macroscopic",
+    "rhs": " fm . D * ( v_x . v_x )"
+  },
+  "E_186": {
+    "lhs": "aE_potential",
+    "network": "macroscopic",
+    "rhs": " fm . g . D * height"
+  },
+  "E_188": {
+    "lhs": "friction_coeff_linear",
+    "network": "macroscopic",
+    "rhs": " Instantiate ( aE_potential . ( I_N_A * inv ( l ) ) , value )"
+  },
+  "E_189": {
+    "lhs": "fw",
+    "network": "macroscopic",
+    "rhs": " friction_coeff_linear . length_pipe"
+  },
   "E_19": {
     "lhs": "v_x",
     "network": "physical",
     "rhs": " inv ( t ) . r_x"
+  },
+  "E_191": {
+    "lhs": "fw_V",
+    "network": "macroscopic",
+    "rhs": " fV . ( D * p )"
+  },
+  "E_192": {
+    "lhs": "aE_mechanical",
+    "network": "macroscopic",
+    "rhs": " aE_kinetic + aE_potential + fw_V + fw"
   },
   "E_2": {
     "lhs": "zero",
@@ -783,5 +838,15 @@
     "lhs": "T_K",
     "network": "reactions",
     "rhs": " T . P_N_K"
+  },
+  "E_193": {
+    "lhs": "residual_aE_mechanical",
+    "network": "macroscopic",
+    "rhs": " aE_mechanical - ( aE_kinetic + aE_potential + fw_V + fw )"
+  },
+  "E_194": {
+    "lhs": "fV",
+    "network": "macroscopic",
+    "rhs": " Root ( residual_aE_mechanical )"
   }
 }

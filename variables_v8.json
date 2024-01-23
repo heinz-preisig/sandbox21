@@ -232,7 +232,7 @@
         "E_86": {
           "rhs": {
             "global_ID": " O_10 D_0 V_21 D_7 V_1 D_1",
-            "latex": "\\text{Instantiate}({{\\mu}}{_{N, S}}, {{\\#}}{_{}})",
+            "latex": "\\textbf{Instantiate}({{\\mu}}{_{N, S}}, {{\\#}}{_{}})",
             "matlab": null
           },
           "type": "generic",
@@ -947,7 +947,7 @@
         "E_100": {
           "rhs": {
             "global_ID": " O_10 D_0 V_34 O_4 V_114 D_7 V_1 D_1",
-            "latex": "\\text{Instantiate}({R}{_{N}} \\, . \\, {T}{_{N, K}}, {{\\#}}{_{}})",
+            "latex": "\\textbf{Instantiate}({R}{_{N}} \\, . \\, {T}{_{N, K}}, {{\\#}}{_{}})",
             "matlab": null
           },
           "type": "generic",
@@ -1101,7 +1101,7 @@
         "E_8": {
           "rhs": {
             "global_ID": " O_10 D_0 V_11 D_7 V_1 D_1",
-            "latex": "\\text{Instantiate}({{\\ell}}{_{N}}, {{\\#}}{_{}})",
+            "latex": "\\textbf{Instantiate}({{\\ell}}{_{N}}, {{\\#}}{_{}})",
             "matlab": null
           },
           "type": "generic",
@@ -1333,7 +1333,7 @@
         "E_110": {
           "rhs": {
             "global_ID": " O_10 D_0 V_125 D_7 V_1 D_1",
-            "latex": "\\text{Instantiate}({{\\_c}}{_{N, S}}, {{\\#}}{_{}})",
+            "latex": "\\textbf{Instantiate}({{\\_c}}{_{N, S}}, {{\\#}}{_{}})",
             "matlab": null
           },
           "type": "generic",
@@ -1511,7 +1511,7 @@
         "E_9": {
           "rhs": {
             "global_ID": " O_10 D_0 V_11 D_7 V_1 D_1",
-            "latex": "\\text{Instantiate}({{\\ell}}{_{N}}, {{\\#}}{_{}})",
+            "latex": "\\textbf{Instantiate}({{\\ell}}{_{N}}, {{\\#}}{_{}})",
             "matlab": null
           },
           "type": "generic",
@@ -1628,7 +1628,7 @@
         "E_118": {
           "rhs": {
             "global_ID": " O_10 D_0 V_98  O_5 D_0 V_113  O_5 D_0 F_15 D_0 V_4 D_1 O_4 F_15 D_0 V_15 D_1 O_4 V_18 D_1 D_1 D_7 V_1 D_1",
-            "latex": "\\text{Instantiate}({I}{_{S}} \\star \\left({P}{_{N, K}} \\star \\left(\\left( {t}{_{}} \\right)^{-1} \\, . \\, \\left( {V}{_{N}} \\right)^{-1} \\, . \\, {n}{_{N, S}}\\right)\\right), {{\\#}}{_{}})",
+            "latex": "\\textbf{Instantiate}({I}{_{S}} \\star \\left({P}{_{N, K}} \\star \\left(\\left( {t}{_{}} \\right)^{-1} \\, . \\, \\left( {V}{_{N}} \\right)^{-1} \\, . \\, {n}{_{N, S}}\\right)\\right), {{\\#}}{_{}})",
             "matlab": null
           },
           "type": "generic",
@@ -1690,7 +1690,7 @@
         "E_119": {
           "rhs": {
             "global_ID": " V_134 O_4 F_0 D_0 F_11 D_0 V_115 D_1 O_4 F_15 D_0 V_34 O_4 V_114 D_1 D_1",
-            "latex": "{{K^o}}{_{K}} \\, . \\, exp(\\left( -{E_a}{_{N, K}} \\right) \\, . \\, \\left( {R}{_{N}} \\, . \\, {T}{_{N, K}} \\right)^{-1})",
+            "latex": "{{K^o}}{_{K}} \\, . \\, \\textbf{exp}\\left(\\left( -{E_a}{_{N, K}} \\right) \\, . \\, \\left( {R}{_{N}} \\, . \\, {T}{_{N, K}} \\right)^{-1}\\right)",
             "matlab": "Ko(K) .* exp(-1 .* Ea(N, K) .* 1 ./ R(N) .* T_K(N, K))"
           },
           "type": "generic",
@@ -1988,7 +1988,7 @@
         "E_10": {
           "rhs": {
             "global_ID": " O_10 D_0 V_11 D_7 V_1 D_1",
-            "latex": "\\text{Instantiate}({{\\ell}}{_{N}}, {{\\#}}{_{}})",
+            "latex": "\\textbf{Instantiate}({{\\ell}}{_{N}}, {{\\#}}{_{}})",
             "matlab": null
           },
           "type": "generic",
@@ -2046,7 +2046,7 @@
         "E_125": {
           "rhs": {
             "global_ID": " O_10 D_0 V_109 D_7 V_1 D_1",
-            "latex": "\\text{Instantiate}({{\\hat{H}^c}}{_{A}}, {{\\#}}{_{}})",
+            "latex": "\\textbf{Instantiate}({{\\hat{H}^c}}{_{A}}, {{\\#}}{_{}})",
             "matlab": null
           },
           "type": "generic",
@@ -2058,6 +2058,26 @@
           ],
           "created": "2023-12-30 18:13:22",
           "modified": "2023-12-30 18:13:22",
+          "lhs": {
+            "global_ID": "V_141",
+            "latex": "{{\\hat{w}}}{_{A}}",
+            "matlab": "fw(A)"
+          }
+        },
+        "E_189": {
+          "rhs": {
+            "global_ID": " V_203 O_4 V_196",
+            "latex": "{{f^l}}{_{A}} \\, . \\, {L}{_{A}}"
+          },
+          "type": "generic",
+          "doc": "a linear model",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_196",
+            "V_203"
+          ],
+          "created": "2024-01-23 18:11:28",
+          "modified": "2024-01-23 18:11:28",
           "lhs": {
             "global_ID": "V_141",
             "latex": "{{\\hat{w}}}{_{A}}",
@@ -2222,7 +2242,7 @@
         "E_130": {
           "rhs": {
             "global_ID": " O_10 D_0 V_22 D_7 V_1 D_1",
-            "latex": "\\text{Instantiate}({H}{_{N}}, {{\\#}}{_{}})",
+            "latex": "\\textbf{Instantiate}({H}{_{N}}, {{\\#}}{_{}})",
             "matlab": null
           },
           "type": "generic",
@@ -2280,7 +2300,7 @@
         "E_131": {
           "rhs": {
             "global_ID": " O_10 D_0 V_18 D_7 V_1 D_1",
-            "latex": "\\text{Instantiate}({n}{_{N, S}}, {{\\#}}{_{}})",
+            "latex": "\\textbf{Instantiate}({n}{_{N, S}}, {{\\#}}{_{}})",
             "matlab": null
           },
           "type": "generic",
@@ -2339,7 +2359,7 @@
         "E_132": {
           "rhs": {
             "global_ID": " O_10 D_0 V_19 D_7 V_1 D_1",
-            "latex": "\\text{Instantiate}({T}{_{N}}, {{\\#}}{_{}})",
+            "latex": "\\textbf{Instantiate}({T}{_{N}}, {{\\#}}{_{}})",
             "matlab": null
           },
           "type": "generic",
@@ -2397,7 +2417,7 @@
         "E_133": {
           "rhs": {
             "global_ID": " O_10 D_0 V_20 D_7 V_1 D_1",
-            "latex": "\\text{Instantiate}({p}{_{N}}, {{\\#}}{_{}})",
+            "latex": "\\textbf{Instantiate}({p}{_{N}}, {{\\#}}{_{}})",
             "matlab": null
           },
           "type": "generic",
@@ -2455,7 +2475,7 @@
         "E_134": {
           "rhs": {
             "global_ID": " O_10 D_0 V_85 D_7 V_1 D_1",
-            "latex": "\\text{Instantiate}({c}{_{N, S}}, {{\\#}}{_{}})",
+            "latex": "\\textbf{Instantiate}({c}{_{N, S}}, {{\\#}}{_{}})",
             "matlab": null
           },
           "type": "generic",
@@ -3057,7 +3077,7 @@
         "E_144": {
           "rhs": {
             "global_ID": " O_10 D_0 V_155 D_7 V_1 D_1",
-            "latex": "\\text{Instantiate}({m}{_{A}}, {{\\#}}{_{}})",
+            "latex": "\\textbf{Instantiate}({m}{_{A}}, {{\\#}}{_{}})",
             "matlab": null
           },
           "type": "generic",
@@ -3115,7 +3135,7 @@
         "E_145": {
           "rhs": {
             "global_ID": " O_10 D_0 V_156 D_7 V_1 D_1",
-            "latex": "\\text{Instantiate}({m}{_{A, S}}, {{\\#}}{_{}})",
+            "latex": "\\textbf{Instantiate}({m}{_{A, S}}, {{\\#}}{_{}})",
             "matlab": null
           },
           "type": "generic",
@@ -3380,7 +3400,7 @@
         "E_170": {
           "rhs": {
             "global_ID": " V_8 O_4 D_0 V_97 O_4 V_2 O_1 F_16 D_0 D_0 V_97 O_4 V_4 D_1 O_1 V_185 D_1 D_1",
-            "latex": "{0.5}{_{}} \\, . \\, \\left({I}{_{A}} \\, . \\, {1}{_{}}  - \\text{sign} \\left( \\left({I}{_{A}} \\, . \\, {t}{_{}}\\right)  - {t_switch_A}{_{A}} \\right)\\right)"
+            "latex": "{0.5}{_{}} \\, . \\, \\left({I}{_{A}} \\, . \\, {1}{_{}}  - \\textbf{sign} \\left( \\left({I}{_{A}} \\, . \\, {t}{_{}}\\right)  - {{t_s}}{_{A}} \\right)\\right)"
           },
           "type": "generic",
           "doc": "control ouput vector -- switches",
@@ -4147,7 +4167,7 @@
         "E_160": {
           "rhs": {
             "global_ID": " O_10 D_0 V_19 D_7 V_1 D_1",
-            "latex": "\\text{Instantiate}({T}{_{N}}, {{\\#}}{_{}})",
+            "latex": "\\textbf{Instantiate}({T}{_{N}}, {{\\#}}{_{}})",
             "matlab": null
           },
           "type": "generic",
@@ -4497,7 +4517,7 @@
         "E_166": {
           "rhs": {
             "global_ID": " O_10 D_0 V_179 D_7 V_1 D_1",
-            "latex": "\\text{Instantiate}({x}{_{N}}, {{\\#}}{_{}})",
+            "latex": "\\textbf{Instantiate}({x}{_{N}}, {{\\#}}{_{}})",
             "matlab": null
           },
           "type": "generic",
@@ -4546,7 +4566,7 @@
       },
       "compiled_lhs": {
         "global_ID": "V_185",
-        "latex": "t_switch_A"
+        "latex": "{{t_s}}{_{A}}"
       },
       "created": "2024-01-09 15:00:56",
       "doc": "switching times",
@@ -4554,7 +4574,7 @@
         "E_169": {
           "rhs": {
             "global_ID": " O_10 D_0 V_97 O_4 V_4 D_7 V_1 D_1",
-            "latex": "\\text{Instantiate}({I}{_{A}} \\, . \\, {t}{_{}}, {{\\#}}{_{}})"
+            "latex": "\\textbf{Instantiate}({I}{_{A}} \\, . \\, {t}{_{}}, {{\\#}}{_{}})"
           },
           "type": "generic",
           "doc": "switching times",
@@ -4568,7 +4588,7 @@
           "modified": "2024-01-09 15:00:56",
           "lhs": {
             "global_ID": "V_185",
-            "latex": "t_switch_A"
+            "latex": "{{t_s}}{_{A}}"
           }
         }
       },
@@ -4610,7 +4630,7 @@
         "E_171": {
           "rhs": {
             "global_ID": " O_10 D_0 V_91 D_7 V_1 D_1",
-            "latex": "\\text{Instantiate}({{\\dot{V}}}{_{A}}, {{\\#}}{_{}})"
+            "latex": "\\textbf{Instantiate}({{\\hat{V}}}{_{A}}, {{\\#}}{_{}})"
           },
           "type": "generic",
           "doc": "valve constant -- pressure difference must be dimensionless",
@@ -4701,6 +4721,116 @@
         0
       ]
     },
+    "V_188": {
+      "IRI": "qudt:MassFlowRate",
+      "aliases": {
+        "matlab": "fm",
+        "latex": "{\\hat{m}}",
+        "internal_code": "fm",
+        "global_ID": "V_188"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_188",
+        "latex": "{{\\hat{m}}}{_{A}}"
+      },
+      "created": "2024-01-22 16:55:25",
+      "doc": "mass flow rate ",
+      "equations": {
+        "E_174": {
+          "rhs": {
+            "global_ID": " V_90 O_4 V_91",
+            "latex": "{{\\_\\rho}}{_{A}} \\, . \\, {{\\hat{V}}}{_{A}}"
+          },
+          "type": "generic",
+          "doc": "mass flow rate ",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_90",
+            "V_91"
+          ],
+          "created": "2024-01-22 16:55:25",
+          "modified": "2024-01-22 16:55:25",
+          "lhs": {
+            "global_ID": "V_188",
+            "latex": "{{\\hat{m}}}{_{A}}"
+          }
+        }
+      },
+      "index_structures": [
+        "I_2"
+      ],
+      "label": "fm",
+      "modified": "2024-01-22 17:03:00",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "transport",
+      "units": [
+        -1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_189": {
+      "IRI": "promo:height",
+      "aliases": {
+        "matlab": "height",
+        "latex": "h",
+        "internal_code": "height",
+        "global_ID": "V_189"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_189",
+        "latex": "{h}{_{N}}"
+      },
+      "created": "2024-01-22 17:07:26",
+      "doc": "height",
+      "equations": {
+        "E_176": {
+          "rhs": {
+            "global_ID": " O_10 D_0 V_11 D_7 V_1 D_1",
+            "latex": "\\textbf{Instantiate}({{\\ell}}{_{N}}, {{\\#}}{_{}})"
+          },
+          "type": "generic",
+          "doc": "height",
+          "network": "physical",
+          "incidence_list": [
+            "V_1",
+            "V_11"
+          ],
+          "created": "2024-01-22 17:07:26",
+          "modified": "2024-01-22 17:07:26",
+          "lhs": {
+            "global_ID": "V_189",
+            "latex": "{h}{_{N}}"
+          }
+        }
+      },
+      "index_structures": [
+        "I_1"
+      ],
+      "label": "height",
+      "modified": "2024-01-22 17:07:36",
+      "network": "physical",
+      "port_variable": false,
+      "tokens": [],
+      "type": "frame",
+      "units": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
     "V_19": {
       "IRI": "promo:T",
       "aliases": {
@@ -4741,7 +4871,7 @@
         "E_162": {
           "rhs": {
             "global_ID": " F_17 D_0 V_22 D_1",
-            "latex": "Root\\left( {H}{_{N}}\\right)",
+            "latex": "\\textbf{Root}\\left( {H}{_{N}}\\right)",
             "matlab": null
           },
           "type": "generic",
@@ -4779,6 +4909,182 @@
         0
       ]
     },
+    "V_190": {
+      "IRI": "promo:g",
+      "aliases": {
+        "matlab": "g",
+        "latex": "g",
+        "internal_code": "g",
+        "global_ID": "V_190"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_190",
+        "latex": "{g}{_{}}"
+      },
+      "created": "2024-01-22 17:13:48",
+      "doc": "gravitational constant",
+      "equations": {},
+      "index_structures": [],
+      "label": "g",
+      "modified": "2024-01-23 09:37:10",
+      "network": "physical",
+      "port_variable": true,
+      "tokens": [],
+      "type": "constant",
+      "units": [
+        -2,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_191": {
+      "IRI": "promo:friction_coeff",
+      "aliases": {
+        "matlab": "friction_coeff",
+        "latex": "{f}",
+        "internal_code": "friction_coeff",
+        "global_ID": "V_191"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_191",
+        "latex": "{{f}}{_{}}"
+      },
+      "created": "2024-01-22 17:35:40",
+      "doc": "friction coefficient",
+      "equations": {},
+      "index_structures": [],
+      "label": "friction_coeff",
+      "modified": "2024-01-23 18:36:14",
+      "network": "macroscopic",
+      "port_variable": true,
+      "tokens": [],
+      "type": "properties",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_192": {
+      "IRI": "promo:v_x_A",
+      "aliases": {
+        "matlab": "v_x_A",
+        "latex": "{v_x}",
+        "internal_code": "v_x_A",
+        "global_ID": "V_192"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_192",
+        "latex": "{{v_x}}{_{A}}"
+      },
+      "created": "2024-01-23 09:02:49",
+      "doc": "velocity in arc",
+      "equations": {
+        "E_177": {
+          "rhs": {
+            "global_ID": " V_48  O_5 V_27",
+            "latex": "{I}{_{N, A}} \\star {{v_x}}{_{N}}"
+          },
+          "type": "generic",
+          "doc": "velocity in arc",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_27",
+            "V_48"
+          ],
+          "created": "2024-01-23 09:02:49",
+          "modified": "2024-01-23 09:02:49",
+          "lhs": {
+            "global_ID": "V_192",
+            "latex": "{{v_x}}{_{A}}"
+          }
+        }
+      },
+      "index_structures": [
+        "I_2"
+      ],
+      "label": "v_x_A",
+      "modified": "2024-01-23 09:13:36",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "secondaryState",
+      "units": [
+        -1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_196": {
+      "IRI": "promo:length_pipe",
+      "aliases": {
+        "matlab": "length_pipe",
+        "latex": "L",
+        "internal_code": "length_pipe",
+        "global_ID": "V_196"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_196",
+        "latex": "{L}{_{A}}"
+      },
+      "created": "2024-01-23 10:28:48",
+      "doc": "length of pipe",
+      "equations": {
+        "E_181": {
+          "rhs": {
+            "global_ID": " V_48  O_5 V_11",
+            "latex": "{I}{_{N, A}} \\star {{\\ell}}{_{N}}"
+          },
+          "type": "generic",
+          "doc": "length of pipe",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_11",
+            "V_48"
+          ],
+          "created": "2024-01-23 10:28:48",
+          "modified": "2024-01-23 10:28:48",
+          "lhs": {
+            "global_ID": "V_196",
+            "latex": "{L}{_{A}}"
+          }
+        }
+      },
+      "index_structures": [
+        "I_2"
+      ],
+      "label": "length_pipe",
+      "modified": "2024-01-23 18:33:20",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "transport",
+      "units": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
     "V_2": {
       "IRI": "promo:one",
       "aliases": {
@@ -4798,7 +5104,7 @@
         "E_1": {
           "rhs": {
             "global_ID": " O_10 D_0 V_1 D_7 V_1 D_1",
-            "latex": "\\text{Instantiate}({{\\#}}{_{}}, {{\\#}}{_{}})",
+            "latex": "\\textbf{Instantiate}({{\\#}}{_{}}, {{\\#}}{_{}})",
             "matlab": null
           },
           "type": "generic",
@@ -4892,6 +5198,347 @@
         0
       ]
     },
+    "V_200": {
+      "IRI": "promo:aE_kinetic",
+      "aliases": {
+        "matlab": "aE_kinetic",
+        "latex": "{\\dot{E}^k}",
+        "internal_code": "aE_kinetic",
+        "global_ID": "V_200"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_200",
+        "latex": "{{\\dot{E}^k}}{_{A}}"
+      },
+      "created": "2024-01-23 17:18:46",
+      "doc": "net kinetic energy",
+      "equations": {
+        "E_185": {
+          "rhs": {
+            "global_ID": " V_188 O_4 V_64  O_5 D_0 V_27 O_4 V_27 D_1",
+            "latex": "{{\\hat{m}}}{_{A}} \\, . \\, {D}{_{N, A}} \\star \\left({{v_x}}{_{N}} \\, . \\, {{v_x}}{_{N}}\\right)"
+          },
+          "type": "generic",
+          "doc": "net kinetic energy",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_188",
+            "V_27",
+            "V_64"
+          ],
+          "created": "2024-01-23 17:18:46",
+          "modified": "2024-01-23 17:18:46",
+          "lhs": {
+            "global_ID": "V_200",
+            "latex": "{{\\dot{E}^k}}{_{A}}"
+          }
+        }
+      },
+      "index_structures": [
+        "I_2"
+      ],
+      "label": "aE_kinetic",
+      "modified": "2024-01-23 18:33:45",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "transport",
+      "units": [
+        -3,
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_201": {
+      "IRI": "promo:aE_potential",
+      "aliases": {
+        "matlab": "aE_potential",
+        "latex": "{\\dot{E}^p}",
+        "internal_code": "aE_potential",
+        "global_ID": "V_201"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_201",
+        "latex": "{{\\dot{E}^p}}{_{A}}"
+      },
+      "created": "2024-01-23 17:19:45",
+      "doc": "net potential energy",
+      "equations": {
+        "E_186": {
+          "rhs": {
+            "global_ID": " V_188 O_4 V_190 O_4 V_64  O_5 V_189",
+            "latex": "{{\\hat{m}}}{_{A}} \\, . \\, {g}{_{}} \\, . \\, {D}{_{N, A}} \\star {h}{_{N}}"
+          },
+          "type": "generic",
+          "doc": "net potential energy",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_188",
+            "V_189",
+            "V_190",
+            "V_64"
+          ],
+          "created": "2024-01-23 17:19:45",
+          "modified": "2024-01-23 17:19:45",
+          "lhs": {
+            "global_ID": "V_201",
+            "latex": "{{\\dot{E}^p}}{_{A}}"
+          }
+        }
+      },
+      "index_structures": [
+        "I_2"
+      ],
+      "label": "aE_potential",
+      "modified": "2024-01-23 18:34:02",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "transport",
+      "units": [
+        -3,
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_203": {
+      "IRI": "promo:friction_coeff_linear",
+      "aliases": {
+        "matlab": "friction_coeff_linear",
+        "latex": "{f^l}",
+        "internal_code": "friction_coeff_linear",
+        "global_ID": "V_203"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_203",
+        "latex": "{{f^l}}{_{A}}"
+      },
+      "created": "2024-01-23 18:08:48",
+      "doc": "friction coefficient for linear model",
+      "equations": {
+        "E_188": {
+          "rhs": {
+            "global_ID": " O_10 D_0 V_201 O_4 D_0 V_48  O_5 F_15 D_0 V_11 D_1 D_1 D_7 V_1 D_1",
+            "latex": "\\textbf{Instantiate}({{\\dot{E}^p}}{_{A}} \\, . \\, \\left({I}{_{N, A}} \\star \\left( {{\\ell}}{_{N}} \\right)^{-1}\\right), {{\\#}}{_{}})"
+          },
+          "type": "generic",
+          "doc": "friction coefficient for linear model",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_1",
+            "V_11",
+            "V_201",
+            "V_48"
+          ],
+          "created": "2024-01-23 18:08:48",
+          "modified": "2024-01-23 18:08:48",
+          "lhs": {
+            "global_ID": "V_203",
+            "latex": "{{f^l}}{_{A}}"
+          }
+        }
+      },
+      "index_structures": [
+        "I_2"
+      ],
+      "label": "friction_coeff_linear",
+      "modified": "2024-01-23 18:36:07",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "properties",
+      "units": [
+        -3,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_205": {
+      "IRI": "promo:fw_V",
+      "aliases": {
+        "matlab": "fw_V",
+        "latex": "{\\dot{w}^V}",
+        "internal_code": "fw_V",
+        "global_ID": "V_205"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_205",
+        "latex": "{{\\dot{w}^V}}{_{A}}"
+      },
+      "created": "2024-01-23 18:20:04",
+      "doc": "net volume work",
+      "equations": {
+        "E_191": {
+          "rhs": {
+            "global_ID": " V_91 O_4 D_0 V_64  O_5 V_20 D_1",
+            "latex": "{{\\hat{V}}}{_{A}} \\, . \\, \\left({D}{_{N, A}} \\star {p}{_{N}}\\right)"
+          },
+          "type": "generic",
+          "doc": "net volume work",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_20",
+            "V_64",
+            "V_91"
+          ],
+          "created": "2024-01-23 18:20:04",
+          "modified": "2024-01-23 18:20:04",
+          "lhs": {
+            "global_ID": "V_205",
+            "latex": "{{\\dot{w}^V}}{_{A}}"
+          }
+        }
+      },
+      "index_structures": [
+        "I_2"
+      ],
+      "label": "fw_V",
+      "modified": "2024-01-23 18:35:42",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "transport",
+      "units": [
+        -3,
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_206": {
+      "IRI": "promo:aE_mechanical",
+      "aliases": {
+        "matlab": "aE_mechanical",
+        "latex": "{\\dot{E}^m}",
+        "internal_code": "aE_mechanical",
+        "global_ID": "V_206"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_206",
+        "latex": "{{\\dot{E}^m}}{_{A}}"
+      },
+      "created": "2024-01-23 18:21:20",
+      "doc": "accumulation of mechanical work",
+      "equations": {
+        "E_192": {
+          "rhs": {
+            "global_ID": " V_200 O_0 V_201 O_0 V_205 O_0 V_141",
+            "latex": "{{\\dot{E}^k}}{_{A}}  + {{\\dot{E}^p}}{_{A}}  + {{\\dot{w}^V}}{_{A}}  + {{\\hat{w}}}{_{A}}"
+          },
+          "type": "generic",
+          "doc": "accumulation of mechanical work",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_141",
+            "V_200",
+            "V_201",
+            "V_205"
+          ],
+          "created": "2024-01-23 18:21:20",
+          "modified": "2024-01-23 18:21:20",
+          "lhs": {
+            "global_ID": "V_206",
+            "latex": "{{\\dot{E}^m}}{_{A}}"
+          }
+        }
+      },
+      "index_structures": [
+        "I_2"
+      ],
+      "label": "aE_mechanical",
+      "modified": "2024-01-23 18:34:15",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "transport",
+      "units": [
+        -3,
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_207": {
+      "IRI": "promo:residual_aE_mechanical",
+      "aliases": {
+        "matlab": "residual_aE_mechanical",
+        "latex": "residual_aE_mechanical",
+        "internal_code": "residual_aE_mechanical",
+        "global_ID": "V_207"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_207",
+        "latex": "{residual_aE_mechanical}{_{A}}"
+      },
+      "created": "2024-01-23 18:38:35",
+      "doc": "residual form of differential mechanical energy balance",
+      "equations": {
+        "E_193": {
+          "rhs": {
+            "global_ID": " V_206 O_1 D_0 V_200 O_0 V_201 O_0 V_205 O_0 V_141 D_1",
+            "latex": "{{\\dot{E}^m}}{_{A}}  - \\left({{\\dot{E}^k}}{_{A}}  + {{\\dot{E}^p}}{_{A}}  + {{\\dot{w}^V}}{_{A}}  + {{\\hat{w}}}{_{A}}\\right)"
+          },
+          "type": "generic",
+          "doc": "residual form of differential mechanical energy balance",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_141",
+            "V_200",
+            "V_201",
+            "V_205",
+            "V_206"
+          ],
+          "created": "2024-01-23 18:38:35",
+          "modified": "2024-01-23 18:38:35",
+          "lhs": {
+            "global_ID": "V_207",
+            "latex": "{residual_aE_mechanical}{_{A}}"
+          }
+        }
+      },
+      "index_structures": [
+        "I_2"
+      ],
+      "label": "residual_aE_mechanical",
+      "modified": "2024-01-23 18:38:35",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "transport",
+      "units": [
+        -3,
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
     "V_21": {
       "IRI": "promo:chemPot",
       "aliases": {
@@ -4932,7 +5579,7 @@
         "E_88": {
           "rhs": {
             "global_ID": " V_102 O_0 V_34 O_4 V_19 O_4 F_2 D_0 V_103 D_1",
-            "latex": "{{\\mu^o}}{_{N, S}}  + {R}{_{N}} \\, . \\, {T}{_{N}} \\, . \\, ln({{\\_x}}{_{N, S}})",
+            "latex": "{{\\mu^o}}{_{N, S}}  + {R}{_{N}} \\, . \\, {T}{_{N}} \\, . \\, \\textbf{ln}\\left({{\\_x}}{_{N, S}}\\right)",
             "matlab": "chemPot_o(N, S) + R(N) .* T(N) .* log(_x(N, S))"
           },
           "type": "generic",
@@ -5462,7 +6109,7 @@
         "E_2": {
           "rhs": {
             "global_ID": " O_10 D_0 V_1 D_7 V_1 D_1",
-            "latex": "\\text{Instantiate}({{\\#}}{_{}}, {{\\#}}{_{}})",
+            "latex": "\\textbf{Instantiate}({{\\#}}{_{}}, {{\\#}}{_{}})",
             "matlab": null
           },
           "type": "generic",
@@ -5607,7 +6254,7 @@
         "E_24": {
           "rhs": {
             "global_ID": " O_10 D_0 V_17 D_7 V_1 D_1",
-            "latex": "\\text{Instantiate}({S}{_{N}}, {{\\#}}{_{}})",
+            "latex": "\\textbf{Instantiate}({S}{_{N}}, {{\\#}}{_{}})",
             "matlab": null
           },
           "type": "generic",
@@ -6629,7 +7276,7 @@
         "E_3": {
           "rhs": {
             "global_ID": " O_10 D_0 V_4 D_7 V_3 D_1",
-            "latex": "\\text{Instantiate}({t}{_{}}, {0}{_{}})",
+            "latex": "\\textbf{Instantiate}({t}{_{}}, {0}{_{}})",
             "matlab": null
           },
           "type": "generic",
@@ -7268,7 +7915,7 @@
         "E_4": {
           "rhs": {
             "global_ID": " O_10 D_0 V_4 D_7 V_1 D_1",
-            "latex": "\\text{Instantiate}({t}{_{}}, {{\\#}}{_{}})",
+            "latex": "\\textbf{Instantiate}({t}{_{}}, {{\\#}}{_{}})",
             "matlab": null
           },
           "type": "generic",
@@ -7894,7 +8541,7 @@
         "E_5": {
           "rhs": {
             "global_ID": " O_10 D_0 V_4 D_7 V_1 D_1",
-            "latex": "\\text{Instantiate}({t}{_{}}, {{\\#}}{_{}})",
+            "latex": "\\textbf{Instantiate}({t}{_{}}, {{\\#}}{_{}})",
             "matlab": null
           },
           "type": "generic",
@@ -8527,7 +9174,7 @@
         "E_6": {
           "rhs": {
             "global_ID": " O_10 D_0 V_1 D_7 V_1 D_1",
-            "latex": "\\text{Instantiate}({{\\#}}{_{}}, {{\\#}}{_{}})",
+            "latex": "\\textbf{Instantiate}({{\\#}}{_{}}, {{\\#}}{_{}})",
             "matlab": null
           },
           "type": "generic",
@@ -8930,7 +9577,7 @@
         "E_75": {
           "rhs": {
             "global_ID": " F_16 D_0 V_64  O_5 V_20 D_1",
-            "latex": "\\text{sign} \\left( {D}{_{N, A}} \\star {p}{_{N}} \\right)",
+            "latex": "\\textbf{sign} \\left( {D}{_{N, A}} \\star {p}{_{N}} \\right)",
             "matlab": "sign(D(N, A) * p(N))"
           },
           "type": "generic",
@@ -9164,7 +9811,7 @@
         "E_7": {
           "rhs": {
             "global_ID": " F_16 D_0 V_4 O_1 V_5 D_1 O_1 F_16 D_0 V_4 O_1 D_0 V_5 O_1 V_7 D_1 D_1",
-            "latex": "\\text{sign} \\left( {t}{_{}}  - {{t^o}}{_{}} \\right)  - \\text{sign} \\left( {t}{_{}}  - \\left({{t^o}}{_{}}  - {{\\Delta t}}{_{}}\\right) \\right)",
+            "latex": "\\textbf{sign} \\left( {t}{_{}}  - {{t^o}}{_{}} \\right)  - \\textbf{sign} \\left( {t}{_{}}  - \\left({{t^o}}{_{}}  - {{\\Delta t}}{_{}}\\right) \\right)",
             "matlab": "sign(t - to) - sign(t - (to - t_interval))"
           },
           "type": "generic",
@@ -9260,16 +9907,16 @@
       ]
     },
     "V_91": {
-      "IRI": "promo:fV",
+      "IRI": "qudt:VolumeFlowRate",
       "aliases": {
         "matlab": "fV",
-        "latex": "{\\dot{V}}",
+        "latex": "{\\hat{V}}",
         "internal_code": "fV",
         "global_ID": "V_91"
       },
       "compiled_lhs": {
         "global_ID": "V_91",
-        "latex": "{{\\dot{V}}}{_{A}}",
+        "latex": "{{\\hat{V}}}{_{A}}",
         "matlab": "fV(A)"
       },
       "created": "2023-12-21 10:46:47",
@@ -9295,14 +9942,14 @@
           "modified": "2023-12-21 10:46:47",
           "lhs": {
             "global_ID": "V_91",
-            "latex": "{{\\dot{V}}}{_{A}}",
+            "latex": "{{\\hat{V}}}{_{A}}",
             "matlab": "fV(A)"
           }
         },
         "E_172": {
           "rhs": {
             "global_ID": " V_187 O_4 V_186 O_4 F_3 D_0 D_0 V_64  O_5 D_0 V_20 O_4 F_15 D_0 V_147 D_1 D_1 D_1 D_1",
-            "latex": "{{\\_u^v}}{_{A}} \\, . \\, {{k^{valve}}}{_{A}} \\, . \\, sqrt(\\left({D}{_{N, A}} \\star \\left({p}{_{N}} \\, . \\, \\left( {{p^o}}{_{N}} \\right)^{-1}\\right)\\right))"
+            "latex": "{{\\_u^v}}{_{A}} \\, . \\, {{k^{valve}}}{_{A}} \\, . \\, \\textbf{sqrt}\\left(\\left({D}{_{N, A}} \\star \\left({p}{_{N}} \\, . \\, \\left( {{p^o}}{_{N}} \\right)^{-1}\\right)\\right)\\right)"
           },
           "type": "generic",
           "doc": "volumetric flow",
@@ -9318,7 +9965,47 @@
           "modified": "2024-01-10 17:14:53",
           "lhs": {
             "global_ID": "V_91",
-            "latex": "{{\\dot{V}}}{_{A}}",
+            "latex": "{{\\hat{V}}}{_{A}}",
+            "matlab": "fV(A)"
+          }
+        },
+        "E_175": {
+          "rhs": {
+            "global_ID": " D_0 V_48  O_5 V_27 D_1 O_4 V_70",
+            "latex": "\\left({I}{_{N, A}} \\star {{v_x}}{_{N}}\\right) \\, . \\, {{A_{yz}}}{_{A}}"
+          },
+          "type": "generic",
+          "doc": "volumetric flow",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_27",
+            "V_48",
+            "V_70"
+          ],
+          "created": "2024-01-22 16:58:50",
+          "modified": "2024-01-22 16:58:50",
+          "lhs": {
+            "global_ID": "V_91",
+            "latex": "{{\\hat{V}}}{_{A}}",
+            "matlab": "fV(A)"
+          }
+        },
+        "E_194": {
+          "rhs": {
+            "global_ID": " F_17 D_0 V_207 D_1",
+            "latex": "\\textbf{Root}\\left( {residual_aE_mechanical}{_{A}}\\right)"
+          },
+          "type": "generic",
+          "doc": "volumetric flow as a root of the pressure distribution",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_207"
+          ],
+          "created": "2024-01-23 18:46:29",
+          "modified": "2024-01-23 18:46:29",
+          "lhs": {
+            "global_ID": "V_91",
+            "latex": "{{\\hat{V}}}{_{A}}",
             "matlab": "fV(A)"
           }
         }
@@ -9327,7 +10014,7 @@
         "I_2"
       ],
       "label": "fV",
-      "modified": "2023-12-21 10:46:47",
+      "modified": "2024-01-23 18:43:14",
       "network": "macroscopic",
       "port_variable": false,
       "tokens": [],
@@ -9362,7 +10049,7 @@
         "E_81": {
           "rhs": {
             "global_ID": " V_91 O_4 V_87",
-            "latex": "{{\\dot{V}}}{_{A}} \\, . \\, {c}{_{A, S}}",
+            "latex": "{{\\hat{V}}}{_{A}} \\, . \\, {c}{_{A, S}}",
             "matlab": "fV(A) .* c_A(A, S)"
           },
           "type": "generic",
@@ -9767,7 +10454,7 @@
     }
   },
   "Ontology_global_IDs": {
-    "variable": 187,
-    "equation": 173
+    "variable": 207,
+    "equation": 194
   }
 }

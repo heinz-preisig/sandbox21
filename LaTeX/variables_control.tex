@@ -36,27 +36,6 @@
              & $  $
              &                 \hyperlink{"e:166"}{ 166 }
                  \\
-            181
-             & \hypertarget{"v:181"}{ $ {I}{_{N, D}} $}
-             & \verb|I_N_D|
-             & map differential space to node space
-             & \begin{lay}constant \end{lay}
-             & $  $
-             & \\
-            159
-             & \hypertarget{"v:159"}{ $ {P}{_{}} $}
-             & \verb|P|
-             & gain
-             & \begin{lay}constant \end{lay}
-             & $  $
-             & \\
-            177
-             & \hypertarget{"v:177"}{ $ {A}{_{N, D}} $}
-             & \verb|A|
-             & LTIS A-matrix 
-             & \begin{lay}constant \end{lay}
-             & $ s^{-1} \, $
-             & \\
             158
              & \hypertarget{"v:158"}{ $ {{m^{m\star}}}{_{A, S}} $}
              & \verb|setpoint_matrix|
@@ -65,6 +44,20 @@
              & $  $
              &                 \hyperlink{"e:145"}{ 145 }
                  \\
+            159
+             & \hypertarget{"v:159"}{ $ {P}{_{}} $}
+             & \verb|P|
+             & gain
+             & \begin{lay}constant \end{lay}
+             & $  $
+             & \\
+            181
+             & \hypertarget{"v:181"}{ $ {I}{_{N, D}} $}
+             & \verb|I_N_D|
+             & map differential space to node space
+             & \begin{lay}constant \end{lay}
+             & $  $
+             & \\
             157
              & \hypertarget{"v:157"}{ $ {{m^{v\star}}}{_{A}} $}
              & \verb|setpoint_vector|
@@ -80,6 +73,13 @@
              & \begin{lay}constant \end{lay}
              & $ s^{-1} \, $
              & \\
+            177
+             & \hypertarget{"v:177"}{ $ {A}{_{N, D}} $}
+             & \verb|A|
+             & LTIS A-matrix 
+             & \begin{lay}constant \end{lay}
+             & $ s^{-1} \, $
+             & \\
             182
              & \hypertarget{"v:182"}{ $ {{\dot{x}}}{_{D}} $}
              & \verb|dxdt|
@@ -87,6 +87,23 @@
              & \begin{lay}diffState \end{lay}
              & $ s^{-1} \, $
              &                 \hyperlink{"e:164"}{ 164 }
+                 \\
+            161
+             & \hypertarget{"v:161"}{ $ {{e^{m}}}{_{A, S}} $}
+             & \verb|error_matrix|
+             & output error matrix
+             & \begin{lay}algebraic \end{lay}
+             & $  $
+             &                 \hyperlink{"e:147"}{ 147 }
+                 \\
+            155
+             & \hypertarget{"v:155"}{ $ {m}{_{A}} $}
+             & \verb|measurement_vector|
+             & normed measurements of temparatures
+             & \begin{lay}algebraic \end{lay}
+             & $  $
+             &                 \hyperlink{"e:141"}{ 141 }
+                                 \hyperlink{"e:142"}{ 142 }
                  \\
             162
              & \hypertarget{"v:162"}{ $ {{u^{v}}}{_{A}} $}
@@ -96,6 +113,14 @@
              & $  $
              &                 \hyperlink{"e:148"}{ 148 }
                                  \hyperlink{"e:170"}{ 170 }
+                 \\
+            163
+             & \hypertarget{"v:163"}{ $ {{u^{m}}}{_{A, S}} $}
+             & \verb|u_matrix|
+             & control output matrix
+             & \begin{lay}algebraic \end{lay}
+             & $  $
+             &                 \hyperlink{"e:149"}{ 149 }
                  \\
             160
              & \hypertarget{"v:160"}{ $ {{e^{v}}}{_{A}} $}
@@ -112,30 +137,5 @@
              & \begin{lay}algebraic \end{lay}
              & $  $
              &                 \hyperlink{"e:143"}{ 143 }
-                 \\
-            155
-             & \hypertarget{"v:155"}{ $ {m}{_{A}} $}
-             & \verb|measurement_vector|
-             & normed measurements of temparatures
-             & \begin{lay}algebraic \end{lay}
-             & $  $
-             &                 \hyperlink{"e:141"}{ 141 }
-                                 \hyperlink{"e:142"}{ 142 }
-                 \\
-            161
-             & \hypertarget{"v:161"}{ $ {{e^{m}}}{_{A, S}} $}
-             & \verb|error_matrix|
-             & output error matrix
-             & \begin{lay}algebraic \end{lay}
-             & $  $
-             &                 \hyperlink{"e:147"}{ 147 }
-                 \\
-            163
-             & \hypertarget{"v:163"}{ $ {{u^{m}}}{_{A, S}} $}
-             & \verb|u_matrix|
-             & control output matrix
-             & \begin{lay}algebraic \end{lay}
-             & $  $
-             &                 \hyperlink{"e:149"}{ 149 }
                  \\
     \end{longtable}

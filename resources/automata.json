@@ -134,12 +134,34 @@
             "output": "-"
           }
         },
+        "('node_interface', 'root', 'enabled')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
         "('node_intraface', 'name', '-')": {
           "left": {
             "state": "-",
             "output": "name node"
           },
           "cursor": "CC_L_change-R_blank",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('node_intraface', 'root', 'enabled')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
           "right": {
             "state": "-",
             "output": "-"
@@ -256,28 +278,6 @@
           }
         },
         "('arc_edge', 'tail', 'selected')": {
-          "left": {
-            "state": "-",
-            "output": "-"
-          },
-          "cursor": "-",
-          "right": {
-            "state": "-",
-            "output": "-"
-          }
-        },
-        "('node_interface', 'root', 'enabled')": {
-          "left": {
-            "state": "-",
-            "output": "-"
-          },
-          "cursor": "-",
-          "right": {
-            "state": "-",
-            "output": "-"
-          }
-        },
-        "('node_intraface', 'root', 'enabled')": {
           "left": {
             "state": "-",
             "output": "-"
@@ -488,6 +488,17 @@
             "output": "-"
           }
         },
+        "('node_interface', 'root', 'enabled')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
         "('node_intraface', 'name', '-')": {
           "left": {
             "state": "-",
@@ -497,6 +508,17 @@
           "right": {
             "state": "-",
             "output": "-"
+          }
+        },
+        "('node_intraface', 'root', 'enabled')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "CC_L_add-R_adda",
+          "right": {
+            "state": "connect_arc",
+            "output": "begin arc"
           }
         },
         "('node_simple', 'name', '-')": {
@@ -610,28 +632,6 @@
           }
         },
         "('arc_edge', 'tail', 'selected')": {
-          "left": {
-            "state": "-",
-            "output": "-"
-          },
-          "cursor": "-",
-          "right": {
-            "state": "-",
-            "output": "-"
-          }
-        },
-        "('node_interface', 'root', 'enabled')": {
-          "left": {
-            "state": "-",
-            "output": "-"
-          },
-          "cursor": "-",
-          "right": {
-            "state": "-",
-            "output": "-"
-          }
-        },
-        "('node_intraface', 'root', 'enabled')": {
           "left": {
             "state": "-",
             "output": "-"
@@ -842,6 +842,17 @@
             "output": "-"
           }
         },
+        "('node_interface', 'root', 'enabled')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
         "('node_intraface', 'name', '-')": {
           "left": {
             "state": "-",
@@ -851,6 +862,17 @@
           "right": {
             "state": "-",
             "output": "-"
+          }
+        },
+        "('node_intraface', 'root', 'enabled')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "CC_L_blank-R_add",
+          "right": {
+            "state": "-",
+            "output": "select node"
           }
         },
         "('node_simple', 'name', '-')": {
@@ -972,28 +994,6 @@
           "right": {
             "state": "-",
             "output": "-"
-          }
-        },
-        "('node_interface', 'root', 'enabled')": {
-          "left": {
-            "state": "-",
-            "output": "-"
-          },
-          "cursor": "-",
-          "right": {
-            "state": "-",
-            "output": "-"
-          }
-        },
-        "('node_intraface', 'root', 'enabled')": {
-          "left": {
-            "state": "-",
-            "output": "-"
-          },
-          "cursor": "CC_L_blank-R_add",
-          "right": {
-            "state": "-",
-            "output": "select node"
           }
         },
         "('node_boundary', 'root', 'enabled')": {
@@ -1196,7 +1196,29 @@
             "output": "-"
           }
         },
+        "('node_interface', 'root', 'enabled')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
         "('node_intraface', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('node_intraface', 'root', 'enabled')": {
           "left": {
             "state": "-",
             "output": "-"
@@ -1318,28 +1340,6 @@
           }
         },
         "('arc_edge', 'tail', 'selected')": {
-          "left": {
-            "state": "-",
-            "output": "-"
-          },
-          "cursor": "-",
-          "right": {
-            "state": "-",
-            "output": "-"
-          }
-        },
-        "('node_interface', 'root', 'enabled')": {
-          "left": {
-            "state": "-",
-            "output": "-"
-          },
-          "cursor": "-",
-          "right": {
-            "state": "-",
-            "output": "-"
-          }
-        },
-        "('node_intraface', 'root', 'enabled')": {
           "left": {
             "state": "-",
             "output": "-"
@@ -1550,7 +1550,29 @@
             "output": "-"
           }
         },
+        "('node_interface', 'root', 'enabled')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
         "('node_intraface', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('node_intraface', 'root', 'enabled')": {
           "left": {
             "state": "-",
             "output": "-"
@@ -1672,28 +1694,6 @@
           }
         },
         "('arc_edge', 'tail', 'selected')": {
-          "left": {
-            "state": "-",
-            "output": "-"
-          },
-          "cursor": "-",
-          "right": {
-            "state": "-",
-            "output": "-"
-          }
-        },
-        "('node_interface', 'root', 'enabled')": {
-          "left": {
-            "state": "-",
-            "output": "-"
-          },
-          "cursor": "-",
-          "right": {
-            "state": "-",
-            "output": "-"
-          }
-        },
-        "('node_intraface', 'root', 'enabled')": {
           "left": {
             "state": "-",
             "output": "-"
@@ -1904,6 +1904,17 @@
             "output": "-"
           }
         },
+        "('node_interface', 'root', 'enabled')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "TC_L_blank-R_del",
+          "right": {
+            "state": "-",
+            "output": "delete node"
+          }
+        },
         "('node_intraface', 'name', '-')": {
           "left": {
             "state": "-",
@@ -1913,6 +1924,17 @@
           "right": {
             "state": "-",
             "output": "-"
+          }
+        },
+        "('node_intraface', 'root', 'enabled')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "TC_L_blank-R_del",
+          "right": {
+            "state": "-",
+            "output": "delete node"
           }
         },
         "('node_simple', 'name', '-')": {
@@ -2034,28 +2056,6 @@
           "right": {
             "state": "-",
             "output": "-"
-          }
-        },
-        "('node_interface', 'root', 'enabled')": {
-          "left": {
-            "state": "-",
-            "output": "-"
-          },
-          "cursor": "TC_L_blank-R_del",
-          "right": {
-            "state": "-",
-            "output": "delete node"
-          }
-        },
-        "('node_intraface', 'root', 'enabled')": {
-          "left": {
-            "state": "-",
-            "output": "-"
-          },
-          "cursor": "TC_L_blank-R_del",
-          "right": {
-            "state": "-",
-            "output": "delete node"
           }
         },
         "('node_boundary', 'root', 'enabled')": {
