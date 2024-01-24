@@ -409,6 +409,16 @@
     "network": "macroscopic",
     "rhs": " aE_kinetic + aE_potential + fw_V + fw"
   },
+  "E_193": {
+    "lhs": "residual_aE_mechanical",
+    "network": "macroscopic",
+    "rhs": " aE_mechanical - ( aE_kinetic + aE_potential + fw_V + fw )"
+  },
+  "E_194": {
+    "lhs": "fV",
+    "network": "macroscopic",
+    "rhs": " Root ( residual_aE_mechanical )"
+  },
   "E_2": {
     "lhs": "zero",
     "network": "root",
@@ -838,15 +848,5 @@
     "lhs": "T_K",
     "network": "reactions",
     "rhs": " T . P_N_K"
-  },
-  "E_193": {
-    "lhs": "residual_aE_mechanical",
-    "network": "macroscopic",
-    "rhs": " aE_mechanical - ( aE_kinetic + aE_potential + fw_V + fw )"
-  },
-  "E_194": {
-    "lhs": "fV",
-    "network": "macroscopic",
-    "rhs": " Root ( residual_aE_mechanical )"
   }
 }

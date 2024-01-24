@@ -19,15 +19,15 @@ rankdir=LR;
 subgraph cluster_control___network {
 label=network;
 rankdir=LR;
-V_10 [fillcolor=salmon, fontsize=12, label=F, penwidth=3, style=filled];
+V_10 [fillcolor=green, fontsize=12, label=F, penwidth=3, style=filled];
 }
 
 subgraph cluster_control___projection {
 label=projection;
 rankdir=LR;
-V_48 [fillcolor=seagreen, fontsize=12, label=I_N_A, penwidth=3, style=filled];
-V_96 [fillcolor=seagreen, fontsize=12, label=I_N, penwidth=3, style=filled];
-V_97 [fillcolor=seagreen, fontsize=12, label=I_A, penwidth=3, style=filled];
+V_48 [fillcolor=lightcyan, fontsize=12, label=I_N_A, penwidth=3, style=filled];
+V_96 [fillcolor=lightcyan, fontsize=12, label=I_N, penwidth=3, style=filled];
+V_97 [fillcolor=lightcyan, fontsize=12, label=I_A, penwidth=3, style=filled];
 }
 
 subgraph cluster_control___localIndex {
@@ -41,12 +41,12 @@ E_169 -> V_97  [splines=ortho];
 subgraph cluster_control___frame {
 label=frame;
 rankdir=LR;
-V_185 [fillcolor=lightcyan2, fontsize=12, label=t_switch_A, penwidth=3, style=filled];
-V_4 [fillcolor=lightcyan2, fontsize=12, label=t, penwidth=3, style=filled];
-V_5 [fillcolor=lightcyan2, fontsize=12, label=to, penwidth=3, style=filled];
-V_6 [fillcolor=lightcyan2, fontsize=12, label=te, penwidth=3, style=filled];
-V_7 [fillcolor=lightcyan2, fontsize=12, label=t_interval, penwidth=3, style=filled];
-V_9 [fillcolor=lightcyan2, fontsize=12, label=pulse, penwidth=3, style=filled];
+V_185 [fillcolor=lightcyan1, fontsize=12, label=t_switch_A, penwidth=3, style=filled];
+V_4 [fillcolor=lightcyan1, fontsize=12, label=t, penwidth=3, style=filled];
+V_5 [fillcolor=lightcyan1, fontsize=12, label=to, penwidth=3, style=filled];
+V_6 [fillcolor=lightcyan1, fontsize=12, label=te, penwidth=3, style=filled];
+V_7 [fillcolor=lightcyan1, fontsize=12, label=t_interval, penwidth=3, style=filled];
+V_9 [fillcolor=lightcyan1, fontsize=12, label=pulse, penwidth=3, style=filled];
 E_169 [fillcolor=pink, fontsize=12, shape=box, style=filled];
 E_169 -> V_185  [splines=ortho];
 }
@@ -62,8 +62,8 @@ E_166 -> V_179  [splines=ortho];
 subgraph cluster_control___state {
 label=state;
 rankdir=LR;
-V_179 [fillcolor=lightcyan4, fontsize=12, label=x, penwidth=3, style=filled];
-V_183 [fillcolor=lightcyan4, fontsize=12, label=xo, penwidth=3, style=filled];
+V_179 [fillcolor=tomato, fontsize=12, label=x, penwidth=3, style=filled];
+V_183 [fillcolor=tomato, fontsize=12, label=xo, penwidth=3, style=filled];
 E_165 [fillcolor=pink, fontsize=12, shape=box, style=filled];
 E_165 -> V_179  [splines=ortho];
 E_166 [fillcolor=pink, fontsize=12, shape=box, style=filled];
@@ -77,16 +77,16 @@ E_145 -> V_156  [splines=ortho];
 subgraph cluster_control___constant {
 label=constant;
 rankdir=LR;
-V_1 [fillcolor=seagreen1, fontsize=12, label=value, penwidth=3, style=filled];
-V_157 [fillcolor=seagreen1, fontsize=12, label=setpoint_vector, penwidth=3, style=filled];
-V_158 [fillcolor=seagreen1, fontsize=12, label=setpoint_matrix, penwidth=3, style=filled];
-V_159 [fillcolor=seagreen1, fontsize=12, label=P, penwidth=3, style=filled];
-V_177 [fillcolor=seagreen1, fontsize=12, label=A, penwidth=3, style=filled];
-V_178 [fillcolor=seagreen1, fontsize=12, label=B, penwidth=3, style=filled];
-V_181 [fillcolor=seagreen1, fontsize=12, label=I_N_D, penwidth=3, style=filled];
-V_2 [fillcolor=seagreen1, fontsize=12, label=one, penwidth=3, style=filled];
-V_3 [fillcolor=seagreen1, fontsize=12, label=zero, penwidth=3, style=filled];
-V_8 [fillcolor=seagreen1, fontsize=12, label=onehalf, penwidth=3, style=filled];
+V_1 [fillcolor=seagreen2, fontsize=12, label=value, penwidth=3, style=filled];
+V_157 [fillcolor=seagreen2, fontsize=12, label=setpoint_vector, penwidth=3, style=filled];
+V_158 [fillcolor=seagreen2, fontsize=12, label=setpoint_matrix, penwidth=3, style=filled];
+V_159 [fillcolor=seagreen2, fontsize=12, label=P, penwidth=3, style=filled];
+V_177 [fillcolor=seagreen2, fontsize=12, label=A, penwidth=3, style=filled];
+V_178 [fillcolor=seagreen2, fontsize=12, label=B, penwidth=3, style=filled];
+V_181 [fillcolor=seagreen2, fontsize=12, label=I_N_D, penwidth=3, style=filled];
+V_2 [fillcolor=seagreen2, fontsize=12, label=one, penwidth=3, style=filled];
+V_3 [fillcolor=seagreen2, fontsize=12, label=zero, penwidth=3, style=filled];
+V_8 [fillcolor=seagreen2, fontsize=12, label=onehalf, penwidth=3, style=filled];
 E_144 [fillcolor=pink, fontsize=12, shape=box, style=filled];
 E_144 -> V_157  [splines=ortho];
 E_145 [fillcolor=pink, fontsize=12, shape=box, style=filled];
@@ -100,7 +100,7 @@ E_164 -> V_179  [splines=ortho];
 subgraph cluster_control___diffState {
 label=diffState;
 rankdir=LR;
-V_182 [fillcolor=seagreen4, fontsize=12, label=dxdt, penwidth=3, style=filled];
+V_182 [fillcolor=darkolivegreen1, fontsize=12, label=dxdt, penwidth=3, style=filled];
 E_164 [fillcolor=pink, fontsize=12, shape=box, style=filled];
 E_164 -> V_182  [splines=ortho];
 }
@@ -127,12 +127,12 @@ E_149 -> V_161  [splines=ortho];
 subgraph cluster_control___algebraic {
 label=algebraic;
 rankdir=LR;
-V_155 [fillcolor=darkolivegreen1, fontsize=12, label=measurement_vector, penwidth=3, style=filled];
-V_156 [fillcolor=darkolivegreen1, fontsize=12, label=measurement_matrix, penwidth=3, style=filled];
-V_160 [fillcolor=darkolivegreen1, fontsize=12, label=error_vector, penwidth=3, style=filled];
-V_161 [fillcolor=darkolivegreen1, fontsize=12, label=error_matrix, penwidth=3, style=filled];
-V_162 [fillcolor=darkolivegreen1, fontsize=12, label=u_vector, penwidth=3, style=filled];
-V_163 [fillcolor=darkolivegreen1, fontsize=12, label=u_matrix, penwidth=3, style=filled];
+V_155 [fillcolor=seagreen, fontsize=12, label=measurement_vector, penwidth=3, style=filled];
+V_156 [fillcolor=seagreen, fontsize=12, label=measurement_matrix, penwidth=3, style=filled];
+V_160 [fillcolor=seagreen, fontsize=12, label=error_vector, penwidth=3, style=filled];
+V_161 [fillcolor=seagreen, fontsize=12, label=error_matrix, penwidth=3, style=filled];
+V_162 [fillcolor=seagreen, fontsize=12, label=u_vector, penwidth=3, style=filled];
+V_163 [fillcolor=seagreen, fontsize=12, label=u_matrix, penwidth=3, style=filled];
 E_141 [fillcolor=pink, fontsize=12, shape=box, style=filled];
 E_141 -> V_155  [splines=ortho];
 E_142 [fillcolor=pink, fontsize=12, shape=box, style=filled];

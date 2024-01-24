@@ -110,7 +110,7 @@
       },
       "index_structures": [
         "I_1",
-        "I_3"
+        "I_4"
       ],
       "label": "x",
       "modified": "2023-12-21 11:15:52",
@@ -194,7 +194,7 @@
       },
       "index_structures": [
         "I_2",
-        "I_3"
+        "I_4"
       ],
       "label": "fnd",
       "modified": "2023-12-21 12:17:26",
@@ -253,7 +253,7 @@
       },
       "index_structures": [
         "I_1",
-        "I_3"
+        "I_4"
       ],
       "label": "chemPot_o",
       "modified": "2023-12-21 11:41:49",
@@ -311,7 +311,7 @@
       },
       "index_structures": [
         "I_1",
-        "I_3"
+        "I_4"
       ],
       "label": "_x",
       "modified": "2023-12-21 11:42:58",
@@ -370,7 +370,7 @@
       },
       "index_structures": [
         "I_1",
-        "I_3"
+        "I_4"
       ],
       "label": "and",
       "modified": "2023-12-21 11:56:42",
@@ -428,7 +428,7 @@
       },
       "index_structures": [
         "I_1",
-        "I_3"
+        "I_4"
       ],
       "label": "_h",
       "modified": "2023-12-21 12:06:08",
@@ -487,7 +487,7 @@
       },
       "index_structures": [
         "I_2",
-        "I_3"
+        "I_4"
       ],
       "label": "h_A",
       "modified": "2024-01-09 13:56:15",
@@ -545,7 +545,7 @@
       },
       "index_structures": [
         "I_2",
-        "I_3"
+        "I_4"
       ],
       "label": "_h_A",
       "modified": "2023-12-21 12:12:14",
@@ -850,7 +850,7 @@
       "equations": {},
       "index_structures": [
         "I_1",
-        "I_4"
+        "I_5"
       ],
       "label": "P_N_K",
       "modified": "2023-12-22 10:19:30",
@@ -909,7 +909,7 @@
       },
       "index_structures": [
         "I_1",
-        "I_4"
+        "I_5"
       ],
       "label": "T_K",
       "modified": "2023-12-22 10:22:06",
@@ -969,7 +969,7 @@
       },
       "index_structures": [
         "I_1",
-        "I_4"
+        "I_5"
       ],
       "label": "Ea",
       "modified": "2023-12-22 10:47:06",
@@ -1004,8 +1004,8 @@
       "doc": "stoichiometric matrix",
       "equations": {},
       "index_structures": [
-        "I_3",
-        "I_4"
+        "I_4",
+        "I_5"
       ],
       "label": "N",
       "modified": "2023-12-22 11:19:46",
@@ -1063,7 +1063,7 @@
       },
       "index_structures": [
         "I_1",
-        "I_4"
+        "I_5"
       ],
       "label": "_Ea",
       "modified": "2023-12-23 16:01:54",
@@ -1178,8 +1178,8 @@
         }
       },
       "index_structures": [
-        "I_3",
-        "I_4"
+        "I_4",
+        "I_5"
       ],
       "label": "_N",
       "modified": "2023-12-23 16:02:00",
@@ -1237,7 +1237,7 @@
       },
       "index_structures": [
         "I_1",
-        "I_4"
+        "I_5"
       ],
       "label": "_T_K",
       "modified": "2023-12-23 16:02:09",
@@ -1295,7 +1295,7 @@
       },
       "index_structures": [
         "I_1",
-        "I_3"
+        "I_4"
       ],
       "label": "_c",
       "modified": "2023-12-23 16:24:10",
@@ -1354,7 +1354,7 @@
       },
       "index_structures": [
         "I_1",
-        "I_3"
+        "I_4"
       ],
       "label": "c_norming",
       "modified": "2023-12-23 16:34:36",
@@ -1413,7 +1413,7 @@
       },
       "index_structures": [
         "I_1",
-        "I_3"
+        "I_4"
       ],
       "label": "cn",
       "modified": "2023-12-30 11:30:25",
@@ -1472,8 +1472,8 @@
       },
       "index_structures": [
         "I_1",
-        "I_3",
-        "I_4"
+        "I_4",
+        "I_5"
       ],
       "label": "cn_NK",
       "modified": "2023-12-30 11:40:07",
@@ -1568,7 +1568,7 @@
       "equations": {
         "E_115": {
           "rhs": {
-            "global_ID": " O_9 D_0 V_129 O_2 D_0 V_118 D_1 D_7 I_3 D_1",
+            "global_ID": " O_9 D_0 V_129 O_2 D_0 V_118 D_1 D_7 I_4 D_1",
             "latex": "\\prod_{S}  {{{\\bar n}}{_{N, S, K}}^{\\left({N}{_{S, K}}\\right)}} ",
             "matlab": null
           },
@@ -1590,7 +1590,7 @@
       },
       "index_structures": [
         "I_1",
-        "I_4"
+        "I_5"
       ],
       "label": "interactionProbability",
       "modified": "2023-12-30 11:46:24",
@@ -1652,7 +1652,7 @@
         }
       },
       "index_structures": [
-        "I_4"
+        "I_5"
       ],
       "label": "Ko",
       "modified": "2023-12-30 17:55:27",
@@ -1713,7 +1713,7 @@
       },
       "index_structures": [
         "I_1",
-        "I_4"
+        "I_5"
       ],
       "label": "K",
       "modified": "2023-12-30 17:55:21",
@@ -1774,7 +1774,7 @@
       },
       "index_structures": [
         "I_1",
-        "I_3"
+        "I_4"
       ],
       "label": "nProd",
       "modified": "2023-12-30 18:01:21",
@@ -1832,7 +1832,7 @@
       },
       "index_structures": [
         "I_1",
-        "I_3"
+        "I_4"
       ],
       "label": "_nProd",
       "modified": "2023-12-30 18:02:04",
@@ -1890,7 +1890,7 @@
       },
       "index_structures": [
         "I_1",
-        "I_3"
+        "I_4"
       ],
       "label": "anProduction",
       "modified": "2023-12-30 18:04:09",
@@ -1950,7 +1950,7 @@
       },
       "index_structures": [
         "I_1",
-        "I_3"
+        "I_4"
       ],
       "label": "an",
       "modified": "2023-12-30 18:05:07",
@@ -2321,7 +2321,7 @@
       },
       "index_structures": [
         "I_1",
-        "I_3"
+        "I_4"
       ],
       "label": "no",
       "modified": "2023-12-30 18:20:17",
@@ -2496,7 +2496,7 @@
       },
       "index_structures": [
         "I_1",
-        "I_3"
+        "I_4"
       ],
       "label": "c_norming",
       "modified": "2024-01-02 16:42:54",
@@ -2729,7 +2729,7 @@
       },
       "index_structures": [
         "I_1",
-        "I_3"
+        "I_4"
       ],
       "label": "c_normed",
       "modified": "2024-01-02 16:44:29",
@@ -2901,7 +2901,7 @@
       },
       "index_structures": [
         "I_1",
-        "I_3"
+        "I_4"
       ],
       "label": "_c_normed",
       "modified": "2024-01-02 16:56:29",
@@ -3039,7 +3039,7 @@
       },
       "index_structures": [
         "I_2",
-        "I_3"
+        "I_4"
       ],
       "label": "measurement_matrix",
       "modified": "2024-01-02 17:05:47",
@@ -3156,7 +3156,7 @@
       },
       "index_structures": [
         "I_2",
-        "I_3"
+        "I_4"
       ],
       "label": "setpoint_matrix",
       "modified": "2024-01-02 17:09:13",
@@ -3341,7 +3341,7 @@
       },
       "index_structures": [
         "I_2",
-        "I_3"
+        "I_4"
       ],
       "label": "error_matrix",
       "modified": "2024-01-02 17:24:09",
@@ -3481,7 +3481,7 @@
       },
       "index_structures": [
         "I_2",
-        "I_3"
+        "I_4"
       ],
       "label": "u_matrix",
       "modified": "2024-01-02 17:28:35",
@@ -3539,7 +3539,7 @@
       },
       "index_structures": [
         "I_2",
-        "I_3"
+        "I_4"
       ],
       "label": "_setpoint_matrix",
       "modified": "2024-01-03 09:56:00",
@@ -3839,7 +3839,7 @@
       "doc": "species selection",
       "equations": {},
       "index_structures": [
-        "I_3"
+        "I_4"
       ],
       "label": "S_S",
       "modified": "2024-01-04 17:10:01",
@@ -4223,7 +4223,7 @@
       "equations": {},
       "index_structures": [
         "I_1",
-        "I_5"
+        "I_6"
       ],
       "label": "A",
       "modified": "2024-01-09 14:43:05",
@@ -4259,7 +4259,7 @@
       "equations": {},
       "index_structures": [
         "I_2",
-        "I_5"
+        "I_6"
       ],
       "label": "B",
       "modified": "2024-01-09 14:43:11",
@@ -4383,7 +4383,7 @@
       },
       "index_structures": [
         "I_1",
-        "I_3"
+        "I_4"
       ],
       "label": "n",
       "modified": "2023-12-09 18:50:03",
@@ -4419,7 +4419,7 @@
       "equations": {},
       "index_structures": [
         "I_1",
-        "I_5"
+        "I_6"
       ],
       "label": "I_N_D",
       "modified": "2024-01-09 14:46:42",
@@ -4479,7 +4479,7 @@
         }
       },
       "index_structures": [
-        "I_5"
+        "I_6"
       ],
       "label": "dxdt",
       "modified": "2024-01-09 14:46:36",
@@ -5485,7 +5485,7 @@
       "IRI": "promo:residual_aE_mechanical",
       "aliases": {
         "matlab": "residual_aE_mechanical",
-        "latex": "residual_aE_mechanical",
+        "latex": "{r^m}",
         "internal_code": "residual_aE_mechanical",
         "global_ID": "V_207"
       },
@@ -5523,7 +5523,7 @@
         "I_2"
       ],
       "label": "residual_aE_mechanical",
-      "modified": "2024-01-23 18:38:35",
+      "modified": "2024-01-24 10:27:02",
       "network": "macroscopic",
       "port_variable": false,
       "tokens": [],
@@ -5602,7 +5602,7 @@
       },
       "index_structures": [
         "I_1",
-        "I_3"
+        "I_4"
       ],
       "label": "chemPot",
       "modified": "2023-12-09 18:41:29",
@@ -5897,7 +5897,7 @@
       "doc": "species' molecular mass",
       "equations": {},
       "index_structures": [
-        "I_3"
+        "I_4"
       ],
       "label": "Mm",
       "modified": "2023-12-12 09:30:59",
@@ -6183,7 +6183,7 @@
         }
       },
       "index_structures": [
-        "I_3"
+        "I_4"
       ],
       "label": "_Mm",
       "modified": "2023-12-20 10:34:26",
@@ -6777,7 +6777,7 @@
       },
       "index_structures": [
         "I_1",
-        "I_3"
+        "I_4"
       ],
       "label": "kd_x",
       "modified": "2023-12-20 14:52:00",
@@ -6838,7 +6838,7 @@
       },
       "index_structures": [
         "I_1",
-        "I_3"
+        "I_4"
       ],
       "label": "kd_y",
       "modified": "2023-12-20 14:52:38",
@@ -6899,7 +6899,7 @@
       },
       "index_structures": [
         "I_1",
-        "I_3"
+        "I_4"
       ],
       "label": "kd_z",
       "modified": "2023-12-20 14:53:14",
@@ -7144,7 +7144,7 @@
       },
       "index_structures": [
         "I_1",
-        "I_3"
+        "I_4"
       ],
       "label": "h",
       "modified": "2023-12-20 15:35:25",
@@ -7469,7 +7469,7 @@
       },
       "index_structures": [
         "I_2",
-        "I_3"
+        "I_4"
       ],
       "label": "kd_x_A",
       "modified": "2023-12-20 15:54:12",
@@ -7528,7 +7528,7 @@
       },
       "index_structures": [
         "I_2",
-        "I_3"
+        "I_4"
       ],
       "label": "kd_y_A",
       "modified": "2023-12-20 15:55:13",
@@ -7587,7 +7587,7 @@
       },
       "index_structures": [
         "I_2",
-        "I_3"
+        "I_4"
       ],
       "label": "kd_z_A",
       "modified": "2023-12-20 15:55:58",
@@ -7991,7 +7991,7 @@
         }
       },
       "index_structures": [
-        "I_3"
+        "I_4"
       ],
       "label": "v",
       "modified": "2023-12-20 16:17:33",
@@ -8053,7 +8053,7 @@
       },
       "index_structures": [
         "I_2",
-        "I_3"
+        "I_4"
       ],
       "label": "kd_x_Fick",
       "modified": "2023-12-21 14:28:24",
@@ -8115,7 +8115,7 @@
       },
       "index_structures": [
         "I_2",
-        "I_3"
+        "I_4"
       ],
       "label": "kd_y_Fick",
       "modified": "2023-12-21 14:28:00",
@@ -8177,7 +8177,7 @@
       },
       "index_structures": [
         "I_2",
-        "I_3"
+        "I_4"
       ],
       "label": "kd_z_Fick",
       "modified": "2023-12-21 14:28:14",
@@ -8846,7 +8846,7 @@
       },
       "index_structures": [
         "I_2",
-        "I_3"
+        "I_4"
       ],
       "label": "_kd_x_A",
       "modified": "2023-12-20 16:56:01",
@@ -8904,7 +8904,7 @@
       },
       "index_structures": [
         "I_2",
-        "I_3"
+        "I_4"
       ],
       "label": "_kd_x_Fick",
       "modified": "2023-12-20 16:56:07",
@@ -8962,7 +8962,7 @@
       },
       "index_structures": [
         "I_2",
-        "I_3"
+        "I_4"
       ],
       "label": "_kd_y_Fick",
       "modified": "2023-12-20 16:56:09",
@@ -9020,7 +9020,7 @@
       },
       "index_structures": [
         "I_2",
-        "I_3"
+        "I_4"
       ],
       "label": "_kd_y_A",
       "modified": "2023-12-20 16:56:11",
@@ -9078,7 +9078,7 @@
       },
       "index_structures": [
         "I_2",
-        "I_3"
+        "I_4"
       ],
       "label": "_kd_z_A",
       "modified": "2023-12-20 16:56:13",
@@ -9136,7 +9136,7 @@
       },
       "index_structures": [
         "I_2",
-        "I_3"
+        "I_4"
       ],
       "label": "_kd_z_Fick",
       "modified": "2023-12-20 16:56:14",
@@ -9539,7 +9539,7 @@
       },
       "index_structures": [
         "I_1",
-        "I_3"
+        "I_4"
       ],
       "label": "c",
       "modified": "2023-12-21 09:53:01",
@@ -9658,7 +9658,7 @@
       },
       "index_structures": [
         "I_2",
-        "I_3"
+        "I_4"
       ],
       "label": "c_A",
       "modified": "2023-12-21 09:56:25",
@@ -10070,7 +10070,7 @@
       },
       "index_structures": [
         "I_2",
-        "I_3"
+        "I_4"
       ],
       "label": "fnc",
       "modified": "2023-12-21 12:17:20",
@@ -10129,7 +10129,7 @@
       },
       "index_structures": [
         "I_1",
-        "I_3"
+        "I_4"
       ],
       "label": "anc",
       "modified": "2023-12-21 10:51:51",
@@ -10234,7 +10234,7 @@
       "doc": "vector of ones of length sepecies",
       "equations": {},
       "index_structures": [
-        "I_3"
+        "I_4"
       ],
       "label": "I_S",
       "modified": "2023-12-21 11:13:12",
@@ -10365,6 +10365,31 @@
     },
     "I_3": {
       "type": "index",
+      "label": "interface",
+      "network": [
+        "root",
+        "physical",
+        "reactions",
+        "material",
+        "macroscopic",
+        "solid",
+        "fluid",
+        "liquid",
+        "gas",
+        "energy",
+        "control"
+      ],
+      "aliases": {
+        "matlab": "I",
+        "latex": "I",
+        "internal_code": "I",
+        "global_ID": "I_3"
+      },
+      "tokens": null,
+      "IRI": "None"
+    },
+    "I_4": {
+      "type": "index",
       "label": "species",
       "network": [
         "physical",
@@ -10381,12 +10406,12 @@
         "matlab": "S",
         "latex": "S",
         "internal_code": "S",
-        "global_ID": "I_3"
+        "global_ID": "I_4"
       },
       "tokens": "mass",
       "IRI": "None"
     },
-    "I_4": {
+    "I_5": {
       "type": "index",
       "label": "species_conversion",
       "network": [
@@ -10404,7 +10429,7 @@
         "matlab": "K",
         "latex": "K",
         "internal_code": "K",
-        "global_ID": " I_I_4"
+        "global_ID": " I_I_5"
       },
       "tokens": {
         "instances": [
@@ -10437,7 +10462,7 @@
       },
       "IRI": "None"
     },
-    "I_5": {
+    "I_6": {
       "type": "index",
       "label": "D",
       "network": [
@@ -10447,7 +10472,7 @@
         "matlab": "D",
         "latex": "D",
         "internal_code": "D",
-        "global_ID": " I_5"
+        "global_ID": " I_6"
       },
       "tokens": null,
       "IRI": "None"
