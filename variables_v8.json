@@ -147,8 +147,8 @@
       "equations": {
         "E_85": {
           "rhs": {
-            "global_ID": " V_70 O_4 F_11 D_0 V_75 D_1 O_4 D_0 V_64  O_5 V_85 D_1",
-            "latex": "{{A_{yz}}}{_{A}} \\, . \\, \\left( -{{\\_k^{d,Fick}_x}}{_{A, S}} \\right) \\, . \\, \\left({D}{_{N, A}} \\star {c}{_{N, S}}\\right)",
+            "global_ID": " V_70 O_4 F_11 D_0 V_75 D_1 O_4 D_0 V_64  O_5 I_1 V_85 D_1",
+            "latex": "{{A_{yz}}}{_{A}} \\, . \\, \\left( -{{\\_k^{d,Fick}_x}}{_{A, S}} \\right) \\, . \\, \\left({D}{_{N, A}} \\stackrel{N}{\\star} {c}{_{N, S}}\\right)",
             "matlab": "A_yz_A(A) .* -1 .* _kd_x_Fick(A, S) .* (D(N, A) * c(N, S))"
           },
           "type": "generic",
@@ -170,8 +170,8 @@
         },
         "E_89": {
           "rhs": {
-            "global_ID": " V_70 O_4 F_11 D_0 V_74 D_1 O_4 D_0 V_64  O_5 V_21 D_1",
-            "latex": "{{A_{yz}}}{_{A}} \\, . \\, \\left( -{{\\_k^d_x}}{_{A, S}} \\right) \\, . \\, \\left({D}{_{N, A}} \\star {{\\mu}}{_{N, S}}\\right)",
+            "global_ID": " V_70 O_4 F_11 D_0 V_74 D_1 O_4 D_0 V_64  O_5 I_1 V_21 D_1",
+            "latex": "{{A_{yz}}}{_{A}} \\, . \\, \\left( -{{\\_k^d_x}}{_{A, S}} \\right) \\, . \\, \\left({D}{_{N, A}} \\stackrel{N}{\\star} {{\\mu}}{_{N, S}}\\right)",
             "matlab": "A_yz_A(A) .* -1 .* _kd_x_A(A, S) .* (D(N, A) * chemPot(N, S))"
           },
           "type": "generic",
@@ -348,8 +348,8 @@
       "equations": {
         "E_90": {
           "rhs": {
-            "global_ID": " V_10  O_5 V_101",
-            "latex": "{F}{_{N, A}} \\star {{\\hat{n}^d}}{_{A, S}}",
+            "global_ID": " V_10  O_5 I_2 V_101",
+            "latex": "{F}{_{N, A}} \\stackrel{A}{\\star} {{\\hat{n}^d}}{_{A, S}}",
             "matlab": "F(N, A) * fnd(A, S)"
           },
           "type": "generic",
@@ -465,8 +465,8 @@
       "equations": {
         "E_93": {
           "rhs": {
-            "global_ID": " V_48  O_5 V_47",
-            "latex": "{I}{_{N, A}} \\star {h}{_{N, S}}",
+            "global_ID": " V_48  O_5 I_1 V_47",
+            "latex": "{I}{_{N, A}} \\stackrel{N}{\\star} {h}{_{N, S}}",
             "matlab": "I_N_A(N, A) * h(N, S)"
           },
           "type": "generic",
@@ -582,8 +582,8 @@
       "equations": {
         "E_95": {
           "rhs": {
-            "global_ID": " V_98  O_5 D_0 V_108 O_4 V_92 D_1",
-            "latex": "{I}{_{S}} \\star \\left({{\\_h}}{_{A, S}} \\, . \\, {{\\hat{n}^c}}{_{A, S}}\\right)",
+            "global_ID": " V_98  O_5 I_4 D_0 V_108 O_4 V_92 D_1",
+            "latex": "{I}{_{S}} \\stackrel{S}{\\star} \\left({{\\_h}}{_{A, S}} \\, . \\, {{\\hat{n}^c}}{_{A, S}}\\right)",
             "matlab": "I_S(S) * (_h_A(A, S) .* fnc(A, S))"
           },
           "type": "generic",
@@ -676,8 +676,8 @@
       "equations": {
         "E_96": {
           "rhs": {
-            "global_ID": " V_98  O_5 D_0 V_108 O_4 V_101 D_1",
-            "latex": "{I}{_{S}} \\star \\left({{\\_h}}{_{A, S}} \\, . \\, {{\\hat{n}^d}}{_{A, S}}\\right)",
+            "global_ID": " V_98  O_5 I_4 D_0 V_108 O_4 V_101 D_1",
+            "latex": "{I}{_{S}} \\stackrel{S}{\\star} \\left({{\\_h}}{_{A, S}} \\, . \\, {{\\hat{n}^d}}{_{A, S}}\\right)",
             "matlab": "I_S(S) * (_h_A(A, S) .* fnd(A, S))"
           },
           "type": "generic",
@@ -735,8 +735,8 @@
       "equations": {
         "E_97": {
           "rhs": {
-            "global_ID": " V_10  O_5 V_109",
-            "latex": "{F}{_{N, A}} \\star {{\\hat{H}^c}}{_{A}}",
+            "global_ID": " V_10  O_5 I_2 V_109",
+            "latex": "{F}{_{N, A}} \\stackrel{A}{\\star} {{\\hat{H}^c}}{_{A}}",
             "matlab": "F(N, A) * fHc(A)"
           },
           "type": "generic",
@@ -793,8 +793,8 @@
       "equations": {
         "E_98": {
           "rhs": {
-            "global_ID": " V_10  O_5 V_110",
-            "latex": "{F}{_{N, A}} \\star {{\\hat{H}^d}}{_{A}}",
+            "global_ID": " V_10  O_5 I_2 V_110",
+            "latex": "{F}{_{N, A}} \\stackrel{A}{\\star} {{\\hat{H}^d}}{_{A}}",
             "matlab": "F(N, A) * fHd(A)"
           },
           "type": "generic",
@@ -1627,8 +1627,8 @@
       "equations": {
         "E_118": {
           "rhs": {
-            "global_ID": " O_10 D_0 V_98  O_5 D_0 V_113  O_5 D_0 F_15 D_0 V_4 D_1 O_4 F_15 D_0 V_15 D_1 O_4 V_18 D_1 D_1 D_7 V_1 D_1",
-            "latex": "\\textbf{Instantiate}({I}{_{S}} \\star \\left({P}{_{N, K}} \\star \\left(\\left( {t}{_{}} \\right)^{-1} \\, . \\, \\left( {V}{_{N}} \\right)^{-1} \\, . \\, {n}{_{N, S}}\\right)\\right), {{\\#}}{_{}})",
+            "global_ID": " O_10 D_0 V_98  O_5 I_4 D_0 V_113  O_5 I_1 D_0 F_15 D_0 V_4 D_1 O_4 F_15 D_0 V_15 D_1 O_4 V_18 D_1 D_1 D_7 V_1 D_1",
+            "latex": "\\textbf{Instantiate}({I}{_{S}} \\stackrel{S}{\\star} \\left({P}{_{N, K}} \\stackrel{N}{\\star} \\left(\\left( {t}{_{}} \\right)^{-1} \\, . \\, \\left( {V}{_{N}} \\right)^{-1} \\, . \\, {n}{_{N, S}}\\right)\\right), {{\\#}}{_{}})",
             "matlab": null
           },
           "type": "generic",
@@ -1750,8 +1750,8 @@
       "equations": {
         "E_120": {
           "rhs": {
-            "global_ID": " V_15 O_4 D_0 V_118  O_5 D_0 V_135 O_4 V_131 D_1 D_1",
-            "latex": "{V}{_{N}} \\, . \\, \\left({N}{_{S, K}} \\star \\left({K}{_{N, K}} \\, . \\, {\\phi}{_{N, K}}\\right)\\right)",
+            "global_ID": " V_15 O_4 D_0 V_118  O_5 I_5 D_0 V_135 O_4 V_131 D_1 D_1",
+            "latex": "{V}{_{N}} \\, . \\, \\left({N}{_{S, K}} \\stackrel{K}{\\star} \\left({K}{_{N, K}} \\, . \\, {\\phi}{_{N, K}}\\right)\\right)",
             "matlab": "V(N) .* (N(S, K) * (K(N, K) .* interactionProbability(N, K)))"
           },
           "type": "generic",
@@ -2123,8 +2123,8 @@
       "equations": {
         "E_126": {
           "rhs": {
-            "global_ID": " V_10  O_5 V_141",
-            "latex": "{F}{_{N, A}} \\star {{\\hat{w}}}{_{A}}",
+            "global_ID": " V_10  O_5 I_2 V_141",
+            "latex": "{F}{_{N, A}} \\stackrel{A}{\\star} {{\\hat{w}}}{_{A}}",
             "matlab": "F(N, A) * fw(A)"
           },
           "type": "generic",
@@ -2519,13 +2519,13 @@
       "IRI": "promo:T_normed",
       "aliases": {
         "matlab": "T_normed",
-        "latex": "{\\bar{T}^o}",
+        "latex": "{\\bar{T}}",
         "internal_code": "T_normed",
         "global_ID": "V_149"
       },
       "compiled_lhs": {
         "global_ID": "V_149",
-        "latex": "{{\\bar{T}^o}}{_{N}}",
+        "latex": "{{\\bar{T}}}{_{N}}",
         "matlab": "T_normed(N)"
       },
       "created": "2024-01-02 16:43:29",
@@ -2548,7 +2548,7 @@
           "modified": "2024-01-02 16:43:29",
           "lhs": {
             "global_ID": "V_149",
-            "latex": "{{\\bar{T}^o}}{_{N}}",
+            "latex": "{{\\bar{T}}}{_{N}}",
             "matlab": "T_normed(N)"
           }
         }
@@ -2557,7 +2557,7 @@
         "I_1"
       ],
       "label": "T_normed",
-      "modified": "2024-01-02 16:43:29",
+      "modified": "2024-02-12 13:26:32",
       "network": "macroscopic",
       "port_variable": false,
       "tokens": [],
@@ -2636,13 +2636,13 @@
       "IRI": "promo:p_normed",
       "aliases": {
         "matlab": "p_normed",
-        "latex": "{\\bar{p}^o}",
+        "latex": "{\\bar{p}}",
         "internal_code": "p_normed",
         "global_ID": "V_150"
       },
       "compiled_lhs": {
         "global_ID": "V_150",
-        "latex": "{{\\bar{p}^o}}{_{N}}",
+        "latex": "{{\\bar{p}}}{_{N}}",
         "matlab": "p_normed(N)"
       },
       "created": "2024-01-02 16:44:00",
@@ -2664,7 +2664,7 @@
           "modified": "2024-01-02 16:44:00",
           "lhs": {
             "global_ID": "V_150",
-            "latex": "{{\\bar{p}^o}}{_{N}}",
+            "latex": "{{\\bar{p}}}{_{N}}",
             "matlab": "p_normed(N)"
           }
         }
@@ -2673,7 +2673,7 @@
         "I_1"
       ],
       "label": "p_normed",
-      "modified": "2024-01-02 16:44:00",
+      "modified": "2024-02-12 13:26:37",
       "network": "macroscopic",
       "port_variable": false,
       "tokens": [],
@@ -2693,13 +2693,13 @@
       "IRI": "promo:c_normed",
       "aliases": {
         "matlab": "c_normed",
-        "latex": "{\\bar{c}^o}",
+        "latex": "{\\bar{c}}",
         "internal_code": "c_normed",
         "global_ID": "V_151"
       },
       "compiled_lhs": {
         "global_ID": "V_151",
-        "latex": "{{\\bar{c}^o}}{_{N, S}}",
+        "latex": "{{\\bar{c}}}{_{N, S}}",
         "matlab": "c_normed(N, S)"
       },
       "created": "2024-01-02 16:44:29",
@@ -2722,7 +2722,7 @@
           "modified": "2024-01-02 16:44:29",
           "lhs": {
             "global_ID": "V_151",
-            "latex": "{{\\bar{c}^o}}{_{N, S}}",
+            "latex": "{{\\bar{c}}}{_{N, S}}",
             "matlab": "c_normed(N, S)"
           }
         }
@@ -2732,7 +2732,7 @@
         "I_4"
       ],
       "label": "c_normed",
-      "modified": "2024-01-02 16:44:29",
+      "modified": "2024-02-12 13:26:44",
       "network": "macroscopic",
       "port_variable": false,
       "tokens": [],
@@ -2767,7 +2767,7 @@
         "E_138": {
           "rhs": {
             "global_ID": " V_150",
-            "latex": "{{\\bar{p}^o}}{_{N}}",
+            "latex": "{{\\bar{p}}}{_{N}}",
             "matlab": "p_normed(N)"
           },
           "type": "interface_link_equation",
@@ -2824,7 +2824,7 @@
         "E_139": {
           "rhs": {
             "global_ID": " V_149",
-            "latex": "{{\\bar{T}^o}}{_{N}}",
+            "latex": "{{\\bar{T}}}{_{N}}",
             "matlab": "T_normed(N)"
           },
           "type": "interface_link_equation",
@@ -2881,7 +2881,7 @@
         "E_140": {
           "rhs": {
             "global_ID": " V_151",
-            "latex": "{{\\bar{c}^o}}{_{N, S}}",
+            "latex": "{{\\bar{c}}}{_{N, S}}",
             "matlab": "c_normed(N, S)"
           },
           "type": "interface_link_equation",
@@ -2938,8 +2938,8 @@
       "equations": {
         "E_141": {
           "rhs": {
-            "global_ID": " V_10  O_5 V_153",
-            "latex": "{F}{_{N, A}} \\star {{\\_\\bar{T}}}{_{N}}",
+            "global_ID": " V_10  O_5 I_1  V_153",
+            "latex": "{F}{_{N, A}} \\stackrel{N}{\\star} {{\\_\\bar{T}}}{_{N}}",
             "matlab": "F(N, A) * _T_normed(N)"
           },
           "type": "generic",
@@ -2959,8 +2959,8 @@
         },
         "E_142": {
           "rhs": {
-            "global_ID": " V_10  O_5 V_152",
-            "latex": "{F}{_{N, A}} \\star {{\\_\\bar{p}}}{_{N}}",
+            "global_ID": " V_10  O_5 I_1 V_152",
+            "latex": "{F}{_{N, A}} \\stackrel{N}{\\star} {{\\_\\bar{p}}}{_{N}}",
             "matlab": "F(N, A) * _p_normed(N)"
           },
           "type": "generic",
@@ -3017,8 +3017,8 @@
       "equations": {
         "E_143": {
           "rhs": {
-            "global_ID": " V_10  O_5 V_154",
-            "latex": "{F}{_{N, A}} \\star {{\\_\\bar{c}}}{_{N, S}}",
+            "global_ID": " V_10  O_5 I_1 V_154",
+            "latex": "{F}{_{N, A}} \\stackrel{N}{\\star} {{\\_\\bar{c}}}{_{N, S}}",
             "matlab": "F(N, A) * _c_normed(N, S)"
           },
           "type": "generic",
@@ -3876,8 +3876,8 @@
       "equations": {
         "E_155": {
           "rhs": {
-            "global_ID": " F_15 D_0 V_168 D_1 O_4 D_0 V_170  O_5 V_103 D_1",
-            "latex": "\\left( {{R^e}}{_{N}} \\right)^{-1} \\, . \\, \\left({S}{_{S}} \\star {{\\_x}}{_{N, S}}\\right)",
+            "global_ID": " F_15 D_0 V_168 D_1 O_4 D_0 V_170  O_5 I_4 V_103 D_1",
+            "latex": "\\left( {{R^e}}{_{N}} \\right)^{-1} \\, . \\, \\left({S}{_{S}} \\stackrel{S}{\\star} {{\\_x}}{_{N, S}}\\right)",
             "matlab": "1 ./ Re(N) .* (S_S(S) * _x(N, S))"
           },
           "type": "generic",
@@ -4050,8 +4050,8 @@
       "equations": {
         "E_158": {
           "rhs": {
-            "global_ID": " V_30  O_5 V_18",
-            "latex": "{{\\_\\lambda}}{_{S}} \\star {n}{_{N, S}}",
+            "global_ID": " V_30  O_5 I_4 V_18",
+            "latex": "{{\\_\\lambda}}{_{S}} \\stackrel{S}{\\star} {n}{_{N, S}}",
             "matlab": "_Mm(S) * n(N, S)"
           },
           "type": "generic",
@@ -4296,8 +4296,8 @@
       "equations": {
         "E_165": {
           "rhs": {
-            "global_ID": " O_8 D_0 V_181  O_5 V_182 D_8 V_4 O_13 D_2 V_5 D_7 V_6 D_3 D_1 O_0 V_183",
-            "latex": "\\int_{ {{t^o}}{_{}} }^{ {{t^e}}{_{}} } \\, {I}{_{N, D}} \\star {{\\dot{x}}}{_{D}} \\enskip d\\,{t}{_{}}  + {{x^o}}{_{N}}",
+            "global_ID": " O_8 D_0 V_181  O_5 I_6 V_182 D_8 V_4 O_13 D_2 V_5 D_7 V_6 D_3 D_1 O_0 V_183",
+            "latex": "\\int_{ {{t^o}}{_{}} }^{ {{t^e}}{_{}} } \\, {I}{_{N, D}} \\stackrel{D}{\\star} {{\\dot{x}}}{_{D}} \\enskip d\\,{t}{_{}}  + {{x^o}}{_{N}}",
             "matlab": "xo(N)"
           },
           "type": "generic",
@@ -4456,8 +4456,8 @@
       "equations": {
         "E_164": {
           "rhs": {
-            "global_ID": " V_177  O_5 V_179 O_0 V_178  O_5 V_155",
-            "latex": "{A}{_{N, D}} \\star {x}{_{N}}  + {B}{_{A, D}} \\star {m}{_{A}}",
+            "global_ID": " V_177  O_5 I_1 V_179 O_0 V_178  O_5 I_2 V_155",
+            "latex": "{A}{_{N, D}} \\stackrel{N}{\\star} {x}{_{N}}  + {B}{_{A, D}} \\stackrel{A}{\\star} {m}{_{A}}",
             "matlab": "A(N, D) * x(N) + B(A, D) * measurement_vector(A)"
           },
           "type": "generic",
@@ -4722,16 +4722,16 @@
       ]
     },
     "V_188": {
-      "IRI": "qudt:MassFlowRate",
+      "IRI": "qudt:fmc",
       "aliases": {
-        "matlab": "fm",
-        "latex": "{\\hat{m}}",
-        "internal_code": "fm",
+        "matlab": "fmc",
+        "latex": "{\\hat{m}^c}",
+        "internal_code": "fmc",
         "global_ID": "V_188"
       },
       "compiled_lhs": {
         "global_ID": "V_188",
-        "latex": "{{\\hat{m}}}{_{A}}"
+        "latex": "{{\\hat{m}^c}}{_{A}}"
       },
       "created": "2024-01-22 16:55:25",
       "doc": "mass flow rate ",
@@ -4752,15 +4752,34 @@
           "modified": "2024-01-22 16:55:25",
           "lhs": {
             "global_ID": "V_188",
-            "latex": "{{\\hat{m}}}{_{A}}"
+            "latex": "{{\\hat{m}^c}}{_{A}}"
+          }
+        },
+        "E_197": {
+          "rhs": {
+            "global_ID": " V_30  O_5 I_3 V_92",
+            "latex": "{{\\_\\lambda}}{_{S}} \\stackrel{I}{\\star} {{\\hat{n}^c}}{_{A, S}}"
+          },
+          "type": "generic",
+          "doc": "mass flow rate from molar flow",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_30",
+            "V_92"
+          ],
+          "created": "2024-01-25 17:10:22",
+          "modified": "2024-01-25 17:10:22",
+          "lhs": {
+            "global_ID": "V_188",
+            "latex": "{{\\hat{m}^c}}{_{A}}"
           }
         }
       },
       "index_structures": [
         "I_2"
       ],
-      "label": "fm",
-      "modified": "2024-01-22 17:03:00",
+      "label": "fmc",
+      "modified": "2024-01-25 17:12:17",
       "network": "macroscopic",
       "port_variable": false,
       "tokens": [],
@@ -4992,8 +5011,8 @@
       "equations": {
         "E_177": {
           "rhs": {
-            "global_ID": " V_48  O_5 V_27",
-            "latex": "{I}{_{N, A}} \\star {{v_x}}{_{N}}"
+            "global_ID": " V_48  O_5 I_1 V_27",
+            "latex": "{I}{_{N, A}} \\stackrel{N}{\\star} {{v_x}}{_{N}}"
           },
           "type": "generic",
           "doc": "velocity in arc",
@@ -5047,8 +5066,8 @@
       "equations": {
         "E_181": {
           "rhs": {
-            "global_ID": " V_48  O_5 V_11",
-            "latex": "{I}{_{N, A}} \\star {{\\ell}}{_{N}}"
+            "global_ID": " V_48  O_5 I_1 V_11",
+            "latex": "{I}{_{N, A}} \\stackrel{N}{\\star} {{\\ell}}{_{N}}"
           },
           "type": "generic",
           "doc": "length of pipe",
@@ -5215,8 +5234,8 @@
       "equations": {
         "E_185": {
           "rhs": {
-            "global_ID": " V_188 O_4 V_64  O_5 D_0 V_27 O_4 V_27 D_1",
-            "latex": "{{\\hat{m}}}{_{A}} \\, . \\, {D}{_{N, A}} \\star \\left({{v_x}}{_{N}} \\, . \\, {{v_x}}{_{N}}\\right)"
+            "global_ID": " V_188 O_4 V_64  O_5 I_1 D_0 V_27 O_4 V_27 D_1",
+            "latex": "{{\\hat{m}^c}}{_{A}} \\, . \\, {D}{_{N, A}} \\stackrel{N}{\\star} \\left({{v_x}}{_{N}} \\, . \\, {{v_x}}{_{N}}\\right)"
           },
           "type": "generic",
           "doc": "net kinetic energy",
@@ -5271,8 +5290,8 @@
       "equations": {
         "E_186": {
           "rhs": {
-            "global_ID": " V_188 O_4 V_190 O_4 V_64  O_5 V_189",
-            "latex": "{{\\hat{m}}}{_{A}} \\, . \\, {g}{_{}} \\, . \\, {D}{_{N, A}} \\star {h}{_{N}}"
+            "global_ID": " V_188 O_4 V_190 O_4 V_64  O_5 I_1 V_189",
+            "latex": "{{\\hat{m}^c}}{_{A}} \\, . \\, {g}{_{}} \\, . \\, {D}{_{N, A}} \\stackrel{N}{\\star} {h}{_{N}}"
           },
           "type": "generic",
           "doc": "net potential energy",
@@ -5328,8 +5347,8 @@
       "equations": {
         "E_188": {
           "rhs": {
-            "global_ID": " O_10 D_0 V_201 O_4 D_0 V_48  O_5 F_15 D_0 V_11 D_1 D_1 D_7 V_1 D_1",
-            "latex": "\\textbf{Instantiate}({{\\dot{E}^p}}{_{A}} \\, . \\, \\left({I}{_{N, A}} \\star \\left( {{\\ell}}{_{N}} \\right)^{-1}\\right), {{\\#}}{_{}})"
+            "global_ID": " O_10 D_0 V_201 O_4 D_0 V_48  O_5 I_1 F_15 D_0 V_11 D_1 D_1 D_7 V_1 D_1",
+            "latex": "\\textbf{Instantiate}({{\\dot{E}^p}}{_{A}} \\, . \\, \\left({I}{_{N, A}} \\stackrel{N}{\\star} \\left( {{\\ell}}{_{N}} \\right)^{-1}\\right), {{\\#}}{_{}})"
           },
           "type": "generic",
           "doc": "friction coefficient for linear model",
@@ -5385,8 +5404,8 @@
       "equations": {
         "E_191": {
           "rhs": {
-            "global_ID": " V_91 O_4 D_0 V_64  O_5 V_20 D_1",
-            "latex": "{{\\hat{V}}}{_{A}} \\, . \\, \\left({D}{_{N, A}} \\star {p}{_{N}}\\right)"
+            "global_ID": " V_91 O_4 D_0 V_64  O_5 I_1 V_20 D_1",
+            "latex": "{{\\hat{V}}}{_{A}} \\, . \\, \\left({D}{_{N, A}} \\stackrel{N}{\\star} {p}{_{N}}\\right)"
           },
           "type": "generic",
           "doc": "net volume work",
@@ -5491,7 +5510,7 @@
       },
       "compiled_lhs": {
         "global_ID": "V_207",
-        "latex": "{residual_aE_mechanical}{_{A}}"
+        "latex": "{{r^m}}{_{A}}"
       },
       "created": "2024-01-23 18:38:35",
       "doc": "residual form of differential mechanical energy balance",
@@ -5515,7 +5534,7 @@
           "modified": "2024-01-23 18:38:35",
           "lhs": {
             "global_ID": "V_207",
-            "latex": "{residual_aE_mechanical}{_{A}}"
+            "latex": "{{r^m}}{_{A}}"
           }
         }
       },
@@ -5531,6 +5550,117 @@
       "units": [
         -3,
         2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_208": {
+      "IRI": "promo:am",
+      "aliases": {
+        "matlab": "am",
+        "latex": "{\\hat{m}}",
+        "internal_code": "am",
+        "global_ID": "V_208"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_208",
+        "latex": "{{\\hat{m}}}{_{N}}"
+      },
+      "created": "2024-01-25 17:05:50",
+      "doc": "accumulation of mass",
+      "equations": {
+        "E_195": {
+          "rhs": {
+            "global_ID": " V_30  O_5 I_4 V_139",
+            "latex": "{{\\_\\lambda}}{_{S}} \\stackrel{S}{\\star} {{\\dot{n}}}{_{N, S}}"
+          },
+          "type": "generic",
+          "doc": "accumulation of mass",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_139",
+            "V_30"
+          ],
+          "created": "2024-01-25 17:05:50",
+          "modified": "2024-01-25 17:05:50",
+          "lhs": {
+            "global_ID": "V_208",
+            "latex": "{{\\hat{m}}}{_{N}}"
+          }
+        }
+      },
+      "index_structures": [
+        "I_1"
+      ],
+      "label": "am",
+      "modified": "2024-01-25 17:05:50",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "secondaryState",
+      "units": [
+        -1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_209": {
+      "IRI": "promo:residual_am",
+      "aliases": {
+        "matlab": "residual_am",
+        "latex": "{r^m}",
+        "internal_code": "residual_am",
+        "global_ID": "V_209"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_209",
+        "latex": "{{r^m}}{_{N}}"
+      },
+      "created": "2024-01-25 17:07:40",
+      "doc": "residual form of differential mass balance",
+      "equations": {
+        "E_196": {
+          "rhs": {
+            "global_ID": " V_208 O_1 V_30  O_5 I_4 D_0 V_139 D_1",
+            "latex": "{{\\hat{m}}}{_{N}}  - {{\\_\\lambda}}{_{S}} \\stackrel{S}{\\star} \\left({{\\dot{n}}}{_{N, S}}\\right)"
+          },
+          "type": "generic",
+          "doc": "residual form of differential mass balance",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_139",
+            "V_208",
+            "V_30"
+          ],
+          "created": "2024-01-25 17:07:40",
+          "modified": "2024-01-25 17:07:40",
+          "lhs": {
+            "global_ID": "V_209",
+            "latex": "{{r^m}}{_{N}}"
+          }
+        }
+      },
+      "index_structures": [
+        "I_1"
+      ],
+      "label": "residual_am",
+      "modified": "2024-01-25 17:14:16",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "state",
+      "units": [
+        -1,
+        0,
         0,
         1,
         0,
@@ -5614,6 +5744,61 @@
         -2,
         2,
         -1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_210": {
+      "IRI": "promo:residual_am_A",
+      "aliases": {
+        "matlab": "residual_am_A",
+        "latex": "{r^m}",
+        "internal_code": "residual_am_A",
+        "global_ID": "V_210"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_210",
+        "latex": "{{r^m}}{_{A}}"
+      },
+      "created": "2024-01-26 13:55:30",
+      "doc": "residual formulation for the mass balance for an arc node",
+      "equations": {
+        "E_198": {
+          "rhs": {
+            "global_ID": " V_48  O_5 I_1 V_209",
+            "latex": "{I}{_{N, A}} \\stackrel{N}{\\star} {{r^m}}{_{N}}"
+          },
+          "type": "generic",
+          "doc": "residual formulation for the mass balance for an arc node",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_209",
+            "V_48"
+          ],
+          "created": "2024-01-26 13:55:30",
+          "modified": "2024-01-26 13:55:30",
+          "lhs": {
+            "global_ID": "V_210",
+            "latex": "{{r^m}}{_{A}}"
+          }
+        }
+      },
+      "index_structures": [
+        "I_2"
+      ],
+      "label": "residual_am_A",
+      "modified": "2024-01-26 13:55:30",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "transport",
+      "units": [
+        -1,
+        0,
+        0,
         1,
         0,
         0,
@@ -6936,8 +7121,8 @@
       "equations": {
         "E_35": {
           "rhs": {
-            "global_ID": " D_0 V_26  O_5 F_15 D_0 V_21 D_1 D_1 O_4 F_15 D_0 V_15 D_1 O_4 O_6 D_0 V_16 D_7 V_20 D_1 O_4 V_27",
-            "latex": "\\left({{\\lambda}}{_{S}} \\star \\left( {{\\mu}}{_{N, S}} \\right)^{-1}\\right) \\, . \\, \\left( {V}{_{N}} \\right)^{-1} \\, . \\, \\frac{\\partial{{U}{_{N}}}}{\\partial{{p}{_{N}}}} \\, . \\, {{v_x}}{_{N}}",
+            "global_ID": " D_0 V_26  O_5 I_4 F_15 D_0 V_21 D_1 D_1 O_4 F_15 D_0 V_15 D_1 O_4 O_6 D_0 V_16 D_7 V_20 D_1 O_4 V_27",
+            "latex": "\\left({{\\lambda}}{_{S}} \\stackrel{S}{\\star} \\left( {{\\mu}}{_{N, S}} \\right)^{-1}\\right) \\, . \\, \\left( {V}{_{N}} \\right)^{-1} \\, . \\, \\frac{\\partial{{U}{_{N}}}}{\\partial{{p}{_{N}}}} \\, . \\, {{v_x}}{_{N}}",
             "matlab": "v_x(N)"
           },
           "type": "generic",
@@ -6998,8 +7183,8 @@
       "equations": {
         "E_36": {
           "rhs": {
-            "global_ID": " D_0 V_26  O_5 F_15 D_0 V_21 D_1 D_1 O_4 F_15 D_0 V_15 D_1 O_4 O_6 D_0 V_16 D_7 V_20 D_1 O_4 V_28",
-            "latex": "\\left({{\\lambda}}{_{S}} \\star \\left( {{\\mu}}{_{N, S}} \\right)^{-1}\\right) \\, . \\, \\left( {V}{_{N}} \\right)^{-1} \\, . \\, \\frac{\\partial{{U}{_{N}}}}{\\partial{{p}{_{N}}}} \\, . \\, {{v_y}}{_{N}}",
+            "global_ID": " D_0 V_26  O_5 I_4 F_15 D_0 V_21 D_1 D_1 O_4 F_15 D_0 V_15 D_1 O_4 O_6 D_0 V_16 D_7 V_20 D_1 O_4 V_28",
+            "latex": "\\left({{\\lambda}}{_{S}} \\stackrel{S}{\\star} \\left( {{\\mu}}{_{N, S}} \\right)^{-1}\\right) \\, . \\, \\left( {V}{_{N}} \\right)^{-1} \\, . \\, \\frac{\\partial{{U}{_{N}}}}{\\partial{{p}{_{N}}}} \\, . \\, {{v_y}}{_{N}}",
             "matlab": "v_y(N)"
           },
           "type": "generic",
@@ -7060,8 +7245,8 @@
       "equations": {
         "E_37": {
           "rhs": {
-            "global_ID": " D_0 V_26  O_5 F_15 D_0 V_21 D_1 D_1 O_4 F_15 D_0 V_15 D_1 O_4 O_6 D_0 V_16 D_7 V_20 D_1 O_4 V_29",
-            "latex": "\\left({{\\lambda}}{_{S}} \\star \\left( {{\\mu}}{_{N, S}} \\right)^{-1}\\right) \\, . \\, \\left( {V}{_{N}} \\right)^{-1} \\, . \\, \\frac{\\partial{{U}{_{N}}}}{\\partial{{p}{_{N}}}} \\, . \\, {{v_z}}{_{N}}",
+            "global_ID": " D_0 V_26  O_5 I_4 F_15 D_0 V_21 D_1 D_1 O_4 F_15 D_0 V_15 D_1 O_4 O_6 D_0 V_16 D_7 V_20 D_1 O_4 V_29",
+            "latex": "\\left({{\\lambda}}{_{S}} \\stackrel{S}{\\star} \\left( {{\\mu}}{_{N, S}} \\right)^{-1}\\right) \\, . \\, \\left( {V}{_{N}} \\right)^{-1} \\, . \\, \\frac{\\partial{{U}{_{N}}}}{\\partial{{p}{_{N}}}} \\, . \\, {{v_z}}{_{N}}",
             "matlab": "v_z(N)"
           },
           "type": "generic",
@@ -7217,8 +7402,8 @@
       "equations": {
         "E_39": {
           "rhs": {
-            "global_ID": " V_48  O_5 V_44",
-            "latex": "{I}{_{N, A}} \\star {{k^c_x}}{_{N}}",
+            "global_ID": " V_48  O_5 I_1 V_44",
+            "latex": "{I}{_{N, A}} \\stackrel{N}{\\star} {{k^c_x}}{_{N}}",
             "matlab": "I_N_A(N, A) * kc_x(N)"
           },
           "type": "generic",
@@ -7331,8 +7516,8 @@
       "equations": {
         "E_40": {
           "rhs": {
-            "global_ID": " V_48  O_5 V_45",
-            "latex": "{I}{_{N, A}} \\star {{k^c_y}}{_{N}}",
+            "global_ID": " V_48  O_5 I_1 V_45",
+            "latex": "{I}{_{N, A}} \\stackrel{N}{\\star} {{k^c_y}}{_{N}}",
             "matlab": "I_N_A(N, A) * kc_y(N)"
           },
           "type": "generic",
@@ -7389,8 +7574,8 @@
       "equations": {
         "E_41": {
           "rhs": {
-            "global_ID": " V_48  O_5 V_46",
-            "latex": "{I}{_{N, A}} \\star {{k^c_z}}{_{N}}",
+            "global_ID": " V_48  O_5 I_1 V_46",
+            "latex": "{I}{_{N, A}} \\stackrel{N}{\\star} {{k^c_z}}{_{N}}",
             "matlab": "I_N_A(N, A) * kc_z(N)"
           },
           "type": "generic",
@@ -7447,8 +7632,8 @@
       "equations": {
         "E_42": {
           "rhs": {
-            "global_ID": " V_48  O_5 V_41",
-            "latex": "{I}{_{N, A}} \\star {{k^d_x}}{_{N, S}}",
+            "global_ID": " V_48  O_5 I_1 V_41",
+            "latex": "{I}{_{N, A}} \\stackrel{N}{\\star} {{k^d_x}}{_{N, S}}",
             "matlab": "I_N_A(N, A) * kd_x(N, S)"
           },
           "type": "generic",
@@ -7506,8 +7691,8 @@
       "equations": {
         "E_43": {
           "rhs": {
-            "global_ID": " V_48  O_5 V_42",
-            "latex": "{I}{_{N, A}} \\star {{k^d_y}}{_{N, S}}",
+            "global_ID": " V_48  O_5 I_1 V_42",
+            "latex": "{I}{_{N, A}} \\stackrel{N}{\\star} {{k^d_y}}{_{N, S}}",
             "matlab": "I_N_A(N, A) * kd_y(N, S)"
           },
           "type": "generic",
@@ -7565,8 +7750,8 @@
       "equations": {
         "E_44": {
           "rhs": {
-            "global_ID": " V_48  O_5 V_43",
-            "latex": "{I}{_{N, A}} \\star {{k^d_z}}{_{N, S}}",
+            "global_ID": " V_48  O_5 I_1 V_43",
+            "latex": "{I}{_{N, A}} \\stackrel{N}{\\star} {{k^d_z}}{_{N, S}}",
             "matlab": "I_N_A(N, A) * kd_z(N, S)"
           },
           "type": "generic",
@@ -7624,8 +7809,8 @@
       "equations": {
         "E_45": {
           "rhs": {
-            "global_ID": " V_48  O_5 V_38",
-            "latex": "{I}{_{N, A}} \\star {{k^q_x}}{_{N}}",
+            "global_ID": " V_48  O_5 I_1 V_38",
+            "latex": "{I}{_{N, A}} \\stackrel{N}{\\star} {{k^q_x}}{_{N}}",
             "matlab": "I_N_A(N, A) * kq_x(N)"
           },
           "type": "generic",
@@ -7682,8 +7867,8 @@
       "equations": {
         "E_46": {
           "rhs": {
-            "global_ID": " V_48  O_5 V_39",
-            "latex": "{I}{_{N, A}} \\star {{k^q_y}}{_{N}}",
+            "global_ID": " V_48  O_5 I_1 V_39",
+            "latex": "{I}{_{N, A}} \\stackrel{N}{\\star} {{k^q_y}}{_{N}}",
             "matlab": "I_N_A(N, A) * kq_y(N)"
           },
           "type": "generic",
@@ -7740,8 +7925,8 @@
       "equations": {
         "E_47": {
           "rhs": {
-            "global_ID": " V_48  O_5 V_40",
-            "latex": "{I}{_{N, A}} \\star {{k^q_z}}{_{N}}",
+            "global_ID": " V_48  O_5 I_1 V_40",
+            "latex": "{I}{_{N, A}} \\stackrel{N}{\\star} {{k^q_z}}{_{N}}",
             "matlab": "I_N_A(N, A) * kq_z(N)"
           },
           "type": "generic",
@@ -7798,8 +7983,8 @@
       "equations": {
         "E_48": {
           "rhs": {
-            "global_ID": " V_26  O_5 V_18",
-            "latex": "{{\\lambda}}{_{S}} \\star {n}{_{N, S}}",
+            "global_ID": " V_26  O_5 I_4 V_18",
+            "latex": "{{\\lambda}}{_{S}} \\stackrel{S}{\\star} {n}{_{N, S}}",
             "matlab": "Mm(S) * n(N, S)"
           },
           "type": "generic",
@@ -7970,8 +8155,8 @@
       "equations": {
         "E_50": {
           "rhs": {
-            "global_ID": " V_15  O_5 F_15 D_0 V_18 D_1",
-            "latex": "{V}{_{N}} \\star \\left( {n}{_{N, S}} \\right)^{-1}",
+            "global_ID": " V_15  O_5 I_1 F_15 D_0 V_18 D_1",
+            "latex": "{V}{_{N}} \\stackrel{N}{\\star} \\left( {n}{_{N, S}} \\right)^{-1}",
             "matlab": "V(N) * 1 ./ n(N, S)"
           },
           "type": "generic",
@@ -8028,8 +8213,8 @@
       "equations": {
         "E_51": {
           "rhs": {
-            "global_ID": " V_48  O_5 D_0 V_27 O_4 O_6 D_0 V_16 D_7 V_21 D_1 O_4 F_15 D_0 V_18 D_1 D_1",
-            "latex": "{I}{_{N, A}} \\star \\left({{v_x}}{_{N}} \\, . \\, \\frac{\\partial{{U}{_{N}}}}{\\partial{{{\\mu}}{_{N, S}}}} \\, . \\, \\left( {n}{_{N, S}} \\right)^{-1}\\right)",
+            "global_ID": " V_48  O_5 I_1 D_0 V_27 O_4 O_6 D_0 V_16 D_7 V_21 D_1 O_4 F_15 D_0 V_18 D_1 D_1",
+            "latex": "{I}{_{N, A}} \\stackrel{N}{\\star} \\left({{v_x}}{_{N}} \\, . \\, \\frac{\\partial{{U}{_{N}}}}{\\partial{{{\\mu}}{_{N, S}}}} \\, . \\, \\left( {n}{_{N, S}} \\right)^{-1}\\right)",
             "matlab": null
           },
           "type": "generic",
@@ -8090,8 +8275,8 @@
       "equations": {
         "E_52": {
           "rhs": {
-            "global_ID": " V_48  O_5 D_0 V_28 O_4 O_6 D_0 V_16 D_7 V_21 D_1 O_4 F_15 D_0 V_18 D_1 D_1",
-            "latex": "{I}{_{N, A}} \\star \\left({{v_y}}{_{N}} \\, . \\, \\frac{\\partial{{U}{_{N}}}}{\\partial{{{\\mu}}{_{N, S}}}} \\, . \\, \\left( {n}{_{N, S}} \\right)^{-1}\\right)",
+            "global_ID": " V_48  O_5 I_1 D_0 V_28 O_4 O_6 D_0 V_16 D_7 V_21 D_1 O_4 F_15 D_0 V_18 D_1 D_1",
+            "latex": "{I}{_{N, A}} \\stackrel{N}{\\star} \\left({{v_y}}{_{N}} \\, . \\, \\frac{\\partial{{U}{_{N}}}}{\\partial{{{\\mu}}{_{N, S}}}} \\, . \\, \\left( {n}{_{N, S}} \\right)^{-1}\\right)",
             "matlab": null
           },
           "type": "generic",
@@ -8152,8 +8337,8 @@
       "equations": {
         "E_53": {
           "rhs": {
-            "global_ID": " V_48  O_5 D_0 V_29 O_4 O_6 D_0 V_16 D_7 V_21 D_1 O_4 F_15 D_0 V_18 D_1 D_1",
-            "latex": "{I}{_{N, A}} \\star \\left({{v_z}}{_{N}} \\, . \\, \\frac{\\partial{{U}{_{N}}}}{\\partial{{{\\mu}}{_{N, S}}}} \\, . \\, \\left( {n}{_{N, S}} \\right)^{-1}\\right)",
+            "global_ID": " V_48  O_5 I_1 D_0 V_29 O_4 O_6 D_0 V_16 D_7 V_21 D_1 O_4 F_15 D_0 V_18 D_1 D_1",
+            "latex": "{I}{_{N, A}} \\stackrel{N}{\\star} \\left({{v_z}}{_{N}} \\, . \\, \\frac{\\partial{{U}{_{N}}}}{\\partial{{{\\mu}}{_{N, S}}}} \\, . \\, \\left( {n}{_{N, S}} \\right)^{-1}\\right)",
             "matlab": null
           },
           "type": "generic",
@@ -8424,8 +8609,8 @@
       "equations": {
         "E_57": {
           "rhs": {
-            "global_ID": " V_48  O_5 V_65",
-            "latex": "{I}{_{N, A}} \\star {{A_{xy}}}{_{N}}",
+            "global_ID": " V_48  O_5 I_1 V_65",
+            "latex": "{I}{_{N, A}} \\stackrel{N}{\\star} {{A_{xy}}}{_{N}}",
             "matlab": "I_N_A(N, A) * A_xy(N)"
           },
           "type": "generic",
@@ -8482,8 +8667,8 @@
       "equations": {
         "E_58": {
           "rhs": {
-            "global_ID": " V_48  O_5 V_66",
-            "latex": "{I}{_{N, A}} \\star {{A_{xz}}}{_{N}}",
+            "global_ID": " V_48  O_5 I_1 V_66",
+            "latex": "{I}{_{N, A}} \\stackrel{N}{\\star} {{A_{xz}}}{_{N}}",
             "matlab": "I_N_A(N, A) * A_xz(N)"
           },
           "type": "generic",
@@ -8596,8 +8781,8 @@
       "equations": {
         "E_59": {
           "rhs": {
-            "global_ID": " V_48  O_5 V_67",
-            "latex": "{I}{_{N, A}} \\star {{A_{yz}}}{_{N}}",
+            "global_ID": " V_48  O_5 I_1 V_67",
+            "latex": "{I}{_{N, A}} \\stackrel{N}{\\star} {{A_{yz}}}{_{N}}",
             "matlab": "I_N_A(N, A) * A_yz(N)"
           },
           "type": "generic",
@@ -9399,8 +9584,8 @@
       "equations": {
         "E_72": {
           "rhs": {
-            "global_ID": " V_70 O_4 V_80 O_4 D_0 V_64  O_5 V_19 D_1",
-            "latex": "{{A_{yz}}}{_{A}} \\, . \\, {{\\_k^q_x}}{_{A}} \\, . \\, \\left({D}{_{N, A}} \\star {T}{_{N}}\\right)",
+            "global_ID": " V_70 O_4 V_80 O_4 D_0 V_64  O_5 I_1 V_19 D_1",
+            "latex": "{{A_{yz}}}{_{A}} \\, . \\, {{\\_k^q_x}}{_{A}} \\, . \\, \\left({D}{_{N, A}} \\stackrel{N}{\\star} {T}{_{N}}\\right)",
             "matlab": "A_yz_A(A) .* _kq_x_A(A) .* (D(N, A) * T(N))"
           },
           "type": "generic",
@@ -9459,8 +9644,8 @@
       "equations": {
         "E_73": {
           "rhs": {
-            "global_ID": " V_10  O_5 V_83",
-            "latex": "{F}{_{N, A}} \\star {{\\hat{q}_x}}{_{A}}",
+            "global_ID": " V_10  O_5 I_2 V_83",
+            "latex": "{F}{_{N, A}} \\stackrel{A}{\\star} {{\\hat{q}_x}}{_{A}}",
             "matlab": "F(N, A) * fq_x(A)"
           },
           "type": "generic",
@@ -9576,8 +9761,8 @@
       "equations": {
         "E_75": {
           "rhs": {
-            "global_ID": " F_16 D_0 V_64  O_5 V_20 D_1",
-            "latex": "\\textbf{sign} \\left( {D}{_{N, A}} \\star {p}{_{N}} \\right)",
+            "global_ID": " F_16 D_0 V_64  O_5 I_1 V_20 D_1",
+            "latex": "\\textbf{sign} \\left( {D}{_{N, A}} \\stackrel{N}{\\star} {p}{_{N}} \\right)",
             "matlab": "sign(D(N, A) * p(N))"
           },
           "type": "generic",
@@ -9634,8 +9819,8 @@
       "equations": {
         "E_76": {
           "rhs": {
-            "global_ID": " D_0 V_8 O_4 D_0 V_64 O_1 V_86 O_4 F_10 D_0 V_64 D_1 D_1 D_1  O_5 V_85",
-            "latex": "\\left({0.5}{_{}} \\, . \\, \\left({D}{_{N, A}}  - {d}{_{A}} \\, . \\, |{D}{_{N, A}}|\\right)\\right) \\star {c}{_{N, S}}",
+            "global_ID": " D_0 V_8 O_4 D_0 V_64 O_1 V_86 O_4 F_10 D_0 V_64 D_1 D_1 D_1  O_5 I_1 V_85",
+            "latex": "\\left({0.5}{_{}} \\, . \\, \\left({D}{_{N, A}}  - {d}{_{A}} \\, . \\, |{D}{_{N, A}}|\\right)\\right) \\stackrel{N}{\\star} {c}{_{N, S}}",
             "matlab": "(onehalf .* (D(N, A) - d(A) .* abs(D(N, A)))) * c(N, S)"
           },
           "type": "generic",
@@ -9752,8 +9937,8 @@
       "equations": {
         "E_78": {
           "rhs": {
-            "global_ID": " V_48  O_5 V_59",
-            "latex": "{I}{_{N, A}} \\star {\\rho}{_{N}}",
+            "global_ID": " V_48  O_5 I_1 V_59",
+            "latex": "{I}{_{N, A}} \\stackrel{N}{\\star} {\\rho}{_{N}}",
             "matlab": "I_N_A(N, A) * density(N)"
           },
           "type": "generic",
@@ -9924,8 +10109,8 @@
       "equations": {
         "E_80": {
           "rhs": {
-            "global_ID": " F_15 D_0 V_90 D_1 O_4 V_71 O_4 V_70 O_4 D_0 V_64  O_5 V_20 D_1",
-            "latex": "\\left( {{\\_\\rho}}{_{A}} \\right)^{-1} \\, . \\, {{\\_k^c_x}}{_{A}} \\, . \\, {{A_{yz}}}{_{A}} \\, . \\, \\left({D}{_{N, A}} \\star {p}{_{N}}\\right)",
+            "global_ID": " F_15 D_0 V_90 D_1 O_4 V_71 O_4 V_70 O_4 D_0 V_64  O_5 I_1 V_20 D_1",
+            "latex": "\\left( {{\\_\\rho}}{_{A}} \\right)^{-1} \\, . \\, {{\\_k^c_x}}{_{A}} \\, . \\, {{A_{yz}}}{_{A}} \\, . \\, \\left({D}{_{N, A}} \\stackrel{N}{\\star} {p}{_{N}}\\right)",
             "matlab": "1 ./ _density_A(A) .* _kc_x_A(A) .* A_yz_A(A) .* (D(N, A) * p(N))"
           },
           "type": "generic",
@@ -9948,8 +10133,8 @@
         },
         "E_172": {
           "rhs": {
-            "global_ID": " V_187 O_4 V_186 O_4 F_3 D_0 D_0 V_64  O_5 D_0 V_20 O_4 F_15 D_0 V_147 D_1 D_1 D_1 D_1",
-            "latex": "{{\\_u^v}}{_{A}} \\, . \\, {{k^{valve}}}{_{A}} \\, . \\, \\textbf{sqrt}\\left(\\left({D}{_{N, A}} \\star \\left({p}{_{N}} \\, . \\, \\left( {{p^o}}{_{N}} \\right)^{-1}\\right)\\right)\\right)"
+            "global_ID": " V_187 O_4 V_186 O_4 F_3 D_0 D_0 V_64  O_5 I_1 D_0 V_20 O_4 F_15 D_0 V_147 D_1 D_1 D_1 D_1",
+            "latex": "{{\\_u^v}}{_{A}} \\, . \\, {{k^{valve}}}{_{A}} \\, . \\, \\textbf{sqrt}\\left(\\left({D}{_{N, A}} \\stackrel{N}{\\star} \\left({p}{_{N}} \\, . \\, \\left( {{p^o}}{_{N}} \\right)^{-1}\\right)\\right)\\right)"
           },
           "type": "generic",
           "doc": "volumetric flow",
@@ -9971,8 +10156,8 @@
         },
         "E_175": {
           "rhs": {
-            "global_ID": " D_0 V_48  O_5 V_27 D_1 O_4 V_70",
-            "latex": "\\left({I}{_{N, A}} \\star {{v_x}}{_{N}}\\right) \\, . \\, {{A_{yz}}}{_{A}}"
+            "global_ID": " D_0 V_48  O_5 I_1 V_27 D_1 O_4 V_70",
+            "latex": "\\left({I}{_{N, A}} \\stackrel{N}{\\star} {{v_x}}{_{N}}\\right) \\, . \\, {{A_{yz}}}{_{A}}"
           },
           "type": "generic",
           "doc": "volumetric flow",
@@ -9993,7 +10178,7 @@
         "E_194": {
           "rhs": {
             "global_ID": " F_17 D_0 V_207 D_1",
-            "latex": "\\textbf{Root}\\left( {residual_aE_mechanical}{_{A}}\\right)"
+            "latex": "\\textbf{Root}\\left( {{r^m}}{_{A}}\\right)"
           },
           "type": "generic",
           "doc": "volumetric flow as a root of the pressure distribution",
@@ -10107,8 +10292,8 @@
       "equations": {
         "E_82": {
           "rhs": {
-            "global_ID": " V_10  O_5 V_92",
-            "latex": "{F}{_{N, A}} \\star {{\\hat{n}^c}}{_{A, S}}",
+            "global_ID": " V_10  O_5 I_2 V_92",
+            "latex": "{F}{_{N, A}} \\stackrel{A}{\\star} {{\\hat{n}^c}}{_{A, S}}",
             "matlab": "F(N, A) * fnc(A, S)"
           },
           "type": "generic",
@@ -10271,8 +10456,8 @@
       "equations": {
         "E_83": {
           "rhs": {
-            "global_ID": " V_98  O_5 V_18",
-            "latex": "{I}{_{S}} \\star {n}{_{N, S}}",
+            "global_ID": " V_98  O_5 I_4 V_18",
+            "latex": "{I}{_{S}} \\stackrel{S}{\\star} {n}{_{N, S}}",
             "matlab": "I_S(S) * n(N, S)"
           },
           "type": "generic",
@@ -10479,7 +10664,7 @@
     }
   },
   "Ontology_global_IDs": {
-    "variable": 207,
-    "equation": 194
+    "variable": 210,
+    "equation": 198
   }
 }

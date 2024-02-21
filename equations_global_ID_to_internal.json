@@ -62,7 +62,7 @@
   "E_118": {
     "lhs": "Ko",
     "network": "reactions",
-    "rhs": " Instantiate ( I_S * ( P_N_K * ( inv ( t ) . inv ( V ) . n ) ) , value )"
+    "rhs": " Instantiate ( I_S * S ( P_N_K * N ( inv ( t ) . inv ( V ) . n ) ) , value )"
   },
   "E_119": {
     "lhs": "K",
@@ -72,7 +72,7 @@
   "E_120": {
     "lhs": "nProd",
     "network": "reactions",
-    "rhs": " V . ( N * ( K . interactionProbability ) )"
+    "rhs": " V . ( N * K ( K . interactionProbability ) )"
   },
   "E_121": {
     "lhs": "_nProd",
@@ -97,7 +97,7 @@
   "E_126": {
     "lhs": "aw",
     "network": "macroscopic",
-    "rhs": " F * fw"
+    "rhs": " F * A fw"
   },
   "E_127": {
     "lhs": "aH",
@@ -182,17 +182,17 @@
   "E_141": {
     "lhs": "measurement_vector",
     "network": "control",
-    "rhs": " F * _T_normed"
+    "rhs": " F * N _T_normed"
   },
   "E_142": {
     "lhs": "measurement_vector",
     "network": "control",
-    "rhs": " F * _p_normed"
+    "rhs": " F * N _p_normed"
   },
   "E_143": {
     "lhs": "measurement_matrix",
     "network": "control",
-    "rhs": " F * _c_normed"
+    "rhs": " F * N _c_normed"
   },
   "E_144": {
     "lhs": "setpoint_vector",
@@ -257,7 +257,7 @@
   "E_155": {
     "lhs": "kex",
     "network": "material",
-    "rhs": " inv ( Re ) . ( S_S * _x )"
+    "rhs": " inv ( Re ) . ( S_S * S _x )"
   },
   "E_156": {
     "lhs": "cp",
@@ -272,7 +272,7 @@
   "E_158": {
     "lhs": "m",
     "network": "macroscopic",
-    "rhs": " _Mm * n"
+    "rhs": " _Mm * S n"
   },
   "E_159": {
     "lhs": "Cp",
@@ -302,12 +302,12 @@
   "E_164": {
     "lhs": "dxdt",
     "network": "control",
-    "rhs": " A * x + B * measurement_vector"
+    "rhs": " A * N x + B * A measurement_vector"
   },
   "E_165": {
     "lhs": "x",
     "network": "control",
-    "rhs": " Integral ( I_N_D * dxdt :: t in [ to , te ] ) + xo"
+    "rhs": " Integral ( I_N_D * D dxdt :: t in [ to , te ] ) + xo"
   },
   "E_166": {
     "lhs": "xo",
@@ -337,7 +337,7 @@
   "E_172": {
     "lhs": "fV",
     "network": "macroscopic",
-    "rhs": " _u_vector . valveConstant . sqrt ( ( D * ( p . inv ( p_norming ) ) ) )"
+    "rhs": " _u_vector . valveConstant . sqrt ( ( D * N ( p . inv ( p_norming ) ) ) )"
   },
   "E_173": {
     "lhs": "_u_vector",
@@ -345,14 +345,14 @@
     "rhs": " u_vector"
   },
   "E_174": {
-    "lhs": "fm",
+    "lhs": "fmc",
     "network": "macroscopic",
     "rhs": " _density_A . fV"
   },
   "E_175": {
     "lhs": "fV",
     "network": "macroscopic",
-    "rhs": " ( I_N_A * v_x ) . A_yz_A"
+    "rhs": " ( I_N_A * N v_x ) . A_yz_A"
   },
   "E_176": {
     "lhs": "height",
@@ -362,7 +362,7 @@
   "E_177": {
     "lhs": "v_x_A",
     "network": "macroscopic",
-    "rhs": " I_N_A * v_x"
+    "rhs": " I_N_A * N v_x"
   },
   "E_18": {
     "lhs": "G",
@@ -372,22 +372,22 @@
   "E_181": {
     "lhs": "length_pipe",
     "network": "macroscopic",
-    "rhs": " I_N_A * l"
+    "rhs": " I_N_A * N l"
   },
   "E_185": {
     "lhs": "aE_kinetic",
     "network": "macroscopic",
-    "rhs": " fm . D * ( v_x . v_x )"
+    "rhs": " fmc . D * N ( v_x . v_x )"
   },
   "E_186": {
     "lhs": "aE_potential",
     "network": "macroscopic",
-    "rhs": " fm . g . D * height"
+    "rhs": " fmc . g . D * N height"
   },
   "E_188": {
     "lhs": "friction_coeff_linear",
     "network": "macroscopic",
-    "rhs": " Instantiate ( aE_potential . ( I_N_A * inv ( l ) ) , value )"
+    "rhs": " Instantiate ( aE_potential . ( I_N_A * N inv ( l ) ) , value )"
   },
   "E_189": {
     "lhs": "fw",
@@ -402,7 +402,7 @@
   "E_191": {
     "lhs": "fw_V",
     "network": "macroscopic",
-    "rhs": " fV . ( D * p )"
+    "rhs": " fV . ( D * N p )"
   },
   "E_192": {
     "lhs": "aE_mechanical",
@@ -418,6 +418,26 @@
     "lhs": "fV",
     "network": "macroscopic",
     "rhs": " Root ( residual_aE_mechanical )"
+  },
+  "E_195": {
+    "lhs": "am",
+    "network": "macroscopic",
+    "rhs": " _Mm * S an"
+  },
+  "E_196": {
+    "lhs": "residual_am",
+    "network": "macroscopic",
+    "rhs": " am - _Mm * S ( an )"
+  },
+  "E_197": {
+    "lhs": "fmc",
+    "network": "macroscopic",
+    "rhs": " _Mm * I fnc"
+  },
+  "E_198": {
+    "lhs": "residual_am_A",
+    "network": "macroscopic",
+    "rhs": " I_N_A * N residual_am"
   },
   "E_2": {
     "lhs": "zero",
@@ -502,17 +522,17 @@
   "E_35": {
     "lhs": "kc_x",
     "network": "material",
-    "rhs": " ( Mm * inv ( chemPot ) ) . inv ( V ) . ParDiff ( U , p ) . v_x"
+    "rhs": " ( Mm * S inv ( chemPot ) ) . inv ( V ) . ParDiff ( U , p ) . v_x"
   },
   "E_36": {
     "lhs": "kc_y",
     "network": "material",
-    "rhs": " ( Mm * inv ( chemPot ) ) . inv ( V ) . ParDiff ( U , p ) . v_y"
+    "rhs": " ( Mm * S inv ( chemPot ) ) . inv ( V ) . ParDiff ( U , p ) . v_y"
   },
   "E_37": {
     "lhs": "kc_z",
     "network": "material",
-    "rhs": " ( Mm * inv ( chemPot ) ) . inv ( V ) . ParDiff ( U , p ) . v_z"
+    "rhs": " ( Mm * S inv ( chemPot ) ) . inv ( V ) . ParDiff ( U , p ) . v_z"
   },
   "E_38": {
     "lhs": "h",
@@ -522,7 +542,7 @@
   "E_39": {
     "lhs": "kc_x_A",
     "network": "material",
-    "rhs": " I_N_A * kc_x"
+    "rhs": " I_N_A * N kc_x"
   },
   "E_4": {
     "lhs": "te",
@@ -532,47 +552,47 @@
   "E_40": {
     "lhs": "kc_y_A",
     "network": "material",
-    "rhs": " I_N_A * kc_y"
+    "rhs": " I_N_A * N kc_y"
   },
   "E_41": {
     "lhs": "kc_z_A",
     "network": "material",
-    "rhs": " I_N_A * kc_z"
+    "rhs": " I_N_A * N kc_z"
   },
   "E_42": {
     "lhs": "kd_x_A",
     "network": "material",
-    "rhs": " I_N_A * kd_x"
+    "rhs": " I_N_A * N kd_x"
   },
   "E_43": {
     "lhs": "kd_y_A",
     "network": "material",
-    "rhs": " I_N_A * kd_y"
+    "rhs": " I_N_A * N kd_y"
   },
   "E_44": {
     "lhs": "kd_z_A",
     "network": "material",
-    "rhs": " I_N_A * kd_z"
+    "rhs": " I_N_A * N kd_z"
   },
   "E_45": {
     "lhs": "kq_x_A",
     "network": "material",
-    "rhs": " I_N_A * kq_x"
+    "rhs": " I_N_A * N kq_x"
   },
   "E_46": {
     "lhs": "kq_y_A",
     "network": "material",
-    "rhs": " I_N_A * kq_y"
+    "rhs": " I_N_A * N kq_y"
   },
   "E_47": {
     "lhs": "kq_z_A",
     "network": "material",
-    "rhs": " I_N_A * kq_z"
+    "rhs": " I_N_A * N kq_z"
   },
   "E_48": {
     "lhs": "m",
     "network": "material",
-    "rhs": " Mm * n"
+    "rhs": " Mm * S n"
   },
   "E_49": {
     "lhs": "density",
@@ -587,22 +607,22 @@
   "E_50": {
     "lhs": "v",
     "network": "material",
-    "rhs": " V * inv ( n )"
+    "rhs": " V * N inv ( n )"
   },
   "E_51": {
     "lhs": "kd_x_Fick",
     "network": "material",
-    "rhs": " I_N_A * ( v_x . ParDiff ( U , chemPot ) . inv ( n ) )"
+    "rhs": " I_N_A * N ( v_x . ParDiff ( U , chemPot ) . inv ( n ) )"
   },
   "E_52": {
     "lhs": "kd_y_Fick",
     "network": "material",
-    "rhs": " I_N_A * ( v_y . ParDiff ( U , chemPot ) . inv ( n ) )"
+    "rhs": " I_N_A * N ( v_y . ParDiff ( U , chemPot ) . inv ( n ) )"
   },
   "E_53": {
     "lhs": "kd_z_Fick",
     "network": "material",
-    "rhs": " I_N_A * ( v_z . ParDiff ( U , chemPot ) . inv ( n ) )"
+    "rhs": " I_N_A * N ( v_z . ParDiff ( U , chemPot ) . inv ( n ) )"
   },
   "E_54": {
     "lhs": "A_xy",
@@ -622,17 +642,17 @@
   "E_57": {
     "lhs": "A_xy_A",
     "network": "macroscopic",
-    "rhs": " I_N_A * A_xy"
+    "rhs": " I_N_A * N A_xy"
   },
   "E_58": {
     "lhs": "A_xz_A",
     "network": "macroscopic",
-    "rhs": " I_N_A * A_xz"
+    "rhs": " I_N_A * N A_xz"
   },
   "E_59": {
     "lhs": "A_yz_A",
     "network": "macroscopic",
-    "rhs": " I_N_A * A_yz"
+    "rhs": " I_N_A * N A_yz"
   },
   "E_6": {
     "lhs": "onehalf",
@@ -707,12 +727,12 @@
   "E_72": {
     "lhs": "fq_x",
     "network": "macroscopic",
-    "rhs": " A_yz_A . _kq_x_A . ( D * T )"
+    "rhs": " A_yz_A . _kq_x_A . ( D * N T )"
   },
   "E_73": {
     "lhs": "aq",
     "network": "macroscopic",
-    "rhs": " F * fq_x"
+    "rhs": " F * A fq_x"
   },
   "E_74": {
     "lhs": "c",
@@ -722,12 +742,12 @@
   "E_75": {
     "lhs": "d",
     "network": "macroscopic",
-    "rhs": " sign ( D * p )"
+    "rhs": " sign ( D * N p )"
   },
   "E_76": {
     "lhs": "c_A",
     "network": "macroscopic",
-    "rhs": " ( onehalf . ( D - d . abs ( D ) ) ) * c"
+    "rhs": " ( onehalf . ( D - d . abs ( D ) ) ) * N c"
   },
   "E_77": {
     "lhs": "_density",
@@ -737,7 +757,7 @@
   "E_78": {
     "lhs": "density_A",
     "network": "material",
-    "rhs": " I_N_A * density"
+    "rhs": " I_N_A * N density"
   },
   "E_79": {
     "lhs": "_density_A",
@@ -752,7 +772,7 @@
   "E_80": {
     "lhs": "fV",
     "network": "macroscopic",
-    "rhs": " inv ( _density_A ) . _kc_x_A . A_yz_A . ( D * p )"
+    "rhs": " inv ( _density_A ) . _kc_x_A . A_yz_A . ( D * N p )"
   },
   "E_81": {
     "lhs": "fnc",
@@ -762,12 +782,12 @@
   "E_82": {
     "lhs": "anc",
     "network": "macroscopic",
-    "rhs": " F * fnc"
+    "rhs": " F * A fnc"
   },
   "E_83": {
     "lhs": "nt",
     "network": "macroscopic",
-    "rhs": " I_S * n"
+    "rhs": " I_S * S n"
   },
   "E_84": {
     "lhs": "x",
@@ -777,7 +797,7 @@
   "E_85": {
     "lhs": "fnd",
     "network": "macroscopic",
-    "rhs": " A_yz_A . neg ( _kd_x_Fick ) . ( D * c )"
+    "rhs": " A_yz_A . neg ( _kd_x_Fick ) . ( D * N c )"
   },
   "E_86": {
     "lhs": "chemPot_o",
@@ -797,7 +817,7 @@
   "E_89": {
     "lhs": "fnd",
     "network": "macroscopic",
-    "rhs": " A_yz_A . neg ( _kd_x_A ) . ( D * chemPot )"
+    "rhs": " A_yz_A . neg ( _kd_x_A ) . ( D * N chemPot )"
   },
   "E_9": {
     "lhs": "r_y",
@@ -807,7 +827,7 @@
   "E_90": {
     "lhs": "and",
     "network": "macroscopic",
-    "rhs": " F * fnd"
+    "rhs": " F * A fnd"
   },
   "E_92": {
     "lhs": "_h",
@@ -817,7 +837,7 @@
   "E_93": {
     "lhs": "h_A",
     "network": "material",
-    "rhs": " I_N_A * h"
+    "rhs": " I_N_A * N h"
   },
   "E_94": {
     "lhs": "_h_A",
@@ -827,22 +847,22 @@
   "E_95": {
     "lhs": "fHc",
     "network": "macroscopic",
-    "rhs": " I_S * ( _h_A . fnc )"
+    "rhs": " I_S * S ( _h_A . fnc )"
   },
   "E_96": {
     "lhs": "fHd",
     "network": "macroscopic",
-    "rhs": " I_S * ( _h_A . fnd )"
+    "rhs": " I_S * S ( _h_A . fnd )"
   },
   "E_97": {
     "lhs": "aHc",
     "network": "macroscopic",
-    "rhs": " F * fHc"
+    "rhs": " F * A fHc"
   },
   "E_98": {
     "lhs": "aHd",
     "network": "macroscopic",
-    "rhs": " F * fHd"
+    "rhs": " F * A fHd"
   },
   "E_99": {
     "lhs": "T_K",

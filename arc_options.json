@@ -11,6 +11,10 @@
             "macroscopic.node.mass|dynamic|lumped.reactiveLump"
         ]
     },
+    "material.arc.mass|convection|lumped.convectiveFlow": {
+        "sources": [],
+        "sinks": []
+    },
     "material >>> macroscopic (kd_z_A -> _kd_z_A)": {
         "sources": [],
         "sinks": []
@@ -82,7 +86,8 @@
     "macroscopic >>> reactions (c -> _c)": {
         "sources": [
             "macroscopic.node.mass|constant|infinity.Source",
-            "macroscopic.node.mass|dynamic|lumped.Pore"
+            "macroscopic.node.mass|dynamic|lumped.Pore",
+            "macroscopic.node.mass|dynamic|lumped.reactiveLump"
         ],
         "sinks": [
             "reactions.node.mass|event|lumped.standardReaction"
@@ -97,7 +102,9 @@
         "sinks": []
     },
     "macroscopic >>> control (T_normed -> _T_normed)": {
-        "sources": [],
+        "sources": [
+            "macroscopic.node.energy|event|lumped.sensorTemperature"
+        ],
         "sinks": []
     },
     "material >>> macroscopic (kd_x_Fick -> _kd_x_Fick)": {

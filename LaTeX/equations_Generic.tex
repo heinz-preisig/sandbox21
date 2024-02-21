@@ -137,15 +137,15 @@ no & equation &documentation &layer \\\hline\hline
     \begin{lay}diffusional mass conductivity in z-direction\end{lay} &
     \begin{lay}material\end{lay} \\
         \hyperlink{"v:44"}{ 35 }\hypertarget{"e:35"}{  } &
-    \begin{eq}{{k^c_x}}{_{N}} := \left({{\lambda}}{_{S}} \star \left( {{\mu}}{_{N, S}} \right)^{-1}\right) \, . \, \left( {V}{_{N}} \right)^{-1} \, . \, \frac{\partial{{U}{_{N}}}}{\partial{{p}{_{N}}}} \, . \, {{v_x}}{_{N}}\end{eq} &
+    \begin{eq}{{k^c_x}}{_{N}} := \left({{\lambda}}{_{S}} \stackrel{S}{\star} \left( {{\mu}}{_{N, S}} \right)^{-1}\right) \, . \, \left( {V}{_{N}} \right)^{-1} \, . \, \frac{\partial{{U}{_{N}}}}{\partial{{p}{_{N}}}} \, . \, {{v_x}}{_{N}}\end{eq} &
     \begin{lay} convective mass conductivity in x-direction\end{lay} &
     \begin{lay}material\end{lay} \\
         \hyperlink{"v:45"}{ 36 }\hypertarget{"e:36"}{  } &
-    \begin{eq}{{k^c_y}}{_{N}} := \left({{\lambda}}{_{S}} \star \left( {{\mu}}{_{N, S}} \right)^{-1}\right) \, . \, \left( {V}{_{N}} \right)^{-1} \, . \, \frac{\partial{{U}{_{N}}}}{\partial{{p}{_{N}}}} \, . \, {{v_y}}{_{N}}\end{eq} &
+    \begin{eq}{{k^c_y}}{_{N}} := \left({{\lambda}}{_{S}} \stackrel{S}{\star} \left( {{\mu}}{_{N, S}} \right)^{-1}\right) \, . \, \left( {V}{_{N}} \right)^{-1} \, . \, \frac{\partial{{U}{_{N}}}}{\partial{{p}{_{N}}}} \, . \, {{v_y}}{_{N}}\end{eq} &
     \begin{lay} convective mass conductivity in y-direction\end{lay} &
     \begin{lay}material\end{lay} \\
         \hyperlink{"v:46"}{ 37 }\hypertarget{"e:37"}{  } &
-    \begin{eq}{{k^c_z}}{_{N}} := \left({{\lambda}}{_{S}} \star \left( {{\mu}}{_{N, S}} \right)^{-1}\right) \, . \, \left( {V}{_{N}} \right)^{-1} \, . \, \frac{\partial{{U}{_{N}}}}{\partial{{p}{_{N}}}} \, . \, {{v_z}}{_{N}}\end{eq} &
+    \begin{eq}{{k^c_z}}{_{N}} := \left({{\lambda}}{_{S}} \stackrel{S}{\star} \left( {{\mu}}{_{N, S}} \right)^{-1}\right) \, . \, \left( {V}{_{N}} \right)^{-1} \, . \, \frac{\partial{{U}{_{N}}}}{\partial{{p}{_{N}}}} \, . \, {{v_z}}{_{N}}\end{eq} &
     \begin{lay} convective mass conductivity in z-direction\end{lay} &
     \begin{lay}material\end{lay} \\
         \hyperlink{"v:47"}{ 38 }\hypertarget{"e:38"}{  } &
@@ -153,43 +153,43 @@ no & equation &documentation &layer \\\hline\hline
     \begin{lay}partial molar enthalpies\end{lay} &
     \begin{lay}material\end{lay} \\
         \hyperlink{"v:49"}{ 39 }\hypertarget{"e:39"}{  } &
-    \begin{eq}{{k^c_x}}{_{A}} := {I}{_{N, A}} \star {{k^c_x}}{_{N}}\end{eq} &
+    \begin{eq}{{k^c_x}}{_{A}} := {I}{_{N, A}} \stackrel{N}{\star} {{k^c_x}}{_{N}}\end{eq} &
     \begin{lay} convective mass conductivity in x-direction in arc\end{lay} &
     \begin{lay}material\end{lay} \\
         \hyperlink{"v:50"}{ 40 }\hypertarget{"e:40"}{  } &
-    \begin{eq}{{k^c_y}}{_{A}} := {I}{_{N, A}} \star {{k^c_y}}{_{N}}\end{eq} &
+    \begin{eq}{{k^c_y}}{_{A}} := {I}{_{N, A}} \stackrel{N}{\star} {{k^c_y}}{_{N}}\end{eq} &
     \begin{lay} convective mass conductivity in y-direction in arc\end{lay} &
     \begin{lay}material\end{lay} \\
         \hyperlink{"v:51"}{ 41 }\hypertarget{"e:41"}{  } &
-    \begin{eq}{{k^c_z}}{_{A}} := {I}{_{N, A}} \star {{k^c_z}}{_{N}}\end{eq} &
+    \begin{eq}{{k^c_z}}{_{A}} := {I}{_{N, A}} \stackrel{N}{\star} {{k^c_z}}{_{N}}\end{eq} &
     \begin{lay} convective mass conductivity in z-direction in arc\end{lay} &
     \begin{lay}material\end{lay} \\
         \hyperlink{"v:52"}{ 42 }\hypertarget{"e:42"}{  } &
-    \begin{eq}{{k^d_x}}{_{A, S}} := {I}{_{N, A}} \star {{k^d_x}}{_{N, S}}\end{eq} &
+    \begin{eq}{{k^d_x}}{_{A, S}} := {I}{_{N, A}} \stackrel{N}{\star} {{k^d_x}}{_{N, S}}\end{eq} &
     \begin{lay}diffusional mass conductivity in x-direction in arc\end{lay} &
     \begin{lay}material\end{lay} \\
         \hyperlink{"v:53"}{ 43 }\hypertarget{"e:43"}{  } &
-    \begin{eq}{{k^d_y}}{_{A, S}} := {I}{_{N, A}} \star {{k^d_y}}{_{N, S}}\end{eq} &
+    \begin{eq}{{k^d_y}}{_{A, S}} := {I}{_{N, A}} \stackrel{N}{\star} {{k^d_y}}{_{N, S}}\end{eq} &
     \begin{lay}diffusional mass conductivity in z-direction in arc\end{lay} &
     \begin{lay}material\end{lay} \\
         \hyperlink{"v:54"}{ 44 }\hypertarget{"e:44"}{  } &
-    \begin{eq}{{k^d_z}}{_{A, S}} := {I}{_{N, A}} \star {{k^d_z}}{_{N, S}}\end{eq} &
+    \begin{eq}{{k^d_z}}{_{A, S}} := {I}{_{N, A}} \stackrel{N}{\star} {{k^d_z}}{_{N, S}}\end{eq} &
     \begin{lay}diffusional mass conductivity in z-direction in arc\end{lay} &
     \begin{lay}material\end{lay} \\
         \hyperlink{"v:55"}{ 45 }\hypertarget{"e:45"}{  } &
-    \begin{eq}{{k^q_x}}{_{A}} := {I}{_{N, A}} \star {{k^q_x}}{_{N}}\end{eq} &
+    \begin{eq}{{k^q_x}}{_{A}} := {I}{_{N, A}} \stackrel{N}{\star} {{k^q_x}}{_{N}}\end{eq} &
     \begin{lay}thermal conductivity in x-direction in arc\end{lay} &
     \begin{lay}material\end{lay} \\
         \hyperlink{"v:56"}{ 46 }\hypertarget{"e:46"}{  } &
-    \begin{eq}{{k^q_y}}{_{A}} := {I}{_{N, A}} \star {{k^q_y}}{_{N}}\end{eq} &
+    \begin{eq}{{k^q_y}}{_{A}} := {I}{_{N, A}} \stackrel{N}{\star} {{k^q_y}}{_{N}}\end{eq} &
     \begin{lay}thermal conductivity in y-direction in arc\end{lay} &
     \begin{lay}material\end{lay} \\
         \hyperlink{"v:57"}{ 47 }\hypertarget{"e:47"}{  } &
-    \begin{eq}{{k^q_z}}{_{A}} := {I}{_{N, A}} \star {{k^q_z}}{_{N}}\end{eq} &
+    \begin{eq}{{k^q_z}}{_{A}} := {I}{_{N, A}} \stackrel{N}{\star} {{k^q_z}}{_{N}}\end{eq} &
     \begin{lay}thermal conductivity in z-direction in arc\end{lay} &
     \begin{lay}material\end{lay} \\
         \hyperlink{"v:58"}{ 48 }\hypertarget{"e:48"}{  } &
-    \begin{eq}{m}{_{N}} := {{\lambda}}{_{S}} \star {n}{_{N, S}}\end{eq} &
+    \begin{eq}{m}{_{N}} := {{\lambda}}{_{S}} \stackrel{S}{\star} {n}{_{N, S}}\end{eq} &
     \begin{lay}mass\end{lay} &
     \begin{lay}material\end{lay} \\
         \hyperlink{"v:59"}{ 49 }\hypertarget{"e:49"}{  } &
@@ -197,19 +197,19 @@ no & equation &documentation &layer \\\hline\hline
     \begin{lay}density\end{lay} &
     \begin{lay}material\end{lay} \\
         \hyperlink{"v:60"}{ 50 }\hypertarget{"e:50"}{  } &
-    \begin{eq}{v}{_{S}} := {V}{_{N}} \star \left( {n}{_{N, S}} \right)^{-1}\end{eq} &
+    \begin{eq}{v}{_{S}} := {V}{_{N}} \stackrel{N}{\star} \left( {n}{_{N, S}} \right)^{-1}\end{eq} &
     \begin{lay}molar volume of species\end{lay} &
     \begin{lay}material\end{lay} \\
         \hyperlink{"v:61"}{ 51 }\hypertarget{"e:51"}{  } &
-    \begin{eq}{{k^{d,Fick}_x}}{_{A, S}} := {I}{_{N, A}} \star \left({{v_x}}{_{N}} \, . \, \frac{\partial{{U}{_{N}}}}{\partial{{{\mu}}{_{N, S}}}} \, . \, \left( {n}{_{N, S}} \right)^{-1}\right)\end{eq} &
+    \begin{eq}{{k^{d,Fick}_x}}{_{A, S}} := {I}{_{N, A}} \stackrel{N}{\star} \left({{v_x}}{_{N}} \, . \, \frac{\partial{{U}{_{N}}}}{\partial{{{\mu}}{_{N, S}}}} \, . \, \left( {n}{_{N, S}} \right)^{-1}\right)\end{eq} &
     \begin{lay}Fick's diffusivity in arc and x-direction \end{lay} &
     \begin{lay}material\end{lay} \\
         \hyperlink{"v:62"}{ 52 }\hypertarget{"e:52"}{  } &
-    \begin{eq}{{k^{d,Fick}_y}}{_{A, S}} := {I}{_{N, A}} \star \left({{v_y}}{_{N}} \, . \, \frac{\partial{{U}{_{N}}}}{\partial{{{\mu}}{_{N, S}}}} \, . \, \left( {n}{_{N, S}} \right)^{-1}\right)\end{eq} &
+    \begin{eq}{{k^{d,Fick}_y}}{_{A, S}} := {I}{_{N, A}} \stackrel{N}{\star} \left({{v_y}}{_{N}} \, . \, \frac{\partial{{U}{_{N}}}}{\partial{{{\mu}}{_{N, S}}}} \, . \, \left( {n}{_{N, S}} \right)^{-1}\right)\end{eq} &
     \begin{lay}Fick's diffusivity in arc and y-direction \end{lay} &
     \begin{lay}material\end{lay} \\
         \hyperlink{"v:63"}{ 53 }\hypertarget{"e:53"}{  } &
-    \begin{eq}{{k^{d,Fick}_z}}{_{A, S}} := {I}{_{N, A}} \star \left({{v_z}}{_{N}} \, . \, \frac{\partial{{U}{_{N}}}}{\partial{{{\mu}}{_{N, S}}}} \, . \, \left( {n}{_{N, S}} \right)^{-1}\right)\end{eq} &
+    \begin{eq}{{k^{d,Fick}_z}}{_{A, S}} := {I}{_{N, A}} \stackrel{N}{\star} \left({{v_z}}{_{N}} \, . \, \frac{\partial{{U}{_{N}}}}{\partial{{{\mu}}{_{N, S}}}} \, . \, \left( {n}{_{N, S}} \right)^{-1}\right)\end{eq} &
     \begin{lay}Fick's diffusivity in arc and z-direction \end{lay} &
     \begin{lay}material\end{lay} \\
         \hyperlink{"v:65"}{ 54 }\hypertarget{"e:54"}{  } &
@@ -225,23 +225,23 @@ no & equation &documentation &layer \\\hline\hline
     \begin{lay}cross sectional area yz\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:68"}{ 57 }\hypertarget{"e:57"}{  } &
-    \begin{eq}{{A_{xy}}}{_{A}} := {I}{_{N, A}} \star {{A_{xy}}}{_{N}}\end{eq} &
+    \begin{eq}{{A_{xy}}}{_{A}} := {I}{_{N, A}} \stackrel{N}{\star} {{A_{xy}}}{_{N}}\end{eq} &
     \begin{lay}cross sectional area yz of arc\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:69"}{ 58 }\hypertarget{"e:58"}{  } &
-    \begin{eq}{{A_{xz}}}{_{A}} := {I}{_{N, A}} \star {{A_{xz}}}{_{N}}\end{eq} &
+    \begin{eq}{{A_{xz}}}{_{A}} := {I}{_{N, A}} \stackrel{N}{\star} {{A_{xz}}}{_{N}}\end{eq} &
     \begin{lay}cross sectional area xz of arc\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:70"}{ 59 }\hypertarget{"e:59"}{  } &
-    \begin{eq}{{A_{yz}}}{_{A}} := {I}{_{N, A}} \star {{A_{yz}}}{_{N}}\end{eq} &
+    \begin{eq}{{A_{yz}}}{_{A}} := {I}{_{N, A}} \stackrel{N}{\star} {{A_{yz}}}{_{N}}\end{eq} &
     \begin{lay}cross sectional area yz of arc\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:83"}{ 72 }\hypertarget{"e:72"}{  } &
-    \begin{eq}{{\hat{q}_x}}{_{A}} := {{A_{yz}}}{_{A}} \, . \, {{\_k^q_x}}{_{A}} \, . \, \left({D}{_{N, A}} \star {T}{_{N}}\right)\end{eq} &
+    \begin{eq}{{\hat{q}_x}}{_{A}} := {{A_{yz}}}{_{A}} \, . \, {{\_k^q_x}}{_{A}} \, . \, \left({D}{_{N, A}} \stackrel{N}{\star} {T}{_{N}}\right)\end{eq} &
     \begin{lay}heat flow in arc and x-direction\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:84"}{ 73 }\hypertarget{"e:73"}{  } &
-    \begin{eq}{{\dot{q}}}{_{N}} := {F}{_{N, A}} \star {{\hat{q}_x}}{_{A}}\end{eq} &
+    \begin{eq}{{\dot{q}}}{_{N}} := {F}{_{N, A}} \stackrel{A}{\star} {{\hat{q}_x}}{_{A}}\end{eq} &
     \begin{lay}accumulation due to conductive heat flow\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:85"}{ 74 }\hypertarget{"e:74"}{  } &
@@ -249,19 +249,19 @@ no & equation &documentation &layer \\\hline\hline
     \begin{lay}molar concentration\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:86"}{ 75 }\hypertarget{"e:75"}{  } &
-    \begin{eq}{d}{_{A}} := \textbf{sign} \left( {D}{_{N, A}} \star {p}{_{N}} \right)\end{eq} &
+    \begin{eq}{d}{_{A}} := \textbf{sign} \left( {D}{_{N, A}} \stackrel{N}{\star} {p}{_{N}} \right)\end{eq} &
     \begin{lay}fow direction of convective flow\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:87"}{ 76 }\hypertarget{"e:76"}{  } &
-    \begin{eq}{c}{_{A, S}} := \left({0.5}{_{}} \, . \, \left({D}{_{N, A}}  - {d}{_{A}} \, . \, |{D}{_{N, A}}|\right)\right) \star {c}{_{N, S}}\end{eq} &
+    \begin{eq}{c}{_{A, S}} := \left({0.5}{_{}} \, . \, \left({D}{_{N, A}}  - {d}{_{A}} \, . \, |{D}{_{N, A}}|\right)\right) \stackrel{N}{\star} {c}{_{N, S}}\end{eq} &
     \begin{lay}concentration in convective mass flow\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:89"}{ 78 }\hypertarget{"e:78"}{  } &
-    \begin{eq}{\rho}{_{A}} := {I}{_{N, A}} \star {\rho}{_{N}}\end{eq} &
+    \begin{eq}{\rho}{_{A}} := {I}{_{N, A}} \stackrel{N}{\star} {\rho}{_{N}}\end{eq} &
     \begin{lay}density of arc material\end{lay} &
     \begin{lay}material\end{lay} \\
         \hyperlink{"v:91"}{ 80 }\hypertarget{"e:80"}{  } &
-    \begin{eq}{{\hat{V}}}{_{A}} := \left( {{\_\rho}}{_{A}} \right)^{-1} \, . \, {{\_k^c_x}}{_{A}} \, . \, {{A_{yz}}}{_{A}} \, . \, \left({D}{_{N, A}} \star {p}{_{N}}\right)\end{eq} &
+    \begin{eq}{{\hat{V}}}{_{A}} := \left( {{\_\rho}}{_{A}} \right)^{-1} \, . \, {{\_k^c_x}}{_{A}} \, . \, {{A_{yz}}}{_{A}} \, . \, \left({D}{_{N, A}} \stackrel{N}{\star} {p}{_{N}}\right)\end{eq} &
     \begin{lay}volumetric flow\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:92"}{ 81 }\hypertarget{"e:81"}{  } &
@@ -269,11 +269,11 @@ no & equation &documentation &layer \\\hline\hline
     \begin{lay}convective mass flow in an arc\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:93"}{ 82 }\hypertarget{"e:82"}{  } &
-    \begin{eq}{{\dot{n}^c}}{_{N, S}} := {F}{_{N, A}} \star {{\hat{n}^c}}{_{A, S}}\end{eq} &
+    \begin{eq}{{\dot{n}^c}}{_{N, S}} := {F}{_{N, A}} \stackrel{A}{\star} {{\hat{n}^c}}{_{A, S}}\end{eq} &
     \begin{lay}accumulation due to convective mass flow\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:99"}{ 83 }\hypertarget{"e:83"}{  } &
-    \begin{eq}{{n^t}}{_{N}} := {I}{_{S}} \star {n}{_{N, S}}\end{eq} &
+    \begin{eq}{{n^t}}{_{N}} := {I}{_{S}} \stackrel{S}{\star} {n}{_{N, S}}\end{eq} &
     \begin{lay}total amount\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:100"}{ 84 }\hypertarget{"e:84"}{  } &
@@ -281,7 +281,7 @@ no & equation &documentation &layer \\\hline\hline
     \begin{lay}concentration mole fraction\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:101"}{ 85 }\hypertarget{"e:85"}{  } &
-    \begin{eq}{{\hat{n}^d}}{_{A, S}} := {{A_{yz}}}{_{A}} \, . \, \left( -{{\_k^{d,Fick}_x}}{_{A, S}} \right) \, . \, \left({D}{_{N, A}} \star {c}{_{N, S}}\right)\end{eq} &
+    \begin{eq}{{\hat{n}^d}}{_{A, S}} := {{A_{yz}}}{_{A}} \, . \, \left( -{{\_k^{d,Fick}_x}}{_{A, S}} \right) \, . \, \left({D}{_{N, A}} \stackrel{N}{\star} {c}{_{N, S}}\right)\end{eq} &
     \begin{lay}diffusional mass flow in arc\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:102"}{ 86 }\hypertarget{"e:86"}{  } &
@@ -293,31 +293,31 @@ no & equation &documentation &layer \\\hline\hline
     \begin{lay}chemical potential standard model with mole fraction\end{lay} &
     \begin{lay}material\end{lay} \\
         \hyperlink{"v:101"}{ 89 }\hypertarget{"e:89"}{  } &
-    \begin{eq}{{\hat{n}^d}}{_{A, S}} := {{A_{yz}}}{_{A}} \, . \, \left( -{{\_k^d_x}}{_{A, S}} \right) \, . \, \left({D}{_{N, A}} \star {{\mu}}{_{N, S}}\right)\end{eq} &
+    \begin{eq}{{\hat{n}^d}}{_{A, S}} := {{A_{yz}}}{_{A}} \, . \, \left( -{{\_k^d_x}}{_{A, S}} \right) \, . \, \left({D}{_{N, A}} \stackrel{N}{\star} {{\mu}}{_{N, S}}\right)\end{eq} &
     \begin{lay}diffusional mass flow in arc\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:104"}{ 90 }\hypertarget{"e:90"}{  } &
-    \begin{eq}{{\dot{n}^d}}{_{N, S}} := {F}{_{N, A}} \star {{\hat{n}^d}}{_{A, S}}\end{eq} &
+    \begin{eq}{{\dot{n}^d}}{_{N, S}} := {F}{_{N, A}} \stackrel{A}{\star} {{\hat{n}^d}}{_{A, S}}\end{eq} &
     \begin{lay}accumulation due to diffusional mass transfer\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:107"}{ 93 }\hypertarget{"e:93"}{  } &
-    \begin{eq}{h}{_{A, S}} := {I}{_{N, A}} \star {h}{_{N, S}}\end{eq} &
+    \begin{eq}{h}{_{A, S}} := {I}{_{N, A}} \stackrel{N}{\star} {h}{_{N, S}}\end{eq} &
     \begin{lay}partial molar enthalpies of transport system\end{lay} &
     \begin{lay}material\end{lay} \\
         \hyperlink{"v:109"}{ 95 }\hypertarget{"e:95"}{  } &
-    \begin{eq}{{\hat{H}^c}}{_{A}} := {I}{_{S}} \star \left({{\_h}}{_{A, S}} \, . \, {{\hat{n}^c}}{_{A, S}}\right)\end{eq} &
+    \begin{eq}{{\hat{H}^c}}{_{A}} := {I}{_{S}} \stackrel{S}{\star} \left({{\_h}}{_{A, S}} \, . \, {{\hat{n}^c}}{_{A, S}}\right)\end{eq} &
     \begin{lay}enthalpy flow due to convective mass flow\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:110"}{ 96 }\hypertarget{"e:96"}{  } &
-    \begin{eq}{{\hat{H}^d}}{_{A}} := {I}{_{S}} \star \left({{\_h}}{_{A, S}} \, . \, {{\hat{n}^d}}{_{A, S}}\right)\end{eq} &
+    \begin{eq}{{\hat{H}^d}}{_{A}} := {I}{_{S}} \stackrel{S}{\star} \left({{\_h}}{_{A, S}} \, . \, {{\hat{n}^d}}{_{A, S}}\right)\end{eq} &
     \begin{lay}enthalpy flow due to diffusive mass flow\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:111"}{ 97 }\hypertarget{"e:97"}{  } &
-    \begin{eq}{{\dot{H}^c}}{_{N}} := {F}{_{N, A}} \star {{\hat{H}^c}}{_{A}}\end{eq} &
+    \begin{eq}{{\dot{H}^c}}{_{N}} := {F}{_{N, A}} \stackrel{A}{\star} {{\hat{H}^c}}{_{A}}\end{eq} &
     \begin{lay}enthalpy accumulation due to convective mass flow\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:112"}{ 98 }\hypertarget{"e:98"}{  } &
-    \begin{eq}{{\dot{H}^d}}{_{N}} := {F}{_{N, A}} \star {{\hat{H}^d}}{_{A}}\end{eq} &
+    \begin{eq}{{\dot{H}^d}}{_{N}} := {F}{_{N, A}} \stackrel{A}{\star} {{\hat{H}^d}}{_{A}}\end{eq} &
     \begin{lay}enthalpy accumulation due to diffusive mass flow\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:114"}{ 99 }\hypertarget{"e:99"}{  } &
@@ -345,7 +345,7 @@ no & equation &documentation &layer \\\hline\hline
     \begin{lay}probability for the species to meet to undergo reaction\end{lay} &
     \begin{lay}reactions\end{lay} \\
         \hyperlink{"v:134"}{ 118 }\hypertarget{"e:118"}{  } &
-    \begin{eq}{{K^o}}{_{K}} := \textbf{Instantiate}({I}{_{S}} \star \left({P}{_{N, K}} \star \left(\left( {t}{_{}} \right)^{-1} \, . \, \left( {V}{_{N}} \right)^{-1} \, . \, {n}{_{N, S}}\right)\right), {{\#}}{_{}})\end{eq} &
+    \begin{eq}{{K^o}}{_{K}} := \textbf{Instantiate}({I}{_{S}} \stackrel{S}{\star} \left({P}{_{N, K}} \stackrel{N}{\star} \left(\left( {t}{_{}} \right)^{-1} \, . \, \left( {V}{_{N}} \right)^{-1} \, . \, {n}{_{N, S}}\right)\right), {{\#}}{_{}})\end{eq} &
     \begin{lay}Arrhenius frequency factor -- a strange construction\end{lay} &
     \begin{lay}reactions\end{lay} \\
         \hyperlink{"v:135"}{ 119 }\hypertarget{"e:119"}{  } &
@@ -353,7 +353,7 @@ no & equation &documentation &layer \\\hline\hline
     \begin{lay}reaction"constant\end{lay} &
     \begin{lay}reactions\end{lay} \\
         \hyperlink{"v:136"}{ 120 }\hypertarget{"e:120"}{  } &
-    \begin{eq}{{\tilde{n}}}{_{N, S}} := {V}{_{N}} \, . \, \left({N}{_{S, K}} \star \left({K}{_{N, K}} \, . \, {\phi}{_{N, K}}\right)\right)\end{eq} &
+    \begin{eq}{{\tilde{n}}}{_{N, S}} := {V}{_{N}} \, . \, \left({N}{_{S, K}} \stackrel{K}{\star} \left({K}{_{N, K}} \, . \, {\phi}{_{N, K}}\right)\right)\end{eq} &
     \begin{lay}production term for differential component mass balance\end{lay} &
     \begin{lay}reactions\end{lay} \\
         \hyperlink{"v:138"}{ 122 }\hypertarget{"e:122"}{  } &
@@ -369,7 +369,7 @@ no & equation &documentation &layer \\\hline\hline
     \begin{lay}just an numerical work flow term -- as a starter\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:142"}{ 126 }\hypertarget{"e:126"}{  } &
-    \begin{eq}{{\dot{w}}}{_{N}} := {F}{_{N, A}} \star {{\hat{w}}}{_{A}}\end{eq} &
+    \begin{eq}{{\dot{w}}}{_{N}} := {F}{_{N, A}} \stackrel{A}{\star} {{\hat{w}}}{_{A}}\end{eq} &
     \begin{lay}enthalpy accumulation due to work flows\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:143"}{ 127 }\hypertarget{"e:127"}{  } &
@@ -405,27 +405,27 @@ no & equation &documentation &layer \\\hline\hline
     \begin{lay}norming concentration\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:149"}{ 135 }\hypertarget{"e:135"}{  } &
-    \begin{eq}{{\bar{T}^o}}{_{N}} := {T}{_{N}} \, . \, \left( {{T^o}}{_{N}} \right)^{-1}\end{eq} &
+    \begin{eq}{{\bar{T}}}{_{N}} := {T}{_{N}} \, . \, \left( {{T^o}}{_{N}} \right)^{-1}\end{eq} &
     \begin{lay}normed temperature\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:150"}{ 136 }\hypertarget{"e:136"}{  } &
-    \begin{eq}{{\bar{p}^o}}{_{N}} := \left( {p}{_{N}} \right)^{-1} \, . \, {p}{_{N}}\end{eq} &
+    \begin{eq}{{\bar{p}}}{_{N}} := \left( {p}{_{N}} \right)^{-1} \, . \, {p}{_{N}}\end{eq} &
     \begin{lay}normed pressure\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:151"}{ 137 }\hypertarget{"e:137"}{  } &
-    \begin{eq}{{\bar{c}^o}}{_{N, S}} := \left( {{c^o}}{_{N, S}} \right)^{-1} \, . \, {c}{_{N, S}}\end{eq} &
+    \begin{eq}{{\bar{c}}}{_{N, S}} := \left( {{c^o}}{_{N, S}} \right)^{-1} \, . \, {c}{_{N, S}}\end{eq} &
     \begin{lay}normed concentration\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:155"}{ 141 }\hypertarget{"e:141"}{  } &
-    \begin{eq}{m}{_{A}} := {F}{_{N, A}} \star {{\_\bar{T}}}{_{N}}\end{eq} &
+    \begin{eq}{m}{_{A}} := {F}{_{N, A}} \stackrel{N}{\star} {{\_\bar{T}}}{_{N}}\end{eq} &
     \begin{lay}normed measurements of temparatures\end{lay} &
     \begin{lay}control\end{lay} \\
         \hyperlink{"v:155"}{ 142 }\hypertarget{"e:142"}{  } &
-    \begin{eq}{m}{_{A}} := {F}{_{N, A}} \star {{\_\bar{p}}}{_{N}}\end{eq} &
+    \begin{eq}{m}{_{A}} := {F}{_{N, A}} \stackrel{N}{\star} {{\_\bar{p}}}{_{N}}\end{eq} &
     \begin{lay}normed measurements of pressures\end{lay} &
     \begin{lay}control\end{lay} \\
         \hyperlink{"v:156"}{ 143 }\hypertarget{"e:143"}{  } &
-    \begin{eq}{m}{_{A, S}} := {F}{_{N, A}} \star {{\_\bar{c}}}{_{N, S}}\end{eq} &
+    \begin{eq}{m}{_{A, S}} := {F}{_{N, A}} \stackrel{N}{\star} {{\_\bar{c}}}{_{N, S}}\end{eq} &
     \begin{lay}normed measurment of concentration\end{lay} &
     \begin{lay}control\end{lay} \\
         \hyperlink{"v:157"}{ 144 }\hypertarget{"e:144"}{  } &
@@ -461,7 +461,7 @@ no & equation &documentation &layer \\\hline\hline
     \begin{lay}electrical resistance\end{lay} &
     \begin{lay}material\end{lay} \\
         \hyperlink{"v:171"}{ 155 }\hypertarget{"e:155"}{  } &
-    \begin{eq}{{k^{e,x}}}{_{N}} := \left( {{R^e}}{_{N}} \right)^{-1} \, . \, \left({S}{_{S}} \star {{\_x}}{_{N, S}}\right)\end{eq} &
+    \begin{eq}{{k^{e,x}}}{_{N}} := \left( {{R^e}}{_{N}} \right)^{-1} \, . \, \left({S}{_{S}} \stackrel{S}{\star} {{\_x}}{_{N, S}}\right)\end{eq} &
     \begin{lay}electrical conductivity -- a simple model being a function of a selected set of species\end{lay} &
     \begin{lay}material\end{lay} \\
         \hyperlink{"v:172"}{ 156 }\hypertarget{"e:156"}{  } &
@@ -469,7 +469,7 @@ no & equation &documentation &layer \\\hline\hline
     \begin{lay}specific heat capacity at constant pressure\end{lay} &
     \begin{lay}material\end{lay} \\
         \hyperlink{"v:174"}{ 158 }\hypertarget{"e:158"}{  } &
-    \begin{eq}{m}{_{N}} := {{\_\lambda}}{_{S}} \star {n}{_{N, S}}\end{eq} &
+    \begin{eq}{m}{_{N}} := {{\_\lambda}}{_{S}} \stackrel{S}{\star} {n}{_{N, S}}\end{eq} &
     \begin{lay}mass\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:175"}{ 159 }\hypertarget{"e:159"}{  } &
@@ -489,11 +489,11 @@ no & equation &documentation &layer \\\hline\hline
     \begin{lay}temperature\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:182"}{ 164 }\hypertarget{"e:164"}{  } &
-    \begin{eq}{{\dot{x}}}{_{D}} := {A}{_{N, D}} \star {x}{_{N}}  + {B}{_{A, D}} \star {m}{_{A}}\end{eq} &
+    \begin{eq}{{\dot{x}}}{_{D}} := {A}{_{N, D}} \stackrel{N}{\star} {x}{_{N}}  + {B}{_{A, D}} \stackrel{A}{\star} {m}{_{A}}\end{eq} &
     \begin{lay}differential controller state\end{lay} &
     \begin{lay}control\end{lay} \\
         \hyperlink{"v:179"}{ 165 }\hypertarget{"e:165"}{  } &
-    \begin{eq}{x}{_{N}} := \int_{ {{t^o}}{_{}} }^{ {{t^e}}{_{}} } \, {I}{_{N, D}} \star {{\dot{x}}}{_{D}} \enskip d\,{t}{_{}}  + {{x^o}}{_{N}}\end{eq} &
+    \begin{eq}{x}{_{N}} := \int_{ {{t^o}}{_{}} }^{ {{t^e}}{_{}} } \, {I}{_{N, D}} \stackrel{D}{\star} {{\dot{x}}}{_{D}} \enskip d\,{t}{_{}}  + {{x^o}}{_{N}}\end{eq} &
     \begin{lay}controller state\end{lay} &
     \begin{lay}control\end{lay} \\
         \hyperlink{"v:183"}{ 166 }\hypertarget{"e:166"}{  } &
@@ -513,15 +513,15 @@ no & equation &documentation &layer \\\hline\hline
     \begin{lay}valve constant -- pressure difference must be dimensionless\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:91"}{ 172 }\hypertarget{"e:172"}{  } &
-    \begin{eq}{{\hat{V}}}{_{A}} := {{\_u^v}}{_{A}} \, . \, {{k^{valve}}}{_{A}} \, . \, \textbf{sqrt}\left(\left({D}{_{N, A}} \star \left({p}{_{N}} \, . \, \left( {{p^o}}{_{N}} \right)^{-1}\right)\right)\right)\end{eq} &
+    \begin{eq}{{\hat{V}}}{_{A}} := {{\_u^v}}{_{A}} \, . \, {{k^{valve}}}{_{A}} \, . \, \textbf{sqrt}\left(\left({D}{_{N, A}} \stackrel{N}{\star} \left({p}{_{N}} \, . \, \left( {{p^o}}{_{N}} \right)^{-1}\right)\right)\right)\end{eq} &
     \begin{lay}volumetric flow\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:188"}{ 174 }\hypertarget{"e:174"}{  } &
-    \begin{eq}{{\hat{m}}}{_{A}} := {{\_\rho}}{_{A}} \, . \, {{\hat{V}}}{_{A}}\end{eq} &
+    \begin{eq}{{\hat{m}^c}}{_{A}} := {{\_\rho}}{_{A}} \, . \, {{\hat{V}}}{_{A}}\end{eq} &
     \begin{lay}mass flow rate \end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:91"}{ 175 }\hypertarget{"e:175"}{  } &
-    \begin{eq}{{\hat{V}}}{_{A}} := \left({I}{_{N, A}} \star {{v_x}}{_{N}}\right) \, . \, {{A_{yz}}}{_{A}}\end{eq} &
+    \begin{eq}{{\hat{V}}}{_{A}} := \left({I}{_{N, A}} \stackrel{N}{\star} {{v_x}}{_{N}}\right) \, . \, {{A_{yz}}}{_{A}}\end{eq} &
     \begin{lay}volumetric flow\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:189"}{ 176 }\hypertarget{"e:176"}{  } &
@@ -529,23 +529,23 @@ no & equation &documentation &layer \\\hline\hline
     \begin{lay}height\end{lay} &
     \begin{lay}physical\end{lay} \\
         \hyperlink{"v:192"}{ 177 }\hypertarget{"e:177"}{  } &
-    \begin{eq}{{v_x}}{_{A}} := {I}{_{N, A}} \star {{v_x}}{_{N}}\end{eq} &
+    \begin{eq}{{v_x}}{_{A}} := {I}{_{N, A}} \stackrel{N}{\star} {{v_x}}{_{N}}\end{eq} &
     \begin{lay}velocity in arc\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:196"}{ 181 }\hypertarget{"e:181"}{  } &
-    \begin{eq}{L}{_{A}} := {I}{_{N, A}} \star {{\ell}}{_{N}}\end{eq} &
+    \begin{eq}{L}{_{A}} := {I}{_{N, A}} \stackrel{N}{\star} {{\ell}}{_{N}}\end{eq} &
     \begin{lay}length of pipe\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:200"}{ 185 }\hypertarget{"e:185"}{  } &
-    \begin{eq}{{\dot{E}^k}}{_{A}} := {{\hat{m}}}{_{A}} \, . \, {D}{_{N, A}} \star \left({{v_x}}{_{N}} \, . \, {{v_x}}{_{N}}\right)\end{eq} &
+    \begin{eq}{{\dot{E}^k}}{_{A}} := {{\hat{m}^c}}{_{A}} \, . \, {D}{_{N, A}} \stackrel{N}{\star} \left({{v_x}}{_{N}} \, . \, {{v_x}}{_{N}}\right)\end{eq} &
     \begin{lay}net kinetic energy\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:201"}{ 186 }\hypertarget{"e:186"}{  } &
-    \begin{eq}{{\dot{E}^p}}{_{A}} := {{\hat{m}}}{_{A}} \, . \, {g}{_{}} \, . \, {D}{_{N, A}} \star {h}{_{N}}\end{eq} &
+    \begin{eq}{{\dot{E}^p}}{_{A}} := {{\hat{m}^c}}{_{A}} \, . \, {g}{_{}} \, . \, {D}{_{N, A}} \stackrel{N}{\star} {h}{_{N}}\end{eq} &
     \begin{lay}net potential energy\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:203"}{ 188 }\hypertarget{"e:188"}{  } &
-    \begin{eq}{{f^l}}{_{A}} := \textbf{Instantiate}({{\dot{E}^p}}{_{A}} \, . \, \left({I}{_{N, A}} \star \left( {{\ell}}{_{N}} \right)^{-1}\right), {{\#}}{_{}})\end{eq} &
+    \begin{eq}{{f^l}}{_{A}} := \textbf{Instantiate}({{\dot{E}^p}}{_{A}} \, . \, \left({I}{_{N, A}} \stackrel{N}{\star} \left( {{\ell}}{_{N}} \right)^{-1}\right), {{\#}}{_{}})\end{eq} &
     \begin{lay}friction coefficient for linear model\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:141"}{ 189 }\hypertarget{"e:189"}{  } &
@@ -553,7 +553,7 @@ no & equation &documentation &layer \\\hline\hline
     \begin{lay}a linear model\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:205"}{ 191 }\hypertarget{"e:191"}{  } &
-    \begin{eq}{{\dot{w}^V}}{_{A}} := {{\hat{V}}}{_{A}} \, . \, \left({D}{_{N, A}} \star {p}{_{N}}\right)\end{eq} &
+    \begin{eq}{{\dot{w}^V}}{_{A}} := {{\hat{V}}}{_{A}} \, . \, \left({D}{_{N, A}} \stackrel{N}{\star} {p}{_{N}}\right)\end{eq} &
     \begin{lay}net volume work\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:206"}{ 192 }\hypertarget{"e:192"}{  } &
@@ -567,6 +567,22 @@ no & equation &documentation &layer \\\hline\hline
         \hyperlink{"v:91"}{ 194 }\hypertarget{"e:194"}{  } &
     \begin{eq}{{\hat{V}}}{_{A}} := \textbf{Root}\left( {{r^m}}{_{A}}\right)\end{eq} &
     \begin{lay}volumetric flow as a root of the pressure distribution\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+        \hyperlink{"v:208"}{ 195 }\hypertarget{"e:195"}{  } &
+    \begin{eq}{{\hat{m}}}{_{N}} := {{\_\lambda}}{_{S}} \stackrel{S}{\star} {{\dot{n}}}{_{N, S}}\end{eq} &
+    \begin{lay}accumulation of mass\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+        \hyperlink{"v:209"}{ 196 }\hypertarget{"e:196"}{  } &
+    \begin{eq}{{r^m}}{_{N}} := {{\hat{m}}}{_{N}}  - {{\_\lambda}}{_{S}} \stackrel{S}{\star} \left({{\dot{n}}}{_{N, S}}\right)\end{eq} &
+    \begin{lay}residual form of differential mass balance\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+        \hyperlink{"v:188"}{ 197 }\hypertarget{"e:197"}{  } &
+    \begin{eq}{{\hat{m}^c}}{_{A}} := {{\_\lambda}}{_{S}} \stackrel{I}{\star} {{\hat{n}^c}}{_{A, S}}\end{eq} &
+    \begin{lay}mass flow rate from molar flow\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+        \hyperlink{"v:210"}{ 198 }\hypertarget{"e:198"}{  } &
+    \begin{eq}{{r^m}}{_{A}} := {I}{_{N, A}} \stackrel{N}{\star} {{r^m}}{_{N}}\end{eq} &
+    \begin{lay}residual formulation for the mass balance for an arc node\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
 \hline
 \end{longtable}

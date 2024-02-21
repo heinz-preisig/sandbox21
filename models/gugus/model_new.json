@@ -1,0 +1,139 @@
+{
+    "N_0": {
+        "identifier": "N_0",
+        "name": "0",
+        "parent_id": null,
+        "modeller_class": "NodeComposite",
+        "children_ids": [
+            "N_1",
+            "N_2",
+            "N_3",
+            "A_4",
+            "A_5"
+        ]
+    },
+    "N_1": {
+        "identifier": "N_1",
+        "name": "default",
+        "parent_id": "N_0",
+        "modeller_class": "EntityContainer",
+        "subtype": 1,
+        "entity_name": "macroscopic.node.mass|constant|infinity.Source",
+        "network": "gas",
+        "named_network": "A-gas",
+        "tokens": [
+            "mass"
+        ],
+        "typed_tokens": {
+            "mass": []
+        },
+        "conversions": null,
+        "instantiated_variables": {
+            "V_85": {}
+        },
+        "outgoing_nodes": [
+            "A_4",
+            "A_5"
+        ]
+    },
+    "N_2": {
+        "identifier": "N_2",
+        "name": "default",
+        "parent_id": "N_0",
+        "modeller_class": "EntityContainer",
+        "subtype": 1,
+        "entity_name": "macroscopic.node.mass|dynamic|lumped.Pore",
+        "network": "gas",
+        "named_network": "A-gas",
+        "tokens": [
+            "mass"
+        ],
+        "typed_tokens": {
+            "mass": []
+        },
+        "conversions": {},
+        "instantiated_variables": {
+            "V_138": {},
+            "V_145": {},
+            "V_15": {},
+            "V_5": {},
+            "V_6": {},
+            "V_93": {}
+        },
+        "outgoing_nodes": []
+    },
+    "N_3": {
+        "identifier": "N_3",
+        "name": "default",
+        "parent_id": "N_0",
+        "modeller_class": "EntityContainer",
+        "subtype": 1,
+        "entity_name": "macroscopic.node.mass|dynamic|lumped.Pore",
+        "network": "gas",
+        "named_network": "A-gas",
+        "tokens": [
+            "mass"
+        ],
+        "typed_tokens": {
+            "mass": []
+        },
+        "conversions": {},
+        "instantiated_variables": {
+            "V_138": {},
+            "V_145": {},
+            "V_15": {},
+            "V_5": {},
+            "V_6": {},
+            "V_93": {}
+        },
+        "outgoing_nodes": []
+    },
+    "A_4": {
+        "identifier": "A_4",
+        "name": "default",
+        "parent_id": "N_0",
+        "modeller_class": "EntityContainer",
+        "subtype": 2,
+        "entity_name": "macroscopic.arc.mass|diffusion|lumped.Diff_arc",
+        "network": "gas",
+        "named_network": "A-gas >>> A-gas",
+        "tokens": [
+            "mass"
+        ],
+        "typed_tokens": {
+            "mass": []
+        },
+        "conversions": null,
+        "instantiated_variables": {
+            "V_70": {},
+            "V_75": {}
+        },
+        "outgoing_nodes": [
+            "N_2"
+        ]
+    },
+    "A_5": {
+        "identifier": "A_5",
+        "name": "default",
+        "parent_id": "N_0",
+        "modeller_class": "EntityContainer",
+        "subtype": 2,
+        "entity_name": "macroscopic.arc.mass|diffusion|lumped.Diff_arc",
+        "network": "gas",
+        "named_network": "A-gas >>> A-gas",
+        "tokens": [
+            "mass"
+        ],
+        "typed_tokens": {
+            "mass": []
+        },
+        "conversions": null,
+        "instantiated_variables": {
+            "V_70": {},
+            "V_75": {}
+        },
+        "outgoing_nodes": [
+            "N_3"
+        ]
+    }
+}
