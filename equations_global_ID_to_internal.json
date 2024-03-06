@@ -787,7 +787,7 @@
   "E_83": {
     "lhs": "nt",
     "network": "macroscopic",
-    "rhs": " I_S * S n"
+    "rhs": " reduceSum ( n , S )"
   },
   "E_84": {
     "lhs": "x",

@@ -5987,7 +5987,6 @@ V_V_98.has_function = []
 
 V_V_99.has_function = []
 incidence_list = []
-incidence_list.append( V_98 )
 incidence_list.append( V_18 )
 F_ID = "F_E_83"
 F_E_83 = onto.function( F_ID )

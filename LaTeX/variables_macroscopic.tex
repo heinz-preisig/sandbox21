@@ -12,13 +12,29 @@
 \endlastfoot
 
 
-        201
-             & \hypertarget{"v:201"}{ $ {{\dot{E}^p}}{_{A}} $}
-             & \verb|aE_potential|
-             & net potential energy
+        210
+             & \hypertarget{"v:210"}{ $ {{r^m}}{_{A}} $}
+             & \verb|residual_am_A|
+             & residual formulation for the mass balance for an arc node
+             & \begin{lay}transport \end{lay}
+             & $ kg \,s^{-1} \, $
+             &                 \hyperlink{"e:198"}{ 198 }
+                 \\
+            166
+             & \hypertarget{"v:166"}{ $ {I}{_{N}} $}
+             & \verb|I|
+             & electric current definition
+             & \begin{lay}transport \end{lay}
+             & $ A \, $
+             &                 \hyperlink{"e:152"}{ 152 }
+                 \\
+            111
+             & \hypertarget{"v:111"}{ $ {{\dot{H}^c}}{_{N}} $}
+             & \verb|aHc|
+             & enthalpy accumulation due to convective mass flow
              & \begin{lay}transport \end{lay}
              & $ kg \,m^{2} \,s^{-3} \, $
-             &                 \hyperlink{"e:186"}{ 186 }
+             &                 \hyperlink{"e:97"}{ 97 }
                  \\
             87
              & \hypertarget{"v:87"}{ $ {c}{_{A, S}} $}
@@ -28,13 +44,21 @@
              & $ m^{-3} \,mol \, $
              &                 \hyperlink{"e:76"}{ 76 }
                  \\
-            92
-             & \hypertarget{"v:92"}{ $ {{\hat{n}^c}}{_{A, S}} $}
-             & \verb|fnc|
-             & convective mass flow in an arc
+            196
+             & \hypertarget{"v:196"}{ $ {L}{_{A}} $}
+             & \verb|length_pipe|
+             & length of pipe
              & \begin{lay}transport \end{lay}
-             & $ mol \,s^{-1} \, $
-             &                 \hyperlink{"e:81"}{ 81 }
+             & $ m  $
+             &                 \hyperlink{"e:181"}{ 181 }
+                 \\
+            109
+             & \hypertarget{"v:109"}{ $ {{\hat{H}^c}}{_{A}} $}
+             & \verb|fHc|
+             & enthalpy flow due to convective mass flow
+             & \begin{lay}transport \end{lay}
+             & $ kg \,m^{2} \,s^{-3} \, $
+             &                 \hyperlink{"e:95"}{ 95 }
                  \\
             200
              & \hypertarget{"v:200"}{ $ {{\dot{E}^k}}{_{A}} $}
@@ -44,13 +68,21 @@
              & $ kg \,m^{2} \,s^{-3} \, $
              &                 \hyperlink{"e:185"}{ 185 }
                  \\
-            207
-             & \hypertarget{"v:207"}{ $ {{r^m}}{_{A}} $}
-             & \verb|residual_aE_mechanical|
-             & residual form of differential mechanical energy balance
+            206
+             & \hypertarget{"v:206"}{ $ {{\dot{E}^m}}{_{A}} $}
+             & \verb|aE_mechanical|
+             & accumulation of mechanical work
              & \begin{lay}transport \end{lay}
              & $ kg \,m^{2} \,s^{-3} \, $
-             &                 \hyperlink{"e:193"}{ 193 }
+             &                 \hyperlink{"e:192"}{ 192 }
+                 \\
+            104
+             & \hypertarget{"v:104"}{ $ {{\dot{n}^d}}{_{N, S}} $}
+             & \verb|and|
+             & accumulation due to diffusional mass transfer
+             & \begin{lay}transport \end{lay}
+             & $ mol \,s^{-1} \, $
+             &                 \hyperlink{"e:90"}{ 90 }
                  \\
             83
              & \hypertarget{"v:83"}{ $ {{\hat{q}_x}}{_{A}} $}
@@ -60,13 +92,71 @@
              & $ kg \,m^{2} \,s^{-3} \, $
              &                 \hyperlink{"e:72"}{ 72 }
                  \\
-            109
-             & \hypertarget{"v:109"}{ $ {{\hat{H}^c}}{_{A}} $}
-             & \verb|fHc|
-             & enthalpy flow due to convective mass flow
+            93
+             & \hypertarget{"v:93"}{ $ {{\dot{n}^c}}{_{N, S}} $}
+             & \verb|anc|
+             & accumulation due to convective mass flow
+             & \begin{lay}transport \end{lay}
+             & $ mol \,s^{-1} \, $
+             &                 \hyperlink{"e:82"}{ 82 }
+                 \\
+            207
+             & \hypertarget{"v:207"}{ $ {{r^m}}{_{A}} $}
+             & \verb|residual_aE_mechanical|
+             & residual form of differential mechanical energy balance
              & \begin{lay}transport \end{lay}
              & $ kg \,m^{2} \,s^{-3} \, $
-             &                 \hyperlink{"e:95"}{ 95 }
+             &                 \hyperlink{"e:193"}{ 193 }
+                 \\
+            110
+             & \hypertarget{"v:110"}{ $ {{\hat{H}^d}}{_{A}} $}
+             & \verb|fHd|
+             & enthalpy flow due to diffusive mass flow
+             & \begin{lay}transport \end{lay}
+             & $ kg \,m^{2} \,s^{-3} \, $
+             &                 \hyperlink{"e:96"}{ 96 }
+                 \\
+            188
+             & \hypertarget{"v:188"}{ $ {{\hat{m}^c}}{_{A}} $}
+             & \verb|fmc|
+             & mass flow rate 
+             & \begin{lay}transport \end{lay}
+             & $ kg \,s^{-1} \, $
+             &                 \hyperlink{"e:174"}{ 174 }
+                                 \hyperlink{"e:197"}{ 197 }
+                 \\
+            205
+             & \hypertarget{"v:205"}{ $ {{\dot{w}^V}}{_{A}} $}
+             & \verb|fw_V|
+             & net volume work
+             & \begin{lay}transport \end{lay}
+             & $ kg \,m^{2} \,s^{-3} \, $
+             &                 \hyperlink{"e:191"}{ 191 }
+                 \\
+            101
+             & \hypertarget{"v:101"}{ $ {{\hat{n}^d}}{_{A, S}} $}
+             & \verb|fnd|
+             & diffusional mass flow in arc
+             & \begin{lay}transport \end{lay}
+             & $ mol \,s^{-1} \, $
+             &                 \hyperlink{"e:85"}{ 85 }
+                                 \hyperlink{"e:89"}{ 89 }
+                 \\
+            84
+             & \hypertarget{"v:84"}{ $ {{\dot{q}}}{_{N}} $}
+             & \verb|aq|
+             & accumulation due to conductive heat flow
+             & \begin{lay}transport \end{lay}
+             & $ kg \,m^{2} \,s^{-3} \, $
+             &                 \hyperlink{"e:73"}{ 73 }
+                 \\
+            201
+             & \hypertarget{"v:201"}{ $ {{\dot{E}^p}}{_{A}} $}
+             & \verb|aE_potential|
+             & net potential energy
+             & \begin{lay}transport \end{lay}
+             & $ kg \,m^{2} \,s^{-3} \, $
+             &                 \hyperlink{"e:186"}{ 186 }
                  \\
             141
              & \hypertarget{"v:141"}{ $ {{\hat{w}}}{_{A}} $}
@@ -77,13 +167,37 @@
              &                 \hyperlink{"e:125"}{ 125 }
                                  \hyperlink{"e:189"}{ 189 }
                  \\
-            196
-             & \hypertarget{"v:196"}{ $ {L}{_{A}} $}
-             & \verb|length_pipe|
-             & length of pipe
+            92
+             & \hypertarget{"v:92"}{ $ {{\hat{n}^c}}{_{A, S}} $}
+             & \verb|fnc|
+             & convective mass flow in an arc
              & \begin{lay}transport \end{lay}
-             & $ m  $
-             &                 \hyperlink{"e:181"}{ 181 }
+             & $ mol \,s^{-1} \, $
+             &                 \hyperlink{"e:81"}{ 81 }
+                 \\
+            86
+             & \hypertarget{"v:86"}{ $ {d}{_{A}} $}
+             & \verb|d|
+             & fow direction of convective flow
+             & \begin{lay}transport \end{lay}
+             & $  $
+             &                 \hyperlink{"e:75"}{ 75 }
+                 \\
+            142
+             & \hypertarget{"v:142"}{ $ {{\dot{w}}}{_{N}} $}
+             & \verb|aw|
+             & enthalpy accumulation due to work flows
+             & \begin{lay}transport \end{lay}
+             & $ kg \,m^{2} \,s^{-3} \, $
+             &                 \hyperlink{"e:126"}{ 126 }
+                 \\
+            112
+             & \hypertarget{"v:112"}{ $ {{\dot{H}^d}}{_{N}} $}
+             & \verb|aHd|
+             & enthalpy accumulation due to diffusive mass flow
+             & \begin{lay}transport \end{lay}
+             & $ kg \,m^{2} \,s^{-3} \, $
+             &                 \hyperlink{"e:98"}{ 98 }
                  \\
             91
              & \hypertarget{"v:91"}{ $ {{\hat{V}}}{_{A}} $}
@@ -96,127 +210,13 @@
                                  \hyperlink{"e:175"}{ 175 }
                                  \hyperlink{"e:194"}{ 194 }
                  \\
-            210
-             & \hypertarget{"v:210"}{ $ {{r^m}}{_{A}} $}
-             & \verb|residual_am_A|
-             & residual formulation for the mass balance for an arc node
-             & \begin{lay}transport \end{lay}
-             & $ kg \,s^{-1} \, $
-             &                 \hyperlink{"e:198"}{ 198 }
-                 \\
-            84
-             & \hypertarget{"v:84"}{ $ {{\dot{q}}}{_{N}} $}
-             & \verb|aq|
-             & accumulation due to conductive heat flow
-             & \begin{lay}transport \end{lay}
-             & $ kg \,m^{2} \,s^{-3} \, $
-             &                 \hyperlink{"e:73"}{ 73 }
-                 \\
-            86
-             & \hypertarget{"v:86"}{ $ {d}{_{A}} $}
-             & \verb|d|
-             & fow direction of convective flow
-             & \begin{lay}transport \end{lay}
-             & $  $
-             &                 \hyperlink{"e:75"}{ 75 }
-                 \\
-            93
-             & \hypertarget{"v:93"}{ $ {{\dot{n}^c}}{_{N, S}} $}
-             & \verb|anc|
-             & accumulation due to convective mass flow
-             & \begin{lay}transport \end{lay}
-             & $ mol \,s^{-1} \, $
-             &                 \hyperlink{"e:82"}{ 82 }
-                 \\
-            142
-             & \hypertarget{"v:142"}{ $ {{\dot{w}}}{_{N}} $}
-             & \verb|aw|
-             & enthalpy accumulation due to work flows
-             & \begin{lay}transport \end{lay}
-             & $ kg \,m^{2} \,s^{-3} \, $
-             &                 \hyperlink{"e:126"}{ 126 }
-                 \\
-            101
-             & \hypertarget{"v:101"}{ $ {{\hat{n}^d}}{_{A, S}} $}
-             & \verb|fnd|
-             & diffusional mass flow in arc
-             & \begin{lay}transport \end{lay}
-             & $ mol \,s^{-1} \, $
-             &                 \hyperlink{"e:85"}{ 85 }
-                                 \hyperlink{"e:89"}{ 89 }
-                 \\
-            205
-             & \hypertarget{"v:205"}{ $ {{\dot{w}^V}}{_{A}} $}
-             & \verb|fw_V|
-             & net volume work
-             & \begin{lay}transport \end{lay}
-             & $ kg \,m^{2} \,s^{-3} \, $
-             &                 \hyperlink{"e:191"}{ 191 }
-                 \\
-            188
-             & \hypertarget{"v:188"}{ $ {{\hat{m}^c}}{_{A}} $}
-             & \verb|fmc|
-             & mass flow rate 
-             & \begin{lay}transport \end{lay}
-             & $ kg \,s^{-1} \, $
-             &                 \hyperlink{"e:174"}{ 174 }
-                                 \hyperlink{"e:197"}{ 197 }
-                 \\
-            112
-             & \hypertarget{"v:112"}{ $ {{\dot{H}^d}}{_{N}} $}
-             & \verb|aHd|
-             & enthalpy accumulation due to diffusive mass flow
-             & \begin{lay}transport \end{lay}
-             & $ kg \,m^{2} \,s^{-3} \, $
-             &                 \hyperlink{"e:98"}{ 98 }
-                 \\
-            104
-             & \hypertarget{"v:104"}{ $ {{\dot{n}^d}}{_{N, S}} $}
-             & \verb|and|
-             & accumulation due to diffusional mass transfer
-             & \begin{lay}transport \end{lay}
-             & $ mol \,s^{-1} \, $
-             &                 \hyperlink{"e:90"}{ 90 }
-                 \\
-            110
-             & \hypertarget{"v:110"}{ $ {{\hat{H}^d}}{_{A}} $}
-             & \verb|fHd|
-             & enthalpy flow due to diffusive mass flow
-             & \begin{lay}transport \end{lay}
-             & $ kg \,m^{2} \,s^{-3} \, $
-             &                 \hyperlink{"e:96"}{ 96 }
-                 \\
-            166
-             & \hypertarget{"v:166"}{ $ {I}{_{N}} $}
-             & \verb|I|
-             & electric current definition
-             & \begin{lay}transport \end{lay}
-             & $ A \, $
-             &                 \hyperlink{"e:152"}{ 152 }
-                 \\
-            206
-             & \hypertarget{"v:206"}{ $ {{\dot{E}^m}}{_{A}} $}
-             & \verb|aE_mechanical|
-             & accumulation of mechanical work
-             & \begin{lay}transport \end{lay}
-             & $ kg \,m^{2} \,s^{-3} \, $
-             &                 \hyperlink{"e:192"}{ 192 }
-                 \\
-            111
-             & \hypertarget{"v:111"}{ $ {{\dot{H}^c}}{_{N}} $}
-             & \verb|aHc|
-             & enthalpy accumulation due to convective mass flow
-             & \begin{lay}transport \end{lay}
-             & $ kg \,m^{2} \,s^{-3} \, $
-             &                 \hyperlink{"e:97"}{ 97 }
-                 \\
-            69
-             & \hypertarget{"v:69"}{ $ {{A_{xz}}}{_{A}} $}
-             & \verb|A_xz_A|
-             & cross sectional area xz of arc
+            67
+             & \hypertarget{"v:67"}{ $ {{A_{yz}}}{_{N}} $}
+             & \verb|A_yz|
+             & cross sectional area yz
              & \begin{lay}geometry \end{lay}
              & $ m^{2} \, $
-             &                 \hyperlink{"e:58"}{ 58 }
+             &                 \hyperlink{"e:56"}{ 56 }
                  \\
             68
              & \hypertarget{"v:68"}{ $ {{A_{xy}}}{_{A}} $}
@@ -226,21 +226,13 @@
              & $ m^{2} \, $
              &                 \hyperlink{"e:57"}{ 57 }
                  \\
-            67
-             & \hypertarget{"v:67"}{ $ {{A_{yz}}}{_{N}} $}
-             & \verb|A_yz|
-             & cross sectional area yz
+            69
+             & \hypertarget{"v:69"}{ $ {{A_{xz}}}{_{A}} $}
+             & \verb|A_xz_A|
+             & cross sectional area xz of arc
              & \begin{lay}geometry \end{lay}
              & $ m^{2} \, $
-             &                 \hyperlink{"e:56"}{ 56 }
-                 \\
-            65
-             & \hypertarget{"v:65"}{ $ {{A_{xy}}}{_{N}} $}
-             & \verb|A_xy|
-             & cross sectional area xy
-             & \begin{lay}geometry \end{lay}
-             & $ m^{2} \, $
-             &                 \hyperlink{"e:54"}{ 54 }
+             &                 \hyperlink{"e:58"}{ 58 }
                  \\
             66
              & \hypertarget{"v:66"}{ $ {{A_{xz}}}{_{N}} $}
@@ -258,6 +250,22 @@
              & $ m^{2} \, $
              &                 \hyperlink{"e:59"}{ 59 }
                  \\
+            65
+             & \hypertarget{"v:65"}{ $ {{A_{xy}}}{_{N}} $}
+             & \verb|A_xy|
+             & cross sectional area xy
+             & \begin{lay}geometry \end{lay}
+             & $ m^{2} \, $
+             &                 \hyperlink{"e:54"}{ 54 }
+                 \\
+            186
+             & \hypertarget{"v:186"}{ $ {{k^{valve}}}{_{A}} $}
+             & \verb|valveConstant|
+             & valve constant -- pressure difference must be dimensionless
+             & \begin{lay}properties \end{lay}
+             & $ m^{3} \,s^{-1} \, $
+             &                 \hyperlink{"e:171"}{ 171 }
+                 \\
             203
              & \hypertarget{"v:203"}{ $ {{f^l}}{_{A}} $}
              & \verb|friction_coeff_linear|
@@ -273,14 +281,6 @@
              & \begin{lay}properties \end{lay}
              & $  $
              & \\
-            186
-             & \hypertarget{"v:186"}{ $ {{k^{valve}}}{_{A}} $}
-             & \verb|valveConstant|
-             & valve constant -- pressure difference must be dimensionless
-             & \begin{lay}properties \end{lay}
-             & $ m^{3} \,s^{-1} \, $
-             &                 \hyperlink{"e:171"}{ 171 }
-                 \\
             64
              & \hypertarget{"v:64"}{ $ {D}{_{N, A}} $}
              & \verb|D|
@@ -288,14 +288,6 @@
              & \begin{lay}differenceOperator \end{lay}
              & $  $
              & \\
-            145
-             & \hypertarget{"v:145"}{ $ {{n^o}}{_{N, S}} $}
-             & \verb|no|
-             & initial species masses
-             & \begin{lay}state \end{lay}
-             & $ mol \, $
-             &                 \hyperlink{"e:131"}{ 131 }
-                 \\
             144
              & \hypertarget{"v:144"}{ $ {{H^o}}{_{N}} $}
              & \verb|Ho|
@@ -312,13 +304,29 @@
              & $ kg \,s^{-1} \, $
              &                 \hyperlink{"e:196"}{ 196 }
                  \\
-            150
-             & \hypertarget{"v:150"}{ $ {{\bar{p}}}{_{N}} $}
-             & \verb|p_normed|
-             & normed pressure
+            145
+             & \hypertarget{"v:145"}{ $ {{n^o}}{_{N, S}} $}
+             & \verb|no|
+             & initial species masses
+             & \begin{lay}state \end{lay}
+             & $ mol \, $
+             &                 \hyperlink{"e:131"}{ 131 }
+                 \\
+            149
+             & \hypertarget{"v:149"}{ $ {{\bar{T}}}{_{N}} $}
+             & \verb|T_normed|
+             & normed temperature
              & \begin{lay}secondaryState \end{lay}
              & $  $
-             &                 \hyperlink{"e:136"}{ 136 }
+             &                 \hyperlink{"e:135"}{ 135 }
+                 \\
+            147
+             & \hypertarget{"v:147"}{ $ {{p^o}}{_{N}} $}
+             & \verb|p_norming|
+             & normed pressure
+             & \begin{lay}secondaryState \end{lay}
+             & $ kg \,m^{-1} \,s^{-2} \, $
+             &                 \hyperlink{"e:133"}{ 133 }
                  \\
             85
              & \hypertarget{"v:85"}{ $ {c}{_{N, S}} $}
@@ -328,29 +336,21 @@
              & $ m^{-3} \,mol \, $
              &                 \hyperlink{"e:74"}{ 74 }
                  \\
-            175
-             & \hypertarget{"v:175"}{ $ {{C_p}}{_{N}} $}
-             & \verb|Cp|
-             & total heat capacity
+            176
+             & \hypertarget{"v:176"}{ $ {{T^{ref}}}{_{N}} $}
+             & \verb|T_ref|
+             & reference temperature
              & \begin{lay}secondaryState \end{lay}
-             & $ kg \,m^{2} \,K^{-1} \,s^{-2} \, $
-             &                 \hyperlink{"e:159"}{ 159 }
+             & $ K \, $
+             &                 \hyperlink{"e:160"}{ 160 }
                  \\
-            174
-             & \hypertarget{"v:174"}{ $ {m}{_{N}} $}
-             & \verb|m|
-             & mass
+            192
+             & \hypertarget{"v:192"}{ $ {{v_x}}{_{A}} $}
+             & \verb|v_x_A|
+             & velocity in arc
              & \begin{lay}secondaryState \end{lay}
-             & $ kg \, $
-             &                 \hyperlink{"e:158"}{ 158 }
-                 \\
-            149
-             & \hypertarget{"v:149"}{ $ {{\bar{T}}}{_{N}} $}
-             & \verb|T_normed|
-             & normed temperature
-             & \begin{lay}secondaryState \end{lay}
-             & $  $
-             &                 \hyperlink{"e:135"}{ 135 }
+             & $ m s^{-1} \, $
+             &                 \hyperlink{"e:177"}{ 177 }
                  \\
             148
              & \hypertarget{"v:148"}{ $ {{c^o}}{_{N, S}} $}
@@ -368,53 +368,13 @@
              & $  $
              &                 \hyperlink{"e:84"}{ 84 }
                  \\
-            176
-             & \hypertarget{"v:176"}{ $ {{T^{ref}}}{_{N}} $}
-             & \verb|T_ref|
-             & reference temperature
-             & \begin{lay}secondaryState \end{lay}
-             & $ K \, $
-             &                 \hyperlink{"e:160"}{ 160 }
-                 \\
-            146
-             & \hypertarget{"v:146"}{ $ {{T^o}}{_{N}} $}
-             & \verb|T_norming|
-             & norming temperature
-             & \begin{lay}secondaryState \end{lay}
-             & $ K \, $
-             &                 \hyperlink{"e:132"}{ 132 }
-                 \\
-            208
-             & \hypertarget{"v:208"}{ $ {{\hat{m}}}{_{N}} $}
-             & \verb|am|
-             & accumulation of mass
-             & \begin{lay}secondaryState \end{lay}
-             & $ kg \,s^{-1} \, $
-             &                 \hyperlink{"e:195"}{ 195 }
-                 \\
-            99
-             & \hypertarget{"v:99"}{ $ {{n^t}}{_{N}} $}
-             & \verb|nt|
-             & total amount
-             & \begin{lay}secondaryState \end{lay}
-             & $ mol \, $
-             &                 \hyperlink{"e:83"}{ 83 }
-                 \\
-            192
-             & \hypertarget{"v:192"}{ $ {{v_x}}{_{A}} $}
-             & \verb|v_x_A|
-             & velocity in arc
-             & \begin{lay}secondaryState \end{lay}
-             & $ m s^{-1} \, $
-             &                 \hyperlink{"e:177"}{ 177 }
-                 \\
-            147
-             & \hypertarget{"v:147"}{ $ {{p^o}}{_{N}} $}
-             & \verb|p_norming|
+            150
+             & \hypertarget{"v:150"}{ $ {{\bar{p}}}{_{N}} $}
+             & \verb|p_normed|
              & normed pressure
              & \begin{lay}secondaryState \end{lay}
-             & $ kg \,m^{-1} \,s^{-2} \, $
-             &                 \hyperlink{"e:133"}{ 133 }
+             & $  $
+             &                 \hyperlink{"e:136"}{ 136 }
                  \\
             151
              & \hypertarget{"v:151"}{ $ {{\bar{c}}}{_{N, S}} $}
@@ -424,6 +384,46 @@
              & $  $
              &                 \hyperlink{"e:137"}{ 137 }
                  \\
+            208
+             & \hypertarget{"v:208"}{ $ {{\hat{m}}}{_{N}} $}
+             & \verb|am|
+             & accumulation of mass
+             & \begin{lay}secondaryState \end{lay}
+             & $ kg \,s^{-1} \, $
+             &                 \hyperlink{"e:195"}{ 195 }
+                 \\
+            174
+             & \hypertarget{"v:174"}{ $ {m}{_{N}} $}
+             & \verb|m|
+             & mass
+             & \begin{lay}secondaryState \end{lay}
+             & $ kg \, $
+             &                 \hyperlink{"e:158"}{ 158 }
+                 \\
+            146
+             & \hypertarget{"v:146"}{ $ {{T^o}}{_{N}} $}
+             & \verb|T_norming|
+             & norming temperature
+             & \begin{lay}secondaryState \end{lay}
+             & $ K \, $
+             &                 \hyperlink{"e:132"}{ 132 }
+                 \\
+            175
+             & \hypertarget{"v:175"}{ $ {{C_p}}{_{N}} $}
+             & \verb|Cp|
+             & total heat capacity
+             & \begin{lay}secondaryState \end{lay}
+             & $ kg \,m^{2} \,K^{-1} \,s^{-2} \, $
+             &                 \hyperlink{"e:159"}{ 159 }
+                 \\
+            99
+             & \hypertarget{"v:99"}{ $ {{n^t}}{_{N}} $}
+             & \verb|nt|
+             & total amount
+             & \begin{lay}secondaryState \end{lay}
+             & $ mol \, $
+             &                 \hyperlink{"e:83"}{ 83 }
+                 \\
             138
              & \hypertarget{"v:138"}{ $ {{\dot{n}^p}}{_{N, S}} $}
              & \verb|anProduction|
@@ -432,14 +432,6 @@
              & $ mol \,s^{-1} \, $
              &                 \hyperlink{"e:122"}{ 122 }
                  \\
-            143
-             & \hypertarget{"v:143"}{ $ {{\dot{H}}}{_{N}} $}
-             & \verb|aH|
-             & differential enthalpy balance
-             & \begin{lay}diffState \end{lay}
-             & $ kg \,m^{2} \,s^{-3} \, $
-             &                 \hyperlink{"e:127"}{ 127 }
-                 \\
             139
              & \hypertarget{"v:139"}{ $ {{\dot{n}}}{_{N, S}} $}
              & \verb|an|
@@ -447,5 +439,13 @@
              & \begin{lay}diffState \end{lay}
              & $ mol \,s^{-1} \, $
              &                 \hyperlink{"e:123"}{ 123 }
+                 \\
+            143
+             & \hypertarget{"v:143"}{ $ {{\dot{H}}}{_{N}} $}
+             & \verb|aH|
+             & differential enthalpy balance
+             & \begin{lay}diffState \end{lay}
+             & $ kg \,m^{2} \,s^{-3} \, $
+             &                 \hyperlink{"e:127"}{ 127 }
                  \\
     \end{longtable}
